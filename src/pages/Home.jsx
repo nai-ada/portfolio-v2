@@ -26,19 +26,17 @@ function Home() {
         style={{
           height: gridHeight,
           backgroundImage: `
-            linear-gradient(to right, #e5e7eb 2px, transparent 2px),
-            linear-gradient(to bottom, #e5e7eb 2px, transparent 2px)
+          linear-gradient(to right, rgba(229, 231, 235, 0.4) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(229, 231, 235, 0.4) 2px, transparent 2px)
           `,
-          backgroundSize: '110px 110px',
+          backgroundSize: '130px 130px',
         }}
       />
       <div className="relative z-10">
         <Nav />
         <div className="flex flex-col items-start justify-center min-h-screen px-6 -mt-20">
           <div className="mb-4">
-            <h1 className="font-semibold text-lightTextColor text-[55px]">
-              Nadia
-            </h1>
+            <h1 className="font-bold text-[55px] text-[#2b2b2b]">Nadia</h1>
             <h1 className="font-bold text-[55px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text">
               Vespalec<span className="text-lightTextColor">.</span>
             </h1>
@@ -58,7 +56,7 @@ function Home() {
                 width={14}
                 className="mr-2"
               />
-              <h2 className="text-[14px] font-semibold">Vancouver, BC</h2>
+              <h2 className="text-[14px] font-medium">Vancouver, BC</h2>
             </div>
             <div className="flex space-x-4">
               <a

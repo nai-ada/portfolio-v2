@@ -49,7 +49,6 @@ const logos = {
   agile: 'Agile',
   ux: 'UX/UI',
   threejs: { src: threejsLogo, alt: 'ThreeJs Icon' },
-  threejs: { src: threejsLogo, alt: 'ThreeJs Icon' },
 };
 
 const createLogoElements = (logoKeys) =>
@@ -109,7 +108,7 @@ function AboutTools() {
       <Accordion variant="splitted">
         <AccordionItem
           key="1"
-          className="devTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450]"
+          className="devTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450] "
           aria-label="Accordion 1"
           title="Development Tools"
         >
@@ -117,7 +116,7 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="2"
-          className="designTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450]"
+          className="designTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450]  "
           aria-label="Accordion 2"
           title="Design Tools"
         >
@@ -132,7 +131,7 @@ function AboutTools() {
           <ul className="flex flex-wrap gap-4">
             {skillsContent.map((skill, index) => (
               <li key={index} className="flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                <span className="w-2 h-2 bg-[#86A6F6] rounded-full mr-2"></span>
                 {skill}
               </li>
             ))}

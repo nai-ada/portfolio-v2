@@ -31,6 +31,7 @@ export default {
             lightBackground: '#ffffff',
             lightTextColor: 'black',
             navHoverColor: '#86A6F6',
+            primary: '#86A6F6',
           },
         },
       },
