@@ -6,7 +6,7 @@ export default function SwitchTheme() {
   return (
     <Switch
       defaultSelected
-      size="lg"
+      size="md"
       style={{ '--nextui-colors-primary': '#86A6F6' }}
       thumbIcon={({ isSelected, className }) =>
         isSelected ? (

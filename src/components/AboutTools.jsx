@@ -57,9 +57,9 @@ const createLogoElements = (logoKeys) =>
       key={key}
       src={logos[key].src}
       alt={logos[key].alt}
-      className="inline p-2"
-      width="50"
-      height="50"
+      className="inline p-1" // Reduced padding
+      width="40" // Reduced size
+      height="40" // Reduced size
     />
   ));
 
@@ -105,33 +105,50 @@ const skillsContent = [
 function AboutTools() {
   return (
     <>
-      <Accordion variant="splitted">
+      <Accordion variant="splitted" className="max-w-[600px] px-6">
+        {' '}
+        {/* Adjust max-width as needed */}
         <AccordionItem
           key="1"
-          className="devTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450] "
+          className="devTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#eaf3ff] to-[white]"
           aria-label="Accordion 1"
           title="Development Tools"
+          classNames={{
+            title: 'text-sm font-medium', // Adjust font size here
+            content: 'text-sm py-2', // Adjust content padding here
+          }}
         >
           {devContent}
         </AccordionItem>
         <AccordionItem
           key="2"
-          className="designTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450]  "
+          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#eaf3ff] to-[white]"
           aria-label="Accordion 2"
           title="Design Tools"
+          classNames={{
+            title: 'text-sm font-medium',
+            content: 'text-sm py-2',
+          }}
         >
           {designContent}
         </AccordionItem>
         <AccordionItem
           key="3"
-          className="designTools m-4 shadow-none rounded-[5px] bg-gradient-to-r from-[#d8eaff] to-[white] font-[450]"
-          aria-label="Accordion 2"
+          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#eaf3ff] to-[white]"
+          aria-label="Accordion 3"
           title="Other Skills"
+          classNames={{
+            title: 'text-sm font-medium',
+            content: 'text-sm py-6',
+          }}
         >
-          <ul className="flex flex-wrap gap-4">
+          <ul className="flex flex-wrap gap-2 text-xs">
+            {' '}
+            {/* Reduced gap and font size */}
             {skillsContent.map((skill, index) => (
               <li key={index} className="flex items-center">
-                <span className="w-2 h-2 bg-[#86A6F6] rounded-full mr-2"></span>
+                <span className="w-1.5 h-1.5 bg-[#86A6F6] rounded-full mr-1"></span>{' '}
+                {/* Smaller dot */}
                 {skill}
               </li>
             ))}

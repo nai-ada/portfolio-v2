@@ -34,7 +34,7 @@ function Home() {
       />
       <div className="relative z-10">
         <Nav />
-        <div className="flex flex-col items-start justify-center min-h-screen px-6 -mt-20">
+        <div className="flex flex-col items-center justify-center min-h-screen px-6 -mt-20">
           <div className="mb-4">
             <h1 className="font-bold text-[55px] text-[#2b2b2b]">Nadia</h1>
             <h1 className="font-bold text-[55px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text">
