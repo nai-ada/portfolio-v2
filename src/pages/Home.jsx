@@ -34,46 +34,60 @@ function Home() {
       />
       <div className="relative z-10">
         <Nav />
-        <div className="flex flex-col items-center justify-center min-h-screen px-6 -mt-20">
-          <div className="mb-4">
-            <h1 className="font-bold text-[55px] text-[#2b2b2b]">Nadia</h1>
-            <h1 className="font-bold text-[55px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text">
-              Vespalec<span className="text-lightTextColor">.</span>
-            </h1>
-          </div>
-          <div className="mt-2">
-            <h2 className="subTitleHome text-left text-[14px] mb-2 font-medium">
-              Front-End{' '}
-              <span className="font-semibold text-[#86A6F6]">
-                Web Developer
-              </span>{' '}
-              & <span className="font-semibold text-[#86A6F6]">Designer</span>.
-            </h2>
-            <div className="flex items-center mb-4">
-              <img
-                src={LocationPin}
-                alt="Location Pin Logo"
-                width={14}
-                className="mr-2"
-              />
-              <h2 className="text-[14px] font-medium">Vancouver, BC</h2>
-            </div>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/in/nadia-vespalec/"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <img src={LinkedIn} alt="LinkedIn Logo" width={23} />
-              </a>
-              <a
-                href="https://github.com/nai-ada"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <img src={GitHub} alt="GitHub Logo" width={23} />
-              </a>
-            </div>
-          </div>
+        <div className="flex items-center justify-center min-h-screen px-6 ">
+  <div className="w-full max-w-3xl -mt-20">
+    <div className="flex flex-col items-center md:items-start">
+      <div className="mb-2 md:mb-0 md:flex md:justify-between md:w-full">
+        <div className="flex flex-col md:flex-row md:items-baseline">
+          <h1 className="font-bold text-[55px] text-[#2b2b2b] sm-plus:text-[68px] md:text-[80px] lg:text-[90px]">Nadia</h1>
+          <h1 className="font-bold text-[55px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text sm-plus:text-[68px] md:ml-4 md:text-[80px] lg:text-[90px]">
+            Vespalec<span className="text-lightTextColor">.</span>
+          </h1>
         </div>
+        <div className="hidden md:flex md:flex-col md:space-y-4 md:mt-6">
+          <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-80 transition-opacity">
+            <img src={LinkedIn} alt="LinkedIn Logo" width={28} />
+          </a>
+          <a href="https://github.com/nai-ada" className="hover:opacity-80 transition-opacity">
+            <img src={GitHub} alt="GitHub Logo" width={28} />
+          </a>
+        </div>
+      </div>
+      <div className="mt-2 md:mt-2 md:ml-1">
+        <h2 className="subTitleHome text-left text-[14px] mb-2 font-medium sm-plus:text-[17px]">
+          Front-End{' '}
+          <span className="font-semibold text-[#86A6F6]">
+            Web Developer
+          </span>{' '}
+          & <span className="font-semibold text-[#86A6F6]">Designer</span>.
+        </h2>
+        <div className="flex items-center mb-4">
+          <img
+            src={LocationPin}
+            alt="Location Pin Logo"
+            width={14}
+            className="mr-2"
+          />
+          <h2 className="text-[14px] font-medium">Vancouver, BC</h2>
+        </div>
+        <div className="flex space-x-4 md:hidden">
+          <a
+            href="https://www.linkedin.com/in/nadia-vespalec/"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <img src={LinkedIn} alt="LinkedIn Logo" width={25} />
+          </a>
+          <a
+            href="https://github.com/nai-ada"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <img src={GitHub} alt="GitHub Logo" width={25} />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
 
       <div ref={aboutRef}>

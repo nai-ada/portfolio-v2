@@ -15,8 +15,8 @@ export default {
       },
       screens: {
         xs: '380px',
-        'sm-plus': '390px',
-        'md-plus': '414px',
+        'sm-plus': '430px',
+        'md-plus': '810px',
       },
     },
   },
@@ -38,6 +38,7 @@ export default {
             navHoverColor: '#86A6F6',
             primary: '#86A6F6',
             menuBackgroundColor: '#F4F4F4',
+            secondary: '#AE93EE',
           },
         },
       },

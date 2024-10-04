@@ -2,7 +2,11 @@ import { Switch } from '@nextui-org/react';
 import { MoonIcon } from '../assets/MoonIcon.jsx';
 import { SunIcon } from '../assets/SunIcon.jsx';
 
+
+
 export default function SwitchTheme() {
+
+
   return (
     <Switch
       defaultSelected

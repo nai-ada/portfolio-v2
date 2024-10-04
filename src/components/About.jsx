@@ -4,7 +4,7 @@ import AboutTools from '../components/AboutTools';
 function About() {
   return (
     <>
-      <h1 className="font-bold uppercase text-[38px] p-8 mt-20 pb-0 mb-0 text-[#2b2b2b]">
+      <h1 className="font-bold uppercase text-[38px] p-8 mt-35 pb-0 mb-0 text-[#2b2b2b]">
         <span className="text-primary">A</span>bout.
       </h1>
       <h2 className="font-semibold text-[23px] p-8 pt-6 pb-4 text-[#2b2b2b]">
