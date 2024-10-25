@@ -8,6 +8,8 @@ import GitHub from '/src/assets/github.svg';
 import LinkedIn from '/src/assets/linkedin.svg';
 import Email from '/src/assets/email.svg';
 import Arrow from '/src/assets/arrow.svg';
+import ScrollToTop from '../components/ScrollToTop';
+
 
 function Connect() {
   const [value] = useState('nadiavespalec00@gmail.com');
@@ -15,9 +17,9 @@ function Connect() {
 
   return (
     <>
-      <h1 className='font-bold uppercase text-[38px] p-8 mt-20 pb-0 mb-0 text-[#2b2b2b]'><span className='text-primary'>C</span>onnect.</h1>
-      <h2 className="font-semibold text-[23px] p-8 pt-6 mt-8 pb-4 text-[#2b2b2b]">Let's Get In Touch.</h2>
-      <p className="font-normal text-[14px] p-8 pr-12 pt-2 mt-6 text-[#2b2b2b]">
+      <h1 className='font-bold uppercase text-[45px] p-8 pt-0 mt-2 pb-0 mb-0 text-[#2b2b2b]'><span className='text-primary'>C</span>onnect.</h1>
+      <h2 className="font-semibold text-[23px] p-8 pt-6 mt-4 pb-4 text-[#2b2b2b]">Let's Get In Touch.</h2>
+      <p className="font-normal text-[14px] p-8 pr-12 pt-0 mt-4 text-[#2b2b2b]">
         Wanting to see your vision come to life? Whether you have a project in
         mind or just want to chat about the latest in tech, I would love to hear
         from you. Feel free to reach out through email, or view my social media
@@ -36,7 +38,7 @@ function Connect() {
       <h2 className="inline-block ml-2 text-[14px] font-bold">Not available for work right now :&#40;</h2>
       </div> */}
 
-<div className="grid grid-cols-3 border border-black mt-20 mb-20 mx-1 rounded-full overflow-hidden">
+<div className="grid grid-cols-3 border border-black mt-12 mb-20 mx-1 rounded-full overflow-hidden">
   <a href="https://www.linkedin.com/in/nadia-vespalec/" className="flex items-center justify-center p-6 hover:bg-gray-100 border-r border-black">
     <img src={LinkedIn} alt="LinkedIn Logo" className="w-5 h-5 mr-1" />
     <span className="text-[12px] font-medium">LinkedIn</span>
@@ -54,7 +56,13 @@ function Connect() {
       </Button>
     </CopyToClipboard>
   </div>
+        <div className="absolute right-5 top-[134%] transform -translate-y-1/2 h-full flex flex-col items-center ">
+          <div className="border-l-1 border-[#222222] h-[3%]"></div>
+          <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
+        </div>
 </div>
+<ScrollToTop />
+
     </>
   );
 }

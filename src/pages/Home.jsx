@@ -3,6 +3,8 @@ import About from '../components/About';
 import Works from '../components/Works';
 import Connect from '../components/Connect';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+
 
 import GitHub from '/src/assets/github.svg';
 import LinkedIn from '/src/assets/linkedin.svg';
@@ -94,6 +96,7 @@ function Home() {
         <About />
         <Works />
         <Connect />
+        <Footer />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ import {
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ['Home', 'About', 'Works', 'Connect'];
+  const menuItems = ['About', 'Works', 'Connect'];
 
   return (
     <Navbar
@@ -30,11 +30,6 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-8 " justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Home
-          </Link>
-        </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
             About

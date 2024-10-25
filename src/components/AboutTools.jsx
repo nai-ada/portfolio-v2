@@ -57,7 +57,7 @@ const createLogoElements = (logoKeys) =>
       key={key}
       src={logos[key].src}
       alt={logos[key].alt}
-      className="inline p-1" // Reduced padding
+      className="inline p-1 md:w-12 md:mr-4" // Reduced padding
       width="40" // Reduced size
       height="40" // Reduced size
     />
@@ -105,16 +105,17 @@ const skillsContent = [
 function AboutTools() {
   return (
     <>
+    <div className="mb-16 md:ml-6">
       <Accordion variant="splitted" className="max-w-[600px] px-6">
         {' '}
         {/* Adjust max-width as needed */}
         <AccordionItem
           key="1"
-          className="devTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#eaf3ff] to-[white]"
+          className="devTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#DDECFF] to-[white] md:py-1"
           aria-label="Accordion 1"
           title="Development Tools"
           classNames={{
-            title: 'text-sm font-medium', // Adjust font size here
+            title: 'text-sm font-medium md:text-[16px]', // Adjust font size here
             content: 'text-sm py-2', // Adjust content padding here
           }}
         >
@@ -122,11 +123,11 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#eaf3ff] to-[white]"
+          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#DDECFF] to-[white] md:py-1"
           aria-label="Accordion 2"
           title="Design Tools"
           classNames={{
-            title: 'text-sm font-medium',
+            title: 'text-sm font-medium md:text-[16px]',
             content: 'text-sm py-2',
           }}
         >
@@ -134,15 +135,15 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#eaf3ff] to-[white]"
+          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#DDECFF] to-[white] md:py-1"
           aria-label="Accordion 3"
           title="Other Skills"
           classNames={{
-            title: 'text-sm font-medium',
+            title: 'text-sm font-medium md:text-[16px]',
             content: 'text-sm py-6',
           }}
         >
-          <ul className="flex flex-wrap gap-2 text-xs">
+          <ul className="flex flex-wrap gap-2 text-xs md:text-[16px]">
             {' '}
             {/* Reduced gap and font size */}
             {skillsContent.map((skill, index) => (
@@ -155,6 +156,7 @@ function AboutTools() {
           </ul>
         </AccordionItem>
       </Accordion>
+      </div>
     </>
   );
 }

@@ -119,16 +119,16 @@ function Works() {
   }, []);
 
   return (
-    <>
-      <h1 className="font-bold uppercase text-[38px] p-8 mt-16 mb-0 text-[#2b2b2b]">
+    <div className="relative">
+      <h1 className="font-bold uppercase text-[45px] p-8 pb-2 mt-16 mb-0 text-[#2b2b2b] z-10">
         <span className="text-primary">W</span>orks.
       </h1>
 
       <div
         ref={scrollRef}
-        className="w-auto h-[500px] overflow-y-auto scrollbar-hide"
+        className="w-full h-[500px] overflow-y-auto scrollbar-hide"
       >
-        <div className=" pb-[150px] pt-[150px]">
+        <div className="pb-[150px] pt-[150px] relative p-1">
           {projectsList.map((project, index) => (
             <div
               key={project.title}
@@ -154,7 +154,7 @@ function Works() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
