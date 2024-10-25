@@ -17,9 +17,12 @@ function Connect() {
 
   return (
     <>
-      <h1 className='font-bold uppercase text-[45px] p-8 pt-0 mt-2 pb-0 mb-0 text-[#2b2b2b]'><span className='text-primary'>C</span>onnect.</h1>
-      <h2 className="font-semibold text-[23px] p-8 pt-6 mt-4 pb-4 text-[#2b2b2b]">Let's Get In Touch.</h2>
-      <p className="font-normal text-[14px] p-8 pr-12 pt-0 mt-4 text-[#2b2b2b]">
+      <div className="md:relative">
+      <h1 className='font-bold uppercase text-[45px] p-8 pt-0 mt-10 pb-0 mb-0 text-[#2b2b2b] md:absolute md:text-[73px] md:rotate-[90deg] md:left-[64%] md:top-[140px]'><span className='text-primary'>C</span>onnect.</h1>
+      </div>
+      <div className="contact-section md:mt-16 md:mb-40">
+      <h2 className="font-semibold text-[23px] p-8 pt-6 mt-4 pb-4 text-[#2b2b2b] md:ml-6 md:text-[36px]">Let's Get In Touch.</h2>
+      <p className="font-normal text-[14px] p-8 pr-12 pt-0 mt-4 text-[#2b2b2b] md:text-[16px] md:ml-6 md:mr-20">
         Wanting to see your vision come to life? Whether you have a project in
         mind or just want to chat about the latest in tech, I would love to hear
         from you. Feel free to reach out through email, or view my social media
@@ -27,9 +30,9 @@ function Connect() {
       </p>
 
       {/* comment out when unavailable */}
-      <div className='text-center mt-6'>
+      <div className='text-center mt-6 '>
       <img src={GreenDot} alt="Green Dot" width={10} className="inline-block"/>
-      <h2 className="inline-block ml-2 text-[14px] font-bold">I'm available for work! 👋</h2>
+      <h2 className="inline-block ml-2 text-[14px] font-bold md:text-[16px]">I'm available for work! 👋</h2>
       </div>
 
       {/* uncomment when unavailable */}
@@ -38,7 +41,7 @@ function Connect() {
       <h2 className="inline-block ml-2 text-[14px] font-bold">Not available for work right now :&#40;</h2>
       </div> */}
 
-<div className="grid grid-cols-3 border border-black mt-12 mb-20 mx-1 rounded-full overflow-hidden">
+<div className="grid grid-cols-3 border border-black mt-12 mb-20 mx-1 rounded-full overflow-hidden md:ml-32 md:mr-32" >
   <a href="https://www.linkedin.com/in/nadia-vespalec/" className="flex items-center justify-center p-6 hover:bg-gray-100 border-r border-black">
     <img src={LinkedIn} alt="LinkedIn Logo" className="w-5 h-5 mr-1" />
     <span className="text-[12px] font-medium">LinkedIn</span>
@@ -56,10 +59,12 @@ function Connect() {
       </Button>
     </CopyToClipboard>
   </div>
-        <div className="absolute right-5 top-[134%] transform -translate-y-1/2 h-full flex flex-col items-center ">
+        <div className="absolute right-5 top-[134%] transform -translate-y-1/2 h-full flex flex-col items-center md:top-[142%] md:right-[6%]">
           <div className="border-l-1 border-[#222222] h-[3%]"></div>
           <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
         </div>
+</div>
+
 </div>
 <ScrollToTop />
 
