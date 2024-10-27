@@ -6,11 +6,11 @@ function About() {
     <>
     <div className="about-section ">
       <div className="md:relative">
-      <h1 className="font-bold uppercase text-[45px] p-8 mt-35 pb-0 mb-0 text-[#2b2b2b] md:text-[88px] md:rotate-[90deg] md:absolute md:left-[67%] md:top-[115px]">
+      <h1 className="font-bold uppercase text-[45px] p-8 mt-35 pt-[8rem] pb-0 mb-0 text-[#2b2b2b] md:text-[88px] md:rotate-[90deg] md:absolute md:left-[75%] md:top-[200px]">
         <span className="text-primary">A</span>bout.
       </h1>
       </div>
-      <h2 className="font-semibold text-[23px] p-8 pt-6 pb-4 text-[#2b2b2b] md:text-[36px] md:ml-6 ">
+      <h2 className="font-semibold text-[23px] p-8 pt-6 md:pt-[10rem] pb-4 text-[#2b2b2b] md:text-[36px] md:ml-6 ">
         Hi, I'm Nadia!
       </h2>
       <p className="font-normal text-[14px] p-8 pr-12 md:mr-28 md:ml-6  md:text-[16px] pt-2 text-[#2b2b2b]">
@@ -30,9 +30,9 @@ function About() {
       <h2 className="font-semibold text-[23px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px]">
         Skill Stack
       </h2>
-      <div className="absolute right-5 top-[86%] md:top-[96%] md:right-16 transform -translate-y-1/2 h-full flex flex-col items-center ">
+      <div className="absolute right-5 top-[86%] md:top-[99%] md:right-14 transform -translate-y-1/2 h-full flex flex-col items-center ">
           <div className="border-l-1 border-[#222222] h-[3%] md:h-[4%]"></div>
-          <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
+          <div className="w-[5px] h-[5px] bg-purple-400 rounded-full mt-2"></div>
         </div>
       <AboutTools />
       </div>

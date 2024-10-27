@@ -37,16 +37,16 @@ function Home() {
       <div className="relative z-10">
         <Nav />
         <div className="flex items-center justify-center min-h-screen px-6">
-  <div className="w-full max-w-3xl -mt-20">
-    <div className="flex flex-col items-center md:items-start">
-      <div className="mb-2 md:mb-0 md:flex md:justify-between md:w-full lg:w-[103%]">
-        <div className="flex flex-col md:flex-row md:items-baseline">
-          <h1 className="font-bold text-[55px] text-[#2b2b2b] sm-plus:text-[68px] md:text-[80px] lg:text-[87px] xl:text-[98px]">Nadia</h1>
-          <h1 className="font-bold text-[55px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text sm-plus:text-[68px] md:ml-4 md:text-[80px] lg:text-[87px] xl:text-[98px]">
+        <div className="w-full max-w-3xl -mt-20">
+    <div className="flex flex-col items-center md:items-start md:items-center lg:items-start">
+      <div className="lg-2 lg:mb-0 lg:flex lg:justify-between lg:w-full lg:w-[103%]">
+        <div className="flex flex-col lg:flex-row lg:items-baseline">
+          <h1 className="font-bold text-[55px] md:text-[110px] text-[#2b2b2b] lg:text-[68px] lg:text-[80px] lg:text-[87px] xl:text-[98px]">Nadia</h1>
+          <h1 className="font-bold text-[55px] md:text-[110px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text lg-plus:text-[68px] lg:ml-4 lg:text-[80px] lg:text-[87px] xl:text-[98px]">
             Vespalec<span className="text-lightTextColor">.</span>
           </h1>
         </div>
-        <div className="hidden md:flex md:flex-col md:space-y-4 md:mt-6 lg:mt-7 xl:mt-7 xl:self-start">
+        <div className="hidden lg:flex lg:flex-col lg:space-y-4 lg:mt-6 lg:mt-7 xl:mt-7 xl:self-start">
           <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-80 transition-opacity">
             <img src={LinkedIn} alt="LinkedIn Logo" width={28} />
           </a>
@@ -55,38 +55,38 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="mt-2 md:mt-2 md:ml-1">
-        <h2 className="subTitleHome text-left text-[14px] mb-2 font-medium sm-plus:text-[17px]">
-          Front-End{' '}
-          <span className="font-semibold text-[#86A6F6]">
-            Web Developer
-          </span>{' '}
-          & <span className="font-semibold text-[#86A6F6]">Designer</span>.
-        </h2>
-        <div className="flex items-center mb-4">
-          <img
-            src={LocationPin}
-            alt="Location Pin Logo"
-            width={14}
-            className="mr-2"
-          />
-          <h2 className="text-[14px] font-medium">Vancouver, BC</h2>
-        </div>
-        <div className="flex space-x-4 md:hidden">
-          <a
-            href="https://www.linkedin.com/in/nadia-vespalec/"
-            className="hover:opacity-80 transition-opacity"
-          >
-            <img src={LinkedIn} alt="LinkedIn Logo" width={25} />
-          </a>
-          <a
-            href="https://github.com/nai-ada"
-            className="hover:opacity-80 transition-opacity"
-          >
-            <img src={GitHub} alt="GitHub Logo" width={25} />
-          </a>
-        </div>
-      </div>
+      <div className="mt-2 md:ml-[12rem] md:w-full lg:mt-2 lg:ml-1">
+  <h2 className="subTitleHome text-left text-[14px] md:text-[20px] md:text-left mb-2 font-medium sm-plus:text-[17px]">
+    Front-End{' '}
+    <span className="font-semibold text-[#86A6F6]">
+      Web Developer
+    </span>{' '}
+    & <span className="font-semibold text-[#86A6F6]">Designer</span>.
+  </h2>
+  <div className="flex items-center mb-4">
+    <img
+      src={LocationPin}
+      alt="Location Pin Logo"
+      width={14}
+      className="mr-2"
+    />
+    <h2 className="text-[14px] font-medium md:text-[16px]">Vancouver, BC</h2>
+  </div>
+  <div className="flex space-x-4 lg:hidden md:justify-start">
+    <a
+      href="https://www.linkedin.com/in/nadia-vespalec/"
+      className="hover:opacity-80 transition-opacity"
+    >
+      <img src={LinkedIn} alt="LinkedIn Logo" width={25} />
+    </a>
+    <a
+      href="https://github.com/nai-ada"
+      className="hover:opacity-80 transition-opacity"
+    >
+      <img src={GitHub} alt="GitHub Logo" width={25} />
+    </a>
+  </div>
+</div>
     </div>
   </div>
 </div>

@@ -18,9 +18,9 @@ function Connect() {
   return (
     <>
       <div className="md:relative">
-      <h1 className='font-bold uppercase text-[45px] p-8 pt-0 mt-10 pb-0 mb-0 text-[#2b2b2b] md:absolute md:text-[73px] md:rotate-[90deg] md:left-[64%] md:top-[140px]'><span className='text-primary'>C</span>onnect.</h1>
+      <h1 className='font-bold uppercase text-[45px] p-8 pt-0 mt-10 pb-0 mb-0 text-[#2b2b2b] md:absolute md:text-[73px] md:rotate-[90deg] md:left-[64.5%] md:top-[190px]'><span className='text-primary'>C</span>onnect.</h1>
       </div>
-      <div className="contact-section md:mt-16 md:mb-40">
+      <div className="contact-section md:mt-16 md:mb-38 md:mt-18">
       <h2 className="font-semibold text-[23px] p-8 pt-6 mt-4 pb-4 text-[#2b2b2b] md:ml-6 md:text-[36px]">Let's Get In Touch.</h2>
       <p className="font-normal text-[14px] p-8 pr-12 pt-0 mt-4 text-[#2b2b2b] md:text-[16px] md:ml-6 md:mr-20">
         Wanting to see your vision come to life? Whether you have a project in
@@ -59,10 +59,7 @@ function Connect() {
       </Button>
     </CopyToClipboard>
   </div>
-        <div className="absolute right-5 top-[134%] transform -translate-y-1/2 h-full flex flex-col items-center md:top-[142%] md:right-[6%]">
-          <div className="border-l-1 border-[#222222] h-[3%]"></div>
-          <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
-        </div>
+       
 </div>
 
 </div>
