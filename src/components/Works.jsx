@@ -1,5 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { Button } from '@nextui-org/react';
+import Slides from '../components/Slides';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 
 
 const projectsList = [
@@ -129,7 +134,7 @@ function Works() {
         ref={scrollRef}
         className="w-full h-[500px] overflow-y-auto scrollbar-hide md:w-[83%] md:ml-auto"
       >
-        <div className="pb-[100px] pt-[100px] md:pb-[150px] md:pt-[150px] relative p-1">
+        <div className="pb-[150px] pt-[150px] relative p-1">
           {projectsList.map((project, index) => (
             <div
               key={project.title}
@@ -155,11 +160,14 @@ function Works() {
           ))}
         </div>
       </div>
-      <div className="absolute transform -translate-y-1/2 h-full flex flex-col items-center md:bottom-[21%] md:left-[7%] rotate-[180deg]">
+      {/* <div className="absolute transform -translate-y-1/2 h-full flex flex-col items-center md:bottom-[21%] md:left-[7%] rotate-[180deg]">
         <div className="border-l-1 border-[#222222] h-[20%]"></div>
         <div className="w-[5px] h-[5px] bg-purple-400 rounded-full mt-2"></div>
-      </div>
-      {/* <Slider /> */}
+      </div> */}
+      <h2 className="font-semibold mt-[4rem] text-[26px] p-8 pt-6 md:pt-[10rem] pb-4 text-[#2b2b2b] md:text-[36px] md:ml-6 ">
+        Featured Projects
+      </h2>
+      <Slides />
     </div>
     
   );

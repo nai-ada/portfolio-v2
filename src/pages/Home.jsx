@@ -46,7 +46,7 @@ function Home() {
             Vespalec<span className="text-lightTextColor">.</span>
           </h1>
         </div>
-        <div className="hidden lg:flex lg:flex-col lg:space-y-4 lg:mt-6 lg:mt-7 xl:mt-7 xl:self-start">
+        <div className="hidden w-28 lg:flex lg:flex-col lg:space-y-4 lg:mt-6 lg:mt-7 xl:mt-7 xl:self-start">
           <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-80 transition-opacity">
             <img src={LinkedIn} alt="LinkedIn Logo" width={28} />
           </a>
@@ -55,8 +55,8 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="mt-2 md:ml-[12rem] md:w-full lg:mt-2 lg:ml-1">
-  <h2 className="subTitleHome text-left text-[14px] md:text-[20px] md:text-left mb-2 font-medium sm-plus:text-[17px]">
+      <div className="mt-2 md:ml-[12rem] md:w-full md:mt-1 lg:mt-2 lg:ml-1">
+  <h2 className="subTitleHome text-left text-[14px] md:text-[22px] md:text-left mb-2 font-medium sm-plus:text-[17px]">
     Front-End{' '}
     <span className="font-semibold text-[#86A6F6]">
       Web Developer
@@ -70,20 +70,20 @@ function Home() {
       width={14}
       className="mr-2"
     />
-    <h2 className="text-[14px] font-medium md:text-[16px]">Vancouver, BC</h2>
+    <h2 className="text-[14px] font-medium md:text-[18px]">Vancouver, BC</h2>
   </div>
-  <div className="flex space-x-4 lg:hidden md:justify-start">
+  <div className="flex space-x-4 lg:hidden md:justify-start ">
     <a
       href="https://www.linkedin.com/in/nadia-vespalec/"
-      className="hover:opacity-80 transition-opacity"
+      className="hover:opacity-80 transition-opacity md:mt-2"
     >
-      <img src={LinkedIn} alt="LinkedIn Logo" width={25} />
+      <img src={LinkedIn} alt="LinkedIn Logo" width={30} />
     </a>
     <a
       href="https://github.com/nai-ada"
-      className="hover:opacity-80 transition-opacity"
+      className="hover:opacity-80 transition-opacity md:mt-2"
     >
-      <img src={GitHub} alt="GitHub Logo" width={25} />
+      <img src={GitHub} alt="GitHub Logo" width={30} />
     </a>
   </div>
 </div>

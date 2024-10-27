@@ -8,10 +8,10 @@ function Nav() {
     <>
       <nav className="top-0 left-0 right-0 z-50">
         <div className="max-w-100 mx-auto px-4">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center py-0">
             {/* Logo */}
             <a href="#" className="block">
-              <img src={Logo} alt="Nadia Vespalec Logo" width={43} />
+              <img src={Logo} alt="Nadia Vespalec Logo" width={38} />
             </a>
 
             {/* Navigation Items and Switch */}

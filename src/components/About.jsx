@@ -10,7 +10,7 @@ function About() {
         <span className="text-primary">A</span>bout.
       </h1>
       </div>
-      <h2 className="font-semibold text-[23px] p-8 pt-6 md:pt-[10rem] pb-4 text-[#2b2b2b] md:text-[36px] md:ml-6 ">
+      <h2 className="font-semibold text-[26px] mt-[2rem] p-8 pt-6 md:pt-[10rem] pb-4 text-[#2b2b2b] md:text-[36px] md:ml-6 ">
         Hi, I'm Nadia!
       </h2>
       <p className="font-normal text-[14px] p-8 pr-12 md:mr-28 md:ml-6  md:text-[16px] pt-2 text-[#2b2b2b]">
@@ -27,7 +27,7 @@ function About() {
         enthusiast (can’t go wrong with a good iced matcha latte), music and
         video game lover, and cat mom! 🧋
       </p>
-      <h2 className="font-semibold text-[23px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px]">
+      <h2 className="font-semibold text-[26px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px]">
         Skill Stack
       </h2>
       <div className="absolute right-5 top-[86%] md:top-[99%] md:right-14 transform -translate-y-1/2 h-full flex flex-col items-center ">
