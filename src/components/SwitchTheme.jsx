@@ -2,15 +2,13 @@ import { Switch } from '@nextui-org/react';
 import { MoonIcon } from '../assets/MoonIcon.jsx';
 import { SunIcon } from '../assets/SunIcon.jsx';
 
-
-
 export default function SwitchTheme() {
-
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
 
   return (
     <Switch
       defaultSelected
-      size="md"
+      size="sm"
       style={{ '--nextui-colors-primary': '#86A6F6' }}
       thumbIcon={({ isSelected, className }) =>
         isSelected ? (
@@ -19,6 +17,7 @@ export default function SwitchTheme() {
           <MoonIcon className={className} />
         )
       }
+      onChange={(isSelected) => setIsDarkMode(isSelected)}
     />
   );
 }

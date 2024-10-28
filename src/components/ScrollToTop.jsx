@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
   return (
     <div
-      className={`fixed bottom-4 right-3 z-50 ${
+      className={`fixed bottom-4 right-3 z-30 ${
         isVisible ? 'block' : 'hidden'
       }`}
     >

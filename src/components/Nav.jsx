@@ -1,23 +1,20 @@
-import { useState } from 'react';
+import React from 'react';
 import Logo from '/src/assets/NVLogo.svg';
-import SwitchTheme from '../components/SwitchTheme';
 import Menu from '../components/Menu';
 
 function Nav() {
   return (
     <>
-      <nav className="top-0 left-0 right-0 z-50">
+      <nav className="top-0 bg-white md:bg-transparent left-0 right-0 z-50 justify-end fixed md:relative bg-hidden">
         <div className="max-w-100 mx-auto px-4">
           <div className="flex justify-between items-center py-0">
             {/* Logo */}
-            <a href="#" className="block">
+            <a href="#" className="hidden md:block">
               <img src={Logo} alt="Nadia Vespalec Logo" width={38} />
             </a>
 
-            {/* Navigation Items and Switch */}
+            {/* Navigation Items and Menu */}
             <div className="flex items-center">
-              {/* SwitchTheme is now outside the hidden ul */}
-              <SwitchTheme className="mr-4" />
               <Menu />
             </div>
           </div>

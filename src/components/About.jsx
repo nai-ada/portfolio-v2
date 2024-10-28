@@ -30,10 +30,10 @@ function About() {
       <h2 className="font-semibold text-[26px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px]">
         Skill Stack
       </h2>
-      <div className="absolute right-5 top-[86%] md:top-[99%] md:right-14 transform -translate-y-1/2 h-full flex flex-col items-center ">
+      {/* <div className="absolute right-5 top-[86%] md:top-[99%] md:right-14 transform -translate-y-1/2 h-full flex flex-col items-center ">
           <div className="border-l-1 border-[#222222] h-[3%] md:h-[4%]"></div>
           <div className="w-[5px] h-[5px] bg-purple-400 rounded-full mt-2"></div>
-        </div>
+        </div> */}
       <AboutTools />
       </div>
     </>

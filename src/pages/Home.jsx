@@ -24,7 +24,7 @@ function Home() {
   return (
     <div className="relative overflow-hidden">
       <div
-        className="absolute top-0 left-0 right-0 bg-gradient-to-b from-gray-100 to-transparent z-0"
+        className="absolute top-0 left-0 right-0 bg-gradient-to-b from-gray-100 to-transparent -z-100"
         style={{
           height: gridHeight,
           backgroundImage: `
@@ -38,11 +38,11 @@ function Home() {
         <Nav />
         <div className="flex items-center justify-center min-h-screen px-6">
         <div className="w-full max-w-3xl -mt-20">
-    <div className="flex flex-col items-center md:items-start md:items-center lg:items-start">
+    <div className="flex flex-col md:items-start md:items-center lg:items-start">
       <div className="lg-2 lg:mb-0 lg:flex lg:justify-between lg:w-full lg:w-[103%]">
         <div className="flex flex-col lg:flex-row lg:items-baseline">
-          <h1 className="font-bold text-[55px] md:text-[110px] text-[#2b2b2b] lg:text-[68px] lg:text-[80px] lg:text-[87px] xl:text-[98px]">Nadia</h1>
-          <h1 className="font-bold text-[55px] md:text-[110px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text lg-plus:text-[68px] lg:ml-4 lg:text-[80px] lg:text-[87px] xl:text-[98px]">
+          <h1 className="font-bold text-[55px] md:text-[105px] h-16 md:h-28 text-[#2b2b2b] lg:text-[80px] lg:text-[87px] xl:text-[98px]">Nadia</h1>
+          <h1 className="font-bold text-[55px] md:text-[105px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text lg:ml-4 lg:text-[80px] lg:text-[87px] xl:text-[98px]">
             Vespalec<span className="text-lightTextColor">.</span>
           </h1>
         </div>
@@ -55,11 +55,11 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="mt-2 md:ml-[12rem] md:w-full md:mt-1 lg:mt-2 lg:ml-1">
-  <h2 className="subTitleHome text-left text-[14px] md:text-[22px] md:text-left mb-2 font-medium sm-plus:text-[17px]">
+      <div className="mt-2 ml-2 md:ml-[13rem] md:w-full md:mt-1 lg:mt-2 lg:ml-1">
+  <h2 className="subTitleHome text-left text-[16px] md:text-[20px] md:text-left mb-2 font-medium sm-plus:text-[17px]">
     Front-End{' '}
     <span className="font-semibold text-[#86A6F6]">
-      Web Developer
+      Developer
     </span>{' '}
     & <span className="font-semibold text-[#86A6F6]">Designer</span>.
   </h2>
@@ -70,20 +70,20 @@ function Home() {
       width={14}
       className="mr-2"
     />
-    <h2 className="text-[14px] font-medium md:text-[18px]">Vancouver, BC</h2>
+    <h2 className="text-[16px] font-medium md:text-[18px]">Vancouver, BC</h2>
   </div>
   <div className="flex space-x-4 lg:hidden md:justify-start ">
     <a
       href="https://www.linkedin.com/in/nadia-vespalec/"
       className="hover:opacity-80 transition-opacity md:mt-2"
     >
-      <img src={LinkedIn} alt="LinkedIn Logo" width={30} />
+      <img src={LinkedIn} alt="LinkedIn Logo" width={26} />
     </a>
     <a
       href="https://github.com/nai-ada"
       className="hover:opacity-80 transition-opacity md:mt-2"
     >
-      <img src={GitHub} alt="GitHub Logo" width={30} />
+      <img src={GitHub} alt="GitHub Logo" width={26} />
     </a>
   </div>
 </div>

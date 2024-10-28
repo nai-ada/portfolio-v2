@@ -52,12 +52,13 @@ const Slides = () => {
     {
       name: `Titan Tech`,
       img: titan,
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      info: `Responsive web application where users can explore and interact with movie data from The Movie Database (TMDB) API. Team project.`
     },
     {
       name: `ClipprDB`,
       img: clippr,
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      info: `Responsive web application where users can explore and interact with movie data from The Movie Database (TMDB) API. Team project.`
+      
     },
   ];
 

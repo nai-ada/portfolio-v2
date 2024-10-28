@@ -25,10 +25,26 @@ video {
   height: auto;
 }
 
+
 .slick-slide > div {
   margin: 0 10px;
 }
 
+.backdrop-blur-lg {
+  --tw-backdrop-blur: none;
+  -webkit-backdrop-filter: none; 
+  backdrop-filter: none;
+}
+
+.before\:duration-150::before,
+.after\:duration-150::after 
+  {
+  transition-duration: 300ms !important;
+}
+
+.data-\[menu-open\=true\]\:backdrop-blur-xl[data-menu-open="true"] {
+  --tw-backdrop-blur: none !important;
+}
 
 /* .slick-prev,
 .slick-next {

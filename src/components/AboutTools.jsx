@@ -111,7 +111,7 @@ function AboutTools() {
         {/* Adjust max-width as needed */}
         <AccordionItem
           key="1"
-          className="devTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#DDECFF] to-[white] md:py-1"
+          className="devTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-1"
           aria-label="Accordion 1"
           title="Development Tools"
           classNames={{
@@ -123,7 +123,7 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#DDECFF] to-[white] md:py-1"
+          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-1"
           aria-label="Accordion 2"
           title="Design Tools"
           classNames={{
@@ -135,7 +135,7 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#DDECFF] to-[white] md:py-1"
+          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-1"
           aria-label="Accordion 3"
           title="Other Skills"
           classNames={{
@@ -143,7 +143,7 @@ function AboutTools() {
             content: 'text-sm py-6',
           }}
         >
-          <ul className="flex flex-wrap gap-2 text-xs md:text-[16px]">
+          <ul className="flex flex-wrap gap-2 text-sm md:text-[16px]">
             {' '}
             {/* Reduced gap and font size */}
             {skillsContent.map((skill, index) => (
