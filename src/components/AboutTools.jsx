@@ -96,7 +96,9 @@ const skillsContent = [
   'Usability Testing',
   'Prototyping',
   'Wireframing',
+  'Problem Solving',
   'Mockups',
+  'Team Collaboration',
   'User Flow',
   'Information Architecture',
   'Style Guides',
@@ -111,11 +113,11 @@ function AboutTools() {
         {/* Adjust max-width as needed */}
         <AccordionItem
           key="1"
-          className="devTools m-2 shadow-none rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-1"
+          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
           aria-label="Accordion 1"
           title="Development Tools"
           classNames={{
-            title: 'text-sm font-medium md:text-[16px]', // Adjust font size here
+            title: 'text-md font-medium md:text-[18px]', // Adjust font size here
             content: 'text-sm py-2', // Adjust content padding here
           }}
         >
@@ -123,11 +125,11 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-1"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-2"
           aria-label="Accordion 2"
           title="Design Tools"
           classNames={{
-            title: 'text-sm font-medium md:text-[16px]',
+            title: 'text-md font-medium md:text-[18px]',
             content: 'text-sm py-2',
           }}
         >
@@ -135,11 +137,11 @@ function AboutTools() {
         </AccordionItem>
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-1"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-2"
           aria-label="Accordion 3"
           title="Other Skills"
           classNames={{
-            title: 'text-sm font-medium md:text-[16px]',
+            title: 'text-md font-medium md:text-[18px]',
             content: 'text-sm py-6',
           }}
         >

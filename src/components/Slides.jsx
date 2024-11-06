@@ -15,12 +15,13 @@ const Slides = () => {
 
   const settings = {
     dots: true,
-    speed: 500,
+    speed: 800,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // add arrows (THAT LOOK GOOD)
-    // arrows: true,
+    autoplay: true,        // Add this line to enable autoplay
+    autoplaySpeed: 2500,   // Optional: set speed (milliseconds between slides)
+    pauseOnHover: true,    // Optional: pause autoplay when hovering
     responsive: [
       {
         breakpoint: 830,

@@ -18,11 +18,11 @@ function Connect() {
   return (
     <>
       <div className="md:relative">
-      <h1 className='font-bold uppercase text-[45px] p-8 pt-0 mt-40 pb-0 mb-0 text-[#2b2b2b] md:absolute md:text-[73px] md:rotate-[90deg] md:left-[64.5%] md:top-[158px]'><span className='text-primary'>C</span>onnect.</h1>
+      <h1 className='font-bold uppercase text-[48px] p-8 pt-0 mt-40 pb-0 mb-0 text-[#2b2b2b] md:absolute md:text-[73px] md:rotate-[90deg] md:left-[64.5%] md:top-[158px]'><span className='text-primary'>C</span>onnect.</h1>
       </div>
       <div className="contact-section md:mt-40 md:mb-38 md:mt-18">
-      <h2 className="font-semibold text-[23px] p-8 pt-6 mt-4 pb-4 text-[#2b2b2b] md:ml-6 md:text-[36px]">Let's Get In Touch.</h2>
-      <p className="font-normal text-[14px] p-8 pr-12 pt-0 mt-4 text-[#2b2b2b] md:text-[16px] md:ml-6 md:mr-20">
+      <h2 className="font-semibold text-[28px] p-8 pt-6 mt-4 pb-4 text-[#2b2b2b] md:ml-6 md:text-[36px]">Let's Get In Touch.</h2>
+      <p className="font-normal text-[16px] p-8 pr-12 pt-0 mt-4 text-[#2b2b2b] md:text-[16px] md:ml-6 md:mr-20">
         Wanting to see your vision come to life? Whether you have a project in
         mind or just want to chat about the latest in tech, I would love to hear
         from you. Feel free to reach out through email, or view my social media

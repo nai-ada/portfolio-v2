@@ -38,17 +38,17 @@ export default function Menu() {
       <NavbarContent className="hidden md:flex gap-24">
         <NavbarItem>
           <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
-            ABOUT 
+            About 
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
-            PROJECTS
+            Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
-            CONNECT
+            Connect
           </Link>
         </NavbarItem>
         <Switch
@@ -67,7 +67,7 @@ export default function Menu() {
       <NavbarMenu className=" bg-white fixed">
         
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start uppercase">
+          <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
             <Link
               className="mt-7 text-black text-[22px] text-right ml-2 pt-4 font-[500]"
               href="#"
