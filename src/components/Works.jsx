@@ -127,7 +127,7 @@ function Works() {
   return (
     <div className="relative">
       <h1 className="font-bold uppercase text-[45px] p-8 pb-2 mt-28 mb-0 text-[#2b2b2b] z-10 md:absolute md:right-[67%] md:top-[182px] md:rotate-[-90deg] md:text-[86px]">
-        <span className="text-primary">W</span>orks.
+        <span className="text-primary">P</span>rojects.
       </h1>
 
       <div

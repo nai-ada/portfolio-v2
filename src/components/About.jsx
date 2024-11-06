@@ -25,7 +25,7 @@ function About() {
       <p className="font-normal text-[14px] p-8 pr-12 pt-2 md:mr-24 md:ml-6 text-[#2b2b2b] md:text-[16px] ">
         Aside from development, I am also an enthusiastic astronomy nerd, matcha
         enthusiast (can’t go wrong with a good iced matcha latte), music and
-        video game lover, and cat mom! 🧋
+        video game lover, and cat mom! ᓚᘏᗢ
       </p>
       <h2 className="font-semibold text-[26px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px]">
         Skill Stack

@@ -35,19 +35,19 @@ export default function Menu() {
         />
       </NavbarContent>
 
-      <NavbarContent className="hidden md:flex gap-20" justify="center">
+      <NavbarContent className="hidden md:flex gap-24">
         <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[18px] font-[500]'>
-            ABOUT
+          <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
+            ABOUT 
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[18px] font-[500]'>
-            WORKS
+          <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
+            PROJECTS
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[18px] font-[500]'>
+          <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
             CONNECT
           </Link>
         </NavbarItem>
@@ -67,9 +67,9 @@ export default function Menu() {
       <NavbarMenu className=" bg-white fixed">
         
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
+          <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start uppercase">
             <Link
-              className="mt-7 text-black text-[22px] text-right ml-2 pt-4 font-normal"
+              className="mt-7 text-black text-[22px] text-right ml-2 pt-4 font-[500]"
               href="#"
               size="lg"
             >

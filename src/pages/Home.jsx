@@ -7,8 +7,20 @@ import Footer from '../components/Footer';
 import GitHub from '/src/assets/github.svg';
 import LinkedIn from '/src/assets/linkedin.svg';
 import LocationPin from '/src/assets/locationpin.svg';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import CustomScrollBar from '../components/CustomScroll';
 
-function Home() {
+
+function Home() { 
+  
+  const [text] = useTypewriter({
+    words: ['Web Developer.', 'UX/UI Designer.', 'problem solver.', 'Software Engineer.', 'Front-end expert.', 'React Developer.', 'Web Designer.',  'Freelance Developer.',],
+    loop: true,
+    delaySpeed: 1000,
+    typeSpeed: 80,
+    deleteSpeed: 90,
+  });
+  
   const aboutRef = useRef(null);
   const [gridHeight, setGridHeight] = useState('100vh');
 
@@ -19,15 +31,18 @@ function Home() {
     }
   }, []);
 
+
+
   return (
+    <CustomScrollBar >
     <div className="relative overflow-hidden">
       <div
         className="absolute top-0 left-0 right-0 bg-gradient-to-b from-gray-100 to-transparent -z-100"
         style={{
           height: gridHeight,
           backgroundImage: `
-          linear-gradient(to right, rgba(229, 231, 235, 0.5) 2px, transparent 2px),
-          linear-gradient(to bottom, rgba(229, 231, 235, 0.5) 2px, transparent 2px)
+          linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
           `,
           backgroundSize: '130px 130px',
         }}
@@ -45,7 +60,7 @@ function Home() {
             Vespalec<span className="text-lightTextColor">.</span>
           </h1>
         </div>
-        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-4 lg-plus:space-y-8 lg:mt-8 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 lg-plus:mt-[4rem] lg-plus:ml-16 lg:self-start">
+        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-4 lg-plus:space-y-8 lg:mt-8 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 lg-plus:mt-[4rem] lg-plus:ml-10 lg:self-start">
           <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-80 transition-opacity">
             <img src={LinkedIn} alt="LinkedIn Logo" width={36} />
           </a>
@@ -55,13 +70,15 @@ function Home() {
         </div>
       </div>
       <div className=" ml-2 md:w-full md:mt-1 md:mt-2 md:ml-1 lg:mt-0 ">
+       
   <h2 className="subTitleHome text-left text-[16px] xs:text-[18px] md:text-[24px] md:text-left mb-2 font-medium sm-plus:text-[20px] sm:text-[22px] lg-plus:text-[28px]">
-    Front-End{' '}
-    <span className="font-semibold text-[#86A6F6]">
-      Developer
-    </span>{' '}
-    & <span className="font-semibold text-[#86A6F6]">Designer</span>.
+    Hi 🐳, I'm a {' '}
+    <span style={{fontWeight: 'bold', color: '#86A6F6'}}>
+      {text}
+      </span>
+      <Cursor />
   </h2>
+
   <div className="flex items-center mb-4 md:mb-2">
     <img
       src={LocationPin}
@@ -98,6 +115,7 @@ function Home() {
         <Footer />
       </div>
     </div>
+    </CustomScrollBar>
   );
 }
 

@@ -41,7 +41,7 @@ export default {
             navHoverColor: '#86A6F6',
             primary: '#86A6F6',
             menuBackgroundColor: '#F4F4F4',
-            secondary: '#AE93EE',
+            secondary: '#6490FF',
           },
         },
       },
