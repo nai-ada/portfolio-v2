@@ -37,18 +37,18 @@ export default function Menu() {
 
       <NavbarContent className="hidden md:flex gap-20" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[18px] font-[400]'>
-            About
+          <Link color="foreground" href="#" className='md:text-[18px] font-[500]'>
+            ABOUT
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[18px] font-[400]'>
-            Works
+          <Link color="foreground" href="#" className='md:text-[18px] font-[500]'>
+            WORKS
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[18px] font-[400]'>
-            Connect
+          <Link color="foreground" href="#" className='md:text-[18px] font-[500]'>
+            CONNECT
           </Link>
         </NavbarItem>
         <Switch

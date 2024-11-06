@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import React from 'react';
 import AboutTools from '../components/AboutTools';
 
 function About() {
   return (
     <>
-    <div className="about-section ">
+    <div className="about-section">
       <div className="md:relative">
       <h1 className="font-bold uppercase text-[45px] p-8 mt-35 pt-[8rem] pb-0 mb-0 text-[#2b2b2b] md:text-[88px] md:rotate-[90deg] md:absolute md:left-[75%] md:top-[200px]">
         <span className="text-primary">A</span>bout.
