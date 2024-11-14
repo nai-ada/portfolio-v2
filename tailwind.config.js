@@ -1,7 +1,7 @@
 const { nextui } = require('@nextui-org/react');
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
@@ -34,12 +34,11 @@ export default {
             darkBackground: '#161616',
             darkTextColor: '#ffffff',
             navHoverColor: '#86A6F6',
-            // Add NextUI semantic colors for dark theme
             primary: '#86A6F6',
             secondary: '#6490FF',
-            background: '#161616', // your dark mode background
-            foreground: '#ffffff', // your dark mode text color
-            menuBackgroundColor: '#2D2D2D', // darker version for dark mode
+            background: '#161616',
+            foreground: '#ffffff',
+            menuBackgroundColor: '#2D2D2D',
           },
         },
         light: {

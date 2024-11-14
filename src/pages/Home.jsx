@@ -52,7 +52,7 @@ function Home() {
         <div className="flex items-center justify-center min-h-screen px-6 md:pr-0">
         <div className="flex justify-center items-center min-h-screen w-full max-w-3xl md:-mt-20 ">
           
-    <div className="flex flex-col md:items-start md:items-center md:items-start">
+    <div className="flex flex-col md:items-start md:items-center md:items-start dark:bg-gray-800">
       <div className="md-2 md:mb-0 md:flex md:justify-between md:w-full md:w-[103%]">
         <div className="flex flex-col md:flex-row md:items-baseline">
           <h1 className="font-bold text-[62px] xs:text-[70px] md:text-[84px] md-x:text-[110px] md-plus:text-[95px] xs:h-20 sm-x:text-[100px] h-17 md:h-28 text-[#2b2b2b] lg:text-[100px] xl:text-[120px] sm-plus:text-[80px] sm-plus:h-24 sm:text-[90px] sm:h-28 lg-plus:text-[150px] ">Nadia</h1>

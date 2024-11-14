@@ -1,15 +1,17 @@
+import { useTheme as useNextTheme } from 'next-themes';
 import { Switch } from '@nextui-org/react';
 import { MoonIcon } from '../assets/MoonIcon.jsx';
 import { SunIcon } from '../assets/SunIcon.jsx';
 
 export default function SwitchTheme() {
-  const [isDarkMode, setIsDarkMode] = React.useState(false);
+  const { setTheme } = useNextTheme();
+  const { isDark } = useTheme();
 
   return (
     <Switch
-      defaultSelected
+      checked={isDark}
       size="sm"
-      style={{ '--nextui-colors-primary': '#86A6F6' }}
+      color="primary"
       thumbIcon={({ isSelected, className }) =>
         isSelected ? (
           <SunIcon className={className} />
@@ -17,7 +19,11 @@ export default function SwitchTheme() {
           <MoonIcon className={className} />
         )
       }
-      onChange={(isSelected) => setIsDarkMode(isSelected)}
+      onChange={(e) => {
+        const newTheme = e.target.checked ? 'dark' : 'light';
+        console.log('Switch toggled, setting theme to:', newTheme);
+        setTheme(newTheme);
+      }}
     />
   );
 }
