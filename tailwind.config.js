@@ -19,6 +19,8 @@ export default {
         'sm-x': '740px',
         'md-plus': '850px',
         'md-x': '1065px',
+        'lg-x': '1275px',
+        'xl-x': '1460px',
         'lg-plus': '1600px',
       },
     },
@@ -32,6 +34,12 @@ export default {
             darkBackground: '#161616',
             darkTextColor: '#ffffff',
             navHoverColor: '#86A6F6',
+            // Add NextUI semantic colors for dark theme
+            primary: '#86A6F6',
+            secondary: '#6490FF',
+            background: '#161616', // your dark mode background
+            foreground: '#ffffff', // your dark mode text color
+            menuBackgroundColor: '#2D2D2D', // darker version for dark mode
           },
         },
         light: {

@@ -9,8 +9,8 @@ function Nav() {
         <div className="max-w-100 mx-auto px-4">
           <div className="flex justify-between items-center py-0">
             {/* Logo */}
-            <a href="#" className="hidden md:block ">
-              <img src={Logo} alt="Nadia Vespalec Logo" width={38} />
+            <a href="#">
+              <img src={Logo} alt="Nadia Vespalec Logo" width={40} />
             </a>
 
             {/* Navigation Items and Menu */}

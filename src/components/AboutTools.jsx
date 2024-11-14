@@ -23,6 +23,9 @@ import framermotionLogo from '/src/assets/framermotion.png';
 import nextuiLogo from '/src/assets/nextui.png';
 import threejsLogo from '/src/assets/threejs.png';
 import reactLogo from '/src/assets/react.png';
+import designIcon from '/src/assets/design.svg';
+import devIcon from '/src/assets/dev.svg';
+import skillsIcon from '/src/assets/skills.svg';
 
 const logos = {
   mysql: { src: mySqlLogo, alt: 'MySQL Icon' },
@@ -102,56 +105,83 @@ const skillsContent = [
   'User Flow',
   'Information Architecture',
   'Style Guides',
+  'SEO',
 ];
 
 function AboutTools() {
   return (
     <>
-    <div className="mb-16 md:ml-6">
-      <Accordion variant="splitted" className="max-w-[600px] px-6">
+    <div className="mb-16 md:ml-6 md:mt-10">
+      <Accordion variant="splitted" className="max-w-[900px] px-6">
         {' '}
-        {/* Adjust max-width as needed */}
+
         <AccordionItem
           key="1"
           className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
           aria-label="Accordion 1"
-          title="Development Tools"
+          title={
+            <div className="flex items-center w-full">
+              <img 
+                src={devIcon} 
+                alt="Development Icon" 
+                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180"
+              />
+              <span>Development Tools</span>
+            </div>
+          }
           classNames={{
-            title: 'text-md font-medium md:text-[18px]', // Adjust font size here
-            content: 'text-sm py-2', // Adjust content padding here
+            title: 'text-md font-medium md:text-[20px] group',
+            content: 'text-sm py-3',
           }}
         >
           {devContent}
         </AccordionItem>
+
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-2"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
           aria-label="Accordion 2"
-          title="Design Tools"
+          title={
+            <div className="flex items-center w-full">
+              <img 
+                src={designIcon} 
+                alt="Design Icon" 
+                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180"
+              />
+              <span>Design Tools</span>
+            </div>
+          }
           classNames={{
-            title: 'text-md font-medium md:text-[18px]',
-            content: 'text-sm py-2',
+            title: 'text-md font-medium md:text-[20px] group',
+            content: 'text-sm py-3',
           }}
         >
           {designContent}
         </AccordionItem>
+
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r  from-[#C0DEFF] to-[white] md:py-2"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
           aria-label="Accordion 3"
-          title="Other Skills"
+          title={
+            <div className="flex items-center w-full">
+              <img 
+                src={skillsIcon} 
+                alt="Skills Icon" 
+                className="w-5 h-5 ml-2 mr-2"
+              />
+              <span>Other Skills</span>
+            </div>
+          }
           classNames={{
-            title: 'text-md font-medium md:text-[18px]',
+            title: 'text-md font-medium md:text-[20px] group',
             content: 'text-sm py-6',
           }}
         >
-          <ul className="flex flex-wrap gap-2 text-sm md:text-[16px]">
-            {' '}
-            {/* Reduced gap and font size */}
+          <ul className="flex flex-wrap gap-4 text-sm md:text-[18px]">
             {skillsContent.map((skill, index) => (
               <li key={index} className="flex items-center">
-                <span className="w-1.5 h-1.5 bg-[#86A6F6] rounded-full mr-1"></span>{' '}
-                {/* Smaller dot */}
+                <span className="w-1.5 h-1.5 bg-[#86A6F6] rounded-full mr-1"></span>
                 {skill}
               </li>
             ))}

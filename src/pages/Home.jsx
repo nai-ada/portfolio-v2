@@ -72,7 +72,7 @@ function Home() {
       <div className=" mt-5 ml-2 md:w-full md:mt-1 md:mt-2 md:ml-1 lg:mt-0 ">
        
   <h2 className="subTitleHome text-left text-[20px] mb-4 xs:text-[18px] md:text-[24px] md:text-left mb-2 font-medium sm-plus:text-[20px] sm:text-[22px] lg-plus:text-[28px]">
-    Hi 🐳, I'm a {' '}
+    Hi, I'm a {' '}
     <span style={{fontWeight: 'bold', color: '#86A6F6'}}>
       {text}
       </span>
@@ -86,7 +86,7 @@ function Home() {
       width={14}
       className="mr-2"
     />
-    <h2 className="text-[14px] font-medium md:text-[18px]">Vancouver, BC</h2>
+    <h2 className="text-[14px] font-medium md:text-[18px]">Vancouver, BC 🐳</h2>
   </div>
   <div className="flex space-x-4 md:justify-start lg:hidden">
     <a
@@ -111,7 +111,9 @@ function Home() {
       <div ref={aboutRef}>
         <About />
         <Works />
+        <div className="">
         <Connect />
+        </div>
         <Footer />
       </div>
     </div>

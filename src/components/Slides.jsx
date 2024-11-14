@@ -5,6 +5,9 @@ import clippr from '/src/assets/clippr.png';
 import titan from '/src/assets/titan.png';
 import portfolio from '/src/assets/portfolio.png';
 import galaxy from '/src/assets/gg.png';
+import nxt from '/src/assets/next.svg';
+import prev from '/src/assets/prev.svg';
+
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -13,15 +16,24 @@ import "slick-carousel/slick/slick-theme.css";
 const Slides = () => {
   const sliderRef = useRef(null);
 
+  const next = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const previous = () => {
+    sliderRef.current.slickPrev();
+  };
+
   const settings = {
     dots: true,
     speed: 800,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,        // Add this line to enable autoplay
-    autoplaySpeed: 2500,   // Optional: set speed (milliseconds between slides)
-    pauseOnHover: true,    // Optional: pause autoplay when hovering
+    autoplay: true,      
+    autoplaySpeed: 3000,   
+    pauseOnHover: true,
+    arrows: false, // Disable default arrows
     responsive: [
       {
         breakpoint: 830,
@@ -38,27 +50,27 @@ const Slides = () => {
     {
       name: `AiSafeguard`,
       img: aisa,
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      info: `Chrome extension designed to block AI art while browsing the internet.`
     },
     {
       name: `Galaxy Grid 2.0`,
       img: galaxy,
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      info: `Tic Tac Toe in-browser game, with an intergalactic take!`
     },
     {
       name: `Portfolio`,
       img: portfolio,
-      info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      info: `My web portfolio. Designed to showcase my skills and abilities as a developer.`
     },
     {
       name: `Titan Tech`,
       img: titan,
-      info: `Responsive web application where users can explore and interact with movie data from The Movie Database (TMDB) API. Team project.`
+      info: `Landing page for Titan Technologies, with design having been provided.`
     },
     {
       name: `ClipprDB`,
       img: clippr,
-      info: `Responsive web application where users can explore and interact with movie data from The Movie Database (TMDB) API. Team project.`
+      info: `Movie database which utilizes data from the TMDb Database (Rest API)`
       
     },
   ];
@@ -66,6 +78,19 @@ const Slides = () => {
   return (
     <div className='w-3/4 m-auto relative'>
       <div className='mt-10'>
+      <button
+          className="hidden md:block absolute left-[-70px] top-1/2 transform -translate-y-1/2  bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-primary/80 transition-colors duration-300"
+          onClick={previous}
+        >
+           <img src={prev} alt="prev" width={50} className='invert'/>
+        </button>
+        
+        <button
+          className="hidden md:block absolute right-[-70px] top-1/2 transform -translate-y-1/2  bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-primary/80 transition-colors duration-300"
+          onClick={next}
+        >
+           <img src={nxt} alt="next" width={50} className='invert'/>
+        </button>
         <Slider ref={sliderRef} {...settings}>
           {projectData.map((d, index) => (
             <div key={index} className='bg-white border-1 shadow-md h-full mb-4 text-black rounded-xl'>

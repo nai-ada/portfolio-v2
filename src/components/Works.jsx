@@ -4,6 +4,8 @@ import Slides from '../components/Slides';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import FadeIn from '../components/FadeIn';
+
 
 
 
@@ -13,7 +15,7 @@ const projectsList = [
     description: ['JavaScript', 'MongoDB', 'CSS'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -23,7 +25,7 @@ const projectsList = [
     description: ['JavaScript', 'CSS', 'HTML'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -33,7 +35,7 @@ const projectsList = [
     description: ['TypeScript', 'Tailwind', 'Solid.js'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -43,7 +45,7 @@ const projectsList = [
     description: ['WordPress', 'PHP', 'SASS'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -53,7 +55,7 @@ const projectsList = [
     description: ['React', 'CSS', 'Rest API'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -63,7 +65,7 @@ const projectsList = [
     description: ['React', 'Tailwind', 'NextUI'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -74,7 +76,7 @@ const projectsList = [
     description: ['JavaScript', 'CSS', 'HTML'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8">
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
         Info
       </Button>
     ),
@@ -126,13 +128,15 @@ function Works() {
   }, []);
   return (
     <div className="relative">
-      <h1 className="font-bold uppercase text-[48px] p-8 pb-2 mt-28 mb-0 text-[#2b2b2b] z-10 md:absolute md:right-[67%] md:top-[182px] md:rotate-[-90deg] md:text-[86px]">
-        <span className="text-primary">P</span>rojects.
+            <FadeIn>
+      <div className="md-x:mx-[4rem] lg-x:mx-[10rem] xl-x:mx-[13rem] mt-28">
+      <h1 className="font-bold uppercase text-[48px] pl-8 mt-35 pt-[3rem] pb-0 mb-0 text-[#2b2b2b]  md:text-[78px] lg-x:text-[98px] md:ml-4">
+        <span className="text-primary">W</span>orks.
       </h1>
-
+      </div>
       <div
         ref={scrollRef}
-        className="w-full h-[500px] overflow-y-auto scrollbar-hide md:w-[83%] md:ml-auto"
+        className=" h-[500px] overflow-y-auto scrollbar-hide md:mx-[2rem] md-x:mx-[5rem] lg-x:mx-[12rem] xl-x:mx-[15rem]"
       >
         <div className="pb-[150px] pt-[150px] relative p-1">
           {projectsList.map((project, index) => (
@@ -150,24 +154,29 @@ function Works() {
               }}
             >
               <div className="flex justify-between items-center mb-2">
-                <h2 className="font-bold text-[24px]">{project.title}</h2>
+                <h2 className="font-bold text-[24px] md:text-[42px]">{project.title}</h2>
                 {project.button}
               </div>
-              <p className="text-[#888888] text-[12px]">
+              <p className="text-[#888888] text-[12px] md:text-[18px]">
                 {project.description.join(' | ')}
               </p>
             </div>
           ))}
         </div>
       </div>
-      {/* <div className="absolute transform -translate-y-1/2 h-full flex flex-col items-center md:bottom-[21%] md:left-[7%] rotate-[180deg]">
-        <div className="border-l-1 border-[#222222] h-[20%]"></div>
-        <div className="w-[5px] h-[5px] bg-purple-400 rounded-full mt-2"></div>
-      </div> */}
-      <h2 className="font-semibold mt-[2rem] text-[32px] p-8 pt-6 md:pt-[10rem] pb-4 text-[#2b2b2b] md:text-[36px] md:ml-6 ">
-        Featured Projects
+      </FadeIn>
+      <div className="hidden md-x:block absolute transform -translate-y-1/2 h-full flex flex-col items-center md:bottom-[21%] md:left-[3%] rotate-[180deg]">
+  <div className="border-l-1 border-[#222222] h-[18%]"></div>
+  <div className="w-[5px] h-[5px] bg-purple-400 rounded-full absolute md:right-[-2px] mt-2"></div>
+</div>
+<FadeIn>
+<div className="md-x:mx-[4rem] lg-x:mx-[10rem] xl-x:mx-[13rem]">
+      <h2 className="font-semibold text-[32px] mt-[1rem] md:mt-[10rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-x:text-[45px]">
+        Featured Works
       </h2>
       <Slides />
+    </div>
+    </FadeIn>
     </div>
     
   );

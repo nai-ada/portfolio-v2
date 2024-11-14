@@ -36,21 +36,39 @@ export default function Menu() {
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-24">
-        <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
-            About 
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
-            Projects
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#" className='md:text-[20px] font-[500]'>
-            Connect
-          </Link>
-        </NavbarItem>
+      <NavbarItem className="relative group">
+        <Link 
+          color="foreground" 
+          href="#" 
+          className='md:text-[20px] text-[#232323] font-[400] hover:opacity-90'
+        >
+          About
+        </Link>
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+      </NavbarItem>
+
+      <NavbarItem className="relative group">
+        <Link 
+          color="foreground" 
+          href="#" 
+          className='md:text-[20px] text-[#232323] font-[400] hover:opacity-90 '
+        >
+          Works
+        </Link>
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+      </NavbarItem>
+
+      <NavbarItem className="relative group">
+        <Link 
+          color="foreground" 
+          href="#" 
+          className='md:text-[20px] text-[#232323] font-[400] hover:opacity-90'
+        >
+          Connect
+        </Link>
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+      </NavbarItem>
+
         <Switch
             defaultSelected
             size="md"
@@ -69,7 +87,7 @@ export default function Menu() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
             <Link
-              className="mt-7 text-black text-[22px] text-right ml-2 pt-4 font-[500]"
+              className="mt-7 text-black text-[22px] text-right ml-2 pt-4 font-[400]"
               href="#"
               size="lg"
             >
