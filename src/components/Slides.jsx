@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { Button } from '@nextui-org/react';
 import aisa from '/src/assets/aisa.png';
 import clippr from '/src/assets/clippr.png';
@@ -7,13 +7,13 @@ import portfolio from '/src/assets/portfolio.png';
 import galaxy from '/src/assets/gg.png';
 import nxt from '/src/assets/next.svg';
 import prev from '/src/assets/prev.svg';
-
-
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import FadeIn from './FadeIn';
 
 const Slides = () => {
+
   const sliderRef = useRef(null);
 
   const next = () => {
@@ -31,9 +31,9 @@ const Slides = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,      
-    autoplaySpeed: 3000,   
+    autoplaySpeed: 2500,   
     pauseOnHover: true,
-    arrows: false, // Disable default arrows
+    arrows: false, 
     responsive: [
       {
         breakpoint: 830,
@@ -76,7 +76,9 @@ const Slides = () => {
   ];
 
   return (
+    <FadeIn>
     <div className='w-3/4 m-auto relative'>
+      
       <div className='mt-10'>
       <button
           className="hidden md:block absolute left-[-70px] top-1/2 transform -translate-y-1/2  bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-primary/80 transition-colors duration-300"
@@ -107,6 +109,7 @@ const Slides = () => {
         </Slider>
       </div>
     </div>
+    </FadeIn>
   );
 };
 

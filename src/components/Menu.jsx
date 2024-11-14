@@ -40,7 +40,7 @@ export default function Menu() {
         <Link 
           color="foreground" 
           href="#" 
-          className='md:text-[20px] text-[#232323] font-[400] hover:opacity-90'
+          className='md:text-[22px] text-[#232323] font-[400] hover:opacity-90'
         >
           About
         </Link>
@@ -51,7 +51,7 @@ export default function Menu() {
         <Link 
           color="foreground" 
           href="#" 
-          className='md:text-[20px] text-[#232323] font-[400] hover:opacity-90 '
+          className='md:text-[22px] text-[#232323] font-[400] hover:opacity-90 '
         >
           Works
         </Link>
@@ -62,7 +62,7 @@ export default function Menu() {
         <Link 
           color="foreground" 
           href="#" 
-          className='md:text-[20px] text-[#232323] font-[400] hover:opacity-90'
+          className='md:text-[22px] text-[#232323] font-[400] hover:opacity-90'
         >
           Connect
         </Link>
