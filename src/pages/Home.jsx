@@ -55,12 +55,12 @@ function Home() {
     <div className="flex flex-col md:items-start md:items-center md:items-start dark:bg-gray-800">
       <div className="md-2 md:mb-0 md:flex md:justify-between md:w-full md:w-[103%]">
         <div className="flex flex-col md:flex-row md:items-baseline">
-          <h1 className="font-bold text-[62px] xs:text-[70px] md:text-[84px] md-x:text-[110px] md-plus:text-[95px] xs:h-20 sm-x:text-[100px] h-17 md:h-28 text-[#2b2b2b] lg:text-[100px] xl:text-[120px] sm-plus:text-[80px] sm-plus:h-24 sm:text-[90px] sm:h-28 lg-plus:text-[150px] ">Nadia</h1>
-          <h1 className="font-bold text-[55px] md:text-[84px] sm:text-[90px] md-x:text-[110px]  md-plus:text-[95px] sm-x:text-[100px] xs:text-[70px] sm-plus:text-[80px] lg:text-[100px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text md:ml-4 md:text-[80px] md:text-[87px] xl:text-[120px]  lg-plus:text-[150px]">
+          <h1 className="font-bold text-[62px] xs:text-[70px] md:text-[84px] md-x:text-[110px] md-plus:text-[95px] xs:h-20 sm-x:text-[100px] h-17 md:h-28 text-[#2b2b2b] lg:text-[100px] xl:text-[120px] sm-plus:text-[80px] sm-plus:h-24 sm:text-[90px] sm:h-28 lg-plus:text-[160px] ">Nadia</h1>
+          <h1 className="font-bold text-[55px] md:text-[84px] sm:text-[90px] md-x:text-[110px]  md-plus:text-[95px] sm-x:text-[100px] xs:text-[70px] sm-plus:text-[80px] lg:text-[100px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text md:ml-4 md:text-[80px] md:text-[87px] xl:text-[120px]  lg-plus:text-[160px]">
             Vespalec<span className="text-lightTextColor">.</span>
           </h1>
         </div>
-        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-4 lg-plus:space-y-8 lg:mt-8 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 lg-plus:mt-[4rem] lg-plus:ml-10 lg:self-start">
+        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-4 lg-plus:space-y-8 lg:mt-8 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 lg-plus:mt-[4.4rem] lg-plus:ml-10 lg:self-start">
           <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-80 transition-opacity">
             <img src={LinkedIn} alt="LinkedIn Logo" width={36} />
           </a>

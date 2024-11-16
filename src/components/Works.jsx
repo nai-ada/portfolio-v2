@@ -8,8 +8,8 @@ import FadeIn from '../components/FadeIn';
 
 const projectsList = [
   {
-    title: 'AiSafeguard',
-    description: ['JavaScript', 'MongoDB', 'CSS'],
+    title: 'Froth Matcha',
+    description: ['WordPress', 'PHP', 'SASS'],
     link: '#',
     button: (
       <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
@@ -38,8 +38,8 @@ const projectsList = [
     ),
   },
   {
-    title: 'Froth Matcha',
-    description: ['WordPress', 'PHP', 'SASS'],
+    title: 'AiSafeguard',
+    description: ['JavaScript', 'MongoDB', 'CSS'],
     link: '#',
     button: (
       <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
@@ -80,7 +80,7 @@ const projectsList = [
 ];
 
 function Works() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(Math.floor(projectsList.length / 2));
   const scrollRef = useRef(null);
   const itemRefs = useRef([]);
 
@@ -89,52 +89,51 @@ function Works() {
       if (scrollRef.current) {
         const container = scrollRef.current;
         const containerRect = container.getBoundingClientRect();
-        const containerTop = containerRect.top;
-        const containerHeight = containerRect.height;
-  
-        // Find which item is most visible
-        let maxVisibleIndex = 0;
-        let maxVisibleRatio = 0;
-  
+        const containerCenter = containerRect.top + containerRect.height / 2;
+
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+
         itemRefs.current.forEach((item, index) => {
           if (item) {
             const rect = item.getBoundingClientRect();
-            const itemTop = rect.top - containerTop;
-            const itemBottom = rect.bottom - containerTop;
-            
-            // Calculate how much of the item is visible in the container
-            const visibleTop = Math.max(0, itemTop);
-            const visibleBottom = Math.min(containerHeight, itemBottom);
-            const visibleHeight = visibleBottom - visibleTop;
-            const visibleRatio = visibleHeight / rect.height;
-  
-            if (visibleRatio > maxVisibleRatio) {
-              maxVisibleRatio = visibleRatio;
-              maxVisibleIndex = index;
-            }
-  
-            // Special handling for first and last items
-            if (index === 0 && itemTop > -rect.height/2 && itemTop < containerHeight/2) {
-              maxVisibleIndex = 0;
-            }
-            if (index === itemRefs.current.length - 1 && 
-                itemBottom > containerHeight/2 && 
-                itemBottom < containerHeight + rect.height/2) {
-              maxVisibleIndex = itemRefs.current.length - 1;
+            const itemCenter = rect.top + rect.height / 2;
+            const distance = Math.abs(containerCenter - itemCenter);
+
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
             }
           }
         });
-  
-        setActiveIndex(maxVisibleIndex);
+
+        setActiveIndex(closestIndex);
       }
     };
-  
+
+    // Initial scroll to middle item
+    const scrollToMiddle = () => {
+      if (scrollRef.current && itemRefs.current[activeIndex]) {
+        const container = scrollRef.current;
+        const item = itemRefs.current[activeIndex];
+        const containerRect = container.getBoundingClientRect();
+        const itemRect = item.getBoundingClientRect();
+        
+        const scrollTo = item.offsetTop - (containerRect.height / 2) + (itemRect.height / 2);
+        container.scrollTo({
+          top: scrollTo,
+          behavior: 'instant'
+        });
+      }
+    };
+
     const scrollContainer = scrollRef.current;
     if (scrollContainer) {
       scrollContainer.addEventListener('scroll', handleScroll);
-      handleScroll(); // Initial check
+      // Scroll to middle after a brief delay to ensure refs are set
+      setTimeout(scrollToMiddle, 0);
     }
-  
+
     return () => {
       if (scrollContainer) {
         scrollContainer.removeEventListener('scroll', handleScroll);
@@ -159,44 +158,44 @@ function Works() {
       </div>
 
       <FadeIn>
-        <div className="md-x:mx-[4rem] lg-x:mx-[10rem] xl-x:mx-[13rem] mt-28">
-          <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 mt-35 pt-[3rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-x:text-[98px] md:ml-4">
+        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] mt-28">
+          <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 mt-35 pt-[3rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-plus:text-[98px] md:ml-4">
             <span className="text-primary">W</span>orks.
           </h1>
         </div>
         <div
           ref={scrollRef}
-          className="h-[800px] overflow-y-auto scrollbar-hide md:mx-[2rem] md-x:mx-[5rem] lg-x:mx-[12rem] xl-x:mx-[15rem] lg-plus:ml-[25rem] lg-plus:mr-[10rem]"
+          className="h-[800px] overflow-y-auto scrollbar-hide md:mx-[2rem] md-x:mx-[5rem] lg-plus:mx-[12rem] xl-x:mx-[12rem] lg-plus:ml-[25rem] lg-plus:mr-[10rem]"
         >
-         <div className="pb-[50px] pt-[50px] relative p-1">
-  {projectsList.map((project, index) => (
-    <div
-      key={project.title}
-      ref={(el) => (itemRefs.current[index] = el)}
-      className={`p-6 transition-opacity duration-300 ${
-        index !== projectsList.length - 1 ? 'border-b-2' : ''
-      }`}
-      style={{
-        opacity: index === activeIndex ? 1 : 0.2,
-        transition: 'opacity 0.3s ease-in-out'
-      }}
-    >
-      <div className="flex justify-between items-center mb-2">
-        <h2 className="font-bold text-[24px] md:text-[42px]">{project.title}</h2>
-        {project.button}
-      </div>
-      <p className="text-[#888888] text-[12px] md:text-[18px]">
-        {project.description.join(' | ')}
-      </p>
-    </div>
-  ))}
-</div>
+          <div className="py-[300px]">
+            {projectsList.map((project, index) => (
+              <div
+                key={project.title}
+                ref={(el) => (itemRefs.current[index] = el)}
+                className={`p-6 transition-opacity duration-300 ${
+                  index !== projectsList.length - 1 ? 'border-b-2' : ''
+                }`}
+                style={{
+                  opacity: index === activeIndex ? 1 : 0.2,
+                  transition: 'opacity 0.3s ease-in-out'
+                }}
+              >
+                <div className="flex justify-between items-center mb-2">
+                  <h2 className="font-bold text-[24px] md:text-[42px]">{project.title}</h2>
+                  {project.button}
+                </div>
+                <p className="text-[#888888] text-[12px] md:text-[18px]">
+                  {project.description.join(' | ')}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </FadeIn>
 
       <FadeIn>
-        <div className="md-x:mx-[4rem] lg-x:mx-[10rem] xl-x:mx-[13rem] pt-[5rem] lg-plus:pt-[20rem]">
-          <h2 className="font-semibold text-[32px] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-x:text-[45px]">
+        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] pt-[5rem] lg-plus:pt-[10rem]">
+          <h2 className="font-semibold text-[32px] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px]">
             Featured Works
           </h2>
           <Slides />

@@ -18,9 +18,9 @@ function Connect() {
 
   return (
     <> 
-    <div className="md-x:mx-[4rem] lg-x:mx-[10rem] xl-x:mx-[13rem] mt-48 lg-plus:mt-72">
+    <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] mt-48 lg-plus:mt-72">
       {/* Rotated heading for lg-plus screens */}
-      <div className="hidden lg-plus:block absolute -right-12 top-[89%] -translate-y-1/2">
+      <div className="hidden lg-plus:block absolute -right-20 top-[89%] -translate-y-1/2">
         <FadeIn>
           <h1 className="font-bold uppercase text-[125px] origin-center rotate-90 text-[#2b2b2b]">
             <span className="text-primary">C</span>onnect.
@@ -31,7 +31,7 @@ function Connect() {
       {/* Original heading for smaller screens */}
       <div className="md:relative">
         <FadeIn>
-          <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 pt-[4rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-x:text-[98px] md:ml-4">
+          <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 pt-[4rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-plus:text-[98px] md:ml-4">
             <span className='text-primary'>C</span>onnect.
           </h1>
         </FadeIn>
@@ -61,13 +61,13 @@ function Connect() {
 
         {/* Social Links */}
         <FadeIn>
-          <div className="grid grid-cols-3 border border-black mt-12 md:mt-20 mb-20 md:mb-53 mx-1 xs:mx-4 sm-plus:mx-16 md-x:mx-auto md-x:max-w-[800px] rounded-full overflow-hidden md:ml-32 md:mr-32 md:p-4">
-            <a href="https://linkedin.com/in/nadiavespalec" className="flex items-center justify-center p-10 hover:bg-gray-100 border-r border-black -my-4">
+          <div className="grid grid-cols-3 border border-black mt-12 md:mt-20 mb-20 md:mb-53 mx-1 xs:mx-4 sm-plus:mx-16 md-x:mx-auto md-x:max-w-[800px] rounded-full overflow-hidden md:ml-32 md:mr-32">
+            <a href="https://linkedin.com/in/nadiavespalec" className="flex items-center justify-center p-10 md:p-14 hover:bg-gray-100 transition duration-300 border-r border-black -my-4">
               <img src={LinkedIn} alt="LinkedIn Logo" className="w-5 h-5 mr-1" />
               <span className="text-[12px] font-medium md:text-[16px]">LinkedIn</span>
               <img src={Arrow} alt="Arrow" className="w-2 h-2 ml-1" />
             </a>
-            <a href="https://github.com/nai-ada" className="flex items-center justify-center p-6 hover:bg-gray-100 border-r border-black -my-4">
+            <a href="https://github.com/nai-ada" className="flex items-center justify-center p-6 hover:bg-gray-100 transition duration-300 border-r border-black -my-4">
               <img src={GitHub} alt="GitHub Logo" className="w-5 h-5 mr-1" />
               <span className="text-[12px] font-medium md:text-[16px]">GitHub</span>
               <img src={Arrow} alt="Arrow" className="w-2 h-2 ml-1" />

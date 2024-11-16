@@ -24,16 +24,16 @@ function About() {
   </div>
 
 
-        <div className="md-x:mx-[4rem] lg-x:mx-[10rem] xl-x:mx-[13rem]">
+        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem]">
           <FadeIn>
             {/* Original heading visible only below lg-plus */}
-            <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 mt-35 pt-[8rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-x:text-[98px] md:ml-4">
+            <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 mt-35 pt-[8rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-plus:text-[98px] md:ml-4">
               <span className="text-primary">A</span>bout.
             </h1>
           </FadeIn>
    
         <FadeIn>
-          <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-x:text-[45px]">
+          <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] lg-x:pt-10">
             Hi, I'm Nadia!
           </h2>
           <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 pt-2 text-[#2b2b2b] lg-x:text-[20px] lg-plus:w-[85%]">
@@ -53,7 +53,7 @@ function About() {
    
 
           <FadeIn>
-          <h2 className="font-semibold text-[32px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px] lg-x:text-[45px]">
+          <h2 className="font-semibold text-[32px] p-8 pt-2 text-[#2b2b2b] md:ml-6 md:text-[36px] lg-plus:text-[45px]">
             Skill Stack
           </h2>
    <div className='lg-plus:mb-[5rem]'>

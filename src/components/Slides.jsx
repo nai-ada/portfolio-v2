@@ -95,20 +95,28 @@ const Slides = () => {
         </button>
         <Slider ref={sliderRef} {...settings}>
           {projectData.map((d, index) => (
-            <div key={index} className='bg-white border-1 shadow-md h-full mb-4 text-black rounded-xl'>
-              <div className='bg-[#DDECFF] rounded-t-xl flex justify-center items-center'>
-                <img src={d.img} alt="" className='max-h-50 w-full rounded-t-xl' />
+            <div key={index} className='h-[400px] bg-white border-1 rounded-xl flex flex-col m-2 shadow-[0_2px_5px_rgba(0,0,0,0.1)]'>
+              <div className='bg-[#DDECFF] rounded-t-xl h-[200px] flex justify-center items-center'> 
+                <img 
+                  src={d.img} 
+                  alt="" 
+                  className='w-full h-full object-cover rounded-t-xl' 
+                />
               </div>
-              <div className='flex flex-col justify-center items-center gap-4 p-4'>
-                <p className='font-semibold text-xl'>{d.name}</p>
-                <p className="text-center text-[12px] md:text-[14px]">{d.info}</p>
-                <Button className='bg-primary text-white text-lg px-3 md:px-4 py-2 rounded-full'>View Project</Button>
+              <div className='flex flex-col flex-grow justify-between p-4'> 
+                <div className='flex flex-col gap-2'>
+                  <p className='font-semibold text-xl text-center'>{d.name}</p>
+                  <p className="text-center text-[12px] md:text-[14px] line-clamp-3">{d.info}</p>
+                </div>
+                <Button className='bg-primary text-white text-lg px-3 md:px-4 py-2 rounded-full self-center mt-4'>
+                  View Project
+                </Button>
               </div>
             </div>
           ))}
         </Slider>
+        </div>
       </div>
-    </div>
     </FadeIn>
   );
 };
