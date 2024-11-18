@@ -46,35 +46,4 @@ video {
   --tw-backdrop-blur: none !important;
 }
 
-/* .slick-prev,
-.slick-next {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  width: 35px;
-  height: 35px;
-  background-color: #86A6F6;
-  border-radius: 50%;
-  color: transparent;
-  font-size: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.slick-prev {
-  left: 0px;
-}
-
-.slick-next {
-  right: 0px;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #4e6191;
-} */
 
