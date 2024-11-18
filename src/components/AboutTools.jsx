@@ -28,9 +28,7 @@ import devIcon from '/src/assets/dev.svg';
 import skillsIcon from '/src/assets/skills.svg';
 
 const logos = {
-  mysql: { src: mySqlLogo, alt: 'MySQL Icon' },
   npm: { src: npmLogo, alt: 'NPM Icon' },
-  wordpress: { src: wordpressLogo, alt: 'Wordpress Icon' },
   shopify: { src: shopifyLogo, alt: 'Shopify Icon' },
   woocommerce: { src: woocommerceLogo, alt: 'Woocommerce Icon' },
   figma: { src: figmaLogo, alt: 'Figma Icon' },
@@ -52,6 +50,9 @@ const logos = {
   agile: 'Agile',
   ux: 'UX/UI',
   threejs: { src: threejsLogo, alt: 'ThreeJs Icon' },
+  mysql: { src: mySqlLogo, alt: 'MySQL Icon' },
+  wordpress: { src: wordpressLogo, alt: 'Wordpress Icon' },
+
 };
 
 const createLogoElements = (logoKeys) =>
@@ -67,9 +68,7 @@ const createLogoElements = (logoKeys) =>
   ));
 
 const devContent = createLogoElements([
-  'mysql',
   'npm',
-  'wordpress',
   'shopify',
   'git',
   'javascript',
@@ -84,6 +83,8 @@ const devContent = createLogoElements([
   'framermotion',
   'nextuilogo',
   'threejs',
+  'mysql',
+  'wordpress',
 ]);
 
 const designContent = createLogoElements([
@@ -112,21 +113,21 @@ function AboutTools() {
   return (
     <>
     <div className="mb-16 md:ml-6 md:mt-10">
-      <Accordion variant="splitted" className="max-w-[900px] px-6">
+      <Accordion variant="splitted" className="max-w-[1000px] px-6">
         {' '}
 
         <AccordionItem
           key="1"
-          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
+          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#546799] dark:to-darkBackground"
           aria-label="Accordion 1"
           title={
             <div className="flex items-center w-full">
               <img 
                 src={devIcon} 
                 alt="Development Icon" 
-                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180"
+                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
               />
-              <span>Development Tools</span>
+              <span className="text-[#2b2b2b] dark:text-white">Development Tools</span>
             </div>
           }
           classNames={{
@@ -139,16 +140,16 @@ function AboutTools() {
 
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#546799] dark:to-darkBackground"
           aria-label="Accordion 2"
           title={
             <div className="flex items-center w-full">
               <img 
                 src={designIcon} 
                 alt="Design Icon" 
-                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180"
+                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
               />
-              <span>Design Tools</span>
+              <span className="text-[#2b2b2b] dark:text-white">Design Tools</span>
             </div>
           }
           classNames={{
@@ -161,16 +162,16 @@ function AboutTools() {
 
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#546799] dark:to-darkBackground"
           aria-label="Accordion 3"
           title={
             <div className="flex items-center w-full">
               <img 
                 src={skillsIcon} 
                 alt="Skills Icon" 
-                className="w-5 h-5 ml-2 mr-2"
+                className="w-5 h-5 ml-2 mr-2 dark:invert"
               />
-              <span>Other Skills</span>
+              <span className="text-[#2b2b2b] dark:text-white">Other Skills</span>
             </div>
           }
           classNames={{
@@ -178,7 +179,7 @@ function AboutTools() {
             content: 'text-sm py-6',
           }}
         >
-          <ul className="flex flex-wrap gap-4 text-sm md:text-[18px]">
+          <ul className="flex flex-wrap gap-4 text-sm md:text-[18px] text-[#2b2b2b] dark:text-white">
             {skillsContent.map((skill, index) => (
               <li key={index} className="flex items-center">
                 <span className="w-1.5 h-1.5 bg-[#86A6F6] rounded-full mr-1"></span>

@@ -5,7 +5,7 @@ module.exports = {
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@nextui-org/theme/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -31,7 +31,7 @@ module.exports = {
       themes: {
         dark: {
           colors: {
-            darkBackground: '#161616',
+            darkBackground: '#141414',
             darkTextColor: '#ffffff',
             navHoverColor: '#86A6F6',
             primary: '#86A6F6',

@@ -149,9 +149,9 @@ function Works() {
           {/* Border and dot positioned above the rotated heading */}
           <div className="absolute left-1/2 bottom-[185%] -translate-x-1/2 flex flex-col items-center ">
             <div className="w-[6px] h-[6px] bg-purple-400 rounded-full mb-2 md:right-[-4px]"></div>
-            <div className="border-l-1 border-[#222222] h-[170px]"></div>
+            <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
           </div>
-          <h1 className="font-bold uppercase text-[125px] origin-center -rotate-90 text-[#2b2b2b]">
+          <h1 className="font-bold uppercase text-[125px] origin-center -rotate-90 text-[#2b2b2b] dark:text-white">
             <span className="text-primary">W</span>orks.
           </h1>
         </FadeIn>
@@ -159,7 +159,7 @@ function Works() {
 
       <FadeIn>
         <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] mt-28">
-          <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 mt-35 pt-[3rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-plus:text-[98px] md:ml-4">
+          <h1 className="lg-plus:hidden font-bold uppercase text-[48px] pl-8 mt-35 pt-[3rem] pb-0 mb-0 text-[#2b2b2b] md:text-[78px] lg-plus:text-[98px] md:ml-4 dark:text-white">
             <span className="text-primary">W</span>orks.
           </h1>
         </div>
@@ -195,7 +195,7 @@ function Works() {
 
       <FadeIn>
         <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] pt-[5rem] lg-plus:pt-[10rem]">
-          <h2 className="font-semibold text-[32px] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px]">
+          <h2 className="font-semibold text-[32px] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] dark:text-white">
             Featured Works
           </h2>
           <Slides />

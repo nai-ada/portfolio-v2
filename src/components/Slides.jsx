@@ -36,13 +36,20 @@ const Slides = () => {
     arrows: false, 
     responsive: [
       {
-        breakpoint: 830,
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 730,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        },
-      },
-    ],
+        }
+      }
+    ]
   };
 
 
@@ -77,6 +84,29 @@ const Slides = () => {
 
   return (
     <FadeIn>
+        <style>
+        {`
+          .slick-dots li button:before {
+            color: #232323 !important;
+            opacity: 0.3;
+          }
+
+          .slick-dots li.slick-active button:before {
+            color: #232323 !important;
+            opacity: 0.75;
+          }
+
+          .dark .slick-dots li button:before {
+            color: white !important;
+            opacity: 0.3;
+          }
+
+          .dark .slick-dots li.slick-active button:before {
+            color: white !important;
+            opacity: 0.75;
+          }
+        `}
+      </style>
     <div className='w-3/4 m-auto relative'>
       
       <div className='mt-10'>
@@ -95,7 +125,7 @@ const Slides = () => {
         </button>
         <Slider ref={sliderRef} {...settings}>
           {projectData.map((d, index) => (
-            <div key={index} className='h-[400px] bg-white border-1 rounded-xl flex flex-col m-2 shadow-[0_2px_5px_rgba(0,0,0,0.1)]'>
+            <div key={index} className='h-[400px] bg-white dark:bg-darkBackground dark:border-[#2D2D2D] border-1 rounded-xl flex flex-col m-2 shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)]'>
               <div className='bg-[#DDECFF] rounded-t-xl h-[200px] flex justify-center items-center'> 
                 <img 
                   src={d.img} 
