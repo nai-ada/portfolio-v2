@@ -31,7 +31,8 @@ function GalaxyGridDetails() {
         
         <div className='flex justify-left gap-4 mt-4 ml-6'>
         <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 ">
-            <span className="text-[12px] md:text-[16px] font-medium whitespace-nowrap">Live Site</span>
+            <span className="text-[12px] md:text-[16px] font-medium whitespace-nowrap"><a href="https://nadiavespalec.com/galaxy-grid-2/"  target="_blank" 
+  rel="noopener noreferrer">Live Site</a></span>
         </Button> 
         <a href="https://github.com/nai-ada" className="hover:opacity-70 transition-opacity dark:invert">
             <img src={GitHub} alt="GitHub Logo" className='w-8'/>
@@ -41,7 +42,8 @@ function GalaxyGridDetails() {
         <FadeIn>
         <div className='m-8 text-left mt-28'>
             <h2 className="font-bold text-[24px] mb-8">Project Overview</h2>
-            <p className='mb-8'>This project is the second rendition of it's original version, Galaxy Grid. It is an In-Browser game created entirely using vanilla <span className='font-bold'>JavaScript</span>, <span className='font-bold'>HTML</span> <span className='font-bold'>CSS</span>. Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. If you are interested in viewing the first rendition of this project, you can <a href="#" className="text-primary underline font-semibold ">view it here</a>.</p>
+            <p className='mb-8'>This project is the second rendition of it's original version, Galaxy Grid. It is an In-Browser game created entirely using vanilla <span className='font-bold'>JavaScript</span>, <span className='font-bold'>HTML</span> <span className='font-bold'>CSS</span>. Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. If you are interested in viewing the first rendition of this project, you can <a href="https://nadiavespalec.com/galaxy-grid/" className="text-primary underline font-semibold" target="_blank" 
+  rel="noopener noreferrer">view it here</a>.</p>
             <div className="flex items-center justify-center ">
             <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-4"></div>
             <div className="w-[6px] h-[6px] bg-purple-400 rounded-full ml-2 mt-4"></div>
