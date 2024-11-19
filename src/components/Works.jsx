@@ -1,10 +1,20 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@nextui-org/react';
 import Slides from '../components/Slides';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import FadeIn from '../components/FadeIn';
+import activeWork from '/src/assets/active-arrow.svg';
+
+const blinkingArrowStyle = `
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+`;
 
 const projectsList = [
   {
@@ -20,13 +30,15 @@ const projectsList = [
   {
     title: 'Galaxy Grid 2.0',
     description: ['JavaScript', 'CSS', 'HTML'],
-    link: '#',
+    link: '/projects/galaxy-grid-2',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
+      <Link to="/projects/galaxy-grid-2">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
     ),
-  },
+},
   {
     title: 'Indigo',
     description: ['TypeScript', 'Tailwind', 'Solid.js'],
@@ -111,7 +123,6 @@ function Works() {
       }
     };
 
-    // Initial scroll to middle item
     const scrollToMiddle = () => {
       if (scrollRef.current && itemRefs.current[activeIndex]) {
         const container = scrollRef.current;
@@ -130,7 +141,6 @@ function Works() {
     const scrollContainer = scrollRef.current;
     if (scrollContainer) {
       scrollContainer.addEventListener('scroll', handleScroll);
-      // Scroll to middle after a brief delay to ensure refs are set
       setTimeout(scrollToMiddle, 0);
     }
 
@@ -143,10 +153,10 @@ function Works() {
   
   return (
     <div className="relative">
-      {/* Rotated heading for lg-plus screens */}
+      <style>{blinkingArrowStyle}</style>
+      
       <div className="hidden lg-plus:block absolute -left-12 top-[25%] -translate-y-1/2 mt-10">
         <FadeIn>
-          {/* Border and dot positioned above the rotated heading */}
           <div className="absolute left-1/2 bottom-[185%] -translate-x-1/2 flex flex-col items-center ">
             <div className="w-[6px] h-[6px] bg-purple-400 rounded-full mb-2 md:right-[-4px]"></div>
             <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
@@ -181,7 +191,19 @@ function Works() {
                 }}
               >
                 <div className="flex justify-between items-center mb-2">
-                  <h2 className="font-bold text-[24px] md:text-[42px]">{project.title}</h2>
+                  <div className="flex items-center gap-2">
+                    <h2 className="font-bold text-[24px] md:text-[42px]">{project.title}</h2>
+                    {index === activeIndex && (
+                      <img 
+                        src={activeWork} 
+                        alt="Active work indicator" 
+                        className="hidden xs:block w-3 h-3 md:w-5 md:h-5 dark:invert"
+                        style={{
+                          animation: 'blink 2s ease-in-out infinite'
+                        }}
+                      />
+                    )}
+                  </div>
                   {project.button}
                 </div>
                 <p className="text-[#888888] text-[12px] md:text-[18px]">

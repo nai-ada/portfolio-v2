@@ -61,9 +61,9 @@ const createLogoElements = (logoKeys) =>
       key={key}
       src={logos[key].src}
       alt={logos[key].alt}
-      className="inline p-1 md:w-12 md:mr-4" // Reduced padding
-      width="40" // Reduced size
-      height="40" // Reduced size
+      className="inline p-1 md:w-12 md:mr-4" 
+      width="40"
+      height="40" 
     />
   ));
 
@@ -118,7 +118,7 @@ function AboutTools() {
 
         <AccordionItem
           key="1"
-          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#546799] dark:to-darkBackground"
+          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#424f71] dark:to-darkBackground"
           aria-label="Accordion 1"
           title={
             <div className="flex items-center w-full">
@@ -140,7 +140,7 @@ function AboutTools() {
 
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#546799] dark:to-darkBackground"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#424f71] dark:to-darkBackground"
           aria-label="Accordion 2"
           title={
             <div className="flex items-center w-full">
@@ -162,7 +162,7 @@ function AboutTools() {
 
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#546799] dark:to-darkBackground"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#424f71] dark:to-darkBackground"
           aria-label="Accordion 3"
           title={
             <div className="flex items-center w-full">

@@ -20,7 +20,7 @@ function Connect() {
     <> 
     <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] mt-48 lg-plus:mt-72">
       {/* Rotated heading for lg-plus screens */}
-      <div className="hidden lg-plus:block absolute -right-20 top-[89%] -translate-y-1/2">
+      <div className="hidden lg-plus:block absolute -right-20 top-[90%] -translate-y-1/2">
         <FadeIn>
           <h1 className="font-bold uppercase text-[125px] origin-center rotate-90 text-[#2b2b2b] dark:text-white">
             <span className="text-primary">C</span>onnect.

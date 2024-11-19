@@ -38,7 +38,7 @@ function Menu() {
           <Link 
             color="foreground" 
             href="#" 
-            className='md:text-[22px] text-[#232323] dark:text-white font-[400] hover:opacity-80'
+            className='md:text-[20px] text-[#232323] dark:text-white font-[400] hover:opacity-80'
           >
             About
           </Link>
@@ -49,7 +49,7 @@ function Menu() {
           <Link 
             color="foreground" 
             href="#" 
-            className='md:text-[22px] text-[#232323] dark:text-white font-[400] hover:opacity-80'
+            className='md:text-[20px] text-[#232323] dark:text-white font-[400] hover:opacity-80'
           >
             Works
           </Link>
@@ -60,7 +60,7 @@ function Menu() {
           <Link 
             color="foreground" 
             href="#" 
-            className='md:text-[22px] text-[#232323] dark:text-white font-[400] hover:opacity-80'
+            className='md:text-[20px] text-[#232323] dark:text-white font-[400] hover:opacity-80'
           >
             Connect
           </Link>

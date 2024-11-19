@@ -6,8 +6,8 @@ import FadeIn from '../components/FadeIn';
 function About() {
   return (
     <>
-        <div className="about-section relative md:overflow-hidden mt-20 "> 
-  <div className="hidden lg-plus:block absolute right-0 top-[30%] -translate-y-1/2">
+        <div className="about-section relative md:overflow-hidden mt-48 lg-plus:pt-[100px]"> 
+  <div className="hidden lg-plus:block absolute right-0 top-[35%] -translate-y-1/2">
     {/* Rotated heading */}
     <FadeIn>
     <h1 className="font-bold uppercase text-[125px] origin-center rotate-90 text-[#2b2b2b] dark:text-white">
@@ -33,7 +33,7 @@ function About() {
           </FadeIn>
    
         <FadeIn>
-          <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] lg-x:pt-10 dark:text-white">
+          <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] dark:text-white">
             Hi, I'm Nadia!
           </h2>
           <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 pt-2 text-[#2b2b2b] lg-x:text-[20px] lg-plus:w-[85%] dark:text-white">

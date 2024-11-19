@@ -6,13 +6,14 @@ import Works from './components/Works';
 import Connect from './components/Connect';
 import About from './components/About';
 import CustomScrollBar from './components/CustomScrollBar'; 
+import GalaxyGridDetails from './pages/GalaxyGridDetails';
 
 function App() {
   return (
     <ThemeProvider>
       <NextUIProvider>
         <Router>
-          <div className="overflow-hidden">
+          <div className="relative overflow-hidden">
             <CustomScrollBar>
               <div className="min-h-screen flex flex-col bg-white dark:bg-darkBackground">
                 <main>
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/works" element={<Works />} />
                     <Route path="/connect" element={<Connect />} />
+                    <Route path="/projects/galaxy-grid-2" element={<GalaxyGridDetails />} />
                   </Routes>
                 </main>
               </div>

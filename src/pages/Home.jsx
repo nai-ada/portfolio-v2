@@ -13,7 +13,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 function Home() { 
   
   const [text] = useTypewriter({
-    words: ['Web Developer.', 'UX/UI Designer.', 'problem solver.', 'Software Engineer.', 'Front-end expert.', 'React Developer.', 'Web Designer.',  'Freelance Developer.',],
+    words: ['passionate web developer.', 'UX/UI designer.', 'problem solver.', 'software developer.', 'front-end expert.', 'React developer.', 'passionate web designer.',  'freelance developer.',],
     loop: true,
     delaySpeed: 1000,
     typeSpeed: 80,
@@ -48,7 +48,7 @@ function Home() {
       <div className="relative z-10">
         <Nav />
         <div className="flex items-center justify-center min-h-screen px-6 md:pr-0">
-        <div className="flex justify-center items-center min-h-screen w-full max-w-3xl md:-mt-20 ">
+        <div className="flex justify-center items-center min-h-screen w-full max-w-3xl md:mt-[1rem] ">
           
     <div className="flex flex-col md:items-start md:items-center md:items-start">
       <div className="md-2 md:mb-0 md:flex md:justify-between md:w-full md:w-[103%]">
@@ -84,7 +84,7 @@ function Home() {
       width={14}
       className="mr-2 dark:invert"
     />
-    <h2 className="text-[14px] font-medium md:text-[18px]">Vancouver, BC 🐳</h2>
+    <h2 className="text-[14px] font-medium md:text-[18px]">Vancouver, BC 🩵</h2>
   </div>
   <div className="flex space-x-4 md:justify-start lg:hidden">
     <a
