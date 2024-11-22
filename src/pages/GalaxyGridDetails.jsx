@@ -94,40 +94,65 @@ function GalaxyGridDetails() {
         </FadeIn>
 
         {/* Desktop Images - Absolute positioning */}
-        <div className="hidden xl:block xl:absolute xl:right-[6rem] lg-plus:right-[10rem] full:right-[14rem] xl:-top-[310px] xl:space-y-20 ">
-            <FadeIn>
-            <img 
-            src={galaxy} 
-            alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center "
-          />
-          </FadeIn>
+        <div className="hidden xl:block xl:absolute xl:right-[6rem] lg-plus:right-[10rem] full:right-[14rem] xl:-top-[310px] xl:space-y-20">
+              <FadeIn>
+                <div className="relative group overflow-hidden rounded-lg">
+                  <img 
+                    src={galaxy} 
+                    alt="Galaxy Grid Screenshot" 
+                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105 "
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <span className="text-white text-xl font-bold">Game Start</span>
+                  </div>
+                </div>
+              </FadeIn>
 
-          <FadeIn>
-          <img 
-            src={galaxy2} 
-            alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.4)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center "
-          />
-          </FadeIn>
+              <FadeIn>
+                <div className="relative group overflow-hidden rounded-lg">
+                  <img 
+                    src={galaxy2} 
+                    alt="Galaxy Grid Screenshot" 
+                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <span className="text-white text-xl font-bold">Level Select</span>
+                  </div>
+                </div>
+              </FadeIn>
 
-          <FadeIn>
-          <img 
-            src={galaxy3} 
-            alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center"
-          />
-          </FadeIn>
+              <FadeIn>
+                <div className="relative group overflow-hidden rounded-lg">
+                  <img 
+                    src={galaxy3} 
+                    alt="Galaxy Grid Screenshot" 
+                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <span className="text-white text-xl font-bold">Gameplay</span>
+                  </div>
+                </div>
+              </FadeIn>
 
-          <FadeIn>
-          <img 
-            src={galaxy4} 
-            alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center "
-          />
-          </FadeIn>
-        </div>
-      </div>
+              <FadeIn>
+                <div className="relative group overflow-hidden rounded-lg">
+                  <img 
+                    src={galaxy4} 
+                    alt="Galaxy Grid Screenshot" 
+                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <span className="text-white text-xl font-bold">High Scores</span>
+                  </div>
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+
 
         <FadeIn>
         <div className='m-8 text-left mt-20 xs:ml-12 xs:mr-12 sm-plus:ml-[3rem] sm-plus:mr-[3rem] md:ml-[6rem] md:mr-[6rem] md-x:ml-[8rem] md-x:mr-[8rem] xl:w-[700px] lg:w-[800px] xl-plus:w-[1000px] lg:ml-[9rem] full:ml-[13rem]'>
