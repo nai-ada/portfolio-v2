@@ -83,7 +83,7 @@ function AboutTools() {
 
         <AccordionItem
           key="1"
-          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#C0DEFF] to-[white] md:py-2 dark:from-[#424f71] dark:to-darkBackground"
+          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
           aria-label="Accordion 1"
           title={
             <div className="flex items-center w-full">

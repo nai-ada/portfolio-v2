@@ -6,7 +6,7 @@ import FadeIn from '../components/FadeIn';
 function About() {
   return (
     <>
-        <div className="about-section relative md:overflow-hidden mt-48 lg-plus:pt-[100px]"> 
+        <div className="about-section relative md:overflow-hidden mt-10 lg-plus:pt-[100px]"> 
   <div className="hidden lg-plus:block absolute right-0 top-[35%] -translate-y-1/2">
     {/* Rotated heading */}
     <FadeIn>
@@ -18,7 +18,7 @@ function About() {
     {/* Border and dot positioned below the rotated heading */}
     <div className="absolute left-1/2 top-[185%] -translate-x-1/2 flex flex-col items-center">
       <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
-      <div className="w-[6px] h-[6px] bg-purple-400 rounded-full mt-2 md:right-[-4px]"></div>
+      <div className="w-[6px] h-[6px] bg-primary rounded-full mt-2 md:right-[-4px]"></div>
     </div> 
    
   </div>

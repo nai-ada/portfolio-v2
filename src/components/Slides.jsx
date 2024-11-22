@@ -125,7 +125,7 @@ const Slides = () => {
         </button>
         <Slider ref={sliderRef} {...settings}>
           {projectData.map((d, index) => (
-            <div key={index} className='h-[400px] bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground dark:border-[#414141] border-1 rounded-xl flex flex-col m-2 shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)]'>
+            <div key={index} className='h-[400px] bg-white dark:bg-gradient-to-b dark:from-[#1d253a] dark:to-darkBackground dark:border-[#414141] border-1 rounded-xl flex flex-col m-2 shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)]'>
               <div className='bg-[#DDECFF] rounded-t-xl h-[200px] flex justify-center items-center'> 
                 <img 
                   src={d.img} 

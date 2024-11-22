@@ -158,7 +158,7 @@ function Works() {
       <div className="hidden lg-plus:block absolute -left-12 top-[25%] -translate-y-1/2 mt-10">
         <FadeIn>
           <div className="absolute left-1/2 bottom-[185%] -translate-x-1/2 flex flex-col items-center ">
-            <div className="w-[6px] h-[6px] bg-purple-400 rounded-full mb-2 md:right-[-4px]"></div>
+            <div className="w-[6px] h-[6px] bg-primary rounded-full mb-2 md:right-[-4px]"></div>
             <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
           </div>
           <h1 className="font-bold uppercase text-[125px] origin-center -rotate-90 text-[#2b2b2b] dark:text-white">

@@ -20,16 +20,16 @@ function GalaxyGridDetails() {
     className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]"
     style={{
       backgroundImage: `
-      linear-gradient(to right, rgba(229, 231, 235, 0.3) 1px, transparent 2px),
-      linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 1px, transparent 2px)
+      linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
       `,
       backgroundSize: '130px 130px',
     }}
   />
     <div className="relative z-10">
     <Nav />
-      <div className="pt-[100px]">
-        <Link to="" className="text-primary hover:opacity-80 pl-4 xs:ml-10 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
+      <div className="pt-[100px] md-plus:pt-[130px]">
+        <Link to="" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-10 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
           ← Back to Works
         </Link>
         
@@ -69,13 +69,13 @@ function GalaxyGridDetails() {
       </div>
 
         <FadeIn>
-        <div className='m-8 text-left mt-[12rem] md:mt-[15rem] xs:ml-12 xs:mr-12 sm-plus:ml-[3rem] sm-plus:mr-[3rem] md:ml-[6rem] md:mr-[6rem] md-x:ml-[8rem] md-x:mr-[8rem] xl:w-[700px] lg:w-[800px] xl-plus:w-[1000px] lg:ml-[9rem] full:ml-[13rem]'>
+        <div className='m-8 text-left mt-[12rem] md-plus:mt-[18rem] xs:ml-12 xs:mr-12 sm-plus:ml-[3rem] sm-plus:mr-[3rem] md:ml-[6rem] md:mr-[6rem] md-x:ml-[8rem] md-x:mr-[8rem] xl:w-[700px] lg:w-[800px] xl-plus:w-[1000px] lg:ml-[9rem] full:ml-[13rem]'>
             <h2 className="font-bold text-[24px] mb-8 xl:text-[30px]">Project Overview</h2>
-            <p className='mb-8 xl:text-[18px]'>This project is the second rendition of it's original version, Galaxy Grid. It is an In-Browser game created entirely using vanilla <span className='font-bold'>JavaScript</span>, <span className='font-bold'>HTML</span> <span className='font-bold'>CSS</span>. Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. If you are interested in viewing the first rendition of this project, you can <a href="https://nadiavespalec.com/galaxy-grid/" className="text-primary underline font-semibold" target="_blank" 
+            <p className='mb-8 xl:text-[18px]'>This project is the second rendition of it's original version, Galaxy Grid. It is an In-Browser game created entirely using vanilla <span className='font-bold'>JavaScript</span>, <span className='font-bold'>HTML</span> <span className='font-bold'>CSS</span>. Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. If you are interested in viewing the first rendition of this project, you can <a href="https://nadiavespalec.com/galaxy-grid/" className="text-primary underline font-semibold hover:opacity-70 transition-opacity" target="_blank" 
             rel="noopener noreferrer">view it here</a>.</p>
             <div className="flex items-center justify-center xl:justify-start">
             <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-4"></div>
-            <div className="w-[6px] h-[6px] bg-purple-400 rounded-full ml-2 mt-4"></div>
+            <div className="w-[6px] h-[6px] bg-primary rounded-full ml-2 mt-4"></div>
             </div>
         </div>
         </FadeIn>
@@ -99,7 +99,7 @@ function GalaxyGridDetails() {
             <img 
             src={galaxy} 
             alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center dark:border-[#414141] border-1"
+            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center "
           />
           </FadeIn>
 
@@ -107,7 +107,7 @@ function GalaxyGridDetails() {
           <img 
             src={galaxy2} 
             alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.4)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center dark:border-[#414141] border-1"
+            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.4)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center "
           />
           </FadeIn>
 
@@ -115,7 +115,7 @@ function GalaxyGridDetails() {
           <img 
             src={galaxy3} 
             alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center dark:border-[#414141] border-1"
+            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center"
           />
           </FadeIn>
 
@@ -123,7 +123,7 @@ function GalaxyGridDetails() {
           <img 
             src={galaxy4} 
             alt="Galaxy Grid Screenshot" 
-            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center dark:border-[#414141] border-1"
+            className="w-[280px] h-[280px] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)] object-cover object-center "
           />
           </FadeIn>
         </div>
@@ -135,7 +135,7 @@ function GalaxyGridDetails() {
             <p className='xl:text-[18px]'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
             <div className="flex items-center justify-center xl:justify-start">
             <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-10"></div>
-            <div className="w-[6px] h-[6px] bg-purple-400 rounded-full ml-2 mt-10"></div>
+            <div className="w-[6px] h-[6px] bg-primary rounded-full ml-2 mt-10"></div>
             </div>
         </div>
         </FadeIn>
