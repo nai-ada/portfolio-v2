@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
 
 
+
 function GalaxyGridDetails() {
   return (
     <div className="relative overflow-hidden">
@@ -95,68 +96,71 @@ function GalaxyGridDetails() {
 
         {/* Desktop Images - Absolute positioning */}
         <div className="hidden xl:block xl:absolute xl:right-[6rem] lg-plus:right-[10rem] full:right-[14rem] xl:-top-[310px] xl:space-y-20">
-              <FadeIn>
-                <div className="relative group overflow-hidden rounded-lg">
-                  <img 
-                    src={galaxy} 
-                    alt="Galaxy Grid Screenshot" 
-                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105 "
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                    <span className="text-white text-xl font-bold">Game Start</span>
-                  </div>
-                </div>
-              </FadeIn>
 
-              <FadeIn>
-                <div className="relative group overflow-hidden rounded-lg">
-                  <img 
-                    src={galaxy2} 
-                    alt="Galaxy Grid Screenshot" 
-                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                    <span className="text-white text-xl font-bold">Level Select</span>
-                  </div>
-                </div>
-              </FadeIn>
 
-              <FadeIn>
-                <div className="relative group overflow-hidden rounded-lg">
-                  <img 
-                    src={galaxy3} 
-                    alt="Galaxy Grid Screenshot" 
-                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                    <span className="text-white text-xl font-bold">Gameplay</span>
-                  </div>
-                </div>
-              </FadeIn>
+        <FadeIn>
+    <div className="relative group overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 dark:border-[#414141] border-1">
+      <img 
+        src={galaxy2} 
+        alt="Galaxy Grid Screenshot" 
+        className="w-[280px] h-[280px] object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+        <span className="text-white text-xl font-bold">Home</span>
+      </div>
+    </div>
+  </FadeIn>
 
-              <FadeIn>
-                <div className="relative group overflow-hidden rounded-lg">
-                  <img 
-                    src={galaxy4} 
-                    alt="Galaxy Grid Screenshot" 
-                    className="w-[280px] h-[280px] object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                    <span className="text-white text-xl font-bold">High Scores</span>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
+  <FadeIn>
+    <div className="relative group overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 dark:border-[#414141] border-1">
+      <img 
+        src={galaxy3} 
+        alt="Galaxy Grid Screenshot" 
+        className="w-[280px] h-[280px] object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+        <span className="text-white text-xl font-bold">Role Selector</span>
+      </div>
+    </div>
+  </FadeIn>
+
+  <FadeIn>
+    <div className="relative group overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 dark:border-[#414141] border-1">
+      <img 
+        src={galaxy} 
+        alt="Galaxy Grid Screenshot" 
+        className="w-[280px] h-[280px] object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+        <span className="text-white text-xl font-bold">Game Start</span>
+      </div>
+    </div>
+  </FadeIn>
+
+
+  <FadeIn>
+    <div className="relative group overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 dark:border-[#414141] border-1">
+      <img 
+        src={galaxy4} 
+        alt="Galaxy Grid Screenshot" 
+        className="w-[280px] h-[280px] object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+        <span className="text-white text-xl font-bold">Round Complete</span>
+      </div>
+    </div>
+  </FadeIn>
+</div>
           </div>
 
 
         <FadeIn>
         <div className='m-8 text-left mt-20 xs:ml-12 xs:mr-12 sm-plus:ml-[3rem] sm-plus:mr-[3rem] md:ml-[6rem] md:mr-[6rem] md-x:ml-[8rem] md-x:mr-[8rem] xl:w-[700px] lg:w-[800px] xl-plus:w-[1000px] lg:ml-[9rem] full:ml-[13rem]'>
-            <h2 className="font-bold text-[24px] mb-8 xl:text-[30px]">Project Takeaway</h2>
+            <h2 className="font-bold text-[24px] mb-8 xl:text-[30px]">Key Takeaways</h2>
             <p className='xl:text-[18px]'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
             <div className="flex items-center justify-center xl:justify-start">
             <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-10"></div>
@@ -175,7 +179,6 @@ function GalaxyGridDetails() {
           </div>
         </FadeIn>
 
-
         <FadeIn>
         <div className='sm-plus:ml-[3rem] sm-plus:mr-[3rem] ml-8 mr-8 xs:ml-10 xs:mr-10 md:ml-[6rem] md:mr-[6rem] md-x:ml-[8rem] md-x:mr-[8rem] xl:w-[700px] lg:w-[800px] xl-plus:w-[1000px] lg:ml-[9rem] full:ml-[13rem]'>
           <h2 className="font-bold text-[24px] xl:text-[30px]">Notes</h2>
@@ -186,9 +189,12 @@ function GalaxyGridDetails() {
           </ul>
         </div>
       </FadeIn>
+        <div className='p-10'>
+
+        </div>
+  
         
         <Footer />
-
       </div>
     </div>
     </div>
