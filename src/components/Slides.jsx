@@ -31,7 +31,7 @@ const Slides = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,      
-    autoplaySpeed: 2500,   
+    autoplaySpeed: 4000,   
     pauseOnHover: true,
     arrows: false, 
     responsive: [

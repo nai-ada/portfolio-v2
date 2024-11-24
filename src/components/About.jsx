@@ -34,7 +34,7 @@ function About() {
    
         <FadeIn>
           <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] dark:text-white">
-            Hi, I'm Nadia!
+            Hey, I'm Nadia!
           </h2>
           <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 pt-2 text-[#2b2b2b] lg-x:text-[20px] lg-plus:w-[85%] dark:text-white">
             As a recent graduate from BCIT and a qualified Front-End Web Developer,
