@@ -74,7 +74,7 @@ const devContent = createLogoElements([
 ]);
 
 
-function AboutTools() {
+function GalaxyGridTools() {
   return (
     <>
     <div className="mb-16 md:ml-6 md:mt-10">
@@ -108,4 +108,4 @@ function AboutTools() {
   );
 }
 
-export default AboutTools;
+export default GalaxyGridTools;

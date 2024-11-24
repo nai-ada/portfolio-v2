@@ -20,11 +20,13 @@ const projectsList = [
   {
     title: 'Froth Matcha',
     description: ['WordPress', 'PHP', 'SASS'],
-    link: '#',
+    link: '/projects/froth-matcha',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
+      <Link to="/projects/froth-matcha">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
     ),
   },
   {
