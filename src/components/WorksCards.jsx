@@ -73,7 +73,7 @@ const WorksCards = ({ currentProject = 'froth' }) => {
                 {project.title}
               </h2>
               <Button 
-                className="bg-[#7289DA] text-white px-6 py-2 mb-2 rounded-full font-[500] hover:opacity-70 transition-opacity"
+                className="bg-primary text-white px-6 py-2 mb-2 rounded-full font-[500] hover:opacity-70 transition-opacity"
               >
                 View Project
               </Button>
