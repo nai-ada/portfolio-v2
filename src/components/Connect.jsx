@@ -61,7 +61,7 @@ function Connect() {
 
         {/* Social Links */}
         <FadeIn>
-          <div className="grid grid-cols-3 border border-black mt-12 md:mt-20 mb-20 md:mb-53 mx-1 xs:mx-4 sm-plus:mx-16 md-x:mx-auto md-x:max-w-[800px] rounded-full overflow-hidden md:ml-32 md:mr-32 dark:border-white">
+          <div className="grid grid-cols-3 border border-black mt-12 md:mt-20 mb-20 md:mb-53 mx-1 xs:mx-4 sm-plus:mx-16 md-x:mx-auto md-x:max-w-[800px] rounded-full overflow-hidden md:ml-30 md:mr-30 dark:border-white">
             <a href="https://linkedin.com/in/nadiavespalec" className="flex items-center justify-center p-10 md:p-14 hover:bg-gray-100 dark:hover:bg-[#0000002f] transition duration-300 border-r border-black -my-4 dark:border-white">
               <img src={LinkedIn} alt="LinkedIn Logo" className="w-5 h-5 mr-1 dark:invert" />
               <span className="text-[12px] font-medium md:text-[16px]">LinkedIn</span>

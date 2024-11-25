@@ -51,7 +51,7 @@ function FrothDetails() {
                   </a>
                 </div>
               </div>
-              <h2 className='xl:text-[20px]'>// Project <span className="font-bold">02</span> | Wordpress Website</h2>
+              <h2 className='xl:text-[20px]'>// Project <span className="font-bold">01</span> | Wordpress Capstone</h2>
               <div className='flex xl:hidden justify-left gap-4 mt-4'>
                 <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                   <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
@@ -66,7 +66,6 @@ function FrothDetails() {
           </div>
 
           <div className="hidden lg-plus:block absolute lg-plus:-left-56 xl-plus:-left-32" style={{ top: '1000px' }}>
-        <FadeIn>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
             <div className="w-[6px] h-[6px] bg-primary rounded-full mb-2"></div>
             <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
@@ -74,7 +73,6 @@ function FrothDetails() {
           <h1 className="font-bold uppercase text-[125px] origin-center -rotate-90 text-[#2b2b2b] dark:text-white whitespace-nowrap">
             <span className="text-primary">P</span>roject 01.
           </h1>
-        </FadeIn>
       </div>
 
           <FadeIn>
