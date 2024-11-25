@@ -14,8 +14,8 @@ const CustomScrollBar = ({ children, maxHeight = "100vh", className = "" }) => {
           [&::-webkit-scrollbar-track]:bg-transparent
           dark:[&::-webkit-scrollbar-track]:bg-[#161616]
           [&::-webkit-scrollbar-thumb]:rounded-full
-          [&::-webkit-scrollbar-thumb]:bg-primary
-          [&::-webkit-scrollbar-thumb]:hover:bg-primary
+          [&::-webkit-scrollbar-thumb]:bg-gray-400
+          [&::-webkit-scrollbar-thumb]:hover:bg-gray-400
           
           /* Firefox */
           scrollbar-width: thin

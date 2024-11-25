@@ -1,75 +1,111 @@
-import React from 'react';
+import { useState } from 'react';
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
 
+import mySqlLogo from '/src/assets/mysql.png';
+import npmLogo from '/src/assets/npm.png';
 import wordpressLogo from '/src/assets/wordpress.png';
+import shopifyLogo from '/src/assets/shopify.png';
+import woocommerceLogo from '/src/assets/woocommerce.png';
 import figmaLogo from '/src/assets/figma.png';
+import xdLogo from '/src/assets/xd.png';
+import photoshopLogo from '/src/assets/photoshop.png';
+import illustratorLogo from '/src/assets/illustrator.png';
 import gitLogo from '/src/assets/git.png';
+import javascriptLogo from '/src/assets/js.png';
 import sassLogo from '/src/assets/sass.png';
+import typescriptLogo from '/src/assets/typescript.png';
 import phpLogo from '/src/assets/php.png';
+import htmlLogo from '/src/assets/html.png';
+import cssLogo from '/src/assets/css.png';
+import tailwindLogo from '/src/assets/tailwind.png';
+import solidLogo from '/src/assets/solid.png';
+import framermotionLogo from '/src/assets/framermotion.png';
+import nextuiLogo from '/src/assets/nextui.png';
+import threejsLogo from '/src/assets/threejs.png';
+import reactLogo from '/src/assets/react.png';
 import designIcon from '/src/assets/design.svg';
 import devIcon from '/src/assets/dev.svg';
+import skillsIcon from '/src/assets/skills.svg';
 
 const logos = {
-  figma: { src: figmaLogo, alt: 'Figma Icon' },
-  git: { src: gitLogo, alt: 'Git Icon' },
-  sass: { src: sassLogo, alt: 'SASS Icon' },
-  php: { src: phpLogo, alt: 'PHP Icon' },
-  wordpress: { src: wordpressLogo, alt: 'Wordpress Icon' },
-
+  npm: { src: npmLogo, alt: 'NPM', title: 'NPM' },
+  shopify: { src: shopifyLogo, alt: 'Shopify', title: 'Shopify' },
+  woocommerce: { src: woocommerceLogo, alt: 'Woocommerce', title: 'WooCommerce' },
+  figma: { src: figmaLogo, alt: 'Figma', title: 'Figma' },
+  xd: { src: xdLogo, alt: 'Adobe XD', title: 'Adobe XD' },
+  photoshop: { src: photoshopLogo, alt: 'Photoshop', title: 'Photoshop' },
+  illustrator: { src: illustratorLogo, alt: 'Adobe Illustrator', title: 'Illustrator' },
+  git: { src: gitLogo, alt: 'Git', title: 'Git' },
+  javascript: { src: javascriptLogo, alt: 'JavaScript', title: 'JavaScript' },
+  react: { src: reactLogo, alt: 'React', title: 'React' },
+  sass: { src: sassLogo, alt: 'SASS', title: 'SASS' },
+  typescript: { src: typescriptLogo, alt: 'TypeScript', title: 'TypeScript' },
+  php: { src: phpLogo, alt: 'PHP', title: 'PHP' },
+  html: { src: htmlLogo, alt: 'HTML', title: 'HTML' },
+  css: { src: cssLogo, alt: 'CSS', title: 'CSS' },
+  tailwind: { src: tailwindLogo, alt: 'Tailwind', title: 'Tailwind' },
+  solidjs: { src: solidLogo, alt: 'SolidJs', title: 'SolidJS' },
+  framermotion: { src: framermotionLogo, alt: 'Framer Motion', title: 'Framer Motion' },
+  nextuilogo: { src: nextuiLogo, alt: 'NextUI', title: 'NextUI' },
+  threejs: { src: threejsLogo, alt: 'ThreeJs', title: 'ThreeJS' },
+  mysql: { src: mySqlLogo, alt: 'MySQL', title: 'MySQL' },
+  wordpress: { src: wordpressLogo, alt: 'Wordpress', title: 'WordPress' },
 };
 
 const createLogoElements = (logoKeys) =>
   logoKeys.map((key) => (
-    <img
-      key={key}
-      src={logos[key].src}
-      alt={logos[key].alt}
-      className="inline p-1 md:w-12 md:mr-4" 
-      width="40"
-      height="40" 
-    />
+    <div key={key} className="inline-flex items-center p-2 m-2 rounded-lg">
+      <img
+        src={logos[key].src}
+        alt={logos[key].alt}
+        className="md:w-12" 
+        width="40"
+        height="40" 
+      />
+      <span className="text-sm text-[#222222] dark:text-white ml-3 mr-3 font-[500]">{logos[key].title}</span>
+    </div>
   ));
 
 const devContent = createLogoElements([
-  'wordpress',
-  'php',
-  'sass',
   'git',
+  'sass',
+  'php',
+  'wordpress',
 ]);
 
 const designContent = createLogoElements([
-    'figma'
-  ]);
+  'figma',
+]);
 
 
 function FrothTools() {
   return (
     <>
-    <div className="mb-16 md:ml-6 md:mt-10">
-      <Accordion variant="splitted" className="max-w-[800px] px-6">
-        {' '}
-
-        <AccordionItem
-          key="1"
-          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
-          aria-label="Accordion 1"
-          title={
-            <div className="flex items-center w-full">
-              <img 
-                src={devIcon} 
-                alt="Development Icon" 
-                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
-              />
-              <span className="text-[#2b2b2b] dark:text-white">Development</span>
+      <div className="mb-16 md:ml-6 md:mt-10">
+        <Accordion variant="splitted" className="max-w-[1000px]">
+          <AccordionItem
+            key="1"
+            className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
+            aria-label="Accordion 1"
+            title={
+              <div className="flex items-center w-full">
+                <img 
+                  src={devIcon} 
+                  alt="Development Icon" 
+                  className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
+                />
+                <span className="text-[#2b2b2b] dark:text-white">Development Tools</span>
+              </div>
+            }
+            classNames={{
+              title: 'text-md font-medium md:text-[20px] group',
+              content: 'text-sm py-4',
+            }}
+          >
+            <div className="flex flex-wrap justify-start gap-2">
+              {devContent}
             </div>
-          }
-          classNames={{
-            title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-3',
-          }}
-        >
-          {devContent}
-        </AccordionItem>
+          </AccordionItem>
 
         <AccordionItem
           key="2"
@@ -82,16 +118,19 @@ function FrothTools() {
                 alt="Design Icon" 
                 className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
               />
-              <span className="text-[#2b2b2b] dark:text-white">Design</span>
+              <span className="text-[#2b2b2b] dark:text-white">Design Tools</span>
             </div>
           }
           classNames={{
             title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-3',
+            content: 'text-sm py-4',
           }}
         >
-          {designContent}
+            <div className="flex flex-wrap justify-start gap-2">
+              {designContent}
+            </div>
         </AccordionItem>
+
       </Accordion>
       </div>
     </>

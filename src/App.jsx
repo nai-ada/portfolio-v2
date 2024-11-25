@@ -8,6 +8,8 @@ import About from './components/About';
 import CustomScrollBar from './components/CustomScrollBar'; 
 import GalaxyGridDetails from './pages/GalaxyGridDetails';
 import FrothDetails from './pages/FrothDetails';
+import Favicon from 'react-favicon';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <NextUIProvider>
         <Router>
           <div className="relative overflow-hidden">
+          <Favicon url="/src/assets/favicon.ico" />
             <CustomScrollBar>
               <div className="min-h-screen flex flex-col bg-white dark:bg-darkBackground">
                 <main>
