@@ -67,31 +67,27 @@ const createLogoElements = (logoKeys) =>
   ));
 
 const devContent = createLogoElements([
-  'git',
+  'react',
   'sass',
-  'php',
-  'wordpress',
+  'git',
 ]);
 
 const designContent = createLogoElements([
-  'figma',
+  'xd',
 ]);
 
 const skillsContent = [
-  'Agile',
-  'UX/UI',
-  'Usability Testing',
+  'Prototyping',
   'Wireframing',
   'Problem Solving',
+  'Mockups',
   'Team Collaboration',
-  'User Flow',
-  'Information Architecture',
-  'SEO',
-  'WordPress Plugins',
+  'Rest API',
 ];
 
 
-function FrothTools() {
+
+function ClipprTools() {
   return (
     <>
       <div className="mb-16 md:ml-6 md:mt-10">
@@ -144,6 +140,7 @@ function FrothTools() {
             </div>
         </AccordionItem>
 
+
         <AccordionItem
           key="3"
           className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
@@ -178,4 +175,4 @@ function FrothTools() {
   );
 }
 
-export default FrothTools;
+export default ClipprTools;

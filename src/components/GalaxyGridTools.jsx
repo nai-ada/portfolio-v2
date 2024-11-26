@@ -28,43 +28,42 @@ import devIcon from '/src/assets/dev.svg';
 import skillsIcon from '/src/assets/skills.svg';
 
 const logos = {
-  npm: { src: npmLogo, alt: 'NPM Icon' },
-  shopify: { src: shopifyLogo, alt: 'Shopify Icon' },
-  woocommerce: { src: woocommerceLogo, alt: 'Woocommerce Icon' },
-  figma: { src: figmaLogo, alt: 'Figma Icon' },
-  xd: { src: xdLogo, alt: 'Adobe XD Icon' },
-  photoshop: { src: photoshopLogo, alt: 'Photoshop Icon' },
-  illustrator: { src: illustratorLogo, alt: 'Adobe Illustrator Icon' },
-  git: { src: gitLogo, alt: 'Git Icon' },
-  javascript: { src: javascriptLogo, alt: 'JavaScript Icon' },
-  react: { src: reactLogo, alt: 'React Icon' },
-  sass: { src: sassLogo, alt: 'SASS Icon' },
-  typescript: { src: typescriptLogo, alt: 'TypeScript Icon' },
-  php: { src: phpLogo, alt: 'PHP Icon' },
-  html: { src: htmlLogo, alt: 'HTML Icon' },
-  css: { src: cssLogo, alt: 'CSS Icon' },
-  tailwind: { src: tailwindLogo, alt: 'Tailwind Icon' },
-  solidjs: { src: solidLogo, alt: 'SolidJs Icon' },
-  framermotion: { src: framermotionLogo, alt: 'Framer Motion Icon' },
-  nextuilogo: { src: nextuiLogo, alt: 'NextUI Icon' },
-  agile: 'Agile',
-  ux: 'UX/UI',
-  threejs: { src: threejsLogo, alt: 'ThreeJs Icon' },
-  mysql: { src: mySqlLogo, alt: 'MySQL Icon' },
-  wordpress: { src: wordpressLogo, alt: 'Wordpress Icon' },
-
+  npm: { src: npmLogo, alt: 'NPM', title: 'NPM' },
+  shopify: { src: shopifyLogo, alt: 'Shopify', title: 'Shopify' },
+  woocommerce: { src: woocommerceLogo, alt: 'Woocommerce', title: 'WooCommerce' },
+  figma: { src: figmaLogo, alt: 'Figma', title: 'Figma' },
+  xd: { src: xdLogo, alt: 'Adobe XD', title: 'Adobe XD' },
+  photoshop: { src: photoshopLogo, alt: 'Photoshop', title: 'Photoshop' },
+  illustrator: { src: illustratorLogo, alt: 'Adobe Illustrator', title: 'Illustrator' },
+  git: { src: gitLogo, alt: 'Git', title: 'Git' },
+  javascript: { src: javascriptLogo, alt: 'JavaScript', title: 'JavaScript' },
+  react: { src: reactLogo, alt: 'React', title: 'React' },
+  sass: { src: sassLogo, alt: 'SASS', title: 'SASS' },
+  typescript: { src: typescriptLogo, alt: 'TypeScript', title: 'TypeScript' },
+  php: { src: phpLogo, alt: 'PHP', title: 'PHP' },
+  html: { src: htmlLogo, alt: 'HTML', title: 'HTML' },
+  css: { src: cssLogo, alt: 'CSS', title: 'CSS' },
+  tailwind: { src: tailwindLogo, alt: 'Tailwind', title: 'Tailwind' },
+  solidjs: { src: solidLogo, alt: 'SolidJs', title: 'SolidJS' },
+  framermotion: { src: framermotionLogo, alt: 'Framer Motion', title: 'Framer Motion' },
+  nextui: { src: nextuiLogo, alt: 'NextUI', title: 'NextUI' },
+  threejs: { src: threejsLogo, alt: 'ThreeJs', title: 'ThreeJS' },
+  mysql: { src: mySqlLogo, alt: 'MySQL', title: 'MySQL' },
+  wordpress: { src: wordpressLogo, alt: 'Wordpress', title: 'WordPress' },
 };
 
 const createLogoElements = (logoKeys) =>
   logoKeys.map((key) => (
-    <img
-      key={key}
-      src={logos[key].src}
-      alt={logos[key].alt}
-      className="inline p-1 md:w-12 md:mr-4" 
-      width="40"
-      height="40" 
-    />
+    <div key={key} className="inline-flex items-center p-2 m-2 rounded-lg">
+      <img
+        src={logos[key].src}
+        alt={logos[key].alt}
+        className="md:w-12" 
+        width="40"
+        height="40" 
+      />
+      <span className="text-sm text-[#222222] dark:text-white ml-3 mr-3 font-[500]">{logos[key].title}</span>
+    </div>
   ));
 
 const devContent = createLogoElements([
@@ -74,34 +73,36 @@ const devContent = createLogoElements([
 ]);
 
 
+
 function GalaxyGridTools() {
   return (
     <>
-    <div className="mb-16 md:ml-6 md:mt-10">
-      <Accordion variant="splitted" className="max-w-[800px] px-6">
-        {' '}
-
-        <AccordionItem
-          key="1"
-          className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
-          aria-label="Accordion 1"
-          title={
-            <div className="flex items-center w-full">
-              <img 
-                src={devIcon} 
-                alt="Development Icon" 
-                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
-              />
-              <span className="text-[#2b2b2b] dark:text-white">Development</span>
+      <div className="mb-16 md:ml-6 md:mt-10">
+        <Accordion variant="splitted" className="max-w-[1000px]">
+          <AccordionItem
+            key="1"
+            className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
+            aria-label="Accordion 1"
+            title={
+              <div className="flex items-center w-full">
+                <img 
+                  src={devIcon} 
+                  alt="Development Icon" 
+                  className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
+                />
+                <span className="text-[#2b2b2b] dark:text-white">Development Tools</span>
+              </div>
+            }
+            classNames={{
+              title: 'text-md font-medium md:text-[20px] group',
+              content: 'text-sm py-4',
+            }}
+          >
+            <div className="flex flex-wrap justify-start gap-2">
+              {devContent}
             </div>
-          }
-          classNames={{
-            title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-3',
-          }}
-        >
-          {devContent}
-        </AccordionItem>
+          </AccordionItem>
+
       </Accordion>
       </div>
     </>

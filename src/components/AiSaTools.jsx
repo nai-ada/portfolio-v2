@@ -67,10 +67,9 @@ const createLogoElements = (logoKeys) =>
   ));
 
 const devContent = createLogoElements([
-  'git',
-  'sass',
-  'php',
-  'wordpress',
+  'javascript',
+  'html',
+  'css',
 ]);
 
 const designContent = createLogoElements([
@@ -78,20 +77,16 @@ const designContent = createLogoElements([
 ]);
 
 const skillsContent = [
-  'Agile',
-  'UX/UI',
-  'Usability Testing',
-  'Wireframing',
   'Problem Solving',
+  'Mockups',
   'Team Collaboration',
-  'User Flow',
-  'Information Architecture',
-  'SEO',
-  'WordPress Plugins',
+  'Agile',
+  'Stripe Setup',
 ];
 
 
-function FrothTools() {
+
+function AiSaTools() {
   return (
     <>
       <div className="mb-16 md:ml-6 md:mt-10">
@@ -178,4 +173,4 @@ function FrothTools() {
   );
 }
 
-export default FrothTools;
+export default AiSaTools;

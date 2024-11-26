@@ -46,7 +46,7 @@ const logos = {
   tailwind: { src: tailwindLogo, alt: 'Tailwind', title: 'Tailwind' },
   solidjs: { src: solidLogo, alt: 'SolidJs', title: 'SolidJS' },
   framermotion: { src: framermotionLogo, alt: 'Framer Motion', title: 'Framer Motion' },
-  nextuilogo: { src: nextuiLogo, alt: 'NextUI', title: 'NextUI' },
+  nextui: { src: nextuiLogo, alt: 'NextUI', title: 'NextUI' },
   threejs: { src: threejsLogo, alt: 'ThreeJs', title: 'ThreeJS' },
   mysql: { src: mySqlLogo, alt: 'MySQL', title: 'MySQL' },
   wordpress: { src: wordpressLogo, alt: 'Wordpress', title: 'WordPress' },
@@ -80,7 +80,7 @@ const devContent = createLogoElements([
   'tailwind',
   'solidjs',
   'framermotion',
-  'nextuilogo',
+  'nextui',
   'threejs',
   'mysql',
   'wordpress',
@@ -106,6 +106,9 @@ const skillsContent = [
   'Information Architecture',
   'Style Guides',
   'SEO',
+  'Rest API',
+  'WordPress Plugins',
+  'Stripe Setup',
 ];
 
 function AboutTools() {

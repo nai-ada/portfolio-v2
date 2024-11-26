@@ -46,9 +46,11 @@ const projectsList = [
     description: ['React', 'Tailwind', 'NextUI'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
+      <Link to="/projects/portfolio">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
     ),
   },
   {
@@ -68,9 +70,11 @@ const projectsList = [
     description: ['JavaScript', 'MongoDB', 'CSS'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
+      <Link to="/projects/aisafeguard">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
     ),
   },
   {
@@ -78,9 +82,11 @@ const projectsList = [
     description: ['React', 'CSS', 'Rest API'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
+      <Link to="/projects/clippr">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
     ),
   },
  
@@ -89,9 +95,11 @@ const projectsList = [
     description: ['JavaScript', 'CSS', 'HTML'],
     link: '#',
     button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
+      <Link to="/projects/titan">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
     ),
   },
 ];

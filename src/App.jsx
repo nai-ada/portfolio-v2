@@ -11,7 +11,12 @@ import CustomLoader from './components/CustomLoader';
 import GalaxyGridDetails from './pages/GalaxyGridDetails';
 import FrothDetails from './pages/FrothDetails';
 import IndigoDetails from './pages/IndigoDetails';
+import PortfolioDetails from './pages/PortfolioDetails';
+import AiSaDetails from './pages/AiSaDetails';
 import Favicon from 'react-favicon';
+import ClipprDetails from "./pages/ClipprDetails";
+import TitanDetails from "./pages/TitanDetails";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,9 +46,13 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/works" element={<Works />} />
                     <Route path="/connect" element={<Connect />} />
-                    <Route path="/projects/galaxy-grid-2" element={<GalaxyGridDetails />} />
                     <Route path="/projects/froth-matcha" element={<FrothDetails />} />
                     <Route path="/projects/indigo" element={<IndigoDetails />} />
+                    <Route path="/projects/portfolio" element={<PortfolioDetails />} />
+                    <Route path="/projects/galaxy-grid-2" element={<GalaxyGridDetails />} />
+                    <Route path="/projects/aisafeguard" element={<AiSaDetails />} />
+                    <Route path="/projects/clippr" element={<ClipprDetails />} />
+                    <Route path="/projects/titan" element={<TitanDetails />} />
                   </Routes>
                 </main>
               </div>

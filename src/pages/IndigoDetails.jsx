@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
-import FrothTools from '../components/FrothTools';
+import IndigoTools from '../components/IndigoTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
-import froth1 from '/src/assets/froth1.png';
-import froth2 from '/src/assets/froth2.png';
-import froth3 from '/src/assets/froth3.png';
+import indigo1 from '/src/assets/indigohome.png';
+import indigo2 from '/src/assets/indigosignup.png';
+import indigo3 from '/src/assets/indigomobile.png';
 import WorksCards from '../components/WorksCards';
 
 
 
-function FrothDetails() {
+function IndigoDetails() {
   const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
@@ -30,7 +30,7 @@ function FrothDetails() {
         <NavWorks />
         <div className="pt-[100px] md-plus:pt-[150px]">
           <Link to="" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
-            ← Back to Works
+            ← Back to All Works
           </Link>
 
           <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
@@ -42,7 +42,7 @@ function FrothDetails() {
                 <div className="hidden xl:flex gap-4 mt-12">
                   <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                     <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                      <a href="" target="_blank" rel="noopener noreferrer">Coming Soon</a>
+                      <a>Coming Soon</a>
                     </span>
                   </Button>
                   <a href="https://github.com/nai-ada" className="hover:opacity-70 transition-opacity dark:invert">
@@ -54,7 +54,7 @@ function FrothDetails() {
               <div className='flex xl:hidden justify-left gap-4 mt-4'>
                 <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                   <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                    <a href="" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    <a>Coming Soon</a>
                   </span>
                 </Button>
                 <a href="https://github.com/nai-ada" className="hover:opacity-70 transition-opacity dark:invert">
@@ -74,7 +74,7 @@ function FrothDetails() {
           </h1>
       </div>
 
-          <FadeIn>
+        
             <div className='x-sm-plus:flex justify-center text-center'>
               <Button 
                 radius="full" 
@@ -83,6 +83,15 @@ function FrothDetails() {
               >
                 <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                   Project Overview
+                </span>
+              </Button> 
+              <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('highlights')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Highlights
                 </span>
               </Button>
               <Button 
@@ -103,15 +112,7 @@ function FrothDetails() {
                   My Roles
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('highlights')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Highlights
-                </span>
-              </Button>
+             
             </div>
 
             {/* Overview Section */}
@@ -144,20 +145,20 @@ function FrothDetails() {
               </p>
               
             </div>
-            </FadeIn>
+       
             </div>
 
     {/* Highlights Section */}
-    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8 md:mx-auto  sm-plus:mx-16 md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
     <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
     <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
               </p>
-  <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[800px] mx-auto px-4'>
+  <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
     <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[220px]'>
+      <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
-          src={froth1} 
+          src={indigo1} 
           alt="Homepage Preview" 
           className='w-full h-full object-cover'
         />
@@ -167,50 +168,51 @@ function FrothDetails() {
       </div>
     </div>
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[220px]'>
+    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
+      <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
-          src={froth2} 
-          alt="Menu Items Preview" 
+          src={indigo2} 
+          alt="Homepage Preview" 
           className='w-full h-full object-cover'
         />
         <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Menu Items</h3>
+          <h3 className='text-white text-xl font-bold'>Signup</h3>
         </div>
       </div>
     </div>
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[220px]'>
+
+    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
+      <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
-          src={froth3} 
-          alt="Project Preview 3" 
+          src={indigo3} 
+          alt="Menu Items Preview" 
           className='w-full h-full object-cover'
         />
         <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Single Item</h3>
+          <h3 className='text-white text-xl font-bold'>Mobile</h3>
         </div>
       </div>
     </div>
-  </div> 
+    </div>
         
 </div>
 </div>
 
   
-        <FadeIn>
-        <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28'>
+       
+        <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16'>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
-            <FrothTools />
+            <IndigoTools />
           </div>
         </div>
-      </FadeIn>
+  
 
 
       <FadeIn>
-      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-            <h2 className="font-bold text-[24px] mb-10  md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">View Other Works</h2>
+      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16  sm-plus:mx-16'>
+            <h2 className="font-bold text-[24px] mb-10  md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Other Works</h2>
           </div>
           <div className='mt-16'>
           <WorksCards currentProject="indigo" />
@@ -223,4 +225,4 @@ function FrothDetails() {
   );
 }
 
-export default FrothDetails;
+export default IndigoDetails;

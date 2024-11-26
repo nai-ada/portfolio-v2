@@ -66,32 +66,24 @@ const createLogoElements = (logoKeys) =>
     </div>
   ));
 
-const devContent = createLogoElements([
-  'git',
-  'sass',
-  'php',
-  'wordpress',
-]);
-
-const designContent = createLogoElements([
-  'figma',
-]);
-
-const skillsContent = [
-  'Agile',
-  'UX/UI',
-  'Usability Testing',
-  'Wireframing',
-  'Problem Solving',
-  'Team Collaboration',
-  'User Flow',
-  'Information Architecture',
-  'SEO',
-  'WordPress Plugins',
-];
+  const devContent = createLogoElements([
+    'javascript',
+    'html',
+    'css',
+  ]);
+  
+  const designContent = createLogoElements([
+    'figma',
+  ]);
+  
+  const skillsContent = [
+    'Mockups',
+    'Team Collaboration',
+  ];
 
 
-function FrothTools() {
+
+function TitanTools() {
   return (
     <>
       <div className="mb-16 md:ml-6 md:mt-10">
@@ -144,6 +136,7 @@ function FrothTools() {
             </div>
         </AccordionItem>
 
+
         <AccordionItem
           key="3"
           className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
@@ -178,4 +171,4 @@ function FrothTools() {
   );
 }
 
-export default FrothTools;
+export default TitanTools;

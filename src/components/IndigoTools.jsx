@@ -28,28 +28,13 @@ import devIcon from '/src/assets/dev.svg';
 import skillsIcon from '/src/assets/skills.svg';
 
 const logos = {
-  npm: { src: npmLogo, alt: 'NPM', title: 'NPM' },
-  shopify: { src: shopifyLogo, alt: 'Shopify', title: 'Shopify' },
-  woocommerce: { src: woocommerceLogo, alt: 'Woocommerce', title: 'WooCommerce' },
   figma: { src: figmaLogo, alt: 'Figma', title: 'Figma' },
-  xd: { src: xdLogo, alt: 'Adobe XD', title: 'Adobe XD' },
-  photoshop: { src: photoshopLogo, alt: 'Photoshop', title: 'Photoshop' },
-  illustrator: { src: illustratorLogo, alt: 'Adobe Illustrator', title: 'Illustrator' },
-  git: { src: gitLogo, alt: 'Git', title: 'Git' },
-  javascript: { src: javascriptLogo, alt: 'JavaScript', title: 'JavaScript' },
-  react: { src: reactLogo, alt: 'React', title: 'React' },
-  sass: { src: sassLogo, alt: 'SASS', title: 'SASS' },
   typescript: { src: typescriptLogo, alt: 'TypeScript', title: 'TypeScript' },
-  php: { src: phpLogo, alt: 'PHP', title: 'PHP' },
   html: { src: htmlLogo, alt: 'HTML', title: 'HTML' },
-  css: { src: cssLogo, alt: 'CSS', title: 'CSS' },
   tailwind: { src: tailwindLogo, alt: 'Tailwind', title: 'Tailwind' },
   solidjs: { src: solidLogo, alt: 'SolidJs', title: 'SolidJS' },
   framermotion: { src: framermotionLogo, alt: 'Framer Motion', title: 'Framer Motion' },
   nextui: { src: nextuiLogo, alt: 'NextUI', title: 'NextUI' },
-  threejs: { src: threejsLogo, alt: 'ThreeJs', title: 'ThreeJS' },
-  mysql: { src: mySqlLogo, alt: 'MySQL', title: 'MySQL' },
-  wordpress: { src: wordpressLogo, alt: 'Wordpress', title: 'WordPress' },
 };
 
 const createLogoElements = (logoKeys) =>
@@ -67,31 +52,32 @@ const createLogoElements = (logoKeys) =>
   ));
 
 const devContent = createLogoElements([
-  'git',
-  'sass',
-  'php',
-  'wordpress',
+  'solidjs',
+  'tailwind',
+  'typescript',
+  'framermotion',
+  'nextui',
+  'html',
 ]);
 
 const designContent = createLogoElements([
   'figma',
 ]);
 
+
 const skillsContent = [
   'Agile',
   'UX/UI',
-  'Usability Testing',
   'Wireframing',
   'Problem Solving',
+  'Mockups',
   'Team Collaboration',
-  'User Flow',
-  'Information Architecture',
   'SEO',
-  'WordPress Plugins',
 ];
 
 
-function FrothTools() {
+
+function IndigoTools() {
   return (
     <>
       <div className="mb-16 md:ml-6 md:mt-10">
@@ -178,4 +164,4 @@ function FrothTools() {
   );
 }
 
-export default FrothTools;
+export default IndigoTools;
