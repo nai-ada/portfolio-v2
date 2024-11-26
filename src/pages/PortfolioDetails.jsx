@@ -29,7 +29,7 @@ function PortfolioDetails() {
       <div className="relative z-10">
         <NavWorks />
         <div className="pt-[100px] md-plus:pt-[150px]">
-          <Link to="" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
+          <Link to="/" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
             ← Back to All Works
           </Link>
 

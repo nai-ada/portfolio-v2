@@ -16,6 +16,7 @@ import AiSaDetails from './pages/AiSaDetails';
 import Favicon from 'react-favicon';
 import ClipprDetails from "./pages/ClipprDetails";
 import TitanDetails from "./pages/TitanDetails";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
                     <Route path="/projects/aisafeguard" element={<AiSaDetails />} />
                     <Route path="/projects/clippr" element={<ClipprDetails />} />
                     <Route path="/projects/titan" element={<TitanDetails />} />
+                    <Route path="*" element={<NotFound />} />
                   </Routes>
                 </main>
               </div>
