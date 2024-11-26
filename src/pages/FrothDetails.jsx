@@ -30,14 +30,14 @@ function FrothDetails() {
       <div className="relative z-10">
         <NavWorks />
         <div className="pt-[100px] md-plus:pt-[150px]">
-          <Link to="" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-10 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
+          <Link to="" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
             ← Back to Works
           </Link>
 
-          <div className='ml-6 mr-8 xs:ml-12 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
+          <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
             <div className="relative mb-40">
               <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
+                <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
                   <span className="text-primary">F</span>roth Matcha.
                 </h1>
                 <div className="hidden xl:flex gap-4 mt-12">
@@ -65,7 +65,7 @@ function FrothDetails() {
             </div>
           </div>
 
-          <div className="hidden lg-plus:block absolute lg-plus:-left-56 xl-plus:-left-32" style={{ top: '1000px' }}>
+          <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
             <div className="w-[6px] h-[6px] bg-primary rounded-full mb-2"></div>
             <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
@@ -116,31 +116,26 @@ function FrothDetails() {
             </div>
 
             {/* Overview Section */}
-            <div style={{ display: activeSection === 'overview' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[1000px] text-left mt-16'>
-              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Overview</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
-              </p>
-              <div className="flex items-center justify-center">
-                <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-8"></div>
-                <div className="w-[6px] h-[6px] bg-primary rounded-full ml-2 mt-[1.9rem]"></div>
-              </div>
+            <div style={{ display: activeSection === 'overview' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-16'>
+            <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
+              <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
-
+            <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
+            </p>
+          </div>
+          
             {/* Key Takeaways Section */}
-            <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[1000px] text-left mt-16'>
+            <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sed corporis voluptate natus quibusdam cum, excepturi earum numquam dolores veritatis suscipit ipsam? Nihil temporibus soluta vitae quod neque nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam aliquam culpa sint nostrum, consequatur odit laboriosam neque provident voluptatum magni esse eum exercitationem, voluptatibus ad cupiditate hic soluta quam!
               </p>
-              <div className="flex items-center justify-center">
-                <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-8"></div>
-                <div className="w-[6px] h-[6px] bg-primary rounded-full ml-2 mt-[1.9rem]"></div>
-              </div>
+             
             </div>
 
             {/* Roles Section */}
-            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[1000px] text-left mt-16'>
+            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
@@ -148,20 +143,19 @@ function FrothDetails() {
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
               </p>
-              <div className="flex items-center justify-center">
-                <div className="w-4/5 max-w-[600px] border-b border-[#222222] dark:border-white mt-8"></div>
-                <div className="w-[6px] h-[6px] bg-primary rounded-full ml-2 mt-[1.9rem]"></div>
-              </div>
+              
             </div>
             </FadeIn>
             </div>
 
     {/* Highlights Section */}
-    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[1000px] text-left mt-16'>
-<h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
-
+    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+    <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
+    <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
+              </p>
   <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[800px] mx-auto px-4'>
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)] transition-transform duration-300 hover:scale-105'>
+    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
       <div className='relative overflow-hidden rounded-lg h-[220px]'>
         <img 
           src={froth1} 
@@ -174,7 +168,7 @@ function FrothDetails() {
       </div>
     </div>
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)] transition-transform duration-300 hover:scale-105'>
+    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
       <div className='relative overflow-hidden rounded-lg h-[220px]'>
         <img 
           src={froth2} 
@@ -187,7 +181,7 @@ function FrothDetails() {
       </div>
     </div>
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)] transition-transform duration-300 hover:scale-105'>
+    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105'>
       <div className='relative overflow-hidden rounded-lg h-[220px]'>
         <img 
           src={froth3} 
@@ -199,15 +193,14 @@ function FrothDetails() {
         </div>
       </div>
     </div>
-
-    
-  </div>
+  </div> 
+        
 </div>
 </div>
 
   
         <FadeIn>
-        <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[1000px] text-left mt-20 mb-28'>
+        <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28'>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
             <FrothTools />
@@ -217,7 +210,7 @@ function FrothDetails() {
 
 
       <FadeIn>
-      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[1000px] text-left mt-16'>
+      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
             <h2 className="font-bold text-[24px] mb-10  md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">View Other Works</h2>
           </div>
           <div className='mt-16'>

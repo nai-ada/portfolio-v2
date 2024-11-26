@@ -30,6 +30,28 @@ const projectsList = [
     ),
   },
   {
+    title: 'Indigo',
+    description: ['TypeScript', 'Tailwind', 'Solid.js'],
+    link: '#',
+    button: (
+      <Link to="/projects/indigo">
+        <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+          Info
+        </Button>
+      </Link>
+    ),
+  },  
+  {
+    title: 'Portfolio',
+    description: ['React', 'Tailwind', 'NextUI'],
+    link: '#',
+    button: (
+      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
+        Info
+      </Button>
+    ),
+  },
+  {
     title: 'Galaxy Grid 2.0',
     description: ['JavaScript', 'CSS', 'HTML'],
     link: '/projects/galaxy-grid-2',
@@ -40,17 +62,7 @@ const projectsList = [
         </Button>
       </Link>
     ),
-},
-  {
-    title: 'Indigo',
-    description: ['TypeScript', 'Tailwind', 'Solid.js'],
-    link: '#',
-    button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
-    ),
-  },
+}, 
   {
     title: 'AiSafeguard',
     description: ['JavaScript', 'MongoDB', 'CSS'],
@@ -71,16 +83,7 @@ const projectsList = [
       </Button>
     ),
   },
-  {
-    title: 'Portfolio',
-    description: ['React', 'Tailwind', 'NextUI'],
-    link: '#',
-    button: (
-      <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]">
-        Info
-      </Button>
-    ),
-  },
+ 
   {
     title: 'Titan Tech',
     description: ['JavaScript', 'CSS', 'HTML'],

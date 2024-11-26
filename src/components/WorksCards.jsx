@@ -61,7 +61,7 @@ const WorksCards = ({ currentProject = 'froth' }) => {
         {randomProjects.map((project) => (
           <div 
             key={project.id}
-            className="w-[230px] bg-white dark:bg-gradient-to-b dark:from-[#1d253a] dark:to-darkBackground dark:border-[#414141] border-1 rounded-xl overflow-hidden shadow-[0_4px_7px_rgba(0,0,0,0.1)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.1)]"
+            className="w-[230px] bg-white dark:bg-gradient-to-b dark:from-[#1d253a] dark:to-darkBackground dark:border-[#414141] border-1 rounded-xl overflow-hidden shadow-[0_4px_7px_rgba(0,0,0,0.2)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)]"
           >
             <img 
               src={project.image} 

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider } from './providers/ThemeProvider';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -6,19 +7,32 @@ import Works from './components/Works';
 import Connect from './components/Connect';
 import About from './components/About';
 import CustomScrollBar from './components/CustomScrollBar'; 
+import CustomLoader from './components/CustomLoader'; 
 import GalaxyGridDetails from './pages/GalaxyGridDetails';
 import FrothDetails from './pages/FrothDetails';
+import IndigoDetails from './pages/IndigoDetails';
 import Favicon from 'react-favicon';
 
-
-
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    window.onload = () => {
+      setIsLoading(false);
+    };
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <ThemeProvider>
       <NextUIProvider>
         <Router>
           <div className="relative overflow-hidden">
-          <Favicon url="/src/assets/favicon.ico" />
+            {isLoading && <CustomLoader />}
+            <Favicon url="/src/assets/favicon.ico" />
             <CustomScrollBar>
               <div className="min-h-screen flex flex-col bg-white dark:bg-darkBackground">
                 <main>
@@ -29,6 +43,7 @@ function App() {
                     <Route path="/connect" element={<Connect />} />
                     <Route path="/projects/galaxy-grid-2" element={<GalaxyGridDetails />} />
                     <Route path="/projects/froth-matcha" element={<FrothDetails />} />
+                    <Route path="/projects/indigo" element={<IndigoDetails />} />
                   </Routes>
                 </main>
               </div>

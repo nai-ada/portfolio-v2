@@ -111,7 +111,7 @@ const skillsContent = [
 function AboutTools() {
   return (
     <>
-      <div className="mb-16 md:ml-6 md:mt-10">
+      <div className="mb-16 md:ml-6 md:mt-5">
         <Accordion variant="splitted" className="max-w-[1000px] px-6">
           <AccordionItem
             key="1"

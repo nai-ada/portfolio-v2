@@ -53,12 +53,12 @@ function Home() {
     <div className="flex flex-col md:items-start md:items-center md:items-start">
       <div className="md-2 md:mb-0 md:flex md:justify-between md:w-full md:w-[103%]">
         <div className="flex flex-col md:flex-row md:items-baseline">
-          <h1 className="font-bold text-[62px] xs:text-[70px] md:text-[84px] md-x:text-[110px] md-plus:text-[95px] xs:h-20 sm-x:text-[100px] h-17 md:h-28 text-[#2b2b2b] lg:text-[125px] xl-plus:text-[150px] sm-plus:text-[80px] sm-plus:h-24 sm:text-[90px] sm:h-28 lg-plus:text-[130px] dark:text-white">Nadia</h1>
-          <h1 className="font-bold text-[62px] md:text-[84px] xs:text-[70px] sm:text-[90px] md-x:text-[110px]  md-plus:text-[95px] sm-x:text-[100px]  sm-plus:text-[80px] lg:text-[125px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text md:ml-4 md:text-[80px] md:text-[87px] xl-plus:text-[150px]  lg-plus:text-[130px]">
+          <h1 className="font-bold text-[62px] xs:text-[70px] md:text-[84px] md-x:text-[110px] md-plus:text-[95px] xs:h-20 sm-x:text-[100px] h-17 md:h-28 text-[#2b2b2b] lg:text-[125px] xl-plus:text-[150px] sm-plus:text-[80px] sm-plus:h-24 sm:text-[90px] sm:h-28 lg-plus:text-[140px] dark:text-white">Nadia</h1>
+          <h1 className="font-bold text-[62px] md:text-[84px] xs:text-[70px] sm:text-[90px] md-x:text-[110px]  md-plus:text-[95px] sm-x:text-[100px]  sm-plus:text-[80px] lg:text-[125px] bg-gradient-to-r from-[#b1dff3] via-[#86A6F6] via-[#99b0e2] to-[#8170aa] text-transparent bg-clip-text md:ml-4 md:text-[80px] md:text-[87px] xl-plus:text-[150px]  lg-plus:text-[140px]">
             Vespalec<span className="text-lightTextColor dark:text-white">.</span>
           </h1>
         </div>
-        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-6 lg:mt-11 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 xl-plus:mt-[4.2rem] lg-plus:mt-[2.9rem] lg-plus:ml-10 lg:self-start dark:invert">
+        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-6 lg:mt-11 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 xl-plus:mt-[4.3rem] lg-plus:mt-[3.7rem] lg-plus:ml-10 lg:self-start dark:invert">
           <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-70 transition-opacity">
             <img src={LinkedIn} alt="LinkedIn Logo" width={36} />
           </a>
