@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Button } from '@nextui-org/react';
+import { Link } from 'react-router-dom';
 import aisa from '/src/assets/aisa.png';
 import clippr from '/src/assets/clippr.png';
 import titan from '/src/assets/titan.png';
@@ -57,28 +58,32 @@ const Slides = () => {
     {
       name: `AiSafeguard`,
       img: aisa,
-      info: `Chrome extension designed to block AI art while browsing the internet.`
+      info: `Chrome extension that blocks AI art while browsing the internet.`,
+      link: '/projects/aisafeguard',
     },
     {
       name: `Galaxy Grid 2.0`,
       img: galaxy,
-      info: `Tic Tac Toe in-browser game, with an intergalactic take!`
+      info: `Tic Tac Toe in-browser game, with an intergalactic take!`,
+      link: '/projects/galaxy-grid-2',
     },
     {
       name: `Portfolio`,
       img: portfolio,
-      info: `My web portfolio. Designed to showcase my skills and abilities as a developer.`
+      info: `My web portfolio showcasing my skills and development projects.`,
+      link: '/projects/portfolio',
     },
     {
       name: `Titan Tech`,
       img: titan,
-      info: `Landing page for Titan Technologies, with design having been provided.`
+      info: `Landing page created for Titan Technologies, based off a provided design.`,
+      link: '/projects/titan',
     },
     {
       name: `ClipprDB`,
       img: clippr,
-      info: `Movie database which utilizes data from the TMDb Database (Rest API)`
-      
+      info: `Movie database which utilizes data from the TMDb Database (Rest API).`,
+      link: '/projects/clippr',
     },
   ];
 
@@ -138,9 +143,14 @@ const Slides = () => {
                   <p className='font-semibold text-xl text-center'>{d.name}</p>
                   <p className="text-center text-[12px] md:text-[14px] line-clamp-3">{d.info}</p>
                 </div>
-                <Button className='bg-primary text-white text-lg px-3 md:px-4 py-2 rounded-full self-center mt-4'>
-                  View Project
-                </Button>
+                <Link to={d.link} className="flex justify-center">
+                  <Button 
+                    radius="full" 
+                    className='bg-primary text-white text-lg px-3 md:px-4 py-2 rounded-full mt-5'
+                  >
+                    View Project
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

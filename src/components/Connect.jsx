@@ -18,7 +18,7 @@ function Connect() {
 
   return (
     <> 
-    <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] mt-48 lg-plus:mt-72">
+    <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] mt-48 lg-plus:mt-72" id="connect">
       {/* Rotated heading for lg-plus screens */}
       <div className="hidden lg-plus:block absolute -right-20 top-[90%] -translate-y-1/2">
         <FadeIn>
@@ -45,8 +45,8 @@ function Connect() {
           </h2>
           <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 mt-4 text-[#2b2b2b] lg-x:text-[20px] lg-plus:w-[85%] dark:text-white">
             Wanting to see your vision come to life? Whether you have a project in
-            mind or just want to chat about the latest in tech, I would love to hear
-            from you. Feel free to reach out through email, or view my social media
+            mind or just want to chat, I would love to hear
+            from you. Feel free to reach out through email, or view my
             links below!
           </p>
         </FadeIn>
@@ -62,12 +62,12 @@ function Connect() {
         {/* Social Links */}
         <FadeIn>
           <div className="grid grid-cols-3 border border-black mt-12 md:mt-20 mb-20 md:mb-53 mx-1 xs:mx-4 sm-plus:mx-16 md-x:mx-auto md-x:max-w-[800px] rounded-full overflow-hidden md:ml-30 md:mr-30 dark:border-white">
-            <a href="https://linkedin.com/in/nadiavespalec" className="flex items-center justify-center p-10 md:p-14 hover:bg-gray-100 dark:hover:bg-[#0000002f] transition duration-300 border-r border-black -my-4 dark:border-white">
+            <a href="https://linkedin.com/in/nadiavespalec" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-10 md:p-14 hover:bg-gray-100 dark:hover:bg-[#0000002f] transition duration-300 border-r border-black -my-4 dark:border-white">
               <img src={LinkedIn} alt="LinkedIn Logo" className="w-5 h-5 mr-1 dark:invert" />
               <span className="text-[12px] font-medium md:text-[16px]">LinkedIn</span>
               <img src={Arrow} alt="Arrow" className="w-2 h-2 ml-1 dark:invert" />
             </a>
-            <a href="https://github.com/nai-ada" className="flex items-center justify-center p-6 hover:bg-gray-100 dark:hover:bg-[#0000002f] transition duration-300 border-r border-black -my-4 dark:border-white">
+            <a href="https://github.com/nai-ada"  target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-6 hover:bg-gray-100 dark:hover:bg-[#0000002f] transition duration-300 border-r border-black -my-4 dark:border-white">
               <img src={GitHub} alt="GitHub Logo" className="w-5 h-5 mr-1 dark:invert" />
               <span className="text-[12px] font-medium md:text-[16px]">GitHub</span>
               <img src={Arrow} alt="Arrow" className="w-2 h-2 ml-1 dark:invert" />

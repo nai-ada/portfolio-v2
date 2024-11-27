@@ -12,14 +12,33 @@ import {
 import { MoonIcon } from '../assets/MoonIcon.jsx';
 import { SunIcon } from '../assets/SunIcon.jsx';
 import { useTheme } from '../providers/ThemeProvider';
+import { HashLink } from 'react-router-hash-link';
 
 function MenuWorks() {
   const menuItems = ['Home', 'Other Works']; 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { theme, toggleTheme } = useTheme();
 
+  const scrollToSection = (sectionId) => {
+    if (sectionId === 'home') {
+      window.location.href = '/';
+      setIsMenuOpen(false);
+      return;
+    }
+    const element = document.getElementById('other-works');
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
         base: 'bg-hidden sm:relative sticky top-0 z-50',
@@ -35,27 +54,26 @@ function MenuWorks() {
 
       <NavbarContent className="hidden md:flex gap-24">
         <NavbarItem className="relative group">
-          <Link 
-            color="foreground" 
-            href="#" 
-            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80'
+          <HashLink 
+            smooth
+            to="/" 
+            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
             Home
-          </Link>
+          </HashLink>
           <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black dark:bg-white opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
         </NavbarItem>
 
         <NavbarItem className="relative group">
           <Link 
             color="foreground" 
-            href="#" 
-            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80'
+            onClick={() => scrollToSection('other-works')}
+            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
             Other Works
           </Link>
           <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black dark:bg-white opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
         </NavbarItem>
-
 
         <Switch
           isSelected={theme === 'dark'}
@@ -75,16 +93,26 @@ function MenuWorks() {
       <NavbarMenu className="bg-white dark:bg-darkBackground">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
-            <Link
-              className="mt-7 text-black dark:text-white text-[22px] text-right ml-2 pt-4 font-[400]"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
+            {item === 'Home' ? (
+              <HashLink 
+                smooth
+                to="/"
+                className="mt-7 text-black dark:text-white text-[22px] text-right ml-2 pt-4 font-[400] cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item}
+              </HashLink>
+            ) : (
+              <div
+                onClick={() => scrollToSection('other-works')}
+                className="mt-7 text-black dark:text-white text-[22px] text-right ml-2 pt-4 font-[400] cursor-pointer"
+              >
+                {item}
+              </div>
+            )}
           </NavbarMenuItem>
         ))}
-        <div className={`mt-10 ml-2 ${isMenuOpen ? 'flex flex-col gap-4' : 'hidden'} justify-start items-start`}>
+        <div className="mt-10 ml-2 flex flex-col gap-4 justify-start items-start">
           <Switch
             isSelected={theme === 'dark'}
             size="md"

@@ -18,8 +18,21 @@ function Menu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { theme, toggleTheme } = useTheme();
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+      setIsMenuOpen(false); // Close menu after scrolling
+    }
+  };
+
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
         base: 'bg-hidden sm:relative sticky top-0 z-50',
@@ -37,8 +50,8 @@ function Menu() {
         <NavbarItem className="relative group">
           <Link 
             color="foreground" 
-            href="#" 
-            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80'
+            onClick={() => scrollToSection('about')}
+            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
             About
           </Link>
@@ -48,8 +61,8 @@ function Menu() {
         <NavbarItem className="relative group">
           <Link 
             color="foreground" 
-            href="#" 
-            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80'
+            onClick={() => scrollToSection('works')}
+            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
             Works
           </Link>
@@ -59,8 +72,8 @@ function Menu() {
         <NavbarItem className="relative group">
           <Link 
             color="foreground" 
-            href="#" 
-            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80'
+            onClick={() => scrollToSection('connect')}
+            className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
             Connect
           </Link>
@@ -85,16 +98,15 @@ function Menu() {
       <NavbarMenu className="bg-white dark:bg-darkBackground">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
-            <Link
-              className="mt-7 text-black dark:text-white text-[22px] text-right ml-2 pt-4 font-[400]"
-              href="#"
-              size="lg"
+            <div
+              onClick={() => scrollToSection(item.toLowerCase())}
+              className="mt-7 text-black dark:text-white text-[22px] text-right ml-2 pt-4 font-[400] cursor-pointer"
             >
               {item}
-            </Link>
+            </div>
           </NavbarMenuItem>
         ))}
-        <div className={`mt-10 ml-2 ${isMenuOpen ? 'flex flex-col gap-4' : 'hidden'} justify-start items-start`}>
+        <div className="mt-10 ml-2 flex flex-col gap-4 justify-start items-start">
           <Switch
             isSelected={theme === 'dark'}
             size="md"

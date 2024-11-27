@@ -165,7 +165,7 @@ function Works() {
   }, []);
   
   return (
-    <div className="relative">
+    <div className="relative" id="works">
       <style>{blinkingArrowStyle}</style>
       
       <div className="hidden lg-plus:block absolute -left-12 top-[25%] -translate-y-1/2 mt-10">

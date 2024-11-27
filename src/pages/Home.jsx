@@ -58,11 +58,11 @@ function Home() {
             Vespalec<span className="text-lightTextColor dark:text-white">.</span>
           </h1>
         </div>
-        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-6 lg:mt-11 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 xl-plus:mt-[4.3rem] lg-plus:mt-[3.7rem] lg-plus:ml-10 lg:self-start dark:invert">
-          <a href="https://www.linkedin.com/in/nadia-vespalec/" className="hover:opacity-70 transition-opacity">
+        <div className="hidden w-28 lg:w-10  lg:flex lg:flex-col space-y-6 lg:mt-11 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 xl-plus:mt-[4.3rem] lg-plus:mt-[3.7rem] lg-plus:ml-8 lg:self-start dark:invert">
+          <a href="https://linkedin.com/in/nadiavespalec" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
             <img src={LinkedIn} alt="LinkedIn Logo" width={36} />
           </a>
-          <a href="https://github.com/nai-ada" className="hover:opacity-70 transition-opacity">
+          <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
             <img src={GitHub} alt="GitHub Logo" width={36} />
           </a>
         </div>
@@ -88,13 +88,13 @@ function Home() {
   </div>
   <div className="flex space-x-4 md:justify-start lg:hidden">
     <a
-      href="https://www.linkedin.com/in/nadia-vespalec/"
+      href="https://linkedin.com/in/nadiavespalec" target="_blank" rel="noopener noreferrer" 
       className="hover:opacity-70 transition-opacity md:mt-2 dark:invert"
     >
       <img src={LinkedIn} alt="LinkedIn Logo" width={26}/>
     </a>
     <a
-      href="https://github.com/nai-ada"
+      href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer"
       className="hover:opacity-70 transition-opacity md:mt-2 dark:invert"
     >
       <img src={GitHub} alt="GitHub Logo" width={26} />

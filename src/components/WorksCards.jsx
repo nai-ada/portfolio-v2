@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Button } from '@nextui-org/react';
+import { Link } from 'react-router-dom';
 import aisa from '/src/assets/aisa.png';
 import indigo from '/src/assets/indigohome.png';
 import clippr from '/src/assets/clippr.png';
@@ -15,36 +16,49 @@ const WorksCards = ({ currentProject = 'froth' }) => {
       id: 'aisa',
       image: aisa,
       title: 'AiSafeguard',
+      link: '/projects/aisafeguard',
+
     },
     {
       id: 'portfolio',
       image: portfolio,
       title: 'Portfolio',
+      link: '/projects/portfolio',
+
     },
     {
       id: 'clippr',
       image: clippr,
       title: 'Clippr DB',
+      link: '/projects/clippr',
     },
     {
       id: 'titan',
       image: titan,
       title: 'Titan Tech',
+      link: '/projects/titan',
+
     },
     {
       id: 'indigo',
       image: indigo,
       title: 'Indigo',
+      link: '/projects/indigo',
+
     },
     {
       id: 'froth',
       image: froth,
       title: 'Froth',
+      link: '/projects/froth-matcha',
+
     },
     {
       id: 'galaxy',
       image: galaxy,
       title: 'Galaxy Grid 2.0',
+      link: '/projects/galaxy-grid-2',
+
     },
   ], []);
 
@@ -72,11 +86,14 @@ const WorksCards = ({ currentProject = 'froth' }) => {
               <h2 className="text-xl font-semibold mb-4 dark:text-white text-[#222222]">
                 {project.title}
               </h2>
-              <Button 
-                className="bg-primary text-white px-6 py-2 mb-2 rounded-full font-[500] hover:opacity-70 transition-opacity"
-              >
-                View Project
-              </Button>
+              <Link to={project.link} className="flex justify-center">
+                  <Button 
+                    radius="full" 
+                    className="bg-primary text-white px-6 py-2 mb-2 rounded-full font-[500] hover:opacity-70 transition-opacity"
+                  >
+                    View Project
+                  </Button>
+                </Link>
             </div>
           </div>
         ))}

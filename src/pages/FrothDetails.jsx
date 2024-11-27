@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
@@ -11,7 +11,6 @@ import froth2 from '/src/assets/froth2.png';
 import froth3 from '/src/assets/froth3.png';
 import froth4 from '/src/assets/froth4.png';
 import WorksCards from '../components/WorksCards';
-
 
 
 function FrothDetails() {
@@ -30,9 +29,13 @@ function FrothDetails() {
       <div className="relative z-10">
         <NavWorks />
         <div className="pt-[100px] md-plus:pt-[150px]">
-          <Link to="/" className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]">
-            ← Back to All Works
-          </Link>
+        <HashLink 
+          smooth
+          to="/#works" 
+          className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
+        >
+          ← Back to All Works
+        </HashLink>
 
           <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
             <div className="relative mb-40">
@@ -46,7 +49,7 @@ function FrothDetails() {
                       <a href="https://matchacafe.bcitwebdeveloper.ca/" target="_blank" rel="noopener noreferrer">Live Site</a>
                     </span>
                   </Button>
-                  <a href="https://github.com/nai-ada" className="hover:opacity-70 transition-opacity dark:invert">
+                  <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
                     <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
                   </a>
                 </div>
@@ -58,7 +61,7 @@ function FrothDetails() {
                     <a href="https://matchacafe.bcitwebdeveloper.ca/" target="_blank" rel="noopener noreferrer">Live Site</a>
                   </span>
                 </Button>
-                <a href="https://github.com/nai-ada" className="hover:opacity-70 transition-opacity dark:invert">
+                <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
                   <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
                 </a>
               </div>
@@ -211,7 +214,7 @@ function FrothDetails() {
 
 
       <FadeIn>
-      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16  sm-plus:mx-16'>
+      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16  sm-plus:mx-16' id="other-works">
             <h2 className="font-bold text-[24px] mb-10  md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Other Works</h2>
           </div>
           <div className='mt-16'>
