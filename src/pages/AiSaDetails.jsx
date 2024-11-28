@@ -15,7 +15,7 @@ import WorksCards from '../components/WorksCards';
 
 
 function AiSaDetails() {
-  const [activeSection, setActiveSection] = useState('overview');
+  const [activeSection, setActiveSection] = useState('highlights');
   return (
     <div className="relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
@@ -47,24 +47,26 @@ function AiSaDetails() {
                 <div className="hidden xl:flex gap-4 mt-12">
                   <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                     <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                    <a href="https://nadiavespalec.com/AiSaWeb" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    <a href="https://nadiavespalec.com/AiSaWeb" target="_blank" rel="noopener noreferrer">Live Demo</a>
                     </span>
                   </Button>
-                  <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
+                {/* GitHub Repo currently unavailable */}
+                  {/* <a href="" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
                     <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <h2 className='xl:text-[20px]'>// Project <span className="font-bold">05</span> | Browser Extension and Website</h2>
               <div className='flex xl:hidden justify-left gap-4 mt-4'>
                 <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                   <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  <a href="https://nadiavespalec.com/AiSaWeb" target="_blank" rel="noopener noreferrer">Live Site</a>
+                  <a href="https://nadiavespalec.com/AiSaWeb" target="_blank" rel="noopener noreferrer">Live Demo</a>
                   </span>
                 </Button>
-                <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
+                {/* GitHub Repo currently unavailable */}
+                {/* <a href="" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
                   <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -80,16 +82,7 @@ function AiSaDetails() {
       </div>
 
           
-            <div className='x-sm-plus:flex justify-center text-center'>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
-                onClick={() => setActiveSection('overview')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Project Overview
-                </span>
-              </Button>
+            <div className='x-sm-plus:flex justify-center text-center'> 
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -99,6 +92,16 @@ function AiSaDetails() {
                   Highlights
                 </span>
               </Button>
+              <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
+                onClick={() => setActiveSection('overview')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Overview
+                </span>
+              </Button>
+             
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}

@@ -4,6 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
+import FigmaIcon from '/src/assets/figmalink.svg';
 import TitanTools from '../components/TitanTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
@@ -14,7 +15,7 @@ import WorksCards from '../components/WorksCards';
 
 
 function TitanDetails() {
-  const [activeSection, setActiveSection] = useState('overview');
+  const [activeSection, setActiveSection] = useState('highlights');
   return (
     <div className="relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
@@ -46,11 +47,11 @@ function TitanDetails() {
                 <div className="hidden xl:flex gap-4 mt-12">
                   <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                     <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                    <a href="https://nadiavespalec.com" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    <a href="https://nadiavespalec.com/titan-tech-homepage/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                     </span>
                   </Button>
-                  <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-                    <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                  <a href="https://www.figma.com/design/yj4cQAMZUmqemq0xycaFmc/Untitled?node-id=0-1" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
+                  <img src={FigmaIcon} alt="Figma Logo" className='w-8 xs:w-9'/>
                   </a>
                 </div>
               </div>
@@ -58,11 +59,11 @@ function TitanDetails() {
               <div className='flex xl:hidden justify-left gap-4 mt-4'>
                 <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                   <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  <a href="https://nadiavespalec.com" target="_blank" rel="noopener noreferrer">Live Site</a>
+                  <a href="https://nadiavespalec.com/titan-tech-homepage/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                   </span>
                 </Button>
-                <a href="https://github.com/nai-ada" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-                  <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                <a href="https://www.figma.com/design/yj4cQAMZUmqemq0xycaFmc/Untitled?node-id=0-1" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
+                  <img src={FigmaIcon} alt="Figma Logo" className='w-8 xs:w-9'/>
                 </a>
               </div>
             </div>
@@ -79,16 +80,7 @@ function TitanDetails() {
       </div>
 
           
-            <div className='x-sm-plus:flex justify-center text-center'>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
-                onClick={() => setActiveSection('overview')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Project Overview
-                </span>
-              </Button>
+            <div className='x-sm-plus:flex justify-center text-center'> 
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -98,6 +90,16 @@ function TitanDetails() {
                   Highlights
                 </span>
               </Button>
+              <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
+                onClick={() => setActiveSection('overview')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Overview
+                </span>
+              </Button>
+             
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
