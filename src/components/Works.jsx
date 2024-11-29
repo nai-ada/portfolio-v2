@@ -67,7 +67,7 @@ const projectsList = [
 }, 
   {
     title: 'AiSafeguard',
-    description: ['JavaScript', 'MongoDB', 'CSS'],
+    description: ['JavaScript', 'CSS', 'HTML'],
     link: '#',
     button: (
       <Link to="/projects/aisafeguard">

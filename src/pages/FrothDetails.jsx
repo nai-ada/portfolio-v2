@@ -126,15 +126,26 @@ function FrothDetails() {
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
             <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
+            A dynamic cafe website developed as the final Capstone project for the BCIT Front-End Web Developer program. 
+            This project was built with WordPress, using advanced development techniques like custom taxonomies and post types, which allows for a fully customized user experience. 
+            This website features an interactive menu system where visitors can explore individual menu items, alongside a homepage that integrates
+            live Instagram feed detailing the cafe's menu items. 
+            Additional features include cafe locations, career opportunities, and a contact page. 
+            The development process utilized essential WordPress 
+            tools such as Jetpack for enhanced functionality, and WP Migrate for deployment management.
             </p>
           </div>
           
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
+              <p className='mb-6 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+                Since this project was highly collaborative, I feel I've gained valuable experience working with a team. I learned to overcome 
+                various challenges including how to properly delegate tasks, merging to GitHub without conflicts, and how to communicate effectively with my team. 
+              </p>
+
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sed corporis voluptate natus quibusdam cum, excepturi earum numquam dolores veritatis suscipit ipsam? Nihil temporibus soluta vitae quod neque nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam aliquam culpa sint nostrum, consequatur odit laboriosam neque provident voluptatum magni esse eum exercitationem, voluptatibus ad cupiditate hic soluta quam!
+                Before starting this project, I initially found working with WordPress to be quite challenging. After working on a larger-scale project, I feel more confident in my abilities. 
               </p>
              
             </div>
@@ -143,12 +154,10 @@ function FrothDetails() {
             <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
+               My responsibilities for this project included utilizing an Instagram Feed plugin for WordPress to display the images on the homepage. I was also in charge of creating custom taxonomies and CPT's 
+               in order to display individual menu items. I was able to add in all the content for these items while styling them in order to maintain a clean, consistent interface which stuck to the theme of the website.
+               I also created and styled the footer, with the main goal being to display the cafes' information as simply as possible. 
               </p>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-              
             </div>
       
             </div>

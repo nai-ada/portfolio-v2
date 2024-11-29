@@ -70,7 +70,7 @@ const Slides = () => {
     {
       name: `Portfolio`,
       img: portfolio,
-      info: `My web portfolio showcasing my skills and development projects.`,
+      info: `The website you're currently on! Showcases my skills as a developer.`,
       link: '/projects/portfolio',
     },
     {
