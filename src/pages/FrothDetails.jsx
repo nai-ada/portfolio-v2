@@ -125,14 +125,18 @@ function FrothDetails() {
             <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
+            <p className='mb-6 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+            This project is a dynamic cafe website developed as the final <span className="font-semibold text-[#86A6F6]">Capstone project</span> for the BCIT Front-End Web Developer program. 
+            This project was built with <span className="font-semibold text-[#86A6F6]">WordPress</span>, using advanced development techniques like <span className="font-semibold text-[#86A6F6]">custom taxonomies and post types</span>, 
+            which allows for a fully customized user experience.
+            </p>
+
             <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-            A dynamic cafe website developed as the final Capstone project for the BCIT Front-End Web Developer program. 
-            This project was built with WordPress, using advanced development techniques like custom taxonomies and post types, which allows for a fully customized user experience. 
             This website features an interactive menu system where visitors can explore individual menu items, alongside a homepage that integrates
             live Instagram feed detailing the cafe's menu items. 
-            Additional features include cafe locations, career opportunities, and a contact page. 
+            Additional features include <span className="font-semibold text-[#86A6F6]">cafe locations</span>, <span className="font-semibold text-[#86A6F6]">career opportunities</span>, and a <span className="font-semibold text-[#86A6F6]">contact page</span>. 
             The development process utilized essential WordPress 
-            tools such as Jetpack for enhanced functionality, and WP Migrate for deployment management.
+            tools such as <span className="font-semibold text-[#86A6F6]">Jetpack</span> for enhanced functionality, and <span className="font-semibold text-[#86A6F6]">WP Migrate</span> for deployment management.
             </p>
           </div>
           
@@ -140,12 +144,17 @@ function FrothDetails() {
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
               <p className='mb-6 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Since this project was highly collaborative, I feel I've gained valuable experience working with a team. I learned to overcome 
-                various challenges including how to properly delegate tasks, merging to GitHub without conflicts, and how to communicate effectively with my team. 
+              Since this project was highly collaborative, I feel I've gained valuable <span className="font-semibold text-[#86A6F6]">experience working with a team</span>. I learned to overcome 
+              various challenges, including <span className="font-semibold text-[#86A6F6]">proper task delegation</span>, <span className="font-semibold text-[#86A6F6]">conflict-free GitHub merging</span>, 
+              and effective <span className="font-semibold text-[#86A6F6]">team communication</span>. This experience enhanced my understanding of <span className="font-semibold text-[#86A6F6]">version control best practices
+              </span>, <span className="font-semibold text-[#86A6F6]">WordPress development workflows</span>, and the importance 
+              of communication when multiple developers work on the same codebase. Additionally, I developed skills in<span className="font-semibold text-[#86A6F6]"> maintaining consistent 
+              styling</span> across different developers' contributions, which I initally found to be a challenge.
               </p>
 
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Before starting this project, I initially found working with WordPress to be quite challenging. After working on a larger-scale project, I feel more confident in my abilities. 
+              Initially, I found WordPress development to be quite challenging. However, after working on this larger-scale project, 
+              I've developed much more confidence in my abilities and look forward to taking on more WordPress projects in the future. 
               </p>
              
             </div>
@@ -154,60 +163,57 @@ function FrothDetails() {
             <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-               My responsibilities for this project included utilizing an Instagram Feed plugin for WordPress to display the images on the homepage. I was also in charge of creating custom taxonomies and CPT's 
-               in order to display individual menu items. I was able to add in all the content for these items while styling them in order to maintain a clean, consistent interface which stuck to the theme of the website.
-               I also created and styled the footer, with the main goal being to display the cafes' information as simply as possible. 
+              My responsibilities included utilizing an <span className="font-semibold text-[#86A6F6]">Instagram Feed plugin</span> to display images on the homepage. I was also in charge of 
+              creating <span className="font-semibold text-[#86A6F6]">custom taxonomies and CPTs</span> (Custom Post Types) to display individual menu items. 
+              For the <span className="font-semibold text-[#86A6F6]">individual menu items page</span>, I deployed a <span className="font-semibold text-[#86A6F6]">"You May Also Like"</span> section, 
+              which relied on a WordPress query for randomization and display purposes. I also included an option for users to 
+              submit reviews, which utilized a <span className="font-semibold text-[#86A6F6]">plugin to display reviews</span> and provide a form for submissions.
+              </p>
+              <p className='mb-6 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              I created and formatted the <span className="font-semibold text-[#86A6F6]">about page</span>, which displays content regarding café staff members and testimonials 
+              by leveraging <span className="font-semibold text-[#86A6F6]">Advanced Custom Fields</span> (ACF) and Custom Post Type data. I implemented all content and styling to
+              provide a clean, consistent interface that aligned with the website theme. 
+              </p>
+              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              Additionally, I implemented and customized the <span className="font-semibold text-[#86A6F6]">footer</span> with the goal of displaying the café's information as simply as possible.
               </p>
             </div>
       
             </div>
-
-    {/* Highlights Section */}
-    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-    <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
-    <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
+{/* Highlights Section */}
+<div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+<h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
   <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
+    <div className='bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]'>
       <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
           src={froth1} 
           alt="Homepage Preview" 
           className='w-full h-full object-cover'
         />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Homepage</h3>
-        </div>
       </div>
     </div>
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
+    <div className='bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]'>
       <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
           src={froth2} 
           alt="Menu Items Preview" 
           className='w-full h-full object-cover'
         />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Menu Items</h3>
-        </div>
       </div>
     </div>
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105'>
+    <div className='bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]'>
       <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
           src={froth3} 
           alt="Project Preview 3" 
           className='w-full h-full object-cover'
         />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Single Item</h3>
-        </div>
       </div>
     </div>
-  </div> 
+  </div>
         
 </div>
 </div>
