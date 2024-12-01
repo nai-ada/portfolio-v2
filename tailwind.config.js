@@ -35,7 +35,7 @@ module.exports = {
       themes: {
         dark: {
           colors: {
-            darkBackground: '#141414',
+            darkBackground: '#0D0D0D',
             darkTextColor: '#ffffff',
             navHoverColor: '#86A6F6',
             primary: '#86A6F6',
