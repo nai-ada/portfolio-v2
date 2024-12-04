@@ -43,7 +43,7 @@ function Connect() {
           <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-x:text-[45px] dark:text-white">
             Let's Get In Touch.
           </h2>
-          <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 mt-4 text-[#2b2b2b] lg-x:text-[20px] lg-plus:w-[85%] dark:text-white">
+          <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 mt-4 text-[#2b2b2b] lg-x:text-[18px] lg-plus:w-[85%] dark:text-white">
             Wanting to see your vision come to life? Whether you have a project in
             mind or just want to chat, I would love to hear
             from you. Feel free to reach out through email, or view my
