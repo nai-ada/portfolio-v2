@@ -22,97 +22,93 @@ function PortfolioDetails() {
   const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
-          `,
-          backgroundSize: '120px 120px',
-        }}
-      />
-     <div className="relative z-10">
-  <NavWorks />
-  <div className="pt-[100px] md-plus:pt-[150px]">
-    <FadeLeft>
-    <HashLink 
-      smooth
-      to="/#works" 
-      className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
-    >
-      ← Back to All Works
-    </HashLink>
-    </FadeLeft>
+    <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
+      style={{
+        backgroundImage: `
+          linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
+          linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
+        `,
+        backgroundSize: '120px 120px',
+      }}
+    />
+    <div className="relative z-10">
+      <NavWorks />
+      <div className="pt-[100px] md-plus:pt-[150px]">
+        <div className="container mx-auto">
+          <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
+            <FadeLeft>
+              <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
+                <HashLink 
+                  smooth
+                  to="/#works" 
+                  className="text-primary hover:opacity-70 transition-opacity block"
+                >
+                  ← Back to All Works
+                </HashLink>
 
 
-    <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px]">
-      <FadeLeft>
-    <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[800px] xl:max-w-[800px]'>
-        <div className="relative mb-40 sm-plus:mb-20">
-          <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-            <h1 className="font-bold uppercase text-[48px] xs:text-[58px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
-              <span className="text-primary">P</span>ortfolio.
-            </h1>
-            <div className="hidden xl:flex gap-4 mt-12 whitespace-nowrap">
-              <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  <a href="https://nadiavespalec.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                </span>
-              </Button>
-              <a href="https://github.com/nai-ada/portfolio-v2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-                <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
-              </a>
-              <a href="https://www.figma.com/design/9jSVd92pcOop5tYOqxschn/Portfolio-Project-2?node-id=0-1&t=2BbysL9ehVSeYZtL-1" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-                <img src={FigmaIcon} alt="Figma Logo" className='w-8 xs:w-9'/>
-              </a>
-            </div>
-          </div>
-          <h2 className='xl:text-[20px]'>// Project <span className="font-bold">03</span> | Web Portfolio</h2>
-          <div className='flex xl:hidden justify-left gap-4 mt-4'>
-            <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
-              <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                <a href="https://nadiavespalec.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
-              </span>
-            </Button>
-            <a href="https://github.com/nai-ada/portfolio-v2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-              <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
-            </a>
-            <a href="https://www.figma.com/design/9jSVd92pcOop5tYOqxschn/Portfolio-Project-2?node-id=0-1&t=2BbysL9ehVSeYZtL-1" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-              <img src={FigmaIcon} alt="Figma Logo" className='w-8 xs:w-9'/>
-            </a>
+                <div className="relative mb-40 md:mb-20">
+                  <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
+                    <h1 className="font-bold uppercase text-[48px] xs:text-[50px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                      <span className="text-primary">P</span>ortfolio.
+                    </h1>
+                    <div className="hidden xl:flex items-center gap-4 mt-12 flex-shrink-0">
+                      <Button 
+                        radius="full" 
+                        className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
+                      >
+                        <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                          <a href="https://nadiavespalec.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </span>
+                      </Button>
+                      <a href="https://github.com/nai-ada/portfolio-v2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0">
+                        <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                      </a>
+                    </div>
+                  </div>
+                  <h2 className='xl:text-[20px]'>// Project <span className="font-bold">01</span> | Wordpress Capstone</h2>
+                  <div className='flex xl:hidden items-center gap-4 mt-4'>
+                    <Button 
+                      radius="full" 
+                      className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
+                    >
+                      <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                        <a href="https://nadiavespalec.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                      </span>
+                    </Button>
+                    <a href="https://github.com/nai-ada/portfolio-v2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0">
+                      <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </FadeLeft>
+  
+
+  {/* desktop imgs */}
+            <FadeRight>
+              <div className='hidden 2xl:block w-[800px]'>
+                <div className='relative bottom-32 right-[5rem] lg-plus:right-[4rem] xl-plus:right-[9rem]'>
+                  <div className='relative w-[400px] -z-10'>
+                    <img 
+                      src={portfolio2} 
+                      alt="Project Preview 3" 
+                      className='w-[400px] h-auto'
+                    />
+                    <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
+                      <img 
+                        src={portfolio1} 
+                        alt="Menu Items Preview" 
+                        className='w-[250px] h-auto'
+                      />
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </FadeRight>
           </div>
         </div>
-      </div>
-      </FadeLeft>
-
-{/* desktop imgs */} 
-<FadeRight>
-      <div className='hidden lg-img:block w-[800px]'>
-       
-        <div className='relative bottom-32 right-[8rem] lg-plus:right-[6rem]'>
-          <div className='relative w-[400px] -z-10'>
-            <img 
-              src={portfolio2} 
-              alt="Project Preview 3" 
-              className='w-[400px] h-auto'
-            />
-            <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
-              <img 
-                src={portfolio1} 
-                alt="Menu Items Preview" 
-                className='w-[250px] h-auto'
-              />
-            </div> 
-          </div>
-        </div>
-       
-      </div> 
-      </FadeRight>
-
-
-</div>
-
-
+     
 
           <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -128,7 +124,7 @@ function PortfolioDetails() {
         
 {/* Mobile Images */}
 <FadeIn>
-<div className='lg-img:hidden flex justify-center mt-8 mb-16'>
+<div className='2xl:hidden flex justify-center mt-8 mb-16'>
   <div className='relative w-fit'>
     <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
       <img 
@@ -161,7 +157,15 @@ function PortfolioDetails() {
                   Project Overview
                 </span>
               </Button>
-            
+             <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('execution')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Execution
+                </span>
+              </Button>
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -171,15 +175,7 @@ function PortfolioDetails() {
                   Key Takeaways
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('execution')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Project Execution
-                </span>
-              </Button>
+             
               
             </div>
 

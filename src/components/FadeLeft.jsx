@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
-const FadeLeft = ({ children, delay = 0, duration = 0.8 }) => {
+const FadeLeft = ({ children, delay = 0, duration = 1 }) => {
   const controls = useAnimation();
 
   useEffect(() => {

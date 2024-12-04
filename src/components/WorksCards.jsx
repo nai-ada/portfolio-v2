@@ -16,7 +16,7 @@ const WorksCards = ({ currentProject = 'froth' }) => {
     {
       id: 'aisa',
       image: comingsoon,
-      title: 'AiSafeguard',
+      title: 'AISafeguard',
       link: '/projects/aisafeguard',
 
     },
