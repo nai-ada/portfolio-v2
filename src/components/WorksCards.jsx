@@ -5,16 +5,17 @@ import aisa from '/src/assets/aisa.png';
 import indigo from '/src/assets/indigohome.png';
 import clippr from '/src/assets/clippr.png';
 import titan from '/src/assets/titan.png';
-import portfolio from '/src/assets/portfolio.png';
+import portfolio from '/src/assets/portfolio1.png';
 import galaxy from '/src/assets/gg.png';
 import froth from '/src/assets/froth1.png';
 import FadeIn from './FadeIn';
+import comingsoon from '/src/assets/comingsoon.svg';
 
 const WorksCards = ({ currentProject = 'froth' }) => {
   const projects = useMemo(() => [
     {
       id: 'aisa',
-      image: aisa,
+      image: comingsoon,
       title: 'AiSafeguard',
       link: '/projects/aisafeguard',
 
@@ -41,7 +42,7 @@ const WorksCards = ({ currentProject = 'froth' }) => {
     },
     {
       id: 'indigo',
-      image: indigo,
+      image: comingsoon,
       title: 'Indigo',
       link: '/projects/indigo',
 

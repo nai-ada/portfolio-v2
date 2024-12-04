@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import aisa from '/src/assets/aisa.png';
 import clippr from '/src/assets/clippr.png';
 import titan from '/src/assets/titan.png';
-import portfolio from '/src/assets/portfolio.png';
+import portfolio from '/src/assets/portfolio1.png';
 import galaxy from '/src/assets/gg.png';
 import nxt from '/src/assets/next.svg';
 import prev from '/src/assets/prev.svg';
@@ -12,6 +12,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FadeIn from './FadeIn';
+import comingsoon from '/src/assets/comingsoon.svg';
+
 
 const Slides = () => {
 
@@ -56,8 +58,8 @@ const Slides = () => {
 
   const projectData = [
     {
-      name: `AiSafeguard`,
-      img: aisa,
+      name: `AISafeguard`,
+      img: comingsoon,
       info: `Chrome extension that blocks AI art while browsing the internet.`,
       link: '/projects/aisafeguard',
     },

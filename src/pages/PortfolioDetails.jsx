@@ -216,12 +216,22 @@ function PortfolioDetails() {
             {/* execution Section */}
             <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution</h2>
-              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
+              <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+                  <li className="mb-2">
+                    Utilized <span className="font-semibold text-primary">NextUI</span>, a React UI library to maintain a clean and consistent interface while enhancing efficiency during production,
+                    as well as being able to implement a light/dark mode feature
+                  </li>
+                  <li className="mb-2">
+                    Deployed and finalized product based on design mockup created using <span className="font-semibold text-primary">Figma</span>
+                  </li>
+                  <li className="mb-2">
+                    On the homepage, implemented a <span className="font-semibold text-primary">unique but intuitive system</span> where website visitors can access information by interacting with accordions,
+                    isolated scrolling funcitonalities, and custom slides
+                  </li>
+                  <li className="mb-2">
+                    Created <span className="font-semibold text-primary">individual project pages</span> to dynamically display project information and details for each project
+                  </li>
+                </ul>
               
             </div>
             </div>

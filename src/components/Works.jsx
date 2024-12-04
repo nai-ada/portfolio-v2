@@ -66,7 +66,7 @@ const projectsList = [
     ),
 }, 
   {
-    title: 'AiSafeguard',
+    title: 'AISafeguard',
     description: ['JavaScript', 'CSS', 'HTML'],
     link: '#',
     button: (

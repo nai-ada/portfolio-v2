@@ -93,9 +93,12 @@ function PortfolioTools() {
         <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Other Skills</h3>
         <ul className="flex flex-wrap gap-4">
           {skillsContent.map((skill, index) => (
-            <li key={index} className="rounded-lg px-3 py-3 text-[#86A6F6] text-sm md:text-[18px]">
-              {skill}
-            </li>
+           <li 
+           key={index} 
+           className="rounded-lg px-3 py-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6591ff] to-[#5ad3ff] text-sm md:text-[18px]"
+         >
+           {skill}
+         </li>
           ))}
         </ul>
       </div>

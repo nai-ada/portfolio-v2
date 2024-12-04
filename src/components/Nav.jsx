@@ -6,7 +6,11 @@ import Menu from '../components/Menu';
 function Nav() {
   return (
     <>
-      <nav className="top-0 bg-white dark:bg-darkBackground  shadow-md md:shadow-none  left-0 right-0 z-50 justify-end fixed ">
+      <nav className="top-0 fixed left-0 right-0 z-50 justify-end
+        bg-white/30 dark:bg-darkBackground/30
+        backdrop-filter backdrop-blur-lg
+        border-b border-white/20 dark:border-gray-800/20
+        shadow-sm dark:shadow-lg">
         <div className="max-w-100 mx-auto px-4">
           <div className="flex justify-between items-center py-0">
             <a href="/">

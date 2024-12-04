@@ -158,7 +158,10 @@ function TitanTools() {
         >
           <ul className="flex flex-wrap gap-4 text-sm md:text-[18px]">
             {skillsContent.map((skill, index) => (
-              <li key={index} className="bg-[#576a97] dark:bg-[#303a51] rounded-lg px-3 py-3 text-white">
+                <li 
+                key={index} 
+                className="rounded-lg px-3 py-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6591ff] to-[#5ad3ff] text-sm md:text-[18px]"
+              >
                 {skill}
               </li>
             ))}
