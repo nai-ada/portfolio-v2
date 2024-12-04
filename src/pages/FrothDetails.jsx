@@ -107,7 +107,16 @@ function FrothDetails() {
                 <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                   Project Overview
                 </span>
-              </Button> 
+              </Button>  
+              <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('execution')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Execution
+                </span>
+              </Button>
              
               <Button 
                 radius="full" 
@@ -118,15 +127,7 @@ function FrothDetails() {
                   Key Takeaways
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'roles' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('roles')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  My Roles
-                </span>
-              </Button>
+             
              
             </div>
             
@@ -154,7 +155,7 @@ function FrothDetails() {
           </FadeIn>
           
             {/* Key Takeaways Section */}
-            <FadeIn>
+          
           
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
@@ -173,31 +174,43 @@ function FrothDetails() {
               </p>
              
             </div>
-          </FadeIn>
+      
 
 
-            {/* Roles Section */}
-            <FadeIn>
+            {/* execution Section */}
+         
 
-            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              My responsibilities included utilizing an <span className="font-semibold">Instagram Feed plugin</span> to display images on the homepage. I was also in charge of 
-              creating <span className="font-semibold ">custom taxonomies and CPTs</span> (Custom Post Types) to display individual menu items. 
-              For the <span className="font-semibold ">individual menu items page</span>, I deployed a <span className="font-semibold ">"You May Also Like"</span> section, 
-              which relied on a WordPress query for randomization and display purposes. I also included an option for users to 
-              submit reviews, which utilized a <span className="font-semibold">plugin to display reviews</span> and provide a form for submissions.
-              </p>
-              <p className='mb-6 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              I created and formatted the <span className="font-semibold ">about page</span>, which displays content regarding café staff members and testimonials 
-              by leveraging <span className="font-semibold ">Advanced Custom Fields</span> (ACF) and Custom Post Type data. I implemented all content and styling to
-              provide a clean, consistent interface that aligned with the website theme. 
-              </p>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Additionally, I implemented and customized the <span className="font-semibold ">footer</span> with the goal of displaying the café's information as simply as possible.
-              </p>
+            <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution</h2>
+              <ul className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+                  <li className="mb-2">
+                    Utilized an <span className="font-semibold">Instagram Feed plugin</span> to display images on the homepage
+                  </li>
+                  <li className="mb-2">
+                    Created <span className="font-semibold">custom taxonomies and CPTs</span> (Custom Post Types) to display individual menu items
+                  </li>
+                  <li className="mb-2">
+                    Implemented a <span className="font-semibold">"You May Also Like"</span> section on individual menu items pages using WordPress query for randomization
+                  </li>
+                  <li className="mb-2">
+                    Added user review functionality using a <span className="font-semibold">plugin to display reviews</span> and submission forms
+                  </li>
+                  <li className="mb-2">
+                    Developed the <span className="font-semibold">about page</span> showcasing staff and testimonials using:
+                    <ul className="list-disc pl-6 mt-2">
+                      <li><span className="font-semibold">Advanced Custom Fields</span> (ACF)</li>
+                      <li>Custom Post Type data</li>
+                    </ul>
+                  </li>
+                  <li className="mb-2">
+                    Implemented content and styling for a clean, theme-consistent interface
+                  </li>
+                  <li className="mb-2">
+                    Customized the <span className="font-semibold">footer</span> to display cafe information in a simplified format
+                  </li>
+                </ul>
             </div>
-          </FadeIn>
+     
 
       
             </div>
