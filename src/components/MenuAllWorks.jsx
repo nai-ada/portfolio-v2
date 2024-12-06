@@ -66,7 +66,7 @@ function MenuAllWorks() {
       <NavbarMenu className="bg-white dark:bg-darkBackground">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
-            {item === 'Home' ? (
+            {item === 'Return Home' ? (
               <HashLink 
                 smooth
                 to="/"

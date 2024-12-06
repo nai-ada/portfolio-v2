@@ -67,7 +67,7 @@ function Footer() {
                 </Link>
               ))} 
               <Link 
-                href=""
+                href="/pages/all-works"
                 color="foreground"
                 className="text-sm md:text-base  text-[#222222] dark:text-white font-[500] hover:opacity-80 cursor-pointer capitalize"
               >
