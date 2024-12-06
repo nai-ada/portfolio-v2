@@ -57,7 +57,7 @@ const WorksCards = ({ currentProject = 'froth' }) => {
     {
       id: 'galaxy',
       image: galaxy,
-      title: 'Galaxy Grid 2.0',
+      title: 'Galaxy Grid II',
       link: '/projects/galaxy-grid-2',
 
     },

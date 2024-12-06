@@ -54,7 +54,7 @@ const projectsList = [
     ),
   },
   {
-    title: 'Galaxy Grid 2.0',
+    title: 'Galaxy Grid II',
     description: ['JavaScript', 'CSS', 'HTML'],
     link: '/projects/galaxy-grid-2',
     button: (

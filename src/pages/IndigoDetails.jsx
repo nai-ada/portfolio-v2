@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import FadeLeft from '../components/FadeLeft';
+import FadeRight from '../components/FadeRight';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import IndigoTools from '../components/IndigoTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
-import indigo1 from '/src/assets/indigohome.png';
-import indigo2 from '/src/assets/indigosignup.png';
-import indigo3 from '/src/assets/indigomobile.png';
+import comingsoon1 from '/src/assets/comingsoonmock1.svg';
+import comingsoon2 from '/src/assets/comingsoonmock2.svg';
 import WorksCards from '../components/WorksCards';
 
 
@@ -27,20 +27,22 @@ function IndigoDetails() {
           backgroundSize: '120px 120px',
         }}
       />
-      <div className="relative z-10">
-        <NavWorks />
-        <div className="pt-[100px] md-plus:pt-[150px]">
-        <HashLink 
-          smooth
-          to="/#works" 
-          className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
-        >
-          ← Back to All Works
-        </HashLink>
-
-          <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
-            <div className="relative mb-40">
-              <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
+    <div className="relative z-10">
+      <NavWorks />
+      <div className="pt-[100px] md-plus:pt-[150px]">
+        <div className="container mx-auto">
+          <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
+            <FadeLeft>
+              <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
+                <HashLink 
+                  smooth
+                  to="/#works" 
+                  className="text-primary hover:opacity-70 transition-opacity block"
+                >
+                  ← Back to All Works
+                </HashLink>
+                <div className="relative mb-16">
+                <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
                 <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
                   <span className="text-primary">I</span>ndigo.
                 </h1>
@@ -70,6 +72,34 @@ function IndigoDetails() {
               </div>
             </div>
           </div>
+            </FadeLeft>
+  
+  {/* desktop imgs */}
+            <FadeRight>
+              <div className='hidden 2xl:block w-[800px] full:w-[940px]'>
+                <div className='relative bottom-32 right-[13rem] lg-plus:right-[12rem] xl-plus:right-[14rem]'>
+                  <div className='relative w-[400px] -z-10'>
+                    <img 
+                      src={comingsoon2} 
+                      alt="Project Preview 3" 
+                      className='w-[400px] h-auto'
+                    />
+                    <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
+                      <img 
+                        src={comingsoon1} 
+                        alt="Menu Items Preview" 
+                        className='w-[250px] h-auto'
+                      />
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </FadeRight>
+          </div>
+        </div>
+ 
+
+
 
           <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -83,22 +113,27 @@ function IndigoDetails() {
 
 
       
-      {/* Image Grid Section */}
-    
-{/* <div className='mx-8 sm-plus:mx-16 md:mx-auto md:max-w-[800px] mt-8 mb-16'>
-  <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto px-4'>
-    <div className='bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img src={indigo1} alt="Menu Items Preview" className='w-full h-full object-cover' />
-      </div>
-    </div>
-    <div className='bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img src={indigo2} alt="Project Preview 3" className='w-full h-full object-cover' />
+{/* Mobile Images */}
+<FadeIn>
+<div className='2xl:hidden flex justify-center mt-8 mb-16'>
+  <div className='relative w-fit'>
+    <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
+      <img 
+        src={comingsoon2} 
+        alt="Project Preview 3" 
+        className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
+      />
+      <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
+        <img 
+          src={comingsoon1} 
+          alt="Menu Items Preview" 
+          className='w-[170px]  xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
+        />
       </div>
     </div>
   </div>
-</div> */}
+</div>
+</FadeIn>
 
 
         
@@ -141,11 +176,11 @@ function IndigoDetails() {
             <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
-            <p className='mb-6 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+            <p className='mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
               Indigo is a multi-media post manager for a variety of social media platforms including TikTok, Discord, Instagram, Twitter (X) and Facebook. 
               Users can curate, schedule, and manage their posts in a simple and easy-to-use format. 
             </p>
-            <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>While Indigo is primarily designed for larger enterprises and 
+            <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>While Indigo is primarily designed for larger enterprises and 
               content creators with an extensive presence on a variety of social media outlets,
               anyone is able to benefit from an application like Indigo. </p>
           </div>
@@ -154,7 +189,7 @@ function IndigoDetails() {
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Stay tuned for more information to come!
               </p>
              
@@ -163,10 +198,10 @@ function IndigoDetails() {
             {/* execution Section */}
             <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                Stay tuned for more information to come!
               </p>
-              {/* <ul className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+              {/* <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
                   <li className="mb-2">
                     <span className="font-semibold"></span> 
                   </li>

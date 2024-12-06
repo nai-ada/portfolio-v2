@@ -243,7 +243,7 @@ function FrothDetails() {
                     Added user review functionality using a <span className="font-semibold text-primary">plugin to display reviews</span> and submission forms
                   </li>
                   <li className="mb-2">
-                    Developed the <span className="font-semibold v">about page</span> showcasing staff and testimonials using:
+                    Developed the <span className="font-semibold text-primary">about page</span> showcasing staff and testimonials using:
                     <ul className="list-disc pl-6 mt-2">
                       <li><span className="font-semibold text-primary">Advanced Custom Fields</span> (ACF)</li>
                       <li>Custom Post Type data</li>

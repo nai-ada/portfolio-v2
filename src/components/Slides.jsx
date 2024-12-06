@@ -39,6 +39,20 @@ const Slides = () => {
     arrows: false, 
     responsive: [
       {
+        breakpoint: 4000, // A safely large number for max width
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 2550,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
         breakpoint: 1400,
         settings: {
           slidesToShow: 2,
@@ -64,7 +78,7 @@ const Slides = () => {
       link: '/projects/aisafeguard',
     },
     {
-      name: `Galaxy Grid 2.0`,
+      name: `Galaxy Grid II`,
       img: galaxy,
       info: `Tic Tac Toe in-browser game, with an intergalactic take!`,
       link: '/projects/galaxy-grid-2',

@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import FadeLeft from '../components/FadeLeft';
+import FadeRight from '../components/FadeRight';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import GalaxyGridTools from '../components/GalaxyGridTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
-import galaxy3 from '/src/assets/gg.png';
-import galaxy1 from '/src/assets/gg2.png';
-import galaxy2 from '/src/assets/gg3.png';
+import galaxy1 from '/src/assets/gg1.svg';
+import galaxy2 from '/src/assets/gg2.svg';
 import WorksCards from '../components/WorksCards';
 
 
 
 function GalaxyGridDetails() {
-  const [activeSection, setActiveSection] = useState('highlights');
+  const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
@@ -27,47 +27,91 @@ function GalaxyGridDetails() {
           backgroundSize: '120px 120px',
         }}
       />
-      <div className="relative z-10">
-        <NavWorks />
-        <div className="pt-[100px] md-plus:pt-[150px]">
-        <HashLink 
-          smooth
-          to="/#works" 
-          className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
-        >
-          ← Back to All Works
-        </HashLink>
+          <div className="relative z-10">
+      <NavWorks />
+      <div className="pt-[100px] md-plus:pt-[150px]">
+        <div className="container mx-auto">
+          <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
+            <FadeLeft>
 
-          <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
-            <div className="relative mb-40">
-              <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
-                  <span className="text-primary">G</span>alaxy Grid 2.0.
-                </h1>
-                <div className="hidden xl:flex gap-4 mt-12">
-                  <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
-                    <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                    <a href="https://nadiavespalec.com/galaxy-grid-2/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                    </span>
-                  </Button>
-                  <a href="https://github.com/nai-ada/galaxy-grid-2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-                    <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
-                  </a>
+
+        <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
+  <HashLink 
+    smooth
+    to="/#works" 
+    className="text-primary hover:opacity-70 transition-opacity block"
+  >
+    ← Back to All Works
+  </HashLink>
+
+
+  <div className="relative mb-16">
+                  <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
+                    <h1 className="font-bold uppercase text-[57px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                      <span className="text-primary">G</span>alaxy Grid II.
+                    </h1>
+                    <div className="hidden xl:flex items-center gap-4 mt-12 flex-shrink-0">
+                      <Button 
+                        radius="full" 
+                        className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
+                      >
+                        <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                          <a href="https://nadiavespalec.com/galaxy-grid-2" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </span>
+                      </Button>
+                      <a href="https://github.com/nai-ada/galaxy-grid-2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0">
+                        <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                      </a>
+                    </div>
+                  </div>
+                  <h2 className='xl:text-[20px]'>// Project <span className="font-bold">04</span> | In-Browser Game</h2>
+                  <div className='flex xl:hidden items-center gap-4 mt-4'>
+                    <Button 
+                      radius="full" 
+                      className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
+                    >
+                      <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                        <a href="https://nadiavespalec.com/galaxy-grid-2" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                      </span>
+                    </Button>
+                    <a href="https://github.com/nai-ada/galaxy-grid-2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0">
+                      <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <h2 className='xl:text-[20px]'>// Project <span className="font-bold">04</span> | In-Browser Game</h2>
-              <div className='flex xl:hidden justify-left gap-4 mt-4'>
-                <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
-                  <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  <a href="https://nadiavespalec.com/galaxy-grid-2/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                  </span>
-                </Button>
-                <a href="https://github.com/nai-ada/galaxy-grid-2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
-                  <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
-                </a>
+            </FadeLeft>
+  
+  {/* desktop imgs */}
+  <FadeRight>
+              <div className='hidden 2xl:block w-[400px] full:w-[560px]'>
+                <div className='relative bottom-32 right-[7rem] xl-plus:right-[13rem]'>
+                  <div className='relative w-[400px] -z-10'>
+                    <img 
+                      src={galaxy2} 
+                      alt="Project Preview 3" 
+                      className='w-[400px] h-auto'
+                    />
+                    <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
+                      <img 
+                        src={galaxy1} 
+                        alt="Menu Items Preview" 
+                        className='w-[250px] h-auto'
+                      />
+                    </div> 
+                  </div>
+                </div>
               </div>
-            </div>
+            </FadeRight>
           </div>
+        </div>
+ 
+
+
+
+
+
+          
 
           <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -79,17 +123,38 @@ function GalaxyGridDetails() {
           </h1>
       </div>
 
+
+
+
+
+
+            
+{/* Mobile Images */}
+<FadeIn>
+<div className='2xl:hidden flex justify-center mt-8 mb-16'>
+  <div className='relative w-fit'>
+    <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
+      <img 
+        src={galaxy2} 
+        alt="Project Preview 3" 
+        className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
+      />
+      <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
+        <img 
+          src={galaxy1} 
+          alt="Menu Items Preview" 
+          className='w-[170px]  xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</FadeIn>
+
+
+
           
             <div className='x-sm-plus:flex justify-center text-center'> 
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('highlights')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Highlights
-                </span>
-              </Button>
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
@@ -99,7 +164,15 @@ function GalaxyGridDetails() {
                   Project Overview
                 </span>
               </Button> 
-             
+              <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('execution')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Execution
+                </span>
+              </Button>
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -109,15 +182,7 @@ function GalaxyGridDetails() {
                   Key Takeaways
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'roles' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('roles')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  My Roles
-                </span>
-              </Button>
+            
              
             </div>
 
@@ -140,9 +205,9 @@ function GalaxyGridDetails() {
              
             </div>
 
-            {/* Roles Section */}
-            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
+            {/* execution Section */}
+            <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution </h2>
               <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
               </p>
@@ -153,55 +218,6 @@ function GalaxyGridDetails() {
             </div>
             </div>
 
-    {/* Highlights Section */}
-    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-    <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
-    <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-  <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={galaxy1} 
-          alt="Homepage Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Game Start</h3>
-        </div>
-      </div>
-    </div>
-
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={galaxy2} 
-          alt="Homepage Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Role Select</h3>
-        </div>
-      </div>
-    </div>
-
-
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={galaxy3} 
-          alt="Menu Items Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Gameplay</h3>
-        </div>
-      </div>
-    </div>
-    </div>
-        
-</div>
 </div>
 
   
