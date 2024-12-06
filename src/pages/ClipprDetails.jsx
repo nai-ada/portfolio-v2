@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import FadeLeft from '../components/FadeLeft';
+import FadeRight from '../components/FadeRight';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import ClipprTools from '../components/ClipprTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
-import clippr1 from '/src/assets/clippr.png';
-import clippr2 from '/src/assets/clippr2.png';
-import clippr3 from '/src/assets/clippr3.png';
+import clippr1 from '/src/assets/clippr1.svg';
+import clippr2 from '/src/assets/clippr2.svg';
 import WorksCards from '../components/WorksCards';
 
 
 
 function ClipprDetails() {
-  const [activeSection, setActiveSection] = useState('highlights');
+  const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
@@ -27,19 +27,24 @@ function ClipprDetails() {
           backgroundSize: '120px 120px',
         }}
       />
-      <div className="relative z-10">
-        <NavWorks />
-        <div className="pt-[100px] md-plus:pt-[150px]">
-        <HashLink 
-          smooth
-          to="/#works" 
-          className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
-        >
-          ← Back to All Works
-        </HashLink>
 
-          <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
-            <div className="relative mb-40">
+          <div className="relative z-10">
+      <NavWorks />
+      <div className="pt-[100px] md-plus:pt-[150px]">
+        <div className="container  full:mx-auto">
+          <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
+            <FadeLeft>
+              <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
+                <HashLink 
+                  smooth
+                  to="/#works" 
+                  className="text-primary hover:opacity-70 transition-opacity block"
+                >
+                  ← Back to All Works
+                </HashLink>
+
+
+                <div className="relative mb-16">
               <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
                 <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
                   <span className="text-primary">C</span>lippr DB.
@@ -68,6 +73,38 @@ function ClipprDetails() {
               </div>
             </div>
           </div>
+            </FadeLeft>
+  
+
+  {/* desktop imgs */}
+  <FadeRight>
+              <div className='hidden 2xl:block w-[580px] full:w-[750px]'>
+                <div className='relative bottom-32 right-[8rem] lg-plus:right-[10rem] xl-plus:right-[15rem]'>
+                  <div className='relative w-[400px] -z-10'>
+                    <img 
+                      src={clippr2} 
+                      alt="Project Preview 3" 
+                      className='w-[400px] h-auto'
+                    />
+                    <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
+                      <img 
+                        src={clippr1} 
+                        alt="Menu Items Preview" 
+                        className='w-[250px] h-auto'
+                      />
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </FadeRight>
+          </div>
+        </div>
+ 
+
+
+
+
+
 
           <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -79,17 +116,37 @@ function ClipprDetails() {
           </h1>
       </div>
 
+
+
+
+{/* Mobile Images */}
+<FadeIn>
+<div className='2xl:hidden flex justify-center mt-8 mb-16'>
+  <div className='relative w-fit'>
+    <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
+      <img 
+        src={clippr2} 
+        alt="Project Preview 3" 
+        className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
+      />
+      <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
+        <img 
+          src={clippr1} 
+          alt="Menu Items Preview" 
+          className='w-[170px]  xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</FadeIn>
+
+
+
+
           
             <div className='x-sm-plus:flex justify-center text-center'> 
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('highlights')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Highlights
-                </span>
-              </Button>
+    
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
@@ -99,7 +156,15 @@ function ClipprDetails() {
                   Project Overview
                 </span>
               </Button>
-             
+                <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('execution')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Execution
+                </span>
+              </Button>
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -109,15 +174,7 @@ function ClipprDetails() {
                   Key Takeaways
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'roles' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('roles')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  My Roles
-                </span>
-              </Button>
+           
               
             </div>
 
@@ -126,92 +183,64 @@ function ClipprDetails() {
             <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
-            <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
+            <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+             Clippr is a movie database app which displays data from the TMDb database API, allowing users to search for movies, archive their favorites, and view individual movie data.
+             This application is currently not responsive, but another rendition of this project is currently in development. Stay tuned for the newly updated version of Clippr! 
             </p>
           </div>
           
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sed corporis voluptate natus quibusdam cum, excepturi earum numquam dolores veritatis suscipit ipsam? Nihil temporibus soluta vitae quod neque nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam aliquam culpa sint nostrum, consequatur odit laboriosam neque provident voluptatum magni esse eum exercitationem, voluptatibus ad cupiditate hic soluta quam!
+              <p className='mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              As my introduction to React development, this project initially presented a challenging learning curve. While React appeared to be a more 
+              sophisticated extension of JavaScript, the development process evolved into an enlightening and rewarding experience. 
+              The logical structure and component-based architecture of React particularly resonated with me, which is also what inspired me to complete my portfolio project in React. 
               </p>
-             
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              Working in a team proved invaluable during the initial development, as it allowed us to distribute the workload and 
+              tackle multiple features simultaneously. However, the second rendition will be a personal rendition of this 
+              project to further deepen my understanding of React's ecosystem. 
+              </p>
             </div>
 
-            {/* Roles Section */}
-            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
+            {/* execution Section */}
+            <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution</h2>
+               <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+                  <li className="mb-2">
+                  Includes a mechanic where users can add movies to their "Favorites"
+                  </li>
+                  <li className="mb-2">
+                    Displays each movie by accessing the TMDb database with an <span className="font-semibold text-primary">API key</span>. Users can filter movies with different tags, including "Popular", "Upcoming", "Now Playing", and "Top Rated"
+                  </li>
+                  <li className="mb-2">
+                  Prior to development, project was prototyped using <span className="font-semibold text-primary">Adobe XD</span> and a mockup was created using <span className="font-semibold text-primary">Photoshop</span>
+                  </li>
+                  <li className="mb-2">
+                  Includes the ability to <span className="font-semibold text-primary">view more info</span> about each movie, which takes users to a page which details the movie rating, cast, and synopsis
+                  </li>
+                  <li className="mb-2">
+                  Enables a <span className="font-semibold text-primary">search function</span> which utilizes the API key to display the search results. Additionally, the API helps display a featured movie on the homepage, which also includes access to that movies' trailer
+                  </li>
+                </ul>
               
             </div>
             </div>
 
-    {/* Highlights Section */}
-    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-    <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
-    <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-  <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={clippr1} 
-          alt="Homepage Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Homepage</h3>
-        </div>
-      </div>
-    </div>
+    
 
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={clippr2} 
-          alt="Homepage Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Movies</h3>
-        </div>
-      </div>
-    </div>
-
-
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={clippr3} 
-          alt="Menu Items Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Favorites</h3>
-        </div>
-      </div>
-    </div>
-    </div>
-        
-</div>
 </div>
 
   
-       
+<FadeIn>
         <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16 '>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
             <ClipprTools />
           </div>
         </div>
+        </FadeIn>
      
 
 

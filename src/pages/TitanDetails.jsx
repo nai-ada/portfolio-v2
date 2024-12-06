@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import FadeLeft from '../components/FadeLeft';
+import FadeRight from '../components/FadeRight';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
@@ -8,14 +9,14 @@ import FigmaIcon from '/src/assets/figmalink.svg';
 import TitanTools from '../components/TitanTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
-import titan1 from '/src/assets/titan.png';
-import titan2 from '/src/assets/titan2.png';
+import titan1 from '/src/assets/titan1.svg';
+import titan2 from '/src/assets/titan2.svg';
 import WorksCards from '../components/WorksCards';
 
 
 
 function TitanDetails() {
-  const [activeSection, setActiveSection] = useState('highlights');
+  const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
@@ -27,20 +28,26 @@ function TitanDetails() {
           backgroundSize: '120px 120px',
         }}
       />
-      <div className="relative z-10">
-        <NavWorks />
-        <div className="pt-[100px] md-plus:pt-[150px]">
-        <HashLink 
-          smooth
-          to="/#works" 
-          className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
-        >
-          ← Back to All Works
-        </HashLink>
+    
 
-          <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
-            <div className="relative mb-40">
-              <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
+          <div className="relative z-10">
+      <NavWorks />
+      <div className="pt-[100px] md-plus:pt-[150px]">
+        <div className="container  full:mx-auto">
+          <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
+            <FadeLeft>
+              <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
+                <HashLink 
+                  smooth
+                  to="/#works" 
+                  className="text-primary hover:opacity-70 transition-opacity block"
+                >
+                  ← Back to All Works
+                </HashLink>
+
+
+                <div className="relative mb-16">
+                <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
                 <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
                   <span className="text-primary">T</span>itan Tech.
                 </h1>
@@ -68,6 +75,34 @@ function TitanDetails() {
               </div>
             </div>
           </div>
+</FadeLeft>
+  
+
+  {/* desktop imgs */}
+  <FadeRight>
+              <div className='hidden 2xl:block w-[400px] full:w-[570px]'>
+                <div className='relative bottom-32 right-[16rem] lg-plus:right-[17rem] xl-plus:right-[20rem]'>
+                  <div className='relative w-[400px] -z-10'>
+                    <img 
+                      src={titan2} 
+                      alt="Project Preview 3" 
+                      className='w-[400px] h-auto'
+                    />
+                    <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
+                      <img 
+                        src={titan1} 
+                        alt="Menu Items Preview" 
+                        className='w-[250px] h-auto'
+                      />
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </FadeRight>
+          </div>
+        </div>
+ 
+
 
           <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -79,17 +114,43 @@ function TitanDetails() {
           </h1>
       </div>
 
+
+
+
+
+{/* Mobile Images */}
+<FadeIn>
+<div className='2xl:hidden flex justify-center mt-8 mb-16'>
+  <div className='relative w-fit'>
+    <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
+      <img 
+        src={titan2} 
+        alt="Project Preview 3" 
+        className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
+      />
+      <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
+        <img 
+          src={titan1} 
+          alt="Menu Items Preview" 
+          className='w-[170px]  xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</FadeIn>
+
+
+
+
+
+
+
+
+
           
             <div className='x-sm-plus:flex justify-center text-center'> 
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('highlights')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Highlights
-                </span>
-              </Button>
+  
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
@@ -99,7 +160,15 @@ function TitanDetails() {
                   Project Overview
                 </span>
               </Button>
-             
+              <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('execution')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Execution
+                </span>
+              </Button>
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -109,15 +178,7 @@ function TitanDetails() {
                   Key Takeaways
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'roles' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('roles')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  My Roles
-                </span>
-              </Button>
+           
               
             </div>
 
@@ -126,29 +187,34 @@ function TitanDetails() {
             <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
-            <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
+            <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+            Executed a precise implementation of Titan Technologies' landing page, transforming their Figma mockup into a fully functional webpage. 
+            Maintained strict adherence to design specifications while strategically integrating enhanced features to improve user experience.
             </p>
           </div>
           
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sed corporis voluptate natus quibusdam cum, excepturi earum numquam dolores veritatis suscipit ipsam? Nihil temporibus soluta vitae quod neque nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam aliquam culpa sint nostrum, consequatur odit laboriosam neque provident voluptatum magni esse eum exercitationem, voluptatibus ad cupiditate hic soluta quam!
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              Through the completion of this project, I learned to deliver pixel-perfect implementations while enhancing user experience through strategic customizations. 
+              I feel I was able to demonstrate strong attention to detail and efficient execution while maintaining design fidelity under tight deadlines, which is something I hadn't experienced prior to 
+              completing this project.
               </p>
              
             </div>
 
-            {/* Roles Section */}
-            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
+            {/* execution Section */}
+            <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution</h2>
+              <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+                  <li className="mb-2">
+                  Used JavaScript for <span className="text-primary font-semibold">subtle animations</span> to make the page stand out. Predominantly used HTML and CSS to <span className="text-primary font-semibold">recreate the mockup</span> that was provided
+                  </li>
+                  <li className="mb-2">
+                    Included all aspects of the design that the client requested, accurately displaying information and styling to adhere to the original design
+                  </li>
+                </ul>
               
             </div>
             </div>
@@ -156,7 +222,7 @@ function TitanDetails() {
     {/* Highlights Section */}
     <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
     <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
-    <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+    <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
               </p>
   <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
@@ -193,14 +259,14 @@ function TitanDetails() {
 </div>
 
   
-       
+       <FadeIn>
         <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16 '>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
             <TitanTools />
           </div>
         </div>
-     
+     </FadeIn>
 
 
       <FadeIn>

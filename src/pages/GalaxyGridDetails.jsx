@@ -30,7 +30,7 @@ function GalaxyGridDetails() {
           <div className="relative z-10">
       <NavWorks />
       <div className="pt-[100px] md-plus:pt-[150px]">
-        <div className="container mx-auto">
+        <div className="container  full:mx-auto">
           <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
             <FadeLeft>
 
@@ -212,14 +212,14 @@ function GalaxyGridDetails() {
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution </h2>
               <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
                   <li className="mb-2">
-                    Practiced using various <span className="font-semibold text-primary">if-else and switch statements</span> for conditional styling and rendering, as well as <span className="font-semibold text-primary">event and DOM methods</span> and various <span className="font-semibold text-primary">properties</span>.
+                    Practiced using various <span className="font-semibold text-primary">if-else and switch statements</span> for conditional styling and rendering, as well as <span className="font-semibold text-primary">event and DOM methods</span> and <span className="font-semibold text-primary">JavaScript properties</span>
                   </li>
                   <li className="mb-2">
                   Elevated the project's complexity through the implementation of advanced systems, including a <span className="font-semibold text-primary">dynamic role-selection mechanism</span> allowing 
-                  users to choose between alien and astronaut characters, a <span className="font-semibold text-primary">comprehensive scoring system</span>, and <span className="font-semibold text-primary">victory logic</span> that determines winners based on score comparisons.
+                  users to choose between alien and astronaut characters, a <span className="font-semibold text-primary">comprehensive scoring system</span>, and <span className="font-semibold text-primary">victory logic</span> that determines winners based on score comparisons
                   </li>
                   <li className="mb-2">
-                    Ensured project was <span className="font-semibold text-primary">responsive and optimized</span> for mobile use despite original being desktop only.
+                    Ensured project was <span className="font-semibold text-primary">responsive and optimized</span> for mobile use despite original being desktop only
                   </li>
                 </ul>
               
@@ -229,13 +229,14 @@ function GalaxyGridDetails() {
 </div>
 
   
-       
+<FadeIn>
         <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16 '>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
             <GalaxyGridTools />
           </div>
         </div>
+        </FadeIn>
      
 
 

@@ -30,7 +30,7 @@ function AiSaDetails() {
     <div className="relative z-10">
       <NavWorks />
       <div className="pt-[100px] md-plus:pt-[150px]">
-        <div className="container mx-auto">
+        <div className="container  full:mx-auto">
           <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
             <FadeLeft>
               <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
@@ -41,9 +41,9 @@ function AiSaDetails() {
                 >
                   ← Back to All Works
                 </HashLink>
-                <div className="relative mb-40">
+                <div className="relative mb-40 md:mb-20">
                 <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                    <h1 className="font-bold uppercase text-[42px] sm-plus:text-[55px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                    <h1 className="font-bold uppercase text-[38px] xs:text-[45px] sm-plus:text-[55px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
                       <span className="text-primary">A</span>ISafeguard.
                     </h1>
                 <div className="hidden xl:flex gap-4 mt-12">

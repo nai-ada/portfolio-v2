@@ -34,7 +34,7 @@ function PortfolioDetails() {
     <div className="relative z-10">
       <NavWorks />
       <div className="pt-[100px] md-plus:pt-[150px]">
-        <div className="container mx-auto">
+        <div className="container  full:mx-auto">
           <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
             <FadeLeft>
               <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
@@ -49,7 +49,7 @@ function PortfolioDetails() {
 
                 <div className="relative mb-40 md:mb-20">
                   <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                    <h1 className="font-bold uppercase text-[48px] xs:text-[50px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                    <h1 className="font-bold uppercase text-[48px] xs:text-[56px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
                       <span className="text-primary">P</span>ortfolio.
                     </h1>
                     <div className="hidden xl:flex items-center gap-4 mt-12 flex-shrink-0">
@@ -63,6 +63,9 @@ function PortfolioDetails() {
                       </Button>
                       <a href="https://github.com/nai-ada/portfolio-v2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0">
                         <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
+                      </a>
+                      <a href="https://www.figma.com/design/9jSVd92pcOop5tYOqxschn/Portfolio-Project-2?node-id=0-1&t=xr19yNumMv82app6-1" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
+                      <img src={FigmaIcon} alt="Figma Logo" className='w-8 xs:w-9'/>
                       </a>
                     </div>
                   </div>
@@ -79,6 +82,9 @@ function PortfolioDetails() {
                     <a href="https://github.com/nai-ada/portfolio-v2" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0">
                       <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
                     </a>
+                    <a href="https://www.figma.com/design/9jSVd92pcOop5tYOqxschn/Portfolio-Project-2?node-id=0-1&t=xr19yNumMv82app6-1" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
+                      <img src={FigmaIcon} alt="Figma Logo" className='w-8 xs:w-9'/>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -87,8 +93,8 @@ function PortfolioDetails() {
 
   {/* desktop imgs */}
             <FadeRight>
-              <div className='hidden 2xl:block w-[800px]'>
-                <div className='relative bottom-32 right-[5rem] lg-plus:right-[4rem] xl-plus:right-[9rem]'>
+              <div className='hidden 2xl:block w-[560px] full:w-[740px]'>
+                <div className='relative bottom-32 right-[3rem] lg-plus:right-[4rem] xl-plus:right-[9rem]'>
                   <div className='relative w-[400px] -z-10'>
                     <img 
                       src={portfolio2} 
@@ -193,7 +199,7 @@ function PortfolioDetails() {
             </p>
             <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
             This portfolio reflects my growth through its refined design and enhanced user experience. With features like theme switching and streamlined navigation, it delivers a cleaner, 
-            more intuitive experience than its predecessor. The minimal design better highlights my work while staying true to my belief that good design should be both simple and functional.
+            more intuitive experience than its predecessor. The minimal design better highlights my work while staying true to my belief that a good design should be both simple and functional.
             </p>
           </div>
           </FadeIn>
@@ -218,7 +224,7 @@ function PortfolioDetails() {
                     as well as being able to implement a light/dark mode feature
                   </li>
                   <li className="mb-2">
-                    Deployed and finalized product based on design mockup created using <span className="font-semibold text-primary">Figma</span>
+                    Deployed and finalized project based on design mockup created using <span className="font-semibold text-primary">Figma</span>
                   </li>
                   <li className="mb-2">
                     On the homepage, implemented a <span className="font-semibold text-primary">unique but intuitive system</span> where website visitors can access information by interacting with accordions,

@@ -31,7 +31,7 @@ function FrothDetails() {
     <div className="relative z-10">
       <NavWorks />
       <div className="pt-[100px] md-plus:pt-[150px]">
-        <div className="container mx-auto">
+        <div className="container full:mx-auto">
           <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
             <FadeLeft>
               <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
@@ -186,7 +186,7 @@ function FrothDetails() {
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
             <p className='mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-            This project is a dynamic cafe website developed as the final Capstone project for the BCIT Front-End Web Developer program. 
+            This project is a dynamic matcha cafe website developed as the final Capstone project for the BCIT Front-End Web Developer program. 
             This project was built with WordPress, using advanced development techniques like custom taxonomies and post types, 
             which allows for a fully customized user experience.
             </p>

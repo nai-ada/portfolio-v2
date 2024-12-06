@@ -30,7 +30,7 @@ function IndigoDetails() {
     <div className="relative z-10">
       <NavWorks />
       <div className="pt-[100px] md-plus:pt-[150px]">
-        <div className="container mx-auto">
+        <div className="container full:mx-auto">
           <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
             <FadeLeft>
               <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
