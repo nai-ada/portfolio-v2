@@ -6,7 +6,7 @@ import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import GalaxyGridTools from '../components/GalaxyGridTools';
-import Footer from '../components/Footer';
+import FooterWorks from '../components/FooterWorks';
 import FadeIn from '../components/FadeIn';
 import galaxy1 from '/src/assets/gg1.svg';
 import galaxy2 from '/src/assets/gg2.svg';
@@ -248,7 +248,7 @@ function GalaxyGridDetails() {
           <WorksCards currentProject="galaxy" />
           </div>
         </FadeIn>
-        <Footer />
+        <FooterWorks />
       </div>
    
 

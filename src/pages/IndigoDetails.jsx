@@ -6,7 +6,7 @@ import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import IndigoTools from '../components/IndigoTools';
-import Footer from '../components/Footer';
+import FooterWorks from '../components/FooterWorks';
 import FadeIn from '../components/FadeIn';
 import comingsoon1 from '/src/assets/comingsoonmock1.svg';
 import comingsoon2 from '/src/assets/comingsoonmock2.svg';
@@ -251,7 +251,7 @@ function IndigoDetails() {
           <WorksCards currentProject="indigo" />
           </div>
         </FadeIn>
-        <Footer />
+        <FooterWorks />
       </div>
    
 

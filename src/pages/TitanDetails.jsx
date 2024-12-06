@@ -7,7 +7,7 @@ import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import FigmaIcon from '/src/assets/figmalink.svg';
 import TitanTools from '../components/TitanTools';
-import Footer from '../components/Footer';
+import FooterWorks from '../components/FooterWorks';
 import FadeIn from '../components/FadeIn';
 import titan1 from '/src/assets/titan1.svg';
 import titan2 from '/src/assets/titan2.svg';
@@ -277,7 +277,7 @@ function TitanDetails() {
           <WorksCards currentProject="titan" />
           </div>
         </FadeIn>
-        <Footer />
+        <FooterWorks />
       </div>
    
 

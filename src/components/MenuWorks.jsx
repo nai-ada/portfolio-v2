@@ -15,26 +15,10 @@ import { useTheme } from '../providers/ThemeProvider';
 import { HashLink } from 'react-router-hash-link';
 
 function MenuWorks() {
-  const menuItems = ['Home', 'Other Works']; 
+  const menuItems = ['Home', 'All Works']; 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { theme, toggleTheme } = useTheme();
 
-  const scrollToSection = (sectionId) => {
-    if (sectionId === 'home') {
-      window.location.href = '/';
-      setIsMenuOpen(false);
-      return;
-    }
-    const element = document.getElementById('other-works');
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-      });
-      setIsMenuOpen(false);
-    }
-  };
 
   return (
     <Navbar
@@ -65,13 +49,13 @@ function MenuWorks() {
         </NavbarItem>
 
         <NavbarItem className="relative group">
-          <Link 
-            color="foreground" 
-            onClick={() => scrollToSection('other-works')}
+        <HashLink 
+            smooth
+            to="/pages/all-works" 
             className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
-            Other Works
-          </Link>
+            All Works
+          </HashLink>
           <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black dark:bg-white opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
         </NavbarItem>
 
@@ -103,12 +87,14 @@ function MenuWorks() {
                 {item}
               </HashLink>
             ) : (
-              <div
-                onClick={() => scrollToSection('other-works')}
+              <HashLink 
+                smooth
+                to="/pages/all-works"
                 className="mt-7 text-black dark:text-white text-[22px] text-right ml-2 pt-4 font-[400] cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item}
-              </div>
+              </HashLink>
             )}
           </NavbarMenuItem>
         ))}

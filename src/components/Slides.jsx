@@ -39,7 +39,7 @@ const Slides = () => {
     arrows: false, 
     responsive: [
       {
-        breakpoint: 4000, // A safely large number for max width
+        breakpoint: 4000, 
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,

@@ -4,7 +4,7 @@ import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import FrothTools from '../components/FrothTools';
-import Footer from '../components/Footer';
+import FooterWorks from '../components/FooterWorks';
 import FadeIn from '../components/FadeIn';
 import froth1 from '/src/assets/froth1.svg';
 import froth2 from '/src/assets/froth2.svg';
@@ -296,7 +296,7 @@ function FrothDetails() {
 
      
     
-        <Footer />
+        <FooterWorks />
       </div>
    
 

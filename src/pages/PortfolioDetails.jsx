@@ -5,7 +5,7 @@ import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import PortfolioTools from '../components/PortfolioTools';
-import Footer from '../components/Footer';
+import FooterWorks from '../components/FooterWorks';
 import FadeIn from '../components/FadeIn';
 import FadeLeft from '../components/FadeLeft';
 import FadeRight from '../components/FadeRight';
@@ -259,7 +259,7 @@ function PortfolioDetails() {
           <WorksCards currentProject="portfolio" />
           </div>
         </FadeIn>
-        <Footer />
+        <FooterWorks />
       </div>
    
 

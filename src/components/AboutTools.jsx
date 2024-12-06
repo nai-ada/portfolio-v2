@@ -118,7 +118,7 @@ function AboutTools() {
         <Accordion variant="splitted" className="max-w-[1000px] px-6">
           <AccordionItem
             key="1"
-            className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#4e5e8c] dark:to-darkBackground"
+            className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#2e3a5b] dark:to-darkBackground"
             aria-label="Accordion 1"
             title={
               <div className="flex items-center w-full">
@@ -142,7 +142,7 @@ function AboutTools() {
 
         <AccordionItem
           key="2"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#4e5e8c] dark:to-darkBackground"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#2e3a5b] dark:to-darkBackground"
           aria-label="Accordion 2"
           title={
             <div className="flex items-center w-full">
@@ -166,7 +166,7 @@ function AboutTools() {
 
         <AccordionItem
           key="3"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#4e5e8c] dark:to-darkBackground"
+          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#2e3a5b] dark:to-darkBackground"
           aria-label="Accordion 3"
           title={
             <div className="flex items-center w-full">
