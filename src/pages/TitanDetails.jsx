@@ -42,7 +42,7 @@ function TitanDetails() {
                   to="/#works" 
                   className="text-primary hover:opacity-70 transition-opacity block"
                 >
-                  ← Back to All Works
+                  ← Back to Works
                 </HashLink>
 
 

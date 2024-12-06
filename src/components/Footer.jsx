@@ -13,7 +13,7 @@ function Footer() {
     }
   };
   return (
-    <FadeIn>
+ 
     <footer className="bg-gradient-to-t from-[#b3c6f6] to-white dark:from-[#1d253a] dark:to-darkBackground py-12 px-6 md:p-[6rem] relative -z-100">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col space-y-8">
@@ -85,7 +85,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-    </FadeIn>
+
   );
 }
 

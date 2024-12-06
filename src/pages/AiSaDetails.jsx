@@ -39,7 +39,7 @@ function AiSaDetails() {
                   to="/#works" 
                   className="text-primary hover:opacity-70 transition-opacity block"
                 >
-                  ← Back to All Works
+                  ← Back to Works
                 </HashLink>
                 <div className="relative mb-40 md:mb-20">
                 <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">

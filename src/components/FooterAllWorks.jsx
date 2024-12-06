@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from '@nextui-org/react';
 import FadeIn from '../components/FadeIn';
 
-function FooterWorks() {
+function FooterAllWorks() {
   const scrollToSection = (sectionId) => {
     if (sectionId === 'home') {
       window.location.href = '/';
@@ -22,7 +22,7 @@ function FooterWorks() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col space-y-8">
           {/* Social Links Section */}
- 
+
 
           <div className="space-y-4">
             <h2 className="text-[22px]  font-bold text-[#222222] dark:text-white mb-4 uppercase">Links</h2>
@@ -53,11 +53,11 @@ function FooterWorks() {
               </a>
             </div>
           </div>
-    
+
 
           {/* Border Divider */}
           <div className="border-t border-[#222222] dark:border-white opacity-20"></div>
-   
+
 
           {/* Navigation Section */}
           <div className="space-y-4">
@@ -68,18 +68,12 @@ function FooterWorks() {
                 href="/"
                 className="text-sm md:text-base  text-[#222222] dark:text-white font-[500] hover:opacity-80 cursor-pointer"
               >
-                Home
+                Return Home
               </Link>
-              <Link 
-                href="/pages/all-works"
-                color="foreground"
-                className="text-sm md:text-base  text-[#222222] dark:text-white font-[500] hover:opacity-80 cursor-pointer capitalize"
-              >
-                All Works
-              </Link>
+  
             </div>
           </div>
-    
+
 
         </div>
 
@@ -94,4 +88,4 @@ function FooterWorks() {
   );
 }
 
-export default FooterWorks;
+export default FooterAllWorks;
