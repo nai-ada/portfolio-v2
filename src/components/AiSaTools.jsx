@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import { Accordion, AccordionItem } from '@nextui-org/accordion';
-
 import mySqlLogo from '/src/assets/mysql.png';
 import npmLogo from '/src/assets/npm.png';
 import wordpressLogo from '/src/assets/wordpress.png';
@@ -23,14 +20,11 @@ import framermotionLogo from '/src/assets/framermotion.png';
 import nextuiLogo from '/src/assets/nextui.png';
 import threejsLogo from '/src/assets/threejs.png';
 import reactLogo from '/src/assets/react.png';
-import designIcon from '/src/assets/design.svg';
-import devIcon from '/src/assets/dev.svg';
-import skillsIcon from '/src/assets/skills.svg';
 
 const logos = {
   npm: { src: npmLogo, alt: 'NPM', title: 'NPM' },
   shopify: { src: shopifyLogo, alt: 'Shopify', title: 'Shopify' },
-  woocommerce: { src: woocommerceLogo, alt: 'Woocommerce', title: 'WooCommerce' },
+  woocommerce: { src: woocommerceLogo, alt: 'WooCommerce', title: 'WooCommerce' },
   figma: { src: figmaLogo, alt: 'Figma', title: 'Figma' },
   xd: { src: xdLogo, alt: 'Adobe XD', title: 'Adobe XD' },
   photoshop: { src: photoshopLogo, alt: 'Photoshop', title: 'Photoshop' },
@@ -54,7 +48,7 @@ const logos = {
 
 const createLogoElements = (logoKeys) =>
   logoKeys.map((key) => (
-    <div key={key} className="inline-flex items-center p-2 m-2 rounded-lg">
+    <div key={key} className="inline-flex items-center p-2 m-2 rounded-lg ">
       <img
         src={logos[key].src}
         alt={logos[key].alt}
@@ -66,113 +60,51 @@ const createLogoElements = (logoKeys) =>
     </div>
   ));
 
-const devContent = createLogoElements([
-  'javascript',
-  'html',
-  'css',
-]);
-
-const designContent = createLogoElements([
-  'figma',
-]);
-
+const devTools = ['git', 'tailwind', 'react', 'javascript', 'html', 'css', 'nextui', 'framermotion'];
+const designTools = ['figma'];
 const skillsContent = [
+  'Agile',
+  'UX/UI',
   'Problem Solving',
   'Mockups',
   'Team Collaboration',
-  'Agile',
+  'SEO',
+  'Rest API',
   'Stripe Setup',
 ];
 
 
-
 function AiSaTools() {
   return (
-    <>
-      <div className="mb-16 md:ml-6 md:mt-10">
-        <Accordion variant="splitted" className="max-w-[1000px]">
-          <AccordionItem
-            key="1"
-            className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
-            aria-label="Accordion 1"
-            title={
-              <div className="flex items-center w-full">
-                <img 
-                  src={devIcon} 
-                  alt="Development Icon" 
-                  className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
-                />
-                <span className="text-[#2b2b2b] dark:text-white">Development Tools</span>
-              </div>
-            }
-            classNames={{
-              title: 'text-md font-medium md:text-[20px] group',
-              content: 'text-sm py-4',
-            }}
-          >
-            <div className="flex flex-wrap justify-start gap-2">
-              {devContent}
-            </div>
-          </AccordionItem>
-
-        <AccordionItem
-          key="2"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
-          aria-label="Accordion 2"
-          title={
-            <div className="flex items-center w-full">
-              <img 
-                src={designIcon} 
-                alt="Design Icon" 
-                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
-              />
-              <span className="text-[#2b2b2b] dark:text-white">Design Tools</span>
-            </div>
-          }
-          classNames={{
-            title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-4',
-          }}
-        >
-            <div className="flex flex-wrap justify-start gap-2">
-              {designContent}
-            </div>
-        </AccordionItem>
-
-        <AccordionItem
-          key="3"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#abc3ff] to-[white] md:py-2 dark:from-[#607bc1] dark:to-darkBackground"
-          aria-label="Accordion 3"
-          title={
-            <div className="flex items-center w-full">
-              <img 
-                src={skillsIcon} 
-                alt="Skills Icon" 
-                className="w-5 h-5 ml-2 mr-2 dark:invert"
-              />
-              <span className="text-[#2b2b2b] dark:text-white">Other Skills</span>
-            </div>
-          }
-          classNames={{
-            title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-6',
-          }}
-        >
-          <ul className="flex flex-wrap gap-4 text-sm md:text-[18px]">
-            {skillsContent.map((skill, index) => (
-               <li 
-               key={index} 
-               className="rounded-lg px-3 py-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6591ff] to-[#5ad3ff] text-sm md:text-[18px]"
-             >
-               {skill}
-             </li>
-            ))}
-          </ul>
-        </AccordionItem>
-
-      </Accordion>
+    <div className="space-y-8">
+      <div>
+        <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Development Tools</h3>
+        <div className="flex flex-wrap justify-start gap-2">
+          {createLogoElements(devTools)}
+        </div>
       </div>
-    </>
+
+      <div>
+        <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Design Tools</h3>
+        <div className="flex flex-wrap justify-start gap-2">
+          {createLogoElements(designTools)}
+        </div>
+      </div>
+
+      <div>
+        <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Other Skills</h3>
+        <ul className="flex flex-wrap gap-4">
+          {skillsContent.map((skill, index) => (
+            <li 
+            key={index} 
+            className="rounded-lg px-3 py-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6591ff] to-[#5ad3ff] text-sm md:text-[18px]"
+          >
+            {skill}
+          </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }
 

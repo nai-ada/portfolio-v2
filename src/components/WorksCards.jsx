@@ -11,6 +11,8 @@ import froth from '/src/assets/froth1.png';
 import FadeIn from './FadeIn';
 import comingsoon from '/src/assets/comingsoon.svg';
 
+
+
 const WorksCards = ({ currentProject = 'froth' }) => {
   const projects = useMemo(() => [
     {

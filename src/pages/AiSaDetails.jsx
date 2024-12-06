@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import FadeLeft from '../components/FadeLeft';
+import FadeRight from '../components/FadeRight';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
 import GitHub from '/src/assets/github.svg';
 import AiSaTools from '../components/AiSaTools';
 import Footer from '../components/Footer';
 import FadeIn from '../components/FadeIn';
-import aisa1 from '/src/assets/aisa.png';
-import aisa2 from '/src/assets/aisahome2.png';
-import aisa3 from '/src/assets/aisaslides.png';
+import comingsoon1 from '/src/assets/comingsoonmock1.svg';
+import comingsoon2 from '/src/assets/comingsoonmock2.svg';
 import WorksCards from '../components/WorksCards';
 
 
 
 function AiSaDetails() {
-  const [activeSection, setActiveSection] = useState('highlights');
+  const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
@@ -27,49 +27,79 @@ function AiSaDetails() {
           backgroundSize: '120px 120px',
         }}
       />
-      <div className="relative z-10">
-        <NavWorks />
-        <div className="pt-[100px] md-plus:pt-[150px]">
-        <HashLink 
-          smooth
-          to="/#works" 
-          className="text-primary hover:opacity-70 transition-opacity pl-4 xs:ml-2 sm-plus:ml-[2rem] md:ml-[4rem] md:mr-[4rem] md-x:ml-[6rem] md-x:mr-[6rem] lg:ml-[7rem] full:ml-[9rem]"
-        >
-          ← Back to All Works
-        </HashLink>
-
-          <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md:ml-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem]'>
-            <div className="relative mb-40">
-              <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                <h1 className="font-bold uppercase text-[38px] xs:text-[45px] sm-plus:text-[55px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight">
-                  <span className="text-primary">A</span>iSafeguard.
-                </h1>
+    <div className="relative z-10">
+      <NavWorks />
+      <div className="pt-[100px] md-plus:pt-[150px]">
+        <div className="container mx-auto">
+          <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
+            <FadeLeft>
+              <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] md-x:ml-[8rem] lg:ml-[9rem] full:ml-[13rem] xl:min-w-[600px] xl:max-w-[800px]'>
+                <HashLink 
+                  smooth
+                  to="/#works" 
+                  className="text-primary hover:opacity-70 transition-opacity block"
+                >
+                  ← Back to All Works
+                </HashLink>
+                <div className="relative mb-40">
+                <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
+                    <h1 className="font-bold uppercase text-[42px] sm-plus:text-[55px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                      <span className="text-primary">A</span>ISafeguard.
+                    </h1>
                 <div className="hidden xl:flex gap-4 mt-12">
                   <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                     <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                    <a href="https://nadiavespalec.com/AiSaWeb" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                      <a>Coming Soon</a>
                     </span>
                   </Button>
-                {/* GitHub Repo currently unavailable */}
+                  {/* add in github repo once available */}
                   {/* <a href="" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
                     <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
                   </a> */}
                 </div>
               </div>
-              <h2 className='xl:text-[20px]'>// Project <span className="font-bold">05</span> | Browser Extension and Website</h2>
+              <h2 className='xl:text-[20px]'>// Project <span className="font-bold">05</span> | Chrome Extension & Website</h2>
               <div className='flex xl:hidden justify-left gap-4 mt-4'>
                 <Button radius="full" className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4">
                   <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  <a href="https://nadiavespalec.com/AiSaWeb" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a>Coming Soon</a>
                   </span>
                 </Button>
-                {/* GitHub Repo currently unavailable */}
+                  {/* add in github repo once available */}
                 {/* <a href="" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity dark:invert">
                   <img src={GitHub} alt="GitHub Logo" className='w-8 xs:w-9'/>
                 </a> */}
               </div>
             </div>
           </div>
+            </FadeLeft>
+  
+  {/* desktop imgs */}
+            <FadeRight>
+              <div className='hidden 2xl:block w-[380px] full:w-[560px]'>
+                <div className='relative bottom-32 right-[12rem] lg-plus:right-[12rem] xl-plus:right-[16rem]'>
+                  <div className='relative w-[400px] -z-10'>
+                    <img 
+                      src={comingsoon2} 
+                      alt="Project Preview 3" 
+                      className='w-[400px] h-auto'
+                    />
+                    <div className='absolute w-[250px] -right-[6rem] top-[8rem]'>
+                      <img 
+                        src={comingsoon1} 
+                        alt="Menu Items Preview" 
+                        className='w-[250px] h-auto'
+                      />
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </FadeRight>
+          </div>
+        </div>
+ 
+
+
 
           <div className="hidden lg:block absolute lg:-left-56 xl-plus:-left-32" style={{ top: '1050px' }}>
           <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -81,17 +111,34 @@ function AiSaDetails() {
           </h1>
       </div>
 
-          
+
+      
+{/* Mobile Images */}
+<FadeIn>
+<div className='2xl:hidden flex justify-center mt-8 mb-16'>
+  <div className='relative w-fit'>
+    <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
+      <img 
+        src={comingsoon2} 
+        alt="Project Preview 3" 
+        className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
+      />
+      <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
+        <img 
+          src={comingsoon1} 
+          alt="Menu Items Preview" 
+          className='w-[170px]  xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</FadeIn>
+
+
+        
             <div className='x-sm-plus:flex justify-center text-center'> 
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'highlights' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('highlights')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  Highlights
-                </span>
-              </Button>
+
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'overview' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 ml-2 m-[0.5rem]`}
@@ -100,8 +147,16 @@ function AiSaDetails() {
                 <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                   Project Overview
                 </span>
+              </Button> 
+               <Button 
+                radius="full" 
+                className={`border-primary ${activeSection === 'execution' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
+                onClick={() => setActiveSection('execution')}
+              >
+                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
+                  Project Execution
+                </span>
               </Button>
-             
               <Button 
                 radius="full" 
                 className={`border-primary ${activeSection === 'takeaways' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
@@ -111,114 +166,82 @@ function AiSaDetails() {
                   Key Takeaways
                 </span>
               </Button>
-              <Button 
-                radius="full" 
-                className={`border-primary ${activeSection === 'roles' ? 'bg-primary text-white' : 'bg-transparent text-[#222222] dark:text-white'} p-4 xs:p-5 border-2 min-w-16 h-8 md:min-w-20 md:h-10 m-[0.5rem]`}
-                onClick={() => setActiveSection('roles')}
-              >
-                <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
-                  My Roles
-                </span>
-              </Button>
-              
+            
+             
             </div>
 
+            <FadeIn>
             {/* Overview Section */}
             <div style={{ display: activeSection === 'overview' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-16'>
             <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
-            <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
+            <p className='mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              AISafeguard is a Chrome extension which is currently in development! Stay tuned for more information.
             </p>
+    
           </div>
+          </FadeIn>
           
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sed corporis voluptate natus quibusdam cum, excepturi earum numquam dolores veritatis suscipit ipsam? Nihil temporibus soluta vitae quod neque nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam aliquam culpa sint nostrum, consequatur odit laboriosam neque provident voluptatum magni esse eum exercitationem, voluptatibus ad cupiditate hic soluta quam!
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+                Stay tuned for more information to come!
               </p>
              
             </div>
 
-            {/* Roles Section */}
-            <div style={{ display: activeSection === 'roles' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Roles</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
+            {/* execution Section */}
+            <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
+              <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution</h2>
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+               Stay tuned for more information to come!
               </p>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-              
+              {/* <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+                  <li className="mb-2">
+                    <span className="font-semibold"></span> 
+                  </li>
+                  <li className="mb-2">
+                  
+                  </li>
+                  <li className="mb-2">
+                
+                  </li>
+                  <li className="mb-2">
+               
+                  </li>
+                  <li className="mb-2">
+                  
+                  </li>
+                  <li className="mb-2">
+               
+                  </li>
+                  <li className="mb-2">
+             
+                  </li>
+                </ul> */}
             </div>
+       
             </div>
 
-    {/* Highlights Section */}
-    <div style={{ display: activeSection === 'highlights' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
-    <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Highlights</h2>
-    <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-  <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={aisa1} 
-          alt="Homepage Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Homepage</h3>
-        </div>
-      </div>
-    </div>
-
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={aisa2} 
-          alt="Homepage Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>About</h3>
-        </div>
-      </div>
-    </div>
-
-
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground  border-1  dark:border-[#414141] rounded-lg shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
-      <div className='relative overflow-hidden rounded-lg h-[260px]'>
-        <img 
-          src={aisa3} 
-          alt="Menu Items Preview" 
-          className='w-full h-full object-cover'
-        />
-        <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <h3 className='text-white text-xl font-bold'>Installation</h3>
-        </div>
-      </div>
-    </div>
-    </div>
-        
-</div>
 </div>
 
   
+    <FadeIn>
        
-        <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16 '>
+        <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16'>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
             <AiSaTools />
           </div>
         </div>
-     
+        </FadeIn>
+  
 
 
       <FadeIn>
-      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16  sm-plus:mx-16' id="other-works">
+      <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16  sm-plus:mx-16'  id="other-works">
             <h2 className="font-bold text-[24px] mb-10  md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">My Other Works</h2>
           </div>
           <div className='mt-16'>

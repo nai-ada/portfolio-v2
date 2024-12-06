@@ -191,29 +191,37 @@ function GalaxyGridDetails() {
             <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
-            <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia aperiam sequi odio beatae neque atque ad labore suscipit perspiciatis provident voluptas a, incidunt soluta veniam, qui eveniet temporibus fuga.
+            <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+            Step into an exciting game of intergalactic Tic-Tac-Toe! Choose your side as either an astronaut or alien and compete in a 
+            10-round battle for cosmic supremacy. This project represents the second and enhanced iteration of my original 
+            Galaxy Grid game, developed during my time in the BCIT Front-End Web Development program. If you would like to view the original, you can view it <a href="https://nadiavespalec.com/galaxy-grid" target="_blank" rel="noopener noreferrer" className='text-primary underline font-medium'>here</a>.
             </p>
           </div>
           
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sed corporis voluptate natus quibusdam cum, excepturi earum numquam dolores veritatis suscipit ipsam? Nihil temporibus soluta vitae quod neque nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam aliquam culpa sint nostrum, consequatur odit laboriosam neque provident voluptatum magni esse eum exercitationem, voluptatibus ad cupiditate hic soluta quam!
-              </p>
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'> Throughout the development of this project, I feel I've significantly strengthened my JavaScript programming capabilities. 
+            The process of implementing game logic, managing player turns, handling the role selector, and calculating scores has honed my problem-solving 
+            skills. Creating win conditions and handling various game states also pushed me to think more systematically and develop cleaner, more efficient code solutions. </p>
              
             </div>
 
             {/* execution Section */}
             <div style={{ display: activeSection === 'execution' ? 'block' : 'none' }} className='mx-8  sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Execution </h2>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
-              <p className='mb-8 xl:text-[18px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
-              </p>
+              <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
+                  <li className="mb-2">
+                    Practiced using various <span className="font-semibold text-primary">if-else and switch statements</span> for conditional styling and rendering, as well as <span className="font-semibold text-primary">event and DOM methods</span> and various <span className="font-semibold text-primary">properties</span>.
+                  </li>
+                  <li className="mb-2">
+                  Elevated the project's complexity through the implementation of advanced systems, including a <span className="font-semibold text-primary">dynamic role-selection mechanism</span> allowing 
+                  users to choose between alien and astronaut characters, a <span className="font-semibold text-primary">comprehensive scoring system</span>, and <span className="font-semibold text-primary">victory logic</span> that determines winners based on score comparisons.
+                  </li>
+                  <li className="mb-2">
+                    Ensured project was <span className="font-semibold text-primary">responsive and optimized</span> for mobile use despite original being desktop only.
+                  </li>
+                </ul>
               
             </div>
             </div>
