@@ -74,7 +74,7 @@ const Slides = () => {
     {
       name: `AISafeguard`,
       img: comingsoon,
-      info: `Chrome extension that blocks AI art while browsing the internet.`,
+      info: `Chrome extension that is currently in development.`,
       link: '/projects/aisafeguard',
     },
     {

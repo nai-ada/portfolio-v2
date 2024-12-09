@@ -27,6 +27,7 @@ module.exports = {
         'lg-plus': '1600px',
         'xl-plus': '1700px',
         'full': '1920px',
+        '4xl': '2560px',
       },
     },
   },

@@ -43,7 +43,7 @@ function MenuAllWorks() {
             to="/" 
             className='md:text-[16px] text-[#232323] dark:text-white font-[500] hover:opacity-80 cursor-pointer'
           >
-            Return Home
+            Home
           </HashLink>
           <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black dark:bg-white opacity-70 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
         </NavbarItem>
@@ -66,7 +66,7 @@ function MenuAllWorks() {
       <NavbarMenu className="bg-white dark:bg-darkBackground">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
-            {item === 'Return Home' ? (
+            {item === 'Home' ? (
               <HashLink 
                 smooth
                 to="/"

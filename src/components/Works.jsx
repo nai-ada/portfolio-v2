@@ -229,11 +229,15 @@ function Works() {
       </FadeIn>
 
       <FadeIn>
-        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] pt-[5rem] lg-plus:pt-[10rem]">
-          <h2 className="font-semibold text-[32px] p-8 pt-6 pb-2 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] dark:text-white">
+        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] full:ml-[12rem] 4xl:ml-[20rem] pt-[5rem] lg-plus:pt-[10rem]" id="featured">
+
+
+          <h2 className="font-semibold text-[32px] p-8 pt-6 pb-2 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] dark:text-white 4xl:text-[55px]">
             Featured Works
           </h2>
-          <a href="/pages/all-works" className="font-medium underline text-primary p-8 pt-2 text-[#2b2b2b] md:ml-6">View Projects Showcase</a>
+      
+          <a href="/pages/all-works" className="font-medium underline text-primary p-8 pt-2 text-[#2b2b2b] md:ml-6 4xl:text-[26px]">View All Projects</a>
+   
           <Slides />
         </div>
       </FadeIn>

@@ -75,7 +75,7 @@ function FooterWorks() {
                 color="foreground"
                 className="text-sm md:text-base  text-[#222222] dark:text-white font-[500] hover:opacity-80 cursor-pointer capitalize"
               >
-                All Works
+                All Projects
               </Link>
             </div>
           </div>

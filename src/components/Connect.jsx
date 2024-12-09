@@ -37,13 +37,13 @@ function Connect() {
         </FadeIn>
       </div>
 
-      <div className="contact-section md:mt-10 md:mb-38 md:mt-18">
-        <div> </div>
+      <div className="contact-section md:mt-10 md:mb-38 md:mt-18 full:ml-8 4xl:ml-[10rem]">
+       
         <FadeIn>
-          <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-x:text-[45px] dark:text-white">
+          <h2 className="font-semibold text-[32px] mt-[1rem] p-8 pt-6 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-x:text-[45px] dark:text-white 4xl:text-[55px]">
             Let's Get In Touch.
           </h2>
-          <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 mt-4 text-[#2b2b2b] lg-x:text-[18px] lg-plus:w-[85%] dark:text-white">
+          <p className="font-normal text-[16px] p-8 pr-12 md:mr-2 md:ml-6 mt-4 text-[#2b2b2b] lg-x:text-[16px] lg-plus:w-[85%] dark:text-white 4xl:text-[22px]">
             Wanting to see your vision come to life? Whether you have a project in
             mind or just want to chat, I would love to hear
             from you. Feel free to reach out through email, or view my
@@ -53,7 +53,7 @@ function Connect() {
 
         {/* Availability status */}
         <FadeIn>
-          <div className='text-center mt-10 '>
+          <div className='text-center mt-10'>
             <img src={GreenDot} alt="Green Dot" width={10} className="inline-block"/>
             <h2 className="inline-block ml-2 text-[14px] font-bold md:text-[18px]">I'm available for work! 👋</h2>
           </div>

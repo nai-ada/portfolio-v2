@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from '@nextui-org/react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 import { motion } from 'framer-motion';
 import aisa from '/src/assets/aisa.png';
 import indigo from '/src/assets/indigohome.png';
@@ -88,15 +90,26 @@ const AllWorks = () => {
 
   return (
     <>
-    
+  
       <NavAllWorks />
+      
+    
+             
+    
       <div className="min-h-screen">
         <div className="max-w-[1200px] mx-auto px-4">
+        <HashLink 
+                  smooth
+                  to="/#featured" 
+                  className="text-primary hover:opacity-70 transition-opacity block pt-28"
+                >
+                  ← Back to Featured Works
+                </HashLink>
           <FadeIn>
-            <h1 className="font-bold uppercase text-[42px] xs:text-[53px] ml-4 sm-plus:ml-8 pt-[8rem] mb-0 text-[#2b2b2b] md:text-[78px] dark:text-white">
-              <span className="text-primary">P</span>rojects Showcase.
+            <h1 className="font-bold uppercase text-[42px] xs:text-[53px] ml-4 sm-plus:ml-8  mb-0 text-[#2b2b2b] md:text-[78px] dark:text-white">
+              <span className="text-primary">P</span>rojects.
             </h1>
-            <h2 className="font-medium pb-20 mb-0 pb-20 mt-4 ml-4 sm-plus:ml-8 text-[#2b2b2b] md:text-[18px] dark:text-white">All my works in one place.</h2>
+            <h2 className="font-medium mb-0 pb-16 mt-2 ml-4 sm-plus:ml-8 text-[#2b2b2b] md:text-[16px] dark:text-white">All my works in one place.</h2>
           </FadeIn>
           <div className="flex justify-center">
             <div className="max-w-[800px]">
