@@ -15,7 +15,7 @@ import { useTheme } from '../providers/ThemeProvider';
 import { HashLink } from 'react-router-hash-link';
 
 function MenuAllWorks() {
-  const menuItems = ['Return Home']; 
+  const menuItems = ['Home']; 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { theme, toggleTheme } = useTheme();
 
