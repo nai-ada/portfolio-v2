@@ -28,14 +28,17 @@ function FrothDetails() {
         backgroundSize: '120px 120px',
       }}
     />
-   <div className="relative z-10">
+
+
+
+<div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
-    <div className="container mx-auto">
-      <div className="flex justify-center">
-        <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
-          <FadeLeft>
-            <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] lg:ml-[9rem] full:ml-[13rem]'>
+  <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0">
+  <div className="flex flex-col items-center">
+    <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
+      
+            <div className='ml-4 mr-4 xs:ml-6 sm-plus:ml-8 lg:ml-[9rem] xl-x:m-0'>
               <HashLink 
                 smooth
                 to="/#works" 
@@ -45,11 +48,11 @@ function FrothDetails() {
               </HashLink>
 
               <div className="relative mb-16">
-                <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                  <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                <div className="xl-x:flex xl-x:items-center xl-x:justify-start xl-x:gap-4">
+                  <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
                     <span className="text-primary">F</span>roth Matcha.
                   </h1>
-                  <div className="hidden xl:flex items-center gap-4 mt-12 flex-shrink-0">
+                  <div className="hidden xl-x:flex items-center gap-4 mt-12 flex-shrink-0">
                     <Button 
                       radius="full" 
                       className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
@@ -63,8 +66,8 @@ function FrothDetails() {
                     </a>
                   </div>
                 </div>
-                <h2 className='xl:text-[20px]'>// Project <span className="font-bold">01</span> | Wordpress Capstone</h2>
-                <div className='flex xl:hidden items-center gap-4 mt-4'>
+                <h2 className='xl-x:text-[20px]'>// Project <span className="font-bold">01</span> | Wordpress Capstone</h2>
+                <div className='flex xl-x:hidden items-center gap-4 mt-4'>
                   <Button 
                     radius="full" 
                     className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
@@ -79,11 +82,11 @@ function FrothDetails() {
                 </div>
               </div>
             </div>
-          </FadeLeft>
+    
 
-          <FadeRight>
-            <div className='hidden 2xl:block w-[570px]'>
-              <div className='relative bottom-32 xl-plus:right-[4rem]'>
+  
+            <div className='hidden xl-x:block w-[420px]'>
+              <div className='relative bottom-32'>
                 <div className='relative w-[400px] -z-10'>
                   <img 
                     src={froth2} 
@@ -100,9 +103,12 @@ function FrothDetails() {
                 </div>
               </div>
             </div>
-          </FadeRight>
+ 
         </div>
       </div>
+ 
+
+
 
       <div className="hidden 2xl:block absolute lg:-left-56 xl-plus:-left-32 4xl:left-32" style={{ top: '1050px' }}>
         <div className="absolute left-1/2 bottom-[265%] -translate-x-1/2 flex flex-col items-center">
@@ -119,7 +125,7 @@ function FrothDetails() {
     
 {/* Mobile Images */}
 <FadeIn>
-<div className='2xl:hidden flex justify-center mt-8 mb-16'>
+<div className='xl-x:hidden flex justify-center mb-16'>
   <div className='relative w-fit'>
     <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
       <img 

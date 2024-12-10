@@ -31,11 +31,11 @@ function AiSaDetails() {
 <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
-    <div className="container mx-auto">
-      <div className="flex justify-center">
-        <div className="xl:flex xl:items-start xl:justify-between max-w-[1920px] gap-8">
-          <FadeLeft>
-            <div className='ml-6 mr-8 xs:ml-8 sm-plus:ml-[3rem] sm-x:mr-[6rem] lg:ml-[9rem] full:ml-[13rem]'>
+    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0">
+      <div className="flex flex-col items-center">
+        <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
+      
+            <div className='ml-4 mr-4 xs:ml-6 sm-plus:ml-8 lg:ml-[9rem] xl-x:m-0'>
               <HashLink 
                 smooth
                 to="/#works" 
@@ -45,11 +45,11 @@ function AiSaDetails() {
               </HashLink>
 
               <div className="relative mb-16">
-                <div className="xl:flex xl:items-center xl:justify-start xl:gap-4">
-                  <h1 className="font-bold uppercase text-[38px] xs:text-[45px] sm-plus:text-[55px] xl:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl:whitespace-nowrap">
+                <div className="xl-x:flex xl-x:items-center xl-x:justify-start xl-x:gap-4">
+                  <h1 className="font-bold uppercase text-[38px] xs:text-[45px] sm-plus:text-[55px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
                     <span className="text-primary">A</span>ISafeguard.
                   </h1>
-                  <div className="hidden xl:flex gap-4 mt-12">
+                  <div className="hidden xl-x:flex gap-4 mt-12">
                     <Button 
                       radius="full" 
                       className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4"
@@ -60,8 +60,8 @@ function AiSaDetails() {
                     </Button>
                   </div>
                 </div>
-                <h2 className='xl:text-[20px]'>// Project <span className="font-bold">05</span> | Chrome Extension & Website</h2>
-                <div className='flex xl:hidden justify-left gap-4 mt-4'>
+                <h2 className='xl-x:text-[20px]'>// Project <span className="font-bold">05</span> | Chrome Extension & Website</h2>
+                <div className='flex xl-x:hidden justify-left gap-4 mt-4'>
                   <Button 
                     radius="full" 
                     className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4"
@@ -73,11 +73,11 @@ function AiSaDetails() {
                 </div>
               </div>
             </div>
-          </FadeLeft>
+      
 
-          <FadeRight>
-            <div className='hidden 2xl:block w-[570px]'>
-              <div className='relative bottom-32 xl-plus:right-[4rem]'>
+   
+            <div className='hidden xl-x:block w-[420px]'>
+              <div className='relative bottom-32'>
                 <div className='relative w-[400px] -z-10'>
                   <img 
                     src={comingsoon2} 
@@ -94,7 +94,7 @@ function AiSaDetails() {
                 </div>
               </div>
             </div>
-          </FadeRight>
+       
         </div>
       </div>
 
@@ -109,30 +109,27 @@ function AiSaDetails() {
       </div>
     </div>
 
-
-      
-{/* Mobile Images */}
-<FadeIn>
-<div className='2xl:hidden flex justify-center mt-8 mb-16'>
-  <div className='relative w-fit'>
-    <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
-      <img 
-        src={comingsoon2} 
-        alt="Project Preview 3" 
-        className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
-      />
-      <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
-        <img 
-          src={comingsoon1} 
-          alt="Menu Items Preview" 
-          className='w-[170px]  xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
-        />
+    {/* Mobile Images */}
+    <FadeIn>
+      <div className='xl-x:hidden flex justify-center mb-16'>
+        <div className='relative w-fit'>
+          <div className='relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10'>
+            <img 
+              src={comingsoon2} 
+              alt="Project Preview 3" 
+              className='w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto'
+            />
+            <div className='absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]'>
+              <img 
+                src={comingsoon1} 
+                alt="Menu Items Preview" 
+                className='w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto'
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-</FadeIn>
-
+    </FadeIn>
 
         
             <div className='x-sm-plus:flex justify-center text-center'> 
