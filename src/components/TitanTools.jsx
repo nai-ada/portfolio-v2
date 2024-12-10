@@ -77,6 +77,7 @@ const item = {
 };
 
 
+
 const createLogoElements = (logoKeys) =>
   logoKeys.map((key) => (
     <motion.div 
@@ -104,25 +105,44 @@ const skillsContent = [
 ];
 
 function TitanTools() {
-  const control = useAnimation();
-  const [ref, inView] = useInView({
-    threshold: 0.3,
+  const devControl = useAnimation();
+  const designControl = useAnimation();
+  const skillsControl = useAnimation();
+  
+  const [devRef, devInView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true
+  });
+  
+  const [designRef, designInView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true
+  });
+  
+  const [skillsRef, skillsInView] = useInView({
+    threshold: 0.1,
     triggerOnce: true
   });
 
   useEffect(() => {
-    if (inView) {
-      control.start("show");
-    }
-  }, [control, inView]);
+    if (devInView) devControl.start("show");
+  }, [devControl, devInView]);
+
+  useEffect(() => {
+    if (designInView) designControl.start("show");
+  }, [designControl, designInView]);
+
+  useEffect(() => {
+    if (skillsInView) skillsControl.start("show");
+  }, [skillsControl, skillsInView]);
 
   return (
     <div className="space-y-8">
       <motion.div
-        ref={ref}
+        ref={devRef}
         variants={container}
         initial="hidden"
-        animate={control}
+        animate={devControl}
       >
         <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Development Tools</h3>
         <div className="flex flex-wrap justify-start gap-2">
@@ -131,10 +151,10 @@ function TitanTools() {
       </motion.div>
 
       <motion.div
-        ref={ref}
+        ref={designRef}
         variants={container}
         initial="hidden"
-        animate={control}
+        animate={designControl}
       >
         <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Design Tools</h3>
         <div className="flex flex-wrap justify-start gap-2">
@@ -143,10 +163,10 @@ function TitanTools() {
       </motion.div>
 
       <motion.div
-        ref={ref}
+        ref={skillsRef}
         variants={container}
         initial="hidden"
-        animate={control}
+        animate={skillsControl}
       >
         <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Other Skills</h3>
         <ul className="flex flex-wrap gap-4">

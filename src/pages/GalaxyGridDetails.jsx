@@ -205,14 +205,14 @@ function GalaxyGridDetails() {
             </div>
 </div>
 
-<FadeIn>
+
         <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16 '>
           <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Project Tools</h2>
           <div className='md:mx-8 lg:mx-16'>
             <GalaxyGridTools />
           </div>
         </div>
-        </FadeIn>
+    
      
       <FadeIn>
       <div className='mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16  sm-plus:mx-16'  id="other-works">
