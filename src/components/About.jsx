@@ -7,21 +7,19 @@ function About() {
   return (
     <>
         <div className="about-section relative md:overflow-hidden mt-10 lg-plus:pt-[100px]" id="about"> 
-  <div className="hidden lg-plus:block absolute right-0 top-[35%] 4xl:right-[3%] 4xl:top-[42%] -translate-y-1/2">
-    {/* Rotated heading */}
+          {/* rotated heading */}
+          <div className="hidden lg-plus:block absolute right-0 top-[25vh]">
     <FadeIn>
-    <h1 className="font-bold uppercase text-[125px] 4xl:text-[150px] origin-center rotate-90 text-[#2b2b2b] dark:text-white">
+    <h1 className="font-bold uppercase text-[125px] 4xl:text-[150px] origin-center rotate-90 text-[#2b2b2b] dark:text-white whitespace-nowrap">
       <span className="text-primary">A</span>bout.
     </h1>
     </FadeIn>
     
-    {/* Border and dot positioned below the rotated heading */}
     <div className="absolute left-1/2 top-[185%] -translate-x-1/2 flex flex-col items-center">
-      <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
-      <div className="w-[6px] h-[6px] bg-primary rounded-full mt-2 md:right-[-4px]"></div>
+      <div className="border-l border-[#222222] h-[170px] dark:border-white"></div>
+      <div className="w-[6px] h-[6px] bg-primary rounded-full mt-2"></div>
     </div> 
-   
-  </div>
+</div>
 
 
         <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] full:ml-[12rem] 4xl:ml-[20rem]">
@@ -47,7 +45,7 @@ function About() {
           </p>
           <p className="font-normal text-[16px] p-8 pr-12 pt-0 pb-20 md:mr-2 md:ml-6 text-[#2b2b2b] lg-x:text-[16px] lg-plus:w-[78%] dark:text-white 4xl:text-[22px]">
             My favorite aspect of my career is always being able to learn something new. I find myself becoming excited to see what I'm going to learn with every new project I take on.
-            Aside from development I spend my free time playing video games, listening to music, and spending time with my cat Benny. ผ(•̀_•́ผ)
+            Aside from development I spend my free time playing video games, listening to music, and spending time with my cat, Benny ผ(•̀_•́ผ)
           </p>
           </FadeIn>
    

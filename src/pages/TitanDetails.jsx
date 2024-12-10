@@ -186,8 +186,8 @@ function TitanDetails() {
               <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">Project Overview</h2>
             </div>
             <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-            Executed a precise implementation of Titan Technologies' landing page, transforming their Figma mockup into a fully functional webpage. 
-            Maintained strict adherence to design specifications while strategically integrating enhanced features to improve user experience.
+            For this project, I was able to execute a precise implementation of Titan Technologies' landing page, transforming their Figma mockup into a fully functional webpage. 
+            I was able to maintain strict adherence to design specifications while strategically integrating enhanced features to improve user experience.
             </p>
           </div>
           
