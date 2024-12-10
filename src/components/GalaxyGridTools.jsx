@@ -20,6 +20,10 @@ import framermotionLogo from '/src/assets/framermotion.png';
 import nextuiLogo from '/src/assets/nextui.png';
 import threejsLogo from '/src/assets/threejs.png';
 import reactLogo from '/src/assets/react.png';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
+import { useEffect } from 'react';
+
 
 const logos = {
   npm: { src: npmLogo, alt: 'NPM', title: 'NPM' },
@@ -46,9 +50,41 @@ const logos = {
   wordpress: { src: wordpressLogo, alt: 'Wordpress', title: 'WordPress' },
 };
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.2
+    }
+  }
+};
+
+const item = {
+  hidden: { 
+    opacity: 0, 
+    y: 20
+  },
+  show: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+};
+
+
+
 const createLogoElements = (logoKeys) =>
   logoKeys.map((key) => (
-    <div key={key} className="inline-flex items-center p-2 m-2 rounded-lg ">
+    <motion.div 
+      key={key} 
+      variants={item}
+      className="inline-flex items-center p-2 m-2 rounded-lg"
+    >
       <img
         src={logos[key].src}
         alt={logos[key].alt}
@@ -57,7 +93,7 @@ const createLogoElements = (logoKeys) =>
         height="40" 
       />
       <span className="text-sm text-[#222222] dark:text-white ml-3 mr-3 font-[500]">{logos[key].title}</span>
-    </div>
+    </motion.div>
   ));
 
 const devTools = ['git', 'css', 'html', 'javascript'];
@@ -67,28 +103,51 @@ const skillsContent = [
 ];
 
 function GalaxyGridTools() {
+  const control = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true
+  });
+
+  useEffect(() => {
+    if (inView) {
+      control.start("show");
+    }
+  }, [control, inView]);
+
   return (
     <div className="space-y-8">
-      <div>
+      <motion.div
+        ref={ref}
+        variants={container}
+        initial="hidden"
+        animate={control}
+      >
         <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Development Tools</h3>
         <div className="flex flex-wrap justify-start gap-2">
           {createLogoElements(devTools)}
         </div>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        ref={ref}
+        variants={container}
+        initial="hidden"
+        animate={control}
+      >
         <h3 className="text-[#2b2b2b] dark:text-white text-xl font-medium mb-4">Other Skills</h3>
         <ul className="flex flex-wrap gap-4">
           {skillsContent.map((skill, index) => (
-            <li 
-            key={index} 
-            className="rounded-lg px-3 py-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6591ff] to-[#5ad3ff] text-sm md:text-[18px]"
-          >
-            {skill}
-          </li>
+            <motion.li 
+              key={index}
+              variants={item}
+              className="rounded-lg px-3 py-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6591ff] to-[#5ad3ff] text-sm md:text-[18px]"
+            >
+              {skill}
+            </motion.li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 }
