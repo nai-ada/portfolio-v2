@@ -30,7 +30,7 @@ function ClipprDetails() {
 <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
-    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0">
+    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0 pl-[0.2rem]">
       <div className="flex flex-col items-center">
         <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
 
@@ -188,7 +188,7 @@ function ClipprDetails() {
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
               <p className='mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
               As my introduction to React development, this project initially presented a challenging learning curve. While React appeared to be a more 
-              sophisticated extension of JavaScript, the development process evolved into an enlightening and rewarding experience. 
+              sophisticated extension of JavaScript, the development process evolved into a rewarding experience. 
               The logical structure and component-based architecture of React particularly resonated with me, which is also what inspired me to complete my portfolio project in React. 
               </p>
               <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>

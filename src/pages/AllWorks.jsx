@@ -103,7 +103,7 @@ const AllWorks = () => {
                   to="/#featured" 
                   className="text-primary hover:opacity-70 transition-opacity block pt-28 mb-4 text-center"
                 >
-                  ← Back to Featured Works
+                  ← Featured Works
                 </HashLink>
           <FadeIn>
             <h1 className="font-bold uppercase text-[42px] xs:text-[53px] text-center  mb-0 text-[#2b2b2b] md:text-[78px] dark:text-white">

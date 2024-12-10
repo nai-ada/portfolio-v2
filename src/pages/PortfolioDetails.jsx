@@ -36,7 +36,7 @@ function PortfolioDetails() {
 <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
-    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0">
+    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0 pl-[0.2rem]">
       <div className="flex flex-col items-center">
         <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
       
@@ -71,7 +71,7 @@ function PortfolioDetails() {
                     </a>
                   </div>
                 </div>
-                <h2 className='xl-x:text-[20px]'>// Project <span className="font-bold">03</span> | Wordpress Capstone</h2>
+                <h2 className='xl-x:text-[20px]'>// Project <span className="font-bold">03</span> | Web Portfolio</h2>
                 <div className='flex xl-x:hidden items-center gap-4 mt-4'>
                   <Button 
                     radius="full" 
@@ -205,11 +205,15 @@ function PortfolioDetails() {
             {/* Key Takeaways Section */}
             <div style={{ display: activeSection === 'takeaways' ? 'block' : 'none' }} className='mx-8 sm-plus:mx-16  md:mx-auto md:max-w-[800px] lg:max-w-[950px]  text-left mt-16'>
               <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">Key Takeaways</h2>
-              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
-              Throughout this project, I gained valuable insights into managing large-scale projects effectively. Planning the design
-              beforehand helped establish clear style goals and direction. My first experience using a UI library proved to be efficient, constantly 
-              pushing me to evaluate and optimize my development approach. This project taught me to question and improve my methods, making me a more thoughtful developer.
-              </p>
+              <p className='mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
+              Throughout this project, I gained valuable insights into managing large-scale projects effectively. Although I inevitably adjusted the design slightly during
+              the development process, planning the design
+              beforehand helped establish clear style goals and direction. 
+             
+              </p> 
+              
+              <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>My first experience using a UI library proved to be efficient, constantly 
+              pushing me to evaluate and optimize my development approach. This project taught me to question and improve my methods, making me a more thoughtful developer.</p>
              
             </div>
 

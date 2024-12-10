@@ -28,7 +28,7 @@ function GalaxyGridDetails() {
 <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
-    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0">
+    <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0 pl-[0.2rem]">
       <div className="flex flex-col items-center">
         <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
 
@@ -171,7 +171,7 @@ function GalaxyGridDetails() {
             </div>
             <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
             Step into an exciting game of intergalactic Tic-Tac-Toe! Choose your side as either an astronaut or alien and compete in a 
-            10-round battle for cosmic supremacy. This project represents the second and enhanced iteration of my original 
+            10-round battle. This project represents the second and enhanced iteration of my original 
             Galaxy Grid game, developed during my time in the BCIT Front-End Web Development program. If you would like to view the original, you can view it <a href="https://nadiavespalec.com/galaxy-grid" target="_blank" rel="noopener noreferrer" className='text-primary underline font-medium'>here</a>.
             </p>
           </div>
@@ -194,7 +194,7 @@ function GalaxyGridDetails() {
                   </li>
                   <li className="mb-2">
                   Elevated the project's complexity through the implementation of advanced systems, including a <span className="font-semibold text-primary">dynamic role-selection mechanism</span> allowing 
-                  users to choose between alien and astronaut characters, a <span className="font-semibold text-primary">comprehensive scoring system</span>, and <span className="font-semibold text-primary">victory logic</span> that determines winners based on score comparisons
+                  users to choose between alien and astronaut characters, a <span className="font-semibold text-primary">comprehensive scoring system</span>, and <span className="font-semibold text-primary">victory logic</span> that determines a winner based on score comparisons
                   </li>
                   <li className="mb-2">
                     Ensured project was <span className="font-semibold text-primary">responsive and optimized</span> for mobile use despite original being desktop only

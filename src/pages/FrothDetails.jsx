@@ -34,7 +34,7 @@ function FrothDetails() {
 <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
-  <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0">
+  <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0 pl-[0.2rem]">
   <div className="flex flex-col items-center">
     <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
       
@@ -240,7 +240,7 @@ function FrothDetails() {
                     Created <span className="font-semibold text-primary">custom taxonomies and CPTs</span> (Custom Post Types) to display individual menu items
                   </li>
                   <li className="mb-2">
-                    Implemented a <span className="font-semibold text-primary">"You May Also Like"</span> section on individual menu items pages using WordPress query for randomization
+                    Implemented a <span className="font-semibold text-primary">"You May Also Like"</span> section on individual menu item pages using WordPress query for randomization
                   </li>
                   <li className="mb-2">
                     Added user review functionality using a <span className="font-semibold text-primary">plugin to display reviews</span> and submission forms
