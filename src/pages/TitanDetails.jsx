@@ -20,13 +20,13 @@ function TitanDetails() {
   return (
     <div className="relative overflow-hidden">
   <div 
-  className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[10%]" 
+  className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[8%]" 
   style={{
     width: '500%',
     marginLeft: '-18%',
     backgroundImage: `
-      linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
-      linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
+      linear-gradient(to right, rgba(229, 231, 235, 0.4) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(229, 231, 235, 0.4) 2px, transparent 2px)
     `,
     backgroundSize: '100px 100px',
   }}

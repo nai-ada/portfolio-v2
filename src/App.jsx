@@ -18,7 +18,7 @@ import ClipprDetails from "./pages/ClipprDetails";
 import TitanDetails from "./pages/TitanDetails";
 import NotFound from "./pages/NotFound";
 import AllWorks from "./pages/AllWorks";
-
+import faviconUrl from './assets/favicon.ico'
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <Router>
           <div className="relative overflow-hidden">
             {isLoading && <CustomLoader />}
-            <Favicon url="/src/assets/favicon.ico" />
+            <Favicon url={faviconUrl} />
             <CustomScrollBar>
               <div className="min-h-screen flex flex-col bg-white dark:bg-darkBackground">
                 <main>
