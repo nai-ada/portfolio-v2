@@ -62,7 +62,7 @@ const createLogoElements = (logoKeys) =>
         width="40"
         height="40" 
       />
-      <span className="text-sm text-[#222222] dark:text-white ml-3 mr-3 font-[500]">{logos[key].title}</span>
+      <span className="text-sm text-[#222222] dark:text-white ml-3 mr-3 font-[500] transition-colors duration-200">{logos[key].title}</span>
     </div>
   ));
 
@@ -115,85 +115,85 @@ function AboutTools() {
   return (
     <>
       <div className="mb-16 md:ml-6 md:mt-5">
-      <div className="w-full max-w-[1000px] 4xl:w-full 4xl:max-w-[1260px]">
-      <Accordion variant="splitted" className="px-6">
-          <AccordionItem
-            key="1"
-            className="devTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#6379a9] dark:to-darkBackground"
-            aria-label="Accordion 1"
-            title={
-              <div className="flex items-center w-full">
-                <img 
-                  src={devIcon} 
-                  alt="Development Icon" 
-                  className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
-                />
-                <span className="text-[#2b2b2b] dark:text-white">Development Tools</span>
+        <div className="w-full max-w-[1000px] 4xl:w-full 4xl:max-w-[1260px]">
+          <Accordion variant="splitted" className="px-6 transition-colors duration-200 accordion-component">
+            <AccordionItem
+              key="1"
+              className="devTools m-2 shadow-none py-1 rounded-[5px] border-none bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#6379a9] dark:to-darkBackground overflow-hidden transition-colors duration-200 ease-in-out"
+              aria-label="Accordion 1"
+              title={
+                <div className="flex items-center w-full">
+                  <img 
+                    src={devIcon} 
+                    alt="Development Icon" 
+                    className="w-5 h-5 ml-2 mr-2 transition-transform border-none duration-300 group-data-[state=open]:rotate-180 dark:invert"
+                  />
+                  <span className="text-[#2b2b2b] dark:text-white transition-colors duration-200">Development Tools</span>
+                </div>
+              }
+              classNames={{
+                title: 'text-md font-medium md:text-[20px] group',
+                content: 'text-sm py-4',
+              }}
+            >
+              <div className="flex flex-wrap justify-start gap-2">
+                {devContent}
               </div>
-            }
-            classNames={{
-              title: 'text-md font-medium md:text-[20px] group',
-              content: 'text-sm py-4',
-            }}
-          >
-            <div className="flex flex-wrap justify-start gap-2">
-              {devContent}
-            </div>
-          </AccordionItem>
+            </AccordionItem>
 
-        <AccordionItem
-          key="2"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#6379a9] dark:to-darkBackground"
-          aria-label="Accordion 2"
-          title={
-            <div className="flex items-center w-full">
-              <img 
-                src={designIcon} 
-                alt="Design Icon" 
-                className="w-5 h-5 ml-2 mr-2 transition-transform duration-300 group-data-[state=open]:rotate-180 dark:invert"
-              />
-              <span className="text-[#2b2b2b] dark:text-white">Design Tools</span>
-            </div>
-          }
-          classNames={{
-            title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-4',
-          }}
-        >
-            <div className="flex flex-wrap justify-start gap-2">
-              {designContent}
-            </div>
-        </AccordionItem>
+            <AccordionItem
+              key="2"
+              className="designTools m-2 shadow-none py-1 rounded-[5px] border-none bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#6379a9] dark:to-darkBackground overflow-hidden transition-colors duration-200 ease-in-out"
+              aria-label="Accordion 2"
+              title={
+                <div className="flex items-center w-full">
+                  <img 
+                    src={designIcon} 
+                    alt="Design Icon" 
+                    className="w-5 h-5 ml-2 mr-2 transition-transform border-none duration-300 group-data-[state=open]:rotate-180 dark:invert"
+                  />
+                  <span className="text-[#2b2b2b] dark:text-white transition-colors duration-200">Design Tools</span>
+                </div>
+              }
+              classNames={{
+                title: 'text-md font-medium md:text-[20px] group',
+                content: 'text-sm py-4',
+              }}
+            >
+              <div className="flex flex-wrap justify-start gap-2">
+                {designContent}
+              </div>
+            </AccordionItem>
 
-        <AccordionItem
-          key="3"
-          className="designTools m-2 shadow-none py-1 rounded-[5px] bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#6379a9] dark:to-darkBackground"
-          aria-label="Accordion 3"
-          title={
-            <div className="flex items-center w-full">
-              <img 
-                src={skillsIcon} 
-                alt="Skills Icon" 
-                className="w-5 h-5 ml-2 mr-2 dark:invert"
-              />
-              <span className="text-[#2b2b2b] dark:text-white">Other Skills</span>
-            </div>
-          }
-          classNames={{
-            title: 'text-md font-medium md:text-[20px] group',
-            content: 'text-sm py-6',
-          }}
-        >
-          <ul className="flex flex-wrap gap-4 text-sm md:text-[18px]">
-            {skillsContent.map((skill, index) => (
-              <li key={index} className=" rounded-lg px-3 py-3 text-[#222222] dark:text-white">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </AccordionItem>
-      </Accordion>
-      </div>
+            <AccordionItem
+              key="3"
+              className="designTools m-2 shadow-none py-1 rounded-[5px] border-none bg-gradient-to-r from-[#cfdeff] to-[white] md:py-2 dark:from-[#6379a9] dark:to-darkBackground overflow-hidden transition-colors duration-200 ease-in-out"
+              aria-label="Accordion 3"
+              title={
+                <div className="flex items-center w-full">
+                  <img 
+                    src={skillsIcon} 
+                    alt="Skills Icon" 
+                    className="w-5 h-5 ml-2 mr-2 dark:invert"
+                  />
+                  <span className="text-[#2b2b2b] dark:text-white transition-colors duration-200">Other Skills</span>
+                </div>
+              }
+              classNames={{
+                title: 'text-md font-medium border-none md:text-[20px] group',
+                content: 'text-sm py-6',
+              }}
+            >
+              <ul className="flex flex-wrap gap-4 text-sm md:text-[18px]">
+                {skillsContent.map((skill, index) => (
+                  <li key={index} className="rounded-lg px-3 py-3 text-[#222222] dark:text-white transition-colors duration-200">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </div>
     </>
   );

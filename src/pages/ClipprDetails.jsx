@@ -18,15 +18,18 @@ function ClipprDetails() {
   const [activeSection, setActiveSection] = useState('overview');
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[15%]" 
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
-            linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
-          `,
-          backgroundSize: '120px 120px',
-        }}
-      />
+  <div 
+  className="absolute top-0 left-0 right-0 h-[460px] bg-gradient-to-b from-gray-100 to-transparent -z-100 dark:opacity-[10%]" 
+  style={{
+    width: '500%',
+    marginLeft: '-18%',
+    backgroundImage: `
+      linear-gradient(to right, rgba(229, 231, 235, 0.3) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(229, 231, 235, 0.3) 2px, transparent 2px)
+    `,
+    backgroundSize: '100px 100px',
+  }}
+/>
 <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">

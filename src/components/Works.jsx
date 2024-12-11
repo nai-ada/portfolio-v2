@@ -186,50 +186,52 @@ function Works() {
             <span className="text-primary">W</span>orks.
           </h1>
         </div>
-        <div
-          ref={scrollRef}
-          className="h-[800px] overflow-y-auto scrollbar-hide md:mx-[2rem] md-x:mx-[5rem] lg-plus:mx-[12rem] xl-x:mx-[12rem] lg-plus:ml-[25rem] lg-plus:mr-[10rem]"
-        >
-          <div className="py-[300px]">
-            {projectsList.map((project, index) => (
-              <div
-                key={project.title}
-                ref={(el) => (itemRefs.current[index] = el)}
-                className={`p-6 transition-opacity duration-300 ${
-                  index !== projectsList.length - 1 ? 'border-b-2' : ''
-                }`}
-                style={{
-                  opacity: index === activeIndex ? 1 : 0.2,
-                  transition: 'opacity 0.3s ease-in-out'
-                }}
-              >
-                <div className="flex justify-between items-center mb-2">
-                  <div className="flex items-center gap-2">
-                    <h2 className="font-bold text-[24px] md:text-[42px]">{project.title}</h2>
-                    {index === activeIndex && (
-                      <img 
-                        src={activeWork} 
-                        alt="Active work indicator" 
-                        className="hidden xs:block w-3 h-3 md:w-5 md:h-5 dark:invert"
-                        style={{
-                          animation: 'blink 2s ease-in-out infinite'
-                        }}
-                      />
-                    )}
-                  </div>
-                  {project.button}
-                </div>
-                <p className="text-[#888888] text-[12px] md:text-[18px]">
-                  {project.description.join(' | ')}
-                </p>
-              </div>
-            ))}
+        <div 
+  ref={scrollRef} 
+  className="mt-14 sm:mt-8 md:mt-0 h-[800px] overflow-y-auto scrollbar-hide mx-8 sm:mx-12 md:mx-[4rem] md-x:mx-[10rem] lg-plus:mx-[24rem] xl-x:mx-[14rem] lg-plus:ml-[25rem] lg-plus:mr-[10rem]"
+>
+
+  <div className="md:py-[300px]">
+    {projectsList.map((project, index) => (
+      <div 
+        key={project.title} 
+        ref={(el) => (itemRefs.current[index] = el)}
+        className={`p-4 transition-opacity duration-300 ${
+          index !== projectsList.length - 1 ? 'border-b-2' : ''
+        }`}
+        style={{ 
+          opacity: window.innerWidth >= 768 ? (index === activeIndex ? 1 : 0.2) : 1,
+          transition: 'opacity 0.3s ease-in-out' 
+        }}
+      >
+        <div className="flex justify-between items-center mb-2">
+          <div className="flex items-center gap-2">
+            <h2 className="font-bold text-[20px] sm:text-[24px] md:text-[42px]">
+              {project.title}
+            </h2>
+            {index === activeIndex && window.innerWidth >= 768 && (
+              <img 
+                src={activeWork}
+                alt="Active work indicator"
+                className="hidden xs:block w-2 h-2 sm:w-3 sm:h-3 md:w-5 md:h-5 dark:invert"
+                style={{ animation: 'blink 2s ease-in-out infinite' }}
+              />
+            )}
           </div>
+          {project.button}
         </div>
+        <p className="text-[#888888] text-[11px] sm:text-[12px] md:text-[18px]">
+          {project.description.join(' | ')}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
+
       </FadeIn>
 
       <FadeIn>
-        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] full:ml-[12rem] 4xl:ml-[20rem] pt-[5rem] lg-plus:pt-[10rem]" id="featured">
+        <div className="md-x:mx-[4rem] lg-plus:mx-[10rem] xl-x:mx-[10rem] full:ml-[12rem] 4xl:ml-[20rem] md:pt-[5rem] lg-plus:pt-[10rem]" id="featured">
 
 
           <h2 className="font-semibold text-[32px] p-8 pt-6 pb-2 md:pt-[2rem] text-[#2b2b2b] md:text-[36px] md:ml-6 lg-plus:text-[45px] dark:text-white 4xl:text-[55px]">

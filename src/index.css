@@ -25,6 +25,11 @@ video {
   height: auto;
 }
 
+@media (prefers-color-scheme: dark) {
+  .accordion-component {
+    color-scheme: light;
+  }
+}
 
 .slick-slide > div {
   margin: 0 10px;

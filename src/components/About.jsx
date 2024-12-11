@@ -6,9 +6,9 @@ import FadeIn from '../components/FadeIn';
 function About() {
   return (
     <>
-        <div className="about-section relative md:overflow-hidden mt-10 lg-plus:pt-[100px]" id="about"> 
+        <div className="about-section relative md:overflow-hidden mt-[6rem] lg-plus:pt-[100px]" id="about"> 
           {/* rotated heading */}
-          <div className="hidden lg-plus:block absolute right-0 top-[25vh]">
+          <div className="hidden lg-plus:block absolute right-0 top-[30vh]">
     <FadeIn>
     <h1 className="font-bold uppercase text-[125px] 4xl:text-[150px] origin-center rotate-90 text-[#2b2b2b] dark:text-white whitespace-nowrap">
       <span className="text-primary">A</span>bout.
