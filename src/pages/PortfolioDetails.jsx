@@ -195,7 +195,6 @@ function PortfolioDetails() {
             This web portfolio showcases my evolution as a front-end developer through a clean, intuitive design. Built with React.js for robust code organization and enhanced with NextUI components, 
             this project demonstrates my commitment to creating polished, user-focused experiences. While my previous portfolio laid the foundation, 
             this redesign represents a significant step forward in both functionality and aesthetic refinement. 
-            If you are interested in viewing my previous portfolio, you can view it <a href="/portfolio-1" target="_blank" rel="noopener noreferrer" className='text-primary underline font-medium'>here</a>. 
             </p>
             <p className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white'>
             This portfolio reflects my growth through its refined design and enhanced user experience. With features like theme switching and streamlined navigation, it delivers a cleaner, 
