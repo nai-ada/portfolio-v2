@@ -25,8 +25,8 @@ function TitanDetails() {
     width: '500%',
     marginLeft: '-18%',
     backgroundImage: `
-      linear-gradient(to right, rgba(229, 231, 235, 0.4) 2px, transparent 2px),
-      linear-gradient(to bottom, rgba(229, 231, 235, 0.4) 2px, transparent 2px)
+      linear-gradient(to right, rgba(229, 231, 235, 0.25) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(229, 231, 235, 0.25) 2px, transparent 2px)
     `,
     backgroundSize: '100px 100px',
   }}
@@ -227,7 +227,7 @@ function TitanDetails() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ex eum cupiditate rerum quibusdam dolore, necessitatibus fugiat placeat debitis, eaque distinctio omnis quisquam quod adipisci alias sequi quo nemo?
               </p>
   <div className='grid grid-cols-1 gap-8 max-w-[600px] mx-auto px-4'>
-    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0_4px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
+    <div className='group bg-white dark:bg-gradient-to-b dark:from-[#212738] dark:to-darkBackground border-1 dark:border-[#414141] rounded-lg  shadow-[0.25px_7px_rgba(0,0,0,0.3)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.3)]  transition-transform duration-300 hover:scale-105'>
       <div className='relative overflow-hidden rounded-lg h-[260px]'>
         <img 
           src={titan1} 

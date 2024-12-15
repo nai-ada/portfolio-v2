@@ -24,8 +24,8 @@ function ClipprDetails() {
     width: '500%',
     marginLeft: '-18%',
     backgroundImage: `
-      linear-gradient(to right, rgba(229, 231, 235, 0.4) 2px, transparent 2px),
-      linear-gradient(to bottom, rgba(229, 231, 235, 0.4) 2px, transparent 2px)
+      linear-gradient(to right, rgba(229, 231, 235, 0.25) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(229, 231, 235, 0.25) 2px, transparent 2px)
     `,
     backgroundSize: '100px 100px',
   }}
