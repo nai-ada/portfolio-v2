@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import FadeLeft from '../components/FadeLeft';
-import FadeRight from '../components/FadeRight';
 import NavWorks from '../components/NavWorks';
 import {Button} from "@nextui-org/react";
-import GitHub from '/src/assets/github.svg';
 import FigmaIcon from '/src/assets/figmalink.svg';
 import TitanTools from '../components/TitanTools';
 import FooterWorks from '../components/FooterWorks';
@@ -12,7 +9,6 @@ import FadeIn from '../components/FadeIn';
 import titan1 from '/src/assets/titan1.svg';
 import titan2 from '/src/assets/titan2.svg';
 import WorksCards from '../components/WorksCards';
-
 
 
 function TitanDetails() {
@@ -32,7 +28,7 @@ function TitanDetails() {
   }}
 />
     
-    <div className="relative z-10">
+  <div className="relative z-10">
   <NavWorks />
   <div className="pt-[100px] md:pt-[150px]">
     <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0 pl-[0.2rem]">

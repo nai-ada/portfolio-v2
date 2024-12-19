@@ -89,7 +89,7 @@ function Home() {
               width={14}
               className="mr-2 dark:invert 4xl:w-5"
             />
-            <h2 className="text-[14px] font-medium md:text-[18px] 4xl:text-[22px]">Vancouver, BC 🩵</h2>
+            <h2 className="text-[14px] font-medium md:text-[18px] 4xl:text-[22px]">Vancouver, BC</h2>
           </div>
           <div className="flex justify-center md:justify-start space-x-4 lg:hidden">
             <a
