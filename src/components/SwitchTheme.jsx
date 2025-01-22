@@ -1,7 +1,7 @@
-import { useTheme as useNextTheme } from 'next-themes';
-import { Switch } from '@nextui-org/react';
-import { MoonIcon } from '../assets/MoonIcon.jsx';
-import { SunIcon } from '../assets/SunIcon.jsx';
+import { useTheme as useNextTheme } from "next-themes";
+import { Switch } from "@nextui-org/react";
+import { MoonIcon } from "../assets/MoonIcon.jsx";
+import { SunIcon } from "../assets/SunIcon.jsx";
 
 export default function SwitchTheme() {
   const { setTheme } = useNextTheme();
@@ -20,8 +20,8 @@ export default function SwitchTheme() {
         )
       }
       onChange={(e) => {
-        const newTheme = e.target.checked ? 'dark' : 'light';
-        console.log('Switch toggled, setting theme to:', newTheme);
+        const newTheme = e.target.checked ? "dark" : "light";
+        console.log("Switch toggled, setting theme to:", newTheme);
         setTheme(newTheme);
       }}
     />

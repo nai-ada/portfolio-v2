@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Navbar,
   NavbarContent,
@@ -8,40 +8,39 @@ import {
   NavbarMenuItem,
   Link,
   Switch,
-} from '@nextui-org/react';
-import { MoonIcon } from '../assets/MoonIcon.jsx';
-import { SunIcon } from '../assets/SunIcon.jsx';
-import { useTheme } from '../providers/ThemeProvider';
-import { HashLink } from 'react-router-hash-link';
+} from "@nextui-org/react";
+import { MoonIcon } from "../assets/MoonIcon.jsx";
+import { SunIcon } from "../assets/SunIcon.jsx";
+import { useTheme } from "../providers/ThemeProvider";
+import { HashLink } from "react-router-hash-link";
 
 function MenuWorks() {
-  const menuItems = ['Home', 'All Works']; 
+  const menuItems = ["Home", "All Works"];
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { theme, toggleTheme } = useTheme();
-
 
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
-        base: 'bg-hidden sm:relative sticky top-0 z-50',
-        wrapper: 'max-w-full p-2',
+        base: "bg-hidden sm:relative sticky top-0 z-50",
+        wrapper: "max-w-full p-2",
       }}
     >
       <NavbarContent>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden"
         />
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-24">
         <NavbarItem className="relative group">
-          <HashLink 
+          <HashLink
             smooth
-            to="/" 
-            className='md:text-[15px] text-[#232323] dark:text-white font-[500] uppercase hover:opacity-80 cursor-pointer'
+            to="/"
+            className="md:text-[15px] text-[#232323] dark:text-white font-[500] uppercase hover:opacity-80 cursor-pointer"
           >
             Home
           </HashLink>
@@ -49,10 +48,10 @@ function MenuWorks() {
         </NavbarItem>
 
         <NavbarItem className="relative group">
-        <HashLink 
+          <HashLink
             smooth
-            to="/pages/all-works" 
-            className='md:text-[15px] text-[#232323] dark:text-white font-[500] uppercase hover:opacity-80 cursor-pointer'
+            to="/pages/all-works"
+            className="md:text-[15px] text-[#232323] dark:text-white font-[500] uppercase hover:opacity-80 cursor-pointer"
           >
             All Projects
           </HashLink>
@@ -60,7 +59,7 @@ function MenuWorks() {
         </NavbarItem>
 
         <Switch
-          isSelected={theme === 'dark'}
+          isSelected={theme === "dark"}
           size="md"
           color="primary"
           onChange={toggleTheme}
@@ -76,9 +75,12 @@ function MenuWorks() {
 
       <NavbarMenu className="bg-white dark:bg-darkBackground">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`} className="flex justify-start">
-            {item === 'Home' ? (
-              <HashLink 
+          <NavbarMenuItem
+            key={`${item}-${index}`}
+            className="flex justify-start"
+          >
+            {item === "Home" ? (
+              <HashLink
                 smooth
                 to="/"
                 className="mt-7 text-black dark:text-white text-[17px] uppercase text-right ml-6 pt-4 font-[400] cursor-pointer"
@@ -87,7 +89,7 @@ function MenuWorks() {
                 {item}
               </HashLink>
             ) : (
-              <HashLink 
+              <HashLink
                 smooth
                 to="/pages/all-works"
                 className="mt-7 text-black dark:text-white text-[17px] uppercase text-right ml-6 pt-4 font-[400] cursor-pointer"
@@ -100,7 +102,7 @@ function MenuWorks() {
         ))}
         <div className="mt-10 ml-6 flex flex-col gap-4 justify-start items-start">
           <Switch
-            isSelected={theme === 'dark'}
+            isSelected={theme === "dark"}
             size="md"
             color="primary"
             onChange={toggleTheme}

@@ -1,18 +1,18 @@
-import React from 'react';
-import { Link } from '@nextui-org/react';
-import FadeIn from '../components/FadeIn';
+import React from "react";
+import { Link } from "@nextui-org/react";
+import FadeIn from "../components/FadeIn";
 
 function FooterWorks() {
   const scrollToSection = (sectionId) => {
-    if (sectionId === 'home') {
-      window.location.href = '/';
+    if (sectionId === "home") {
+      window.location.href = "/";
       return;
     }
-    const element = document.getElementById('other-works');
+    const element = document.getElementById("other-works");
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -22,55 +22,56 @@ function FooterWorks() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col space-y-8">
           {/* Social Links Section */}
- 
 
           <div className="space-y-4">
-            <h2 className="text-[22px]  font-bold text-[#222222] dark:text-white mb-4 uppercase">Links</h2>
+            <h2 className="text-[22px]  font-bold text-[#222222] dark:text-white mb-4 uppercase">
+              Links
+            </h2>
             <div className="flex flex-row space-x-4 md:space-x-8">
-              <a 
-                href="https://linkedin.com/in/nadiavespalec" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://linkedin.com/in/nadiavespalec"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity text-[#222222] dark:text-white underline"
               >
                 LinkedIn
               </a>
-              <a 
-                href="https://github.com/nai-ada" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://github.com/nai-ada"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity  text-[#222222] dark:text-white underline"
               >
                 GitHub
               </a>
-              <a 
-                href="mailto:nadiavespalec00@gmail.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="mailto:nadiavespalec00@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity  text-[#222222] dark:text-white underline"
               >
                 Email
               </a>
             </div>
           </div>
-    
 
           {/* Border Divider */}
           <div className="border-t border-[#222222] dark:border-white opacity-20"></div>
-   
 
           {/* Navigation Section */}
           <div className="space-y-4">
-            <h2 className="text-[22px] font-bold  text-[#222222] dark:text-white mb-4 uppercase">Navigation</h2>
+            <h2 className="text-[22px] font-bold  text-[#222222] dark:text-white mb-4 uppercase">
+              Navigation
+            </h2>
             <div className="flex flex-row space-x-4 md:space-x-8">
-              <Link 
-                color="foreground" 
+              <Link
+                color="foreground"
                 href="/"
                 className="text-sm md:text-base  text-[#222222] dark:text-white font-[500] hover:opacity-80 cursor-pointer"
               >
                 Home
               </Link>
-              <Link 
+              <Link
                 href="/pages/all-works"
                 color="foreground"
                 className="text-sm md:text-base  text-[#222222] dark:text-white font-[500] hover:opacity-80 cursor-pointer capitalize"
@@ -79,8 +80,6 @@ function FooterWorks() {
               </Link>
             </div>
           </div>
-    
-
         </div>
 
         {/* Copyright Text */}

@@ -1,38 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
     const shouldBeVisible = window.scrollY > 300;
-    console.log('Scroll position:', window.scrollY, 'Should be visible:', shouldBeVisible);
+    console.log(
+      "Scroll position:",
+      window.scrollY,
+      "Should be visible:",
+      shouldBeVisible
+    );
     setIsVisible(shouldBeVisible);
   };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
     // Initial check
     toggleVisibility();
-    
+
     // Add event listener
-    window.addEventListener('scroll', toggleVisibility);
-    
+    window.addEventListener("scroll", toggleVisibility);
+
     // Cleanup
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  console.log('isVisible state:', isVisible); // Debug log
+  console.log("isVisible state:", isVisible); // Debug log
 
   return (
     <div
       className={`fixed bottom-8 right-8 z-[9999] transition-opacity duration-300 ${
-        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
       <button

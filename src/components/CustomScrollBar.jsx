@@ -1,10 +1,10 @@
 // components/CustomScrollBar.jsx
-import React from 'react';
+import React from "react";
 
 const CustomScrollBar = ({ children, maxHeight = "100vh", className = "" }) => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <div 
+      <div
         className={`
           overflow-y-scroll 
           w-full 
@@ -23,9 +23,9 @@ const CustomScrollBar = ({ children, maxHeight = "100vh", className = "" }) => {
           dark:scrollbar-color: rgb(209 213 219) #161616
           ${className}
         `}
-        style={{ 
+        style={{
           maxHeight: maxHeight,
-          height: '100%'
+          height: "100%",
         }}
       >
         {children}
