@@ -55,7 +55,7 @@ function GalaxyGridDetails() {
                         >
                           <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                             <a
-                              href="/public/static/galaxy-grid-2"
+                              href="/static/galaxy-grid-2/index.html"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -88,7 +88,7 @@ function GalaxyGridDetails() {
                       >
                         <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                           <a
-                            href="/public/static/galaxy-grid-2"
+                            href="/static/galaxy-grid-2/index.html"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

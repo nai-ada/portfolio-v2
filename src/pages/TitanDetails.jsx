@@ -54,7 +54,7 @@ function TitanDetails() {
                         >
                           <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                             <a
-                              href="/public/static/titan-tech-homepage"
+                              href="/static/titan-tech-homepage"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -87,7 +87,7 @@ function TitanDetails() {
                       >
                         <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                           <a
-                            href="/public/static/titan-tech-homepage"
+                            href="/static/titan-tech-homepage"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
