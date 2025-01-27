@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Galaxy Grid 2.0</title>
+  </head>
+
+  <body>
+    <div id="game-container">
+      <audio
+          src="media/lobby-music-1.mp3"
+          id="lobby-audio"
+          autoplay
+          loop
+        ></audio>
+        
+        <audio
+          src="media/cpu-gameplay-click.mp3"
+          id="cpu-gameplay-click-audio"
+        ></audio>
+        
+        <audio src="media/menu-click.mp3" id="menu-click-audio"></audio>
+        <audio src="media/menu-click.mp3" id="role-click-audio"></audio>
+        <audio src="media/gameplay-click.mp3" id="gameplay-click-audio"></audio>
+        <audio src="media/fail.mp3" id="fail-audio"></audio>
+        <audio src="media/won.mp3" id="won-audio"></audio>
+        <audio src="media/gameover.mp3" id="gameover-audio"></audio>
+        <audio src="media/draw.mp3" id="draw-audio"></audio>
+        
+      <div class="video-container">
+        <video playsinline autoplay muted loop id="background">
+          <source defer src="media/main-galaxy-bg.mp4" type="video/mp4" />
+        </video>
+      <img src="icons/galaxy-img.jpg" id="galaxy-img"></img>
+
+        
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li class="title">Galaxy Grid 2.0</li>
+          <li><a href="/">My Portfolio 🪐</a></li>
+        </ul>
+        <div id="toggleMuteButton">
+          <div id="muted-button">
+            <img src="icons/mute.png" alt="Muted Icon" />
+          </div>
+          <div id="unmuted-button">
+            <img src="icons/unmute.png" alt="Unmuted Icon" />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section id="main-section" class="main-section">
+          <h1>Galaxy Grid 2.0</h1>
+          <h2>An intergalactic take on Tic Tac Toe.</h2>
+          <div class="button-wrap">
+            <button id="start-button">Blast off!</button>
+          </div>
+        </section>
+
+        <section
+          id="selection-section"
+          class="selection-section"
+          style="display: none"
+        >
+          <h1>Select your role</h1>
+          <h2>How to play:</h2>
+          <p>
+            This is just like your regular game of Tic Tac Toe; but space
+            themed! You, the player, can choose between two roles: Alien or
+            Astronaut. Whichever role you don't choose, the computer will use to
+            play against you. In the game, click on an empty space you want to
+            claim with your role. The first player to fill three spaces with
+            their role on either a horizontal, vertical, or angular axis wins
+            the round. The player with the highest score after 10 rounds wins
+            the game! ☄️
+          </p>
+          <div class="roles">
+            <h2>Astronaut</h2>
+            <img
+              src="icons/astronaut.png"
+              width="100px"
+              alt="purple and blue astronaut emoji"
+              id="astronaut-role"
+            />
+            <h2>Alien</h2>
+            <img
+              src="icons/alien.png"
+              width="100px"
+              alt="purple and blue ufo with a green alien inside"
+              id="alien-role"
+            />
+          </div>
+        </section>
+
+        <section id="game-section" class="game-section" style="display: none">
+          <div class="main-section-game">
+            <h1><span id="final-msg"></span></h1>
+            <h1 id="remove-all-for-final">
+              Round <span id="round-num">1 </span> of 10
+            </h1>
+          </div>
+
+          <div class="hero">
+            <table>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="result-message"></div>
+          <div id="sub-result-message"></div>
+
+          <div class="score-and-buttons">
+            <div class="game-buttons-container">
+              <button id="next-round-button">Next Round</button>
+
+              <button id="to-main-menu-button">
+                <a href="/public/static/galaxy-grid-2/index.html" id="new-game-sound">Main Menu</a>
+              </button>
+            </div>
+
+            <div class="player-scores">
+              <div class="p-1">
+                <h2>You</h2>
+                <div class="player-score">
+                  <h3>Score:<span id="player-score-num">0</span></h3>
+                </div>
+              </div>
+
+              <div class="p-2">
+                <h2>Player 2</h2>
+                <div class="cpu-score">
+                  <h3>Score:<span id="cpu-score-num">0</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>

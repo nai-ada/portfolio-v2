@@ -55,7 +55,7 @@ function GalaxyGridDetails() {
                         >
                           <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                             <a
-                              href="https://nadiavespalec.com/galaxy-grid-2"
+                              href="/public/static/galaxy-grid-2"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -88,7 +88,7 @@ function GalaxyGridDetails() {
                       >
                         <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                           <a
-                            href="https://nadiavespalec.com/galaxy-grid-2"
+                            href="/public/static/galaxy-grid-2"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
