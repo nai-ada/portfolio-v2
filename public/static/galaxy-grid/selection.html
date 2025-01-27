@@ -1,0 +1,58 @@
+
+<!-- WAS CONSIDERING IMPLEMENTING THIS PAGE, BUT HAD SOME ISSUES GETTING IT TO WORK. PLAYER IS NOW DEFAULT X -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Typography Script -->
+    <script> 
+        (function(d) {
+          var config = {
+            kitId: 'cdj2qtr',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <title>Galaxy Grid - Player Selection</title>
+</head>
+<body>
+    <main>
+        <video autoplay muted loop id="background">
+            <source defer src="media/151960 (Original).mp4" type="video/mp4">
+        </video>
+        <section class="border">
+
+            <div class="select-titles">
+                <p>Welcome to <span>Galaxy Grid!</span></p>
+                <h3>Please select an option to begin:</h3>
+            </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" id="o-svg" class="o-select" viewBox="0 0 189 188" fill="none">
+                    <path d="M179 94C179 140.342 141.218 178 94.5 178C47.7819 178 10 140.342 10 94C10 47.658 47.7819 10 94.5 10C141.218 10 179 47.658 179 94Z" stroke="#FB29FF" stroke-width="20"/>
+                </svg>
+                
+                
+                    <button onclick="saveChoice('X')" class="x-button" id="xButton">
+                            <a href="firstround.html"><h2>Select "X"</h2></a>
+                    </button>
+
+                    <button onclick="saveChoice('O')" class="o-button" id="oButton">
+                            <a href="firstround.html"><h2>Select "O"</h2></a>
+                    </button>
+
+                <span class="or">Or</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="100px" id="x-svg" class="x-select" viewBox="0 0 291 296" fill="none">
+                    <path d="M7.99428 8.13164C10.5249 5.55384 13.5304 3.5088 16.8387 2.1135C20.147 0.718197 23.6933 0 27.2747 0C30.8562 0 34.4025 0.718197 37.7108 2.1135C41.0191 3.5088 44.0246 5.55384 46.5552 8.13164L145.504 108.744L244.453 8.13164C246.985 5.55619 249.991 3.51323 253.299 2.1194C256.607 0.725577 260.153 0.00818714 263.733 0.00818707C267.314 0.008187 270.86 0.725577 274.168 2.1194C277.476 3.51323 280.482 5.55619 283.014 8.13164C285.546 10.7071 287.554 13.7646 288.924 17.1296C290.295 20.4946 291 24.1011 291 27.7434C291 31.3856 290.295 34.9922 288.924 38.3572C287.554 41.7222 285.546 44.7797 283.014 47.3551L184.101 148.004L283.014 248.653C288.127 253.854 291 260.909 291 268.265C291 275.621 288.127 282.675 283.014 287.877C277.9 293.078 270.965 296 263.733 296C256.502 296 249.566 293.078 244.453 287.877L145.504 187.265L46.5552 287.877C41.4417 293.078 34.5063 296 27.2747 296C20.0432 296 13.1078 293.078 7.99428 287.877C2.88078 282.675 0.00804877 275.621 0.00804877 268.265C0.00804877 260.909 2.88078 253.854 7.99428 248.653L106.907 148.004L7.99428 47.3551C5.46002 44.781 3.44953 41.7239 2.0778 38.3587C0.706065 34.9936 0 31.3864 0 27.7434C0 24.1004 0.706065 20.4932 2.0778 17.128C3.44953 13.7629 5.46002 10.7058 7.99428 8.13164Z" fill="#423FF3"/>
+                </svg>
+
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

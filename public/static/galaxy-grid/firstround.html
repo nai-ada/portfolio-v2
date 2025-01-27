@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+    <!-- Typography Script -->
+    <script> 
+        (function(d) {
+          var config = {
+            kitId: 'cdj2qtr',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+      
+    <title>Galaxy Grid</title>
+</head>
+<body>
+    <main class="rounds">
+        <video autoplay muted loop id="background-2">
+            <source defer src="media/151960 (Original).mp4" type="video/mp4">
+        </video>
+        <audio src="media/Mystery  Free mystery music for YouTube videos (no copyright).mp3" id="audio" autoplay loop>
+         </audio>
+         <audio src="media/shooting-sound-fx-159024.mp3" id="click-audio">
+        </audio>
+      <section class="table-border">
+
+        <div class="container">
+          
+
+          <div class="heading-titles">
+            <a href="index.html"><h1 id="galaxygridText">Galaxy Grid</h1></a> 
+            <h2>Your Turn</h2>
+            <h3>Click any grid space to begin.</h3>
+          </div>
+          
+          <div class="p-1">
+            <h1>Me</h1>
+            <div class="player-score">
+              <h1>Score</h1>
+              <div id="player-score-num">
+                0
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-2">
+            <h1>CPU</h1>
+            <div class="cpu-score">
+              <h1>Score</h1>
+              <div id="cpu-score-num">
+                0
+              </div>
+            </div>
+          </div>
+
+          <div id="gameboard">
+              <table class="glass-table">
+              <tr>
+                  <td class="box" id="t0" ></td>
+                  <td class="box" id="t1" ></td>
+                  <td class="box" id="t2" ></td>
+              </tr>
+              <tr>
+                  <td class="box" id="t3" ></td>
+                  <td class="box" id="t4" ></td>
+                  <td class="box" id="t5" ></td>
+              </tr>
+              <tr>
+                  <td class="box" id="t6" ></td>
+                  <td class="box" id="t7" ></td>
+                  <td class="box" id="t8" ></td>
+              </tr>
+          </table>
+          </div>
+
+          <button id="restart-button">
+            <h1 id="restartBtn">Play Again</h1>
+          </button>
+          
+          <button id="new-game">
+            <a href="index.html" id="new-game-sound"><h1 id="newgameBtn">New Game</h1></a>
+          </button>
+
+        </div>
+      </section>
+    </main>
+</body>
+</html>

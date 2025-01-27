@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!-- Typography Script -->
+    <script> 
+        (function(d) {
+          var config = {
+            kitId: 'cdj2qtr',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <title>Game Start!</title>
+</head>
+
+<body>
+    <main>
+        <video autoplay muted loop id="background">
+            <source defer src="media/background_-_4422 (1080p).mp4" type="video/mp4">
+        </video>
+
+        <section class="border">
+            
+            <h1 class="start">Game Start!</h1>
+
+            <button class="ok-button">
+                <a href="firstround.html"><h1>Let's Go!</h1></a>
+            </button>
+
+        </section>
+        
+    </main>
+</body>
+</html>

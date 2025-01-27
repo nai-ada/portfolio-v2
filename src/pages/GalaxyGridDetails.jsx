@@ -229,7 +229,7 @@ function GalaxyGridDetails() {
               time in the BCIT Front-End Web Development program. If you would
               like to view the original, you can view it{" "}
               <a
-                href="https://nadiavespalec.com/galaxy-grid"
+                href="/static/galaxy-grid/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary underline font-medium"
