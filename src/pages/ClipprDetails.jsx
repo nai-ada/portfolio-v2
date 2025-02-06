@@ -55,7 +55,7 @@ function ClipprDetails() {
                         >
                           <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                             <a
-                              href="/demos/clippr"
+                              href="https://clippr.nadiavespalec.com"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -88,7 +88,7 @@ function ClipprDetails() {
                       >
                         <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                           <a
-                            href="/demos/clippr"
+                            href="https://clippr.nadiavespalec.com"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
