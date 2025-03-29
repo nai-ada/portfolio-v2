@@ -18,6 +18,10 @@ import phpLogo from "/src/assets/php.png";
 import htmlLogo from "/src/assets/html.png";
 import cssLogo from "/src/assets/css.png";
 import tailwindLogo from "/src/assets/tailwind.png";
+import nodejsLogo from "/src/assets/nodejs.svg";
+import expressLogo from "/src/assets/expressjs.svg";
+import postgresqlLogo from "/src/assets/postgresql.svg";
+import supabaseLogo from "/src/assets/supabase.svg";
 import solidLogo from "/src/assets/solid.png";
 import framermotionLogo from "/src/assets/framermotion.png";
 import nextuiLogo from "/src/assets/nextui.png";
@@ -58,10 +62,14 @@ const logos = {
     alt: "Framer Motion",
     title: "Framer Motion",
   },
-  nextui: { src: nextuiLogo, alt: "NextUI", title: "NextUI" },
+  nextui: { src: nextuiLogo, alt: "HeroUI", title: "HeroUI" },
   threejs: { src: threejsLogo, alt: "ThreeJs", title: "ThreeJS" },
   mysql: { src: mySqlLogo, alt: "MySQL", title: "MySQL" },
   wordpress: { src: wordpressLogo, alt: "Wordpress", title: "WordPress" },
+  nodejs: { src: nodejsLogo, alt: "Node.js", title: "Node.js" },
+  express: { src: expressLogo, alt: "Express.js", title: "Express.js" },
+  supabase: { src: supabaseLogo, alt: "Supabase", title: "Supabase" },
+  postgresql: { src: postgresqlLogo, alt: "PostgreSQL", title: "PostgreSQL" },
 };
 
 const createLogoElements = (logoKeys) =>
@@ -81,10 +89,14 @@ const createLogoElements = (logoKeys) =>
   ));
 
 const devContent = createLogoElements([
-  "npm",
-  "shopify",
   "git",
   "javascript",
+  "wordpress",
+  "mysql",
+  "nodejs",
+  "express",
+  "postgresql",
+  "supabase",
   "react",
   "sass",
   "typescript",
@@ -93,11 +105,8 @@ const devContent = createLogoElements([
   "css",
   "tailwind",
   "solidjs",
-  "framermotion",
-  "nextui",
-  "threejs",
-  "mysql",
-  "wordpress",
+  "npm",
+  "shopify",
 ]);
 
 const designContent = createLogoElements([

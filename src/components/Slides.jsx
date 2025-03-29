@@ -3,7 +3,6 @@ import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import aisa from "/src/assets/aisa.png";
 import clippr from "/src/assets/clippr.png";
-import titan from "/src/assets/titan.png";
 import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
 import nxt from "/src/assets/next.svg";
@@ -86,12 +85,12 @@ const Slides = () => {
       info: `The website you're currently on! Showcases my skills as a developer.`,
       link: "/projects/portfolio",
     },
-    {
-      name: `Titan Tech`,
-      img: titan,
-      info: `Landing page created for Titan Technologies, based off a provided design.`,
-      link: "/projects/titan",
-    },
+    // {
+    //   name: `Refra:me`,
+    //   img: reframe,
+    //   info: `mental wellness app that detects cognitive distortions and reframes negative thought patterns.`,
+    //   link: "/projects/reframe",
+    // },
     {
       name: `ClipprDB`,
       img: clippr,

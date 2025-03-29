@@ -26,7 +26,7 @@ function Menu() {
         block: "start",
         inline: "nearest",
       });
-      setIsMenuOpen(false); // Close menu after scrolling
+      setIsMenuOpen(false);
     }
   };
 
@@ -36,7 +36,7 @@ function Menu() {
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
         base: "bg-hidden sm:relative sticky top-0 z-50",
-        wrapper: "max-w-full p-2",
+        wrapper: "max-w-[full] p-2",
       }}
     >
       <NavbarContent>

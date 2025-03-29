@@ -2,9 +2,7 @@ import React, { useMemo } from "react";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import aisa from "/src/assets/aisa.png";
-import indigo from "/src/assets/indigohome.png";
 import clippr from "/src/assets/clippr.png";
-import titan from "/src/assets/titan.png";
 import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
 import froth from "/src/assets/froth1.png";
@@ -32,12 +30,12 @@ const WorksCards = ({ currentProject = "froth" }) => {
         title: "Clippr DB",
         link: "/projects/clippr",
       },
-      {
-        id: "titan",
-        image: titan,
-        title: "Titan Tech",
-        link: "/projects/titan",
-      },
+      // {
+      //   id: "reframe",
+      //   image: reframe,
+      //   title: "Refra:me",
+      //   link: "/projects/reframe",
+      // },
       {
         id: "indigo",
         image: comingsoon,

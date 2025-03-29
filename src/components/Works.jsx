@@ -19,7 +19,7 @@ const blinkingArrowStyle = `
 const projectsList = [
   {
     title: "Froth Matcha",
-    description: ["WordPress", "PHP", "SASS"],
+    description: ["WordPress", "PHP", "Sass"],
     link: "/projects/froth-matcha",
     button: (
       <Link to="/projects/froth-matcha">
@@ -34,7 +34,7 @@ const projectsList = [
   },
   {
     title: "Indigo",
-    description: ["TypeScript", "Tailwind", "Solid.js"],
+    description: ["TypeScript", "Tailwind CSS", "Solid.js"],
     link: "#",
     button: (
       <Link to="/projects/indigo">
@@ -49,7 +49,7 @@ const projectsList = [
   },
   {
     title: "Portfolio",
-    description: ["React", "Tailwind", "NextUI"],
+    description: ["React", "Tailwind CSS", "HeroUI"],
     link: "#",
     button: (
       <Link to="/projects/portfolio">
@@ -79,7 +79,7 @@ const projectsList = [
   },
   {
     title: "AISafeguard",
-    description: ["React", "Tailwind", "HTML"],
+    description: ["React", "Tailwind CSS", "HTML"],
     link: "#",
     button: (
       <Link to="/projects/aisafeguard">
@@ -108,21 +108,36 @@ const projectsList = [
     ),
   },
 
-  {
-    title: "Titan Tech",
-    description: ["JavaScript", "CSS", "HTML"],
-    link: "#",
-    button: (
-      <Link to="/projects/titan">
-        <Button
-          radius="full"
-          className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
-        >
-          Info
-        </Button>
-      </Link>
-    ),
-  },
+  // {
+  //   title: "Refra:me",
+  //   description: ["React", "PostgreSQL", "Supabase"],
+  //   link: "#",
+  //   button: (
+  //     <Link to="/projects/reframe">
+  //       <Button
+  //         radius="full"
+  //         className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
+  //       >
+  //         Info
+  //       </Button>
+  //     </Link>
+  //   ),
+  // },
+  // {
+  //   title: "Instock",
+  //   description: ["React", "Sass", "Express.js"],
+  //   link: "#",
+  //   button: (
+  //     <Link to="/projects/instock">
+  //       <Button
+  //         radius="full"
+  //         className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
+  //       >
+  //         Info
+  //       </Button>
+  //     </Link>
+  //   ),
+  // },
 ];
 
 function Works() {

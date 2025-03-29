@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import aisa from "/src/assets/aisa.png";
 import indigo from "/src/assets/indigohome.png";
 import clippr from "/src/assets/clippr.png";
-import titan from "/src/assets/titan.png";
 import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
 import froth from "/src/assets/froth1.png";
@@ -41,12 +40,12 @@ const AllWorks = () => {
       title: "Clippr DB",
       link: "/projects/clippr",
     },
-    {
-      id: "titan",
-      image: titan,
-      title: "Titan Tech",
-      link: "/projects/titan",
-    },
+    // {
+    //   id: "reframe",
+    //   image: reframe,
+    //   title: "Refra:me",
+    //   link: "/projects/reframe",
+    // },
     {
       id: "galaxy",
       image: galaxy,

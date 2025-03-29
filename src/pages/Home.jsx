@@ -12,12 +12,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function Home() {
   const [text] = useTypewriter({
     words: [
-      "Web Developer.",
+      "Software Engineer.",
+      "Full-stack Web Developer.",
       "UX/UI Designer.",
-      "problem solver.",
-      "Software Developer.",
-      "React Developer.",
-      "Freelance Developer.",
       "Web Designer.",
     ],
     loop: true,
@@ -70,7 +67,7 @@ function Home() {
                     </span>
                   </h1>
                 </div>
-                <div className="hidden w-28 lg:w-10 lg:flex lg:flex-col space-y-6 lg:mt-11 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 xl-plus:mt-[3.5rem] lg-plus:mt-[3rem] lg-plus:ml-8 lg:self-start dark:invert 4xl:mt-[4.9rem]">
+                <div className="hidden w-28 lg:w-10 lg:flex lg:flex-col space-y-6 lg:mt-11 xl:mt-12 xl:ml-9 md-x:mt-10 lg:ml-7 xl-plus:mt-[3.7rem] lg-plus:mt-[3rem] lg-plus:ml-8 lg:self-start dark:invert 4xl:mt-[4.9rem]">
                   <a
                     href="https://linkedin.com/in/nadiavespalec"
                     target="_blank"

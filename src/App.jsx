@@ -15,7 +15,6 @@ import PortfolioDetails from "./pages/PortfolioDetails";
 import AiSaDetails from "./pages/AiSaDetails";
 import Favicon from "react-favicon";
 import ClipprDetails from "./pages/ClipprDetails";
-import TitanDetails from "./pages/TitanDetails";
 import NotFound from "./pages/NotFound";
 import AllWorks from "./pages/AllWorks";
 import faviconUrl from "./assets/favicon.ico";
@@ -72,7 +71,6 @@ function App() {
                       path="/projects/clippr"
                       element={<ClipprDetails />}
                     />
-                    <Route path="/projects/titan" element={<TitanDetails />} />
                     <Route path="/pages/all-works" element={<AllWorks />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
