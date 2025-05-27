@@ -6,7 +6,6 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
   Switch,
 } from "@nextui-org/react";
 import { MoonIcon } from "../assets/MoonIcon.jsx";

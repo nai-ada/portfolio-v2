@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,6 +15,7 @@ import PortfolioDetails from "./pages/PortfolioDetails";
 import AiSaDetails from "./pages/AiSaDetails";
 import Favicon from "react-favicon";
 import ClipprDetails from "./pages/ClipprDetails";
+import ReframeDetails from "./pages/ReframeDetails";
 import NotFound from "./pages/NotFound";
 import AllWorks from "./pages/AllWorks";
 import faviconUrl from "./assets/favicon.ico";
@@ -70,6 +71,10 @@ function App() {
                     <Route
                       path="/projects/clippr"
                       element={<ClipprDetails />}
+                    />
+                    <Route
+                      path="/projects/reframe"
+                      element={<ReframeDetails />}
                     />
                     <Route path="/pages/all-works" element={<AllWorks />} />
                     <Route path="*" element={<NotFound />} />

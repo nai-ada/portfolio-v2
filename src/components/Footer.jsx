@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "@nextui-org/react";
-import FadeIn from "../components/FadeIn";
 
 function Footer() {
   const scrollToSection = (sectionId) => {
@@ -82,7 +80,7 @@ function Footer() {
         {/* Copyright Text */}
         <div className="mt-12 text-center md:text-left">
           <p className="text-[10px] md:text-xs text-[#222222] dark:text-white font-medium">
-            © Nadia Vespalec | 2024
+            © Nadia Vespalec | 2025
           </p>
         </div>
       </div>

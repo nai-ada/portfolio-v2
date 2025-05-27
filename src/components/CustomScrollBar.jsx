@@ -1,6 +1,3 @@
-// components/CustomScrollBar.jsx
-import React from "react";
-
 const CustomScrollBar = ({ children, maxHeight = "100vh", className = "" }) => {
   return (
     <div className="relative w-full h-screen overflow-hidden">

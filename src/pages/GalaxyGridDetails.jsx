@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import FadeLeft from "../components/FadeLeft";
-import FadeRight from "../components/FadeRight";
 import NavWorks from "../components/NavWorks";
 import { Button } from "@nextui-org/react";
 import GitHub from "/src/assets/github.svg";

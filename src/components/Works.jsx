@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import FadeIn from "../components/FadeIn";
 import activeWork from "/src/assets/active-arrow.svg";
+import favourite from "/src/assets/favourite.svg";
 
 const blinkingArrowStyle = `
   @keyframes blink {
@@ -48,7 +49,21 @@ const projectsList = [
     ),
   },
   {
-    title: "Portfolio",
+    title: (
+      <>
+        <img
+          src={favourite}
+          alt="Favourite"
+          style={{
+            display: "inline",
+            width: "0.7em",
+            verticalAlign: "middle",
+            marginRight: 8,
+          }}
+        />
+        Portfolio
+      </>
+    ),
     description: ["React", "Tailwind CSS", "HeroUI"],
     link: "#",
     button: (
@@ -108,21 +123,35 @@ const projectsList = [
     ),
   },
 
-  // {
-  //   title: "Refra:me",
-  //   description: ["React", "PostgreSQL", "Supabase"],
-  //   link: "#",
-  //   button: (
-  //     <Link to="/projects/reframe">
-  //       <Button
-  //         radius="full"
-  //         className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
-  //       >
-  //         Info
-  //       </Button>
-  //     </Link>
-  //   ),
-  // },
+  {
+    title: (
+      <>
+        <img
+          src={favourite}
+          alt="Favourite"
+          style={{
+            display: "inline",
+            width: "0.7em",
+            verticalAlign: "middle",
+            marginRight: 8,
+          }}
+        />
+        Refra:me
+      </>
+    ),
+    description: ["React", "PostgreSQL", "Netlify"],
+    link: "#",
+    button: (
+      <Link to="/projects/reframe">
+        <Button
+          radius="full"
+          className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
+        >
+          Info
+        </Button>
+      </Link>
+    ),
+  },
   // {
   //   title: "Instock",
   //   description: ["React", "Sass", "Express.js"],

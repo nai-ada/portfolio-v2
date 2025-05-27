@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import NavWorks from "../components/NavWorks";
 import { Button } from "@nextui-org/react";
@@ -8,10 +8,7 @@ import FooterWorks from "../components/FooterWorks";
 import FadeIn from "../components/FadeIn";
 import froth1 from "/src/assets/froth1.svg";
 import froth2 from "/src/assets/froth2.svg";
-import froth4 from "/src/assets/froth4.png";
 import WorksCards from "../components/WorksCards";
-import FadeLeft from "../components/FadeLeft";
-import FadeRight from "../components/FadeRight";
 
 function FrothDetails() {
   const [activeSection, setActiveSection] = useState("overview");

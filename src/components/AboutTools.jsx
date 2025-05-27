@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-
 import mySqlLogo from "/src/assets/mysql.png";
 import npmLogo from "/src/assets/npm.png";
 import wordpressLogo from "/src/assets/wordpress.png";
@@ -22,6 +20,7 @@ import nodejsLogo from "/src/assets/nodejs.svg";
 import expressLogo from "/src/assets/expressjs.svg";
 import postgresqlLogo from "/src/assets/postgresql.svg";
 import supabaseLogo from "/src/assets/supabase.svg";
+import netlifylogo from "/src/assets/netlify.png";
 import solidLogo from "/src/assets/solid.png";
 import framermotionLogo from "/src/assets/framermotion.png";
 import nextuiLogo from "/src/assets/nextui.png";
@@ -70,6 +69,7 @@ const logos = {
   express: { src: expressLogo, alt: "Express.js", title: "Express.js" },
   supabase: { src: supabaseLogo, alt: "Supabase", title: "Supabase" },
   postgresql: { src: postgresqlLogo, alt: "PostgreSQL", title: "PostgreSQL" },
+  netlify: { src: netlifylogo, alt: "Netlify", title: "Netlify" },
 };
 
 const createLogoElements = (logoKeys) =>
@@ -107,6 +107,7 @@ const devContent = createLogoElements([
   "solidjs",
   "npm",
   "shopify",
+  "netlify",
 ]);
 
 const designContent = createLogoElements([

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Button } from "@nextui-org/react";
-
 import GreenDot from "/src/assets/greendot.svg";
 import RedDot from "/src/assets/reddot.svg";
 import GitHub from "/src/assets/github.svg";
@@ -65,7 +64,6 @@ function Connect() {
             </div>
           </FadeIn>
 
-          {/* Social Links */}
           <FadeIn>
             <div className="grid grid-cols-3 border border-black mt-12 md:mt-20 mb-20 md:mb-53 mx-1 xs:mx-4 sm-plus:mx-16 md-x:mx-auto md-x:max-w-[800px] rounded-full overflow-hidden md:ml-30 md:mr-30 dark:border-white">
               <a

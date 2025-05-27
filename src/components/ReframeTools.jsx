@@ -1,9 +1,12 @@
 import figmaLogo from "/src/assets/figma.png";
 import gitLogo from "/src/assets/git.png";
+import javascriptLogo from "/src/assets/js.png";
 import tailwindLogo from "/src/assets/tailwind.png";
 import framermotionLogo from "/src/assets/framermotion.png";
-import nextuiLogo from "/src/assets/nextui.png";
 import reactLogo from "/src/assets/react.png";
+import postgresqlLogo from "/src/assets/postgresql.svg";
+import supabaseLogo from "/src/assets/supabase.svg";
+import netlifylogo from "/src/assets/netlify.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -11,6 +14,7 @@ import { useEffect } from "react";
 const logos = {
   figma: { src: figmaLogo, alt: "Figma", title: "Figma" },
   git: { src: gitLogo, alt: "Git", title: "Git" },
+  javascript: { src: javascriptLogo, alt: "JavaScript", title: "JavaScript" },
   react: { src: reactLogo, alt: "React", title: "React" },
   tailwind: { src: tailwindLogo, alt: "Tailwind", title: "Tailwind" },
   framermotion: {
@@ -18,7 +22,9 @@ const logos = {
     alt: "Framer Motion",
     title: "Framer Motion",
   },
-  nextui: { src: nextuiLogo, alt: "NextUI", title: "NextUI" },
+  supabase: { src: supabaseLogo, alt: "Supabase", title: "Supabase" },
+  postgresql: { src: postgresqlLogo, alt: "PostgreSQL", title: "PostgreSQL" },
+  netlify: { src: netlifylogo, alt: "Netlify", title: "Netlify" },
 };
 
 const container = {
@@ -46,7 +52,6 @@ const item = {
     },
   },
 };
-
 const createLogoElements = (logoKeys) =>
   logoKeys.map((key) => (
     <motion.div
@@ -67,18 +72,20 @@ const createLogoElements = (logoKeys) =>
     </motion.div>
   ));
 
-const devTools = ["git", "tailwind", "react", "nextui", "framermotion"];
-const designTools = ["figma"];
-const skillsContent = [
-  "UX/UI",
-  "Prototyping",
-  "Wireframing",
-  "Problem Solving",
-  "Mockups",
-  "Style Guides",
+const devTools = [
+  "git",
+  "tailwind",
+  "react",
+  "netlify",
+  "supabase",
+  "javascript",
+  "postgresql",
+  "framermotion",
 ];
+const designTools = ["figma"];
+const skillsContent = ["UX/UI", "Wireframing", "Problem Solving", "APIs"];
 
-function PortfolioTools() {
+function ReframeTools() {
   const devControl = useAnimation();
   const designControl = useAnimation();
   const skillsControl = useAnimation();
@@ -165,4 +172,4 @@ function PortfolioTools() {
   );
 }
 
-export default PortfolioTools;
+export default ReframeTools;

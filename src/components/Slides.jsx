@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import aisa from "/src/assets/aisa.png";
+import reframe3 from "/src/assets/reframe3.png";
 import clippr from "/src/assets/clippr.png";
 import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
@@ -85,12 +85,12 @@ const Slides = () => {
       info: `The website you're currently on! Showcases my skills as a developer.`,
       link: "/projects/portfolio",
     },
-    // {
-    //   name: `Refra:me`,
-    //   img: reframe,
-    //   info: `mental wellness app that detects cognitive distortions and reframes negative thought patterns.`,
-    //   link: "/projects/reframe",
-    // },
+    {
+      name: `Refra:me`,
+      img: reframe3,
+      info: `Mental wellness app that reframes negative thinking patterns.`,
+      link: "/projects/reframe",
+    },
     {
       name: `ClipprDB`,
       img: clippr,

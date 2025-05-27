@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,17 +22,12 @@ const ScrollToTop = () => {
   };
 
   useEffect(() => {
-    // Initial check
     toggleVisibility();
-
-    // Add event listener
     window.addEventListener("scroll", toggleVisibility);
-
-    // Cleanup
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  console.log("isVisible state:", isVisible); // Debug log
+  console.log("isVisible state:", isVisible);
 
   return (
     <div

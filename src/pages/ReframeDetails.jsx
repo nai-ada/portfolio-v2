@@ -3,15 +3,14 @@ import { HashLink } from "react-router-hash-link";
 import NavWorks from "../components/NavWorks";
 import { Button } from "@nextui-org/react";
 import GitHub from "/src/assets/github.svg";
-import PortfolioTools from "../components/PortfolioTools";
+import ReframeTools from "../components/ReframeTools";
 import FooterWorks from "../components/FooterWorks";
 import FadeIn from "../components/FadeIn";
-import portfolio1 from "/src/assets/portfolio1.svg";
-import portfolio2 from "/src/assets/portfolio2.svg";
+import reframe1 from "/src/assets/reframe1.svg";
+import reframe2 from "/src/assets/reframe2.svg";
 import WorksCards from "../components/WorksCards";
-import FigmaIcon from "/src/assets/figmalink.svg";
 
-function PortfolioDetails() {
+function ReframeDetails() {
   const [activeSection, setActiveSection] = useState("overview");
   return (
     <div className="relative overflow-hidden">
@@ -27,7 +26,6 @@ function PortfolioDetails() {
           backgroundSize: "100px 100px",
         }}
       />
-
       <div className="relative z-10">
         <NavWorks />
         <div className="pt-[100px] md:pt-[150px]">
@@ -45,17 +43,17 @@ function PortfolioDetails() {
 
                   <div className="relative mb-16">
                     <div className="xl-x:flex xl-x:items-center xl-x:justify-start xl-x:gap-4">
-                      <h1 className="font-bold uppercase text-[48px] xs:text-[56px] sm-plus:text-[70px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
-                        <span className="text-primary">P</span>ortfolio.
+                      <h1 className="font-bold uppercase text-[60px] sm-plus:text-[70px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
+                        <span className="text-primary">R</span>efra:me.
                       </h1>
-                      <div className="hidden xl-x:flex items-center gap-4 mt-12 flex-shrink-0">
+                      <div className="hidden xl-x:flex gap-4 mt-12">
                         <Button
                           radius="full"
-                          className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
+                          className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4"
                         >
                           <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                             <a
-                              href="https://nadiavespalec.com"
+                              href="https://getreframe.netlify.app/login"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -64,10 +62,10 @@ function PortfolioDetails() {
                           </span>
                         </Button>
                         <a
-                          href="https://github.com/nai-ada/portfolio-v2"
+                          href="https://github.com/nai-ada/reframe"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0"
+                          className="hover:opacity-70 transition-opacity dark:invert"
                         >
                           <img
                             src={GitHub}
@@ -75,32 +73,20 @@ function PortfolioDetails() {
                             className="w-8 xs:w-9"
                           />
                         </a>
-                        <a
-                          href="https://www.figma.com/design/9jSVd92pcOop5tYOqxschn/Portfolio-Project-2?node-id=0-1&t=xr19yNumMv82app6-1"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opacity-70 transition-opacity dark:invert"
-                        >
-                          <img
-                            src={FigmaIcon}
-                            alt="Figma Logo"
-                            className="w-8 xs:w-9"
-                          />
-                        </a>
                       </div>
                     </div>
                     <h2 className="xl-x:text-[20px]">
-                      // Project <span className="font-bold">03</span> | Web
-                      Portfolio
+                      // Project <span className="font-bold">07</span> | Mental
+                      Wellness Application for Thought Reframing
                     </h2>
-                    <div className="flex xl-x:hidden items-center gap-4 mt-4">
+                    <div className="flex xl-x:hidden justify-left gap-4 mt-4">
                       <Button
                         radius="full"
-                        className="bg-primary text-white h-auto py-2 px-4 min-h-[32px] md:min-h-[36px] flex items-center justify-center"
+                        className="bg-primary text-white min-w-16 h-8 md:min-w-20 md:h-9 xs:p-5 p-4"
                       >
                         <span className="text-[12px] md:text-[14px] font-medium whitespace-nowrap">
                           <a
-                            href="https://nadiavespalec.com"
+                            href="https://getreframe.netlify.app/login"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -109,26 +95,14 @@ function PortfolioDetails() {
                         </span>
                       </Button>
                       <a
-                        href="https://github.com/nai-ada/portfolio-v2"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:opacity-70 transition-opacity dark:invert flex-shrink-0"
-                      >
-                        <img
-                          src={GitHub}
-                          alt="GitHub Logo"
-                          className="w-8 xs:w-9"
-                        />
-                      </a>
-                      <a
-                        href="https://www.figma.com/design/9jSVd92pcOop5tYOqxschn/Portfolio-Project-2?node-id=0-1&t=xr19yNumMv82app6-1"
+                        href="https://github.com/nai-ada/reframe"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:opacity-70 transition-opacity dark:invert"
                       >
                         <img
-                          src={FigmaIcon}
-                          alt="Figma Logo"
+                          src={GitHub}
+                          alt="GitHub Logo"
                           className="w-8 xs:w-9"
                         />
                       </a>
@@ -140,13 +114,13 @@ function PortfolioDetails() {
                   <div className="relative bottom-32">
                     <div className="relative w-[400px] -z-10">
                       <img
-                        src={portfolio2}
+                        src={reframe2}
                         alt="Project Preview 3"
                         className="w-[400px] h-auto"
                       />
                       <div className="absolute w-[250px] -right-[6rem] top-[8rem]">
                         <img
-                          src={portfolio1}
+                          src={reframe1}
                           alt="Menu Items Preview"
                           className="w-[250px] h-auto"
                         />
@@ -166,7 +140,7 @@ function PortfolioDetails() {
                 <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
               </div>
               <h1 className="font-bold uppercase text-[125px] origin-center -rotate-90 text-[#2b2b2b] dark:text-white whitespace-nowrap">
-                <span className="text-primary">P</span>roject 03.
+                <span className="text-primary">P</span>roject 07.
               </h1>
             </div>
           </div>
@@ -177,13 +151,13 @@ function PortfolioDetails() {
               <div className="relative w-fit">
                 <div className="relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10">
                   <img
-                    src={portfolio2}
+                    src={reframe2}
                     alt="Project Preview 3"
                     className="w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto"
                   />
                   <div className="absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]">
                     <img
-                      src={portfolio1}
+                      src={reframe1}
                       alt="Menu Items Preview"
                       className="w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto"
                     />
@@ -236,37 +210,38 @@ function PortfolioDetails() {
           </div>
 
           {/* Overview Section */}
-          <FadeIn>
-            <div
-              style={{
-                display: activeSection === "overview" ? "block" : "none",
-              }}
-              className="mx-8 sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-16"
-            >
-              <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
-                <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">
-                  Project Overview
-                </h2>
-              </div>
-              <p className="mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-                This web portfolio showcases my evolution as a front-end
-                developer through a clean, intuitive design. Built with React.js
-                for robust code organization and enhanced with NextUI
-                components, this project demonstrates my commitment to creating
-                polished, user-focused experiences. While my previous portfolio
-                laid the foundation, this redesign represents a significant step
-                forward in both functionality and aesthetic refinement.
-              </p>
-              <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-                This portfolio reflects my growth through its refined design and
-                enhanced user experience. With features like theme switching and
-                streamlined navigation, it delivers a cleaner, more intuitive
-                experience than its predecessor. The minimal design better
-                highlights my work while staying true to my belief that a good
-                design should be both simple and functional.
-              </p>
+          <div
+            style={{ display: activeSection === "overview" ? "block" : "none" }}
+            className="mx-8 sm-plus:mx-16 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-16"
+          >
+            <div className="flex items-center gap-4 mb-10 md:mx-8 lg:mx-16">
+              <h2 className="font-bold text-[24px] xl:text-[30px] text-[#222222] dark:text-white">
+                Project Overview
+              </h2>
             </div>
-          </FadeIn>
+            <p className="mb-4 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
+              Refra:me is a mental wellness web application designed to help
+              users challenge negative mindsets and cognitive distortions into
+              positive, empowering perspectives. Leveraging the Gemini API,
+              Refra:me analyzes original journal entries and provides
+              personalized, optimistic thought reframing, along with actionable
+              tips to encourage healthier thinking patterns. Users can create an
+              account to view, edit, update, and delete their journal entries.
+            </p>
+            <p className="mb-4 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
+              Developed as my final capstone project for the BrainStation
+              Software Engineering program, Refra:me is ideal for anyone seeking
+              support in shifting their mindset and improving their well-being.
+              Currently a prototype web app, Refra:me is on track to becoming a
+              full-featured mobile application for both iOS and Android.
+            </p>
+            <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
+              Next steps for Refra:me include email verification and password
+              reset functionality, enhanced security including encryption,
+              hashing, salting, and protected routes, a transition to a mobile
+              app, and UI updates including dark mode.
+            </p>
+          </div>
 
           {/* Key Takeaways Section */}
           <div
@@ -279,18 +254,14 @@ function PortfolioDetails() {
               Key Takeaways
             </h2>
             <p className="mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-              Throughout this project, I gained valuable insights into managing
-              large-scale projects effectively. Although I inevitably adjusted
-              the design slightly during the development process, planning the
-              design beforehand helped establish clear style goals and
-              direction.
-            </p>
-
-            <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-              My first experience using a UI library proved to be efficient,
-              constantly pushing me to evaluate and optimize my development
-              approach. This project taught me to question and improve my
-              methods, making me a more thoughtful developer.
+              Throughout this project, I discovered that I can bring any idea to
+              life, no matter how ambitious it may seem. Working with new
+              technologies like PostgreSQL, Supabase, and Netlify presented
+              unique challenges, especially in setting up the backend
+              infrastructure and managing deployment. However, overcoming these
+              obstacles was incredibly rewarding and deepened my technical
+              skills. I’m excited about the future of this project and look
+              forward to seeing how it evolves!
             </p>
           </div>
 
@@ -306,44 +277,34 @@ function PortfolioDetails() {
             </h2>
             <ul className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6">
               <li className="mb-2">
-                Utilized{" "}
-                <span className="font-semibold text-primary">NextUI</span>, a
-                React UI library to maintain a clean and consistent interface
-                while enhancing efficiency during production, as well as being
-                able to implement a light/dark mode feature
+                Users can create, view, update, and delete entries connected to
+                the PostgreSQL database.
               </li>
               <li className="mb-2">
-                Deployed and finalized project based on design mockup created
-                using <span className="font-semibold text-primary">Figma</span>
+                Users can create an account and login with their email and
+                password.
               </li>
               <li className="mb-2">
-                On the homepage, implemented a{" "}
-                <span className="font-semibold text-primary">
-                  unique but intuitive system
-                </span>{" "}
-                where website visitors can access information by interacting
-                with accordions, isolated scrolling funcitonalities, and custom
-                slides
+                Users can access their dashboard, with the option to view all
+                entries and create entries. Once users create a new entry, their
+                original message is sent to the Gemini API and generates a
+                reframed perspective of their original thoughts.
               </li>
               <li className="mb-2">
-                Created{" "}
-                <span className="font-semibold text-primary">
-                  individual project pages
-                </span>{" "}
-                to dynamically display project information and details for each
-                project
+                Users may only process entries if they are logged in and have an
+                account.
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16">
+      <div className="mx-8 md:mx-auto md:max-w-[800px] lg:max-w-[950px] text-left mt-20 mb-28  sm-plus:mx-16 ">
         <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">
           Project Tools
         </h2>
         <div className="md:mx-8 lg:mx-16">
-          <PortfolioTools />
+          <ReframeTools />
         </div>
       </div>
 
@@ -357,7 +318,7 @@ function PortfolioDetails() {
           </h2>
         </div>
         <div className="mt-16">
-          <WorksCards currentProject="portfolio" />
+          <WorksCards currentProject="reframe" />
         </div>
       </FadeIn>
       <FooterWorks />
@@ -365,4 +326,4 @@ function PortfolioDetails() {
   );
 }
 
-export default PortfolioDetails;
+export default ReframeDetails;

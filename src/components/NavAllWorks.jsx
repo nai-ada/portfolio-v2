@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "/src/assets/NVLogo.svg";
 import darkLogo from "/src/assets/nv-logo-dark.svg";
 import MenuAllWorks from "../components/MenuAllWorks";
