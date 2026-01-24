@@ -12,11 +12,12 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function Home() {
   const [text] = useTypewriter({
     words: [
-      "Software Engineer.",
-      "Full-stack Developer.",
-      "UX/UI Designer.",
-      "Web Designer.",
-      "Coding Instructor.",
+      "Full-stack developer.",
+      "Frontend enthusiast.",
+      "Chronic side-quester.",
+      "Multi-hobbyist.",
+      "UX/UI designer.",
+      "Professional cafe-hopper.",
     ],
     loop: true,
     delaySpeed: 1000,
@@ -97,7 +98,7 @@ function Home() {
               </div>
               <div className="mt-5 ml-2 md:w-full md:mt-1 md:mt-2 md:ml-1 lg:mt-0 text-center md:text-left">
                 <h2 className="subTitleHome text-[18px] mb-4 xs:text-[20px] md:text-[24px] mb-2 font-medium sm-plus:text-[20px] sm:text-[22px] lg-plus:text-[28px] 4xl:text-[40px]">
-                  Hey, I'm a{" "}
+                  {" "}
                   <span style={{ fontWeight: "bold", color: "#86A6F6" }}>
                     {text}
                   </span>
