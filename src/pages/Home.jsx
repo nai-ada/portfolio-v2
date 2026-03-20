@@ -13,10 +13,8 @@ function Home() {
   const [text] = useTypewriter({
     words: [
       "Full-stack developer.",
-      "Frontend enthusiast.",
       "Chronic side-quester.",
       "Multi-hobbyist.",
-      "UX/UI designer.",
       "Professional cafe-hopper.",
     ],
     loop: true,
