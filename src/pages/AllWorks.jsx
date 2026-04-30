@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import reframe3 from "/src/assets/reframe3.png";
 import clippr from "/src/assets/clippr.png";
 import portfolio from "/src/assets/portfolio1.png";
@@ -113,14 +113,14 @@ const AllWorks = () => {
               </FadeIn>
               <div className="flex justify-center">
                 <div className="max-w-[800px]">
-                  <motion.div
+                  <div
                     className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 justify-items-center"
                     variants={container}
                     initial="hidden"
                     animate={isLoaded ? "show" : "hidden"}
                   >
                     {projects.map((project) => (
-                      <motion.div
+                      <div
                         key={project.id}
                         variants={item}
                         className="w-[230px] bg-white dark:bg-gradient-to-b dark:from-[#1d253a] dark:to-darkBackground dark:border-[#414141] border-1 rounded-xl overflow-hidden shadow-[0_4px_7px_rgba(0,0,0,0.2)] dark:shadow-[0_6px_9px_rgba(0,0,0,0.2)]"
@@ -146,9 +146,9 @@ const AllWorks = () => {
                             </Button>
                           </Link>
                         </div>
-                      </motion.div>
+                      </div>
                     ))}
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             </>
