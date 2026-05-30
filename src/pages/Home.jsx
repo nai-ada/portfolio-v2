@@ -12,10 +12,10 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function Home() {
   const [text] = useTypewriter({
     words: [
-      "Full-stack developer.",
-      "Chronic side-quester.",
-      "Multi-hobbyist.",
-      "Professional cafe-hopper.",
+      "Frontend-leaning Full Stack Developer.",
+      "UX/UI Designer",
+      "Chronic Side-Quester.",
+      "Professional Cafe-Hopper.",
     ],
     loop: true,
     delaySpeed: 1000,

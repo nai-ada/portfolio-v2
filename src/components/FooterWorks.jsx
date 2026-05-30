@@ -83,7 +83,7 @@ function FooterWorks() {
         {/* Copyright Text */}
         <div className="mt-12 text-center md:text-left">
           <p className="text-[10px] md:text-xs text-[#222222] dark:text-white font-medium">
-            © Nadia Vespalec | 2025
+            © Nadia Vespalec | 2026
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import reframe3 from "/src/assets/reframe3.png";
-import clippr from "/src/assets/clippr.png";
+import marketing from "/src/assets/marketing.png";
 import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
 import nxt from "/src/assets/next.svg";
@@ -11,7 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FadeIn from "./FadeIn";
-import comingsoon from "/src/assets/comingsoon.svg";
+import aisacover from "/src/assets/aisacover.png";
 
 const Slides = () => {
   const sliderRef = useRef(null);
@@ -68,10 +68,10 @@ const Slides = () => {
 
   const projectData = [
     {
-      name: `AISafeguard`,
-      img: comingsoon,
-      info: `Chrome extension that is currently in development.`,
-      link: "/projects/aisafeguard",
+      name: `HumanOnly`,
+      img: aisacover,
+      info: `Chrome extension and website design concept.`,
+      link: "/projects/humanonly",
     },
     {
       name: `Galaxy Grid II`,
@@ -92,10 +92,10 @@ const Slides = () => {
       link: "/projects/reframe",
     },
     {
-      name: `ClipprDB`,
-      img: clippr,
-      info: `Movie database which utilizes data from the TMDb Database (Rest API).`,
-      link: "/projects/clippr",
+      name: `Marketing Portfolio`,
+      img: marketing,
+      info: `Portfolio designed to showcase my experience in social media.`,
+      link: "/projects/marketing",
     },
   ];
 

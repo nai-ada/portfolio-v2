@@ -46,6 +46,13 @@ function About() {
               <span className="italic">feels</span> good to use.
             </p>
             <p className="font-normal text-[16px] p-8 pr-12 pt-0 pb-4 md:mr-2 md:ml-6 text-[#2b2b2b] lg-x:text-[16px] lg-plus:w-[78%] dark:text-white 4xl:text-[22px]">
+              My approach to design sits at the intersection of UX/UI and
+              frontend development — blending pixel-perfect design with a deep
+              understanding of how things are built. I'm passionate about
+              finding that balance between innovative, unique design and
+              experiences that are genuinely intuitive to use.
+            </p>
+            <p className="font-normal text-[16px] p-8 pr-12 pt-0 pb-4 md:mr-2 md:ml-6 text-[#2b2b2b] lg-x:text-[16px] lg-plus:w-[78%] dark:text-white 4xl:text-[22px]">
               What drives me most as a developer is the constant opportunity to
               learn and evolve. I thrive in environments where growth isn't just
               encouraged - it's inevitable. Every challenge becomes a chance to

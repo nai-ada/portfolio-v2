@@ -5,18 +5,24 @@ import reframe3 from "/src/assets/reframe3.png";
 import clippr from "/src/assets/clippr.png";
 import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
-import froth from "/src/assets/froth1.png";
 import FadeIn from "./FadeIn";
-import comingsoon from "/src/assets/comingsoon.svg";
+import marketing from "/src/assets/marketing.png";
+import aisacover from "/src/assets/aisacover.png";
 
 const WorksCards = ({ currentProject = "froth" }) => {
   const projects = useMemo(
     () => [
       {
-        id: "aisa",
-        image: comingsoon,
-        title: "AISafeguard",
-        link: "/projects/aisafeguard",
+        id: "humanonly",
+        image: aisacover,
+        title: "HumanOnly",
+        link: "/projects/humanonly",
+      },
+      {
+        id: "marketing",
+        image: marketing,
+        title: "Marketing Portfolio",
+        link: "/projects/marketing",
       },
       {
         id: "portfolio",
@@ -25,28 +31,10 @@ const WorksCards = ({ currentProject = "froth" }) => {
         link: "/projects/portfolio",
       },
       {
-        id: "clippr",
-        image: clippr,
-        title: "Clippr DB",
-        link: "/projects/clippr",
-      },
-      {
         id: "reframe",
         image: reframe3,
         title: "Refra:me",
         link: "/projects/reframe",
-      },
-      {
-        id: "indigo",
-        image: comingsoon,
-        title: "Indigo",
-        link: "/projects/indigo",
-      },
-      {
-        id: "froth",
-        image: froth,
-        title: "Froth",
-        link: "/projects/froth-matcha",
       },
       {
         id: "galaxy",
@@ -55,12 +43,12 @@ const WorksCards = ({ currentProject = "froth" }) => {
         link: "/projects/galaxy-grid-2",
       },
     ],
-    []
+    [],
   );
 
   const randomProjects = useMemo(() => {
     const filteredProjects = projects.filter(
-      (project) => project.id !== currentProject
+      (project) => project.id !== currentProject,
     );
     return filteredProjects.sort(() => Math.random() - 0.5).slice(0, 3);
   }, [projects, currentProject]);

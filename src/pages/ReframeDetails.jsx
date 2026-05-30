@@ -9,6 +9,7 @@ import FadeIn from "../components/FadeIn";
 import reframe1 from "/src/assets/reframe1.svg";
 import reframe2 from "/src/assets/reframe2.svg";
 import WorksCards from "../components/WorksCards";
+import FigmaIcon from "/src/assets/figmalink.svg";
 
 function ReframeDetails() {
   const [activeSection, setActiveSection] = useState("overview");
@@ -73,6 +74,18 @@ function ReframeDetails() {
                             className="w-8 xs:w-9"
                           />
                         </a>
+                        <a
+                          href="https://www.figma.com/design/YiVE1JevyG8YvqOCLxienY/Refra-me?node-id=0-1&t=ibUvbRQiN4viUoM3-1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:opacity-70 transition-opacity dark:invert"
+                        >
+                          <img
+                            src={FigmaIcon}
+                            alt="Figma Logo"
+                            className="w-8 xs:w-9"
+                          />
+                        </a>
                       </div>
                     </div>
                     <h2 className="xl-x:text-[20px]">
@@ -103,6 +116,18 @@ function ReframeDetails() {
                         <img
                           src={GitHub}
                           alt="GitHub Logo"
+                          className="w-8 xs:w-9"
+                        />
+                      </a>
+                      <a
+                        href="https://www.figma.com/design/YiVE1JevyG8YvqOCLxienY/Refra-me?node-id=0-1&t=ibUvbRQiN4viUoM3-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:opacity-70 transition-opacity dark:invert"
+                      >
+                        <img
+                          src={FigmaIcon}
+                          alt="Figma Logo"
                           className="w-8 xs:w-9"
                         />
                       </a>

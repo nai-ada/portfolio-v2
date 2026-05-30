@@ -1,31 +1,20 @@
-import figmaLogo from "/src/assets/figma.png";
 import gitLogo from "/src/assets/git.png";
-import typescriptLogo from "/src/assets/typescript.png";
 import tailwindLogo from "/src/assets/tailwind.png";
-import solidLogo from "/src/assets/solid.png";
+import reactLogo from "/src/assets/react.png";
+import vercelIcon from "/src/assets/Vercel.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const logos = {
-  figma: { src: figmaLogo, alt: "Figma", title: "Figma" },
   git: { src: gitLogo, alt: "Git", title: "Git" },
-  typescript: { src: typescriptLogo, alt: "TypeScript", title: "TypeScript" },
+  react: { src: reactLogo, alt: "React", title: "React" },
   tailwind: { src: tailwindLogo, alt: "Tailwind", title: "Tailwind" },
-  solidjs: { src: solidLogo, alt: "SolidJs", title: "SolidJS" },
+  vercel: { src: vercelIcon, alt: "Vercel Logo", title: "Vercel" },
 };
 
-const devTools = ["solidjs", "tailwind", "typescript", "git"];
-const designTools = ["figma"];
-const skillsContent = [
-  "UX/UI",
-  "Wireframing",
-  "Problem Solving",
-  "Mockups",
-  "Team Collaboration",
-  "SEO",
-  "Stripe Setup",
-];
+const devTools = ["git", "tailwind", "react", "vercel"];
+const skillsContent = ["UX/UI", "Problem Solving"];
 
 const container = {
   hidden: { opacity: 0 },
@@ -73,7 +62,7 @@ const createLogoElements = (logoKeys) =>
     </motion.div>
   ));
 
-function IndigoTools() {
+function MarketingTools() {
   const devControl = useAnimation();
   const designControl = useAnimation();
   const skillsControl = useAnimation();
@@ -121,7 +110,7 @@ function IndigoTools() {
         </div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         ref={designRef}
         variants={container}
         initial="hidden"
@@ -133,7 +122,7 @@ function IndigoTools() {
         <div className="flex flex-wrap justify-start gap-2">
           {createLogoElements(designTools)}
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         ref={skillsRef}
@@ -160,4 +149,4 @@ function IndigoTools() {
   );
 }
 
-export default IndigoTools;
+export default MarketingTools;

@@ -9,7 +9,8 @@ import portfolio from "/src/assets/portfolio1.png";
 import galaxy from "/src/assets/gg.png";
 import froth from "/src/assets/froth1.png";
 import FadeIn from "../components/FadeIn";
-import comingsoon from "/src/assets/comingsoon.svg";
+import aisacover from "/src/assets/aisacover.png";
+import marketing from "/src/assets/marketing.png";
 import NavAllWorks from "../components/NavAllWorks";
 import FooterAllWorks from "../components/FooterAllWorks";
 
@@ -22,22 +23,16 @@ const AllWorks = () => {
 
   const projects = [
     {
-      id: "aisa",
-      image: comingsoon,
-      title: "AISafeguard",
-      link: "/projects/aisafeguard",
+      id: "marketing",
+      image: marketing,
+      title: "Marketing Portfolio",
+      link: "/projects/marketing",
     },
     {
-      id: "portfolio",
-      image: portfolio,
-      title: "Portfolio",
-      link: "/projects/portfolio",
-    },
-    {
-      id: "clippr",
-      image: clippr,
-      title: "Clippr DB",
-      link: "/projects/clippr",
+      id: "humanonly",
+      image: aisacover,
+      title: "HumanOnly",
+      link: "/projects/humanonly",
     },
     {
       id: "reframe",
@@ -46,22 +41,29 @@ const AllWorks = () => {
       link: "/projects/reframe",
     },
     {
+      id: "portfolio",
+      image: portfolio,
+      title: "Portfolio",
+      link: "/projects/portfolio",
+    },
+    {
       id: "galaxy",
       image: galaxy,
       title: "Galaxy Grid II",
       link: "/projects/galaxy-grid-2",
     },
     {
+      id: "clippr",
+      image: clippr,
+      title: "Clippr DB",
+      link: "/projects/clippr",
+    },
+
+    {
       id: "froth",
       image: froth,
       title: "Froth",
       link: "/projects/froth-matcha",
-    },
-    {
-      id: "indigo",
-      image: comingsoon,
-      title: "Indigo",
-      link: "/projects/indigo",
     },
   ];
 

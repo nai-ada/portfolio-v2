@@ -29,6 +29,8 @@ import reactLogo from "/src/assets/react.png";
 import designIcon from "/src/assets/design.svg";
 import devIcon from "/src/assets/dev.svg";
 import skillsIcon from "/src/assets/skills.svg";
+import vercelIcon from "/src/assets/Vercel.png";
+import vueIcon from "/src/assets/Vue.png";
 
 const logos = {
   npm: { src: npmLogo, alt: "NPM", title: "NPM" },
@@ -47,6 +49,8 @@ const logos = {
     title: "Illustrator",
   },
   git: { src: gitLogo, alt: "Git", title: "Git" },
+  vercel: { src: vercelIcon, alt: "Vercel Logo", title: "Vercel" },
+  vue: { src: vueIcon, alt: "Vue Logo", title: "Vue" },
   javascript: { src: javascriptLogo, alt: "JavaScript", title: "JavaScript" },
   react: { src: reactLogo, alt: "React", title: "React" },
   sass: { src: sassLogo, alt: "SASS", title: "SASS" },
@@ -92,10 +96,12 @@ const devContent = createLogoElements([
   "git",
   "javascript",
   "wordpress",
+  "vercel",
   "mysql",
   "nodejs",
   "express",
   "postgresql",
+  "vue",
   "supabase",
   "react",
   "sass",
@@ -111,10 +117,10 @@ const devContent = createLogoElements([
 ]);
 
 const designContent = createLogoElements([
+  "figma",
   "illustrator",
   "photoshop",
   "xd",
-  "figma",
 ]);
 
 const skillsContent = [

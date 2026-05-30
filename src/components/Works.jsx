@@ -19,6 +19,7 @@ const blinkingArrowStyle = `
 
 const projectsList = [
   {
+    id: "froth-matcha",
     title: "Froth Matcha",
     description: ["WordPress", "PHP", "Sass"],
     link: "/projects/froth-matcha",
@@ -34,11 +35,26 @@ const projectsList = [
     ),
   },
   {
-    title: "Indigo",
-    description: ["TypeScript", "Tailwind CSS", "Solid.js"],
-    link: "#",
+    id: "marketing",
+    title: (
+      <>
+        <img
+          src={favourite}
+          alt="Favourite"
+          style={{
+            display: "inline",
+            width: "0.7em",
+            verticalAlign: "middle",
+            marginRight: 8,
+          }}
+        />
+        Marketing Portfolio
+      </>
+    ),
+    description: ["React", "Tailwind CSS"],
+    link: "/projects/marketing",
     button: (
-      <Link to="/projects/indigo">
+      <Link to="/projects/marketing">
         <Button
           radius="full"
           className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
@@ -49,6 +65,7 @@ const projectsList = [
     ),
   },
   {
+    id: "portfolio",
     title: (
       <>
         <img
@@ -64,7 +81,7 @@ const projectsList = [
         Portfolio
       </>
     ),
-    description: ["React", "Tailwind CSS", "HeroUI"],
+    description: ["React", "Tailwind CSS", "Figma"],
     link: "#",
     button: (
       <Link to="/projects/portfolio">
@@ -78,6 +95,7 @@ const projectsList = [
     ),
   },
   {
+    id: "galaxy-grid-2",
     title: "Galaxy Grid II",
     description: ["JavaScript", "CSS", "HTML"],
     link: "/projects/galaxy-grid-2",
@@ -93,11 +111,26 @@ const projectsList = [
     ),
   },
   {
-    title: "AISafeguard",
-    description: ["React", "Tailwind CSS", "HTML"],
+    id: "humanonly",
+    title: (
+      <>
+        <img
+          src={favourite}
+          alt="Favourite"
+          style={{
+            display: "inline",
+            width: "0.7em",
+            verticalAlign: "middle",
+            marginRight: 8,
+          }}
+        />
+        HumanOnly
+      </>
+    ),
+    description: ["JavaScript", "CSS", "HTML", "Figma"],
     link: "#",
     button: (
-      <Link to="/projects/aisafeguard">
+      <Link to="/projects/humanonly">
         <Button
           radius="full"
           className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
@@ -108,6 +141,7 @@ const projectsList = [
     ),
   },
   {
+    id: "clippr",
     title: "Clippr DB",
     description: ["React", "CSS", "Rest API"],
     link: "#",
@@ -122,8 +156,8 @@ const projectsList = [
       </Link>
     ),
   },
-
   {
+    id: "reframe",
     title: (
       <>
         <img
@@ -139,7 +173,7 @@ const projectsList = [
         Refra:me
       </>
     ),
-    description: ["React", "PostgreSQL", "Netlify"],
+    description: ["React", "PostgreSQL", "Netlify", "Figma"],
     link: "#",
     button: (
       <Link to="/projects/reframe">
@@ -152,26 +186,11 @@ const projectsList = [
       </Link>
     ),
   },
-  // {
-  //   title: "Instock",
-  //   description: ["React", "Sass", "Express.js"],
-  //   link: "#",
-  //   button: (
-  //     <Link to="/projects/instock">
-  //       <Button
-  //         radius="full"
-  //         className="bg-primary text-white min-w-16 h-8 md:min-w-24 md:h-10 md:text-[16px]"
-  //       >
-  //         Info
-  //       </Button>
-  //     </Link>
-  //   ),
-  // },
 ];
 
 function Works() {
   const [activeIndex, setActiveIndex] = useState(
-    Math.floor(projectsList.length / 2)
+    Math.floor(projectsList.length / 2),
   );
   const scrollRef = useRef(null);
   const itemRefs = useRef([]);
@@ -261,7 +280,7 @@ function Works() {
           <div className="md:py-[300px]">
             {projectsList.map((project, index) => (
               <div
-                key={project.title}
+                key={project.id}
                 ref={(el) => (itemRefs.current[index] = el)}
                 className={`p-4 transition-opacity duration-300 ${
                   index !== projectsList.length - 1 ? "border-b-2" : ""

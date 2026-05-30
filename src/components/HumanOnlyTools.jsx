@@ -73,29 +73,26 @@ const createLogoElements = (logoKeys) =>
     </motion.div>
   ));
 
-const devTools = [
-  "git",
-  "tailwind",
-  "react",
-  "javascript",
-  "html",
-  "css",
-  "nextui",
-  "framermotion",
-];
+// const devTools = [
+//   "git",
+//   "tailwind",
+//   "react",
+//   "javascript",
+//   "html",
+//   "css",
+//   "nextui",
+//   "framermotion",
+// ];
 const designTools = ["figma"];
 const skillsContent = [
   "Agile",
   "UX/UI",
   "Problem Solving",
-  "Mockups",
+  "Mid and High-Fidelity Mockups",
   "Team Collaboration",
-  "SEO",
-  "Rest API",
-  "Stripe Setup",
 ];
 
-function AiSaTools() {
+function HumanOnlyTools() {
   const devControl = useAnimation();
   const designControl = useAnimation();
   const skillsControl = useAnimation();
@@ -129,7 +126,7 @@ function AiSaTools() {
 
   return (
     <div className="space-y-8">
-      <motion.div
+      {/* <motion.div
         ref={devRef}
         variants={container}
         initial="hidden"
@@ -141,7 +138,7 @@ function AiSaTools() {
         <div className="flex flex-wrap justify-start gap-2">
           {createLogoElements(devTools)}
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         ref={designRef}
@@ -182,4 +179,4 @@ function AiSaTools() {
   );
 }
 
-export default AiSaTools;
+export default HumanOnlyTools;

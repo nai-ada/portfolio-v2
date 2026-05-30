@@ -10,9 +10,9 @@ import CustomScrollBar from "./components/CustomScrollBar";
 import CustomLoader from "./components/CustomLoader";
 import GalaxyGridDetails from "./pages/GalaxyGridDetails";
 import FrothDetails from "./pages/FrothDetails";
-import IndigoDetails from "./pages/IndigoDetails";
+import MarketingDetails from "./pages/MarketingDetails";
 import PortfolioDetails from "./pages/PortfolioDetails";
-import AiSaDetails from "./pages/AiSaDetails";
+import HumanOnlyDetails from "./pages/HumanOnlyDetails";
 import Favicon from "react-favicon";
 import ClipprDetails from "./pages/ClipprDetails";
 import ReframeDetails from "./pages/ReframeDetails";
@@ -53,8 +53,8 @@ function App() {
                       element={<FrothDetails />}
                     />
                     <Route
-                      path="/projects/indigo"
-                      element={<IndigoDetails />}
+                      path="/projects/marketing"
+                      element={<MarketingDetails />}
                     />
                     <Route
                       path="/projects/portfolio"
@@ -65,8 +65,8 @@ function App() {
                       element={<GalaxyGridDetails />}
                     />
                     <Route
-                      path="/projects/aisafeguard"
-                      element={<AiSaDetails />}
+                      path="/projects/humanonly"
+                      element={<HumanOnlyDetails />}
                     />
                     <Route
                       path="/projects/clippr"

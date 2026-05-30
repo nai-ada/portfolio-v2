@@ -2,14 +2,15 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import NavWorks from "../components/NavWorks";
 import { Button } from "@nextui-org/react";
-import IndigoTools from "../components/IndigoTools";
+import HumanOnlyTools from "../components/HumanOnlyTools";
 import FooterWorks from "../components/FooterWorks";
 import FadeIn from "../components/FadeIn";
-import comingsoon1 from "/src/assets/comingsoonmock1.svg";
-import comingsoon2 from "/src/assets/comingsoonmock2.svg";
+import aisadesktop from "/src/assets/aisadesktop.png";
+import aisamobile from "/src/assets/aisamobile.png";
 import WorksCards from "../components/WorksCards";
+import FigmaIcon from "/src/assets/figmalink.svg";
 
-function IndigoDetails() {
+function HumanOnlyDetails() {
   const [activeSection, setActiveSection] = useState("overview");
   return (
     <div className="relative overflow-hidden">
@@ -29,7 +30,7 @@ function IndigoDetails() {
       <div className="relative z-10">
         <NavWorks />
         <div className="pt-[100px] md:pt-[150px]">
-          <div className="container mx-auto px-4 xl-x:px-0 pl-[0.2rem] lg-x:ml-20 xl-x:ml-0">
+          <div className="container mx-auto px-4 xl-x:px-0 lg-x:ml-20 xl-x:ml-0 pl-[0.2rem]">
             <div className="flex flex-col items-center">
               <div className="w-full max-w-[1920px] flex flex-col xl-x:flex-row xl-x:items-start xl-x:justify-center gap-8">
                 <div className="ml-4 mr-4 xs:ml-6 sm-plus:ml-8 lg:ml-[9rem] xl-x:m-0">
@@ -43,8 +44,8 @@ function IndigoDetails() {
 
                   <div className="relative mb-16">
                     <div className="xl-x:flex xl-x:items-center xl-x:justify-start xl-x:gap-4">
-                      <h1 className="font-bold uppercase text-[60px] x-sm-plus:text-[90px] sm-plus:text-[70px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
-                        <span className="text-primary">I</span>ndigo.
+                      <h1 className="font-bold uppercase text-[38px] xs:text-[45px] sm-plus:text-[55px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[98px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
+                        <span className="text-primary">H</span>umanOnly.
                       </h1>
                       <div className="hidden xl-x:flex gap-4 mt-12">
                         <Button
@@ -55,11 +56,23 @@ function IndigoDetails() {
                             <a>Coming Soon</a>
                           </span>
                         </Button>
+                        <a
+                          href="https://www.figma.com/design/5dyx56IrqH3qjbVxwJV4Eg/HumanOnly?node-id=0-1&t=1rOgdjj5kPPmx5qb-1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:opacity-70 transition-opacity dark:invert"
+                        >
+                          <img
+                            src={FigmaIcon}
+                            alt="Figma Logo"
+                            className="w-8 xs:w-9"
+                          />
+                        </a>
                       </div>
                     </div>
                     <h2 className="xl-x:text-[20px]">
-                      // Project <span className="font-bold">02</span> | Social
-                      Media Post Manager
+                      // Project <span className="font-bold">05</span> | Chrome
+                      Extension & Website Design
                     </h2>
                     <div className="flex xl-x:hidden justify-left gap-4 mt-4">
                       <Button
@@ -70,6 +83,18 @@ function IndigoDetails() {
                           <a>Coming Soon</a>
                         </span>
                       </Button>
+                      <a
+                        href="https://www.figma.com/design/5dyx56IrqH3qjbVxwJV4Eg/HumanOnly?node-id=0-1&t=1rOgdjj5kPPmx5qb-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:opacity-70 transition-opacity dark:invert"
+                      >
+                        <img
+                          src={FigmaIcon}
+                          alt="Figma Logo"
+                          className="w-8 xs:w-9"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -78,13 +103,13 @@ function IndigoDetails() {
                   <div className="relative bottom-32">
                     <div className="relative w-[400px] -z-10">
                       <img
-                        src={comingsoon2}
+                        src={aisadesktop}
                         alt="Project Preview 3"
                         className="w-[400px] h-auto"
                       />
                       <div className="absolute w-[250px] -right-[6rem] top-[8rem]">
                         <img
-                          src={comingsoon1}
+                          src={aisamobile}
                           alt="Menu Items Preview"
                           className="w-[250px] h-auto"
                         />
@@ -104,7 +129,7 @@ function IndigoDetails() {
                 <div className="border-l-1 border-[#222222] h-[170px] dark:border-white"></div>
               </div>
               <h1 className="font-bold uppercase text-[125px] origin-center -rotate-90 text-[#2b2b2b] dark:text-white whitespace-nowrap">
-                <span className="text-primary">P</span>roject 02.
+                <span className="text-primary">P</span>roject 05.
               </h1>
             </div>
           </div>
@@ -115,13 +140,13 @@ function IndigoDetails() {
               <div className="relative w-fit">
                 <div className="relative w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] -z-10">
                   <img
-                    src={comingsoon2}
+                    src={aisadesktop}
                     alt="Project Preview 3"
                     className="w-[295px] xs:w-[330px] sm-plus:w-[380px] sm-x:w-[420px] h-auto"
                   />
                   <div className="absolute w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] sm-x:-right-16 -right-8 -bottom-[1rem]">
                     <img
-                      src={comingsoon1}
+                      src={aisamobile}
                       alt="Menu Items Preview"
                       className="w-[170px] xs:w-[180px] sm-plus:w-[200px] sm-x:w-[240px] h-auto"
                     />
@@ -187,16 +212,11 @@ function IndigoDetails() {
                 </h2>
               </div>
               <p className="mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-                Indigo is a multi-media post manager for a variety of social
-                media platforms including TikTok, Discord, Instagram, Twitter
-                (X) and Facebook. Users can curate, schedule, and manage their
-                posts in a simple and easy-to-use format.
-              </p>
-              <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-                While Indigo is primarily designed for larger enterprises and
-                content creators with an extensive presence on a variety of
-                social media outlets, anyone is able to benefit from an
-                application like Indigo.{" "}
+                HumanOnly (formerly AISafeguard) is a concept Chrome extension
+                and website, designed end-to-end in Figma. This project follows
+                a full design pipeline from mid-fidelity to high-fidelity
+                mockups, exploring multiple aesthetic directions to evaluate and
+                refine the final design.
               </p>
             </div>
           </FadeIn>
@@ -212,7 +232,11 @@ function IndigoDetails() {
               Key Takeaways
             </h2>
             <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-              Stay tuned for more information to come!
+              The first concept served as a foundation for a cleaner, more
+              intentional second direction. The blue HumanOnly design felt more
+              aligned with the product's identity, and having the original to
+              compare against made that clarity possible — a good reminder that
+              first drafts exist to inform better ones.
             </p>
           </div>
 
@@ -226,32 +250,23 @@ function IndigoDetails() {
             <h2 className="font-bold text-[24px] mb-10 md:mx-8 lg:mx-16 xl:text-[30px] md:text-left text-[#222222] dark:text-white">
               Project Execution
             </h2>
-            <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-              Stay tuned for more information to come!
-            </p>
-            {/* <ul className='mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6'>
-                  <li className="mb-2">
-                    <span className="font-semibold"></span> 
-                  </li>
-                  <li className="mb-2">
-                  
-                  </li>
-                  <li className="mb-2">
-                
-                  </li>
-                  <li className="mb-2">
-               
-                  </li>
-                  <li className="mb-2">
-                  
-                  </li>
-                  <li className="mb-2">
-               
-                  </li>
-                  <li className="mb-2">
-             
-                  </li>
-                </ul> */}
+            <ul className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6">
+              <li className="mb-2">
+                Designed two full variations of the Chrome extension and website
+                in <span className="font-semibold text-primary">Figma</span> —
+                an original pink rendition under the AISafeguard concept, and a
+                refined blue iteration rebranded as HumanOnly. Each variation
+                was taken through a full pipeline from{" "}
+                <span className="font-semibold text-primary">mid-fidelity</span>{" "}
+                to{" "}
+                <span className="font-semibold text-primary">
+                  high-fidelity mockups
+                </span>
+                , covering all screens for both the extension and the website.
+                Both logos were designed in Figma, evolving from a shield
+                monogram for AISafeguard to a wordmark for HumanOnly.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -261,7 +276,7 @@ function IndigoDetails() {
           Project Tools
         </h2>
         <div className="md:mx-8 lg:mx-16">
-          <IndigoTools />
+          <HumanOnlyTools />
         </div>
       </div>
 
@@ -275,7 +290,7 @@ function IndigoDetails() {
           </h2>
         </div>
         <div className="mt-16">
-          <WorksCards currentProject="indigo" />
+          <WorksCards currentProject="humanonly" />
         </div>
       </FadeIn>
       <FooterWorks />
@@ -283,4 +298,4 @@ function IndigoDetails() {
   );
 }
 
-export default IndigoDetails;
+export default HumanOnlyDetails;
