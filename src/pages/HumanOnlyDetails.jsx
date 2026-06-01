@@ -57,7 +57,7 @@ function HumanOnlyDetails() {
                           </span>
                         </Button>
                         <a
-                          href="https://www.figma.com/design/5dyx56IrqH3qjbVxwJV4Eg/HumanOnly?node-id=0-1&t=1rOgdjj5kPPmx5qb-1"
+                          href="https://www.figma.com/design/La865OWZ0LfEBDNlchySvX/HumanOnly--formally-AISafeguard-?node-id=0-1&t=DdjYpRkaQRhtqK3r-1"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:opacity-70 transition-opacity dark:invert"
@@ -84,7 +84,7 @@ function HumanOnlyDetails() {
                         </span>
                       </Button>
                       <a
-                        href="https://www.figma.com/design/5dyx56IrqH3qjbVxwJV4Eg/HumanOnly?node-id=0-1&t=1rOgdjj5kPPmx5qb-1"
+                        href="https://www.figma.com/design/La865OWZ0LfEBDNlchySvX/HumanOnly--formally-AISafeguard-?node-id=0-1&t=DdjYpRkaQRhtqK3r-1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:opacity-70 transition-opacity dark:invert"
