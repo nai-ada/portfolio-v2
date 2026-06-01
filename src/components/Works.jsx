@@ -48,7 +48,7 @@ const projectsList = [
             marginRight: 8,
           }}
         />
-        Marketing Portfolio
+        SMM Portfolio
       </>
     ),
     description: ["React", "Tailwind CSS"],

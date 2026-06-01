@@ -21,7 +21,7 @@ const WorksCards = ({ currentProject = "froth" }) => {
       {
         id: "marketing",
         image: marketing,
-        title: "Marketing Portfolio",
+        title: "SMM Portfolio",
         link: "/projects/marketing",
       },
       {

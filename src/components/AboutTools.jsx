@@ -111,6 +111,7 @@ const devContent = createLogoElements([
   "css",
   "tailwind",
   "solidjs",
+  "nextui",
   "npm",
   "shopify",
   "netlify",

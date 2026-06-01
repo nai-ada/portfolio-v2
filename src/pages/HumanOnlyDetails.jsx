@@ -213,10 +213,10 @@ function HumanOnlyDetails() {
               </div>
               <p className="mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
                 HumanOnly (formerly AISafeguard) is a concept Chrome extension
-                and website, designed end-to-end in Figma. This project follows
-                a full design pipeline from mid-fidelity to high-fidelity
-                mockups, exploring multiple aesthetic directions to evaluate and
-                refine the final design.
+                and website, designed in Figma. This project follows a design
+                pipeline from mid-fidelity to high-fidelity mockups, exploring
+                multiple aesthetic directions to evaluate and refine the final
+                design.
               </p>
             </div>
           </FadeIn>
@@ -261,10 +261,10 @@ function HumanOnlyDetails() {
                 to{" "}
                 <span className="font-semibold text-primary">
                   high-fidelity mockups
-                </span>
-                , covering all screens for both the extension and the website.
-                Both logos were designed in Figma, evolving from a shield
-                monogram for AISafeguard to a wordmark for HumanOnly.
+                </span>{" "}
+                for both the extension and the website. Both logos were designed
+                in Figma, evolving from a shield monogram for AISafeguard to a
+                wordmark for HumanOnly.
               </li>
             </ul>
           </div>

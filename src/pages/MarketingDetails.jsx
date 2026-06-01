@@ -45,8 +45,7 @@ function MarketingDetails() {
                   <div className="relative mb-16">
                     <div className="xl-x:flex xl-x:items-center xl-x:justify-start xl-x:gap-4">
                       <h1 className="font-bold uppercase text-[48px] xs:text-[56px] sm-plus:text-[70px] xl-x:text-[90px] pt-[1rem] mb-0 text-[#2b2b2b] md:text-[78px] md:ml-0 lg-plus:text-[90px] dark:text-white text-left md:leading-tight xl-x:whitespace-nowrap">
-                        <span className="text-primary">M</span>arketing
-                        Portfolio.
+                        <span className="text-primary">S</span>MM Portfolio.
                       </h1>
                       <div className="hidden xl-x:flex items-center gap-4 mt-12 flex-shrink-0">
                         <Button

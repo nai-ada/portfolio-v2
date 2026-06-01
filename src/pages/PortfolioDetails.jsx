@@ -249,21 +249,22 @@ function PortfolioDetails() {
                 </h2>
               </div>
               <p className="mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-                This web portfolio showcases my evolution as a front-end
-                developer through a clean, intuitive design. Built with React.js
-                for robust code organization and enhanced with NextUI
-                components, this project demonstrates my commitment to creating
-                polished, user-focused experiences. While my previous portfolio
-                laid the foundation, this redesign represents a significant step
-                forward in both functionality and aesthetic refinement.
+                This portfolio was built entirely end to end — from the very
+                first mockups to the finished product you're looking at now. The
+                process started with a mid-fidelity mockup in Figma, where I
+                mapped out the structure and flow without getting too precious
+                about the details. From there, I prototyped and built out that
+                original design, only to realize after development that it
+                wasn't living up to the vision I had in my head.
               </p>
               <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-                This portfolio reflects my growth through its refined design and
-                enhanced user experience. With features like theme switching and
-                streamlined navigation, it delivers a cleaner, more intuitive
-                experience than its predecessor. The minimal design better
-                highlights my work while staying true to my belief that a good
-                design should be both simple and functional.
+                So I went back to Figma and reworked everything from scratch
+                into a high-fidelity mockup — refining the layout, tightening
+                the visual language, and pushing the design until it felt right.
+                That hi-fi version became the blueprint for the final build. A
+                lot went into this project. There were lots of detours,
+                redesigns, and more than a few late nights — but that's what
+                made it worth it!
               </p>
             </div>
           </FadeIn>
@@ -279,18 +280,18 @@ function PortfolioDetails() {
               Key Takeaways
             </h2>
             <p className="mb-6 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-              Throughout this project, I gained valuable insights into managing
-              large-scale projects effectively. Although I inevitably adjusted
-              the design slightly during the development process, planning the
-              design beforehand helped establish clear style goals and
-              direction.
-            </p>
-
-            <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
-              My first experience using a UI library proved to be efficient,
-              constantly pushing me to evaluate and optimize my development
-              approach. This project taught me to question and improve my
-              methods, making me a more thoughtful developer.
+              This project gave me experience in managing multiple features at a
+              time, and balancing the demands of both design and development
+              simultaneously. It pushed me to practice real time management —
+              juggling a large scope of work while learning new concepts and
+              tools on the fly, including UI component libraries that I had
+              never worked with before. Working through that challenge is what
+              made the difference. I came out the other side with a solid
+              command of those tools and the confidence to reach for them in
+              every project since. More than anything, this project opened the
+              door to a mindset I carry with me now: stay curious, try new
+              things, and trust that putting in the work will make you a more
+              well-rounded developer.
             </p>
           </div>
 
@@ -307,7 +308,7 @@ function PortfolioDetails() {
             <ul className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white list-disc pl-6">
               <li className="mb-2">
                 Utilized{" "}
-                <span className="font-semibold text-primary">NextUI</span>, a
+                <span className="font-semibold text-primary">HeroUI</span>, a
                 React UI library to maintain a clean and consistent interface
                 while enhancing efficiency during production, as well as being
                 able to implement a light/dark mode feature

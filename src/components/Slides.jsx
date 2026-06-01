@@ -92,7 +92,7 @@ const Slides = () => {
       link: "/projects/reframe",
     },
     {
-      name: `Marketing Portfolio`,
+      name: `SMM Portfolio`,
       img: marketing,
       info: `Portfolio designed to showcase my experience in social media.`,
       link: "/projects/marketing",

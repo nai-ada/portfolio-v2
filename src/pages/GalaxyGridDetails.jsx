@@ -224,8 +224,12 @@ function GalaxyGridDetails() {
               your side as either an astronaut or alien and compete in a
               10-round battle. This project represents the second and enhanced
               iteration of my original Galaxy Grid game, developed during my
-              time in the BCIT Front-End Web Development program. If you would
-              like to view the original, you can view it{" "}
+              time in the BCIT Front-End Web Development program.
+            </p>
+
+            <p className="mb-8 xl:text-[16px] md:mx-8 lg:mx-16 text-[#222222] dark:text-white">
+              If you are interesting in viewing the original game, you can view
+              it{" "}
               <a
                 href="/static/galaxy-grid/index.html"
                 target="_blank"
@@ -234,7 +238,16 @@ function GalaxyGridDetails() {
               >
                 here
               </a>
-              .
+              , and clicking{" "}
+              <a
+                href="https://www.figma.com/design/3hV7oArV9bvKf39T50xo3d/TicTacToe-Game-Mockup?node-id=0-1&t=m3wlQEaRYPeZEJYw-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline font-medium"
+              >
+                here
+              </a>{" "}
+              will take you to the Figma file with the original design mockup.
             </p>
           </div>
 

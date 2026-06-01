@@ -18,7 +18,7 @@ const logos = {
     alt: "Framer Motion",
     title: "Framer Motion",
   },
-  nextui: { src: nextuiLogo, alt: "NextUI", title: "NextUI" },
+  nextui: { src: nextuiLogo, alt: "HeroUI", title: "HeroUI" },
 };
 
 const container = {
