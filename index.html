@@ -1,28 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nadia Vespalec | Front-End Web Developer</title>
+    <title>Nadia Vespalec | Full-Stack Web Developer & Designer</title>
     <script>
-      (function() {
-        const theme = localStorage.getItem('theme') || 'light';
+      (function () {
+        const theme = localStorage.getItem("theme") || "light";
         document.documentElement.className = theme;
       })();
     </script>
     <style>
-      html, body {
+      html,
+      body {
         background-color: #ffffff;
       }
-      
+
       html.dark {
         background-color: #101010;
       }
-      
+
       #root {
         display: none;
       }
-      
+
       html.light #root,
       html.dark #root {
         display: block;
